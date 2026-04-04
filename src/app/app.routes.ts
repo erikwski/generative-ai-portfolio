@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { onboardedGuard } from './shared/data-access/guards/onboarded.guard';
 
 export const routes: Routes = [
   {
@@ -10,5 +11,10 @@ export const routes: Routes = [
     path: 'onboarding',
     loadComponent: () =>
       import('./pages/onboarding/onboarding.component').then((m) => m.OnboardingComponent),
+  },
+  {
+    path: 'canvas',
+    canActivate: [onboardedGuard],
+    loadComponent: () => import('./pages/canvas/canvas.component').then((m) => m.CanvasComponent),
   },
 ];

@@ -1,5 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { LOCALE_ID } from '@angular/core';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
@@ -12,7 +12,7 @@ loadLocale(locale).then(() => {
     ...appConfig,
     providers: [
       ...appConfig.providers,
-      provideAnimationsAsync(),
+      provideAnimations(),
       { provide: LOCALE_ID, useValue: locale },
     ],
   });

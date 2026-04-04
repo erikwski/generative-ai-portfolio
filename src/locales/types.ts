@@ -25,8 +25,36 @@ export interface OnboardingTranslation {
   note: string;
 }
 
+export interface GuardTranslation {
+  onboarded: {
+    message: string;
+    action: string;
+  };
+}
+
+export interface CanvasTranslation {
+  eyebrow: string;
+  headline: string;
+  subline: string;
+  reset: string;
+  chip: {
+    build: string;
+    stack: string;
+    hire: string;
+  };
+  placeholder: {
+    empty: string;
+    active: string;
+  };
+  send: {
+    aria: string;
+  };
+}
+
 export interface AppTranslation {
   onboarding: OnboardingTranslation;
+  guard: GuardTranslation;
+  canvas: CanvasTranslation;
 }
 
 export function flattenTranslations(obj: AppTranslation, prefix = ''): Record<string, string> {

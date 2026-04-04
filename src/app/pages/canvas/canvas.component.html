@@ -1,0 +1,63 @@
+<div class="canvas" [class.canvas--active]="hasContent()">
+
+  <!-- Top bar -->
+  <header class="canvas__topbar">
+    <app-logo layout="mobile" [width]="32" [height]="32" />
+    <button mat-button class="canvas__reset-btn" (click)="resetExperience()">
+      <span i18n="@@canvas.reset">Reset</span>
+    </button>
+  </header>
+
+  <!-- Widget grid (visible when active) -->
+  <main class="canvas__grid">
+    <!-- Generated widgets will appear here -->
+  </main>
+
+  <!-- Prompt area -->
+  <div class="canvas__prompt-area">
+
+    <!-- Hero text (empty state only) -->
+    @if (!hasContent()) {
+      <div class="canvas__hero">
+        <p class="canvas__eyebrow" i18n="@@canvas.eyebrow">Aura: Portfolio AI</p>
+        <h1 class="canvas__headline" i18n="@@canvas.headline">Ask me anything about Erik.</h1>
+        <p class="canvas__subline" i18n="@@canvas.subline">I'll build the interface around your question.</p>
+      </div>
+
+      <!-- Suggestion chips -->
+      <div class="canvas__chips">
+        @for (s of suggestions; track s) {
+          <button class="canvas__chip" (click)="useSuggestion(s)">{{ s }}</button>
+        }
+      </div>
+    }
+
+    <!-- Input row -->
+    <div class="canvas__input-row">
+      <mat-form-field class="canvas__field" appearance="outline" subscriptSizing="dynamic">
+        <textarea
+          matInput
+          class="canvas__textarea"
+          [ngModel]="prompt()"
+          (ngModelChange)="prompt.set($event)"
+          (keydown)="onKeydown($event)"
+          [placeholder]="hasContent() ? placeholderActive : placeholderEmpty"
+          rows="1"
+        ></textarea>
+      </mat-form-field>
+
+      <button
+        mat-icon-button
+        class="canvas__send-btn"
+        [class.canvas__send-btn--ready]="prompt().trim().length > 0"
+        [disabled]="!prompt().trim() || isLoading()"
+        (click)="send()"
+        aria-label="Send"
+        i18n-aria-label="@@canvas.send.aria"
+      >
+        <mat-icon>arrow_upward</mat-icon>
+      </button>
+    </div>
+
+  </div>
+</div>

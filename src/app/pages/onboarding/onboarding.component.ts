@@ -5,19 +5,17 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRippleModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
-import { CommunicationStyle, TimeAvailable, VisitorRole } from '../../shared/domain/visitor-profile';
+import {
+  CommunicationStyle,
+  TimeAvailable,
+  VisitorRole,
+} from '../../shared/domain/visitor-profile';
 import { LogoComponent } from '../../shared/ui/logo/logo.component';
 import { SUPPORTED_LOCALES, switchLocale, type SupportedLocale } from '../../../locales';
 
 @Component({
   selector: 'app-onboarding',
-  imports: [
-    FormsModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatRippleModule,
-    LogoComponent,
-  ],
+  imports: [FormsModule, MatButtonModule, MatButtonToggleModule, MatRippleModule, LogoComponent],
   templateUrl: './onboarding.component.html',
   styleUrl: './onboarding.component.scss',
 })
@@ -28,7 +26,6 @@ export class OnboardingComponent {
   readonly activeLocale = inject(LOCALE_ID) as SupportedLocale;
   readonly locales = SUPPORTED_LOCALES;
 
-  // Pre-fill from persisted store state
   role = signal<VisitorRole | null>(this.store.role());
   timeAvailable = signal<TimeAvailable | null>(this.store.timeAvailable());
   communicationStyle = signal<CommunicationStyle | null>(this.store.communicationStyle());
@@ -38,7 +35,9 @@ export class OnboardingComponent {
   }
 
   isValid(): boolean {
-    return this.role() !== null && this.timeAvailable() !== null && this.communicationStyle() !== null;
+    return (
+      this.role() !== null && this.timeAvailable() !== null && this.communicationStyle() !== null
+    );
   }
 
   submit(): void {

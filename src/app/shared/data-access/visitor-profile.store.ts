@@ -1,5 +1,5 @@
 import { computed } from '@angular/core';
-import { patchState, signalStore, withComputed, withHooks, withMethods, withState } from '@ngrx/signals';
+import { patchState, signalStore, withComputed, withMethods, withState } from '@ngrx/signals';
 import { EMPTY_PROFILE, VisitorProfile } from '../domain/visitor-profile';
 
 const STORAGE_KEY = 'visitor-profile';
@@ -26,7 +26,9 @@ function clearStorage(): void {
 
 export const VisitorProfileStore = signalStore(
   { providedIn: 'root' },
-  withState<VisitorProfile>(EMPTY_PROFILE),
+  // Factory runs synchronously at store construction — before any guard checks
+  // isOnboarded(). withHooks.onInit would be too late (runs inside an effect).
+  withState<VisitorProfile>(() => loadFromStorage()),
   withComputed((store) => ({
     isOnboarded: computed(
       () =>
@@ -75,9 +77,4 @@ export const VisitorProfileStore = signalStore(
       clearStorage();
     },
   })),
-  withHooks({
-    onInit(store) {
-      patchState(store, loadFromStorage());
-    },
-  }),
 );
