@@ -1,0 +1,164 @@
+@use '@angular/material' as mat;
+
+// ── Custom amber/gold M3 tonal palette ─────────────────────────────────────
+// Built so that tone 80 = #FFBF00, which M3 uses as primary in dark mode.
+$gold-palette: (
+  0: #000000,
+  10: #241A00,
+  20: #3E2D00,
+  25: #4C3700,
+  30: #5B4200,
+  35: #694D00,
+  40: #785800,
+  50: #987100,
+  60: #BA8B00,
+  70: #DDA600,
+  80: #FFBF00,
+  90: #FFDEA0,
+  95: #FFEFD0,
+  98: #FFF8EC,
+  99: #FFFBFF,
+  100: #FFFFFF,
+  secondary: (0: #000000,
+    10: #211B0E,
+    20: #382F21,
+    25: #443A2B,
+    30: #504536,
+    35: #5D5141,
+    40: #6A5D4C,
+    50: #837664,
+    60: #9D8F7C,
+    70: #B8A995,
+    80: #D4C5B0,
+    90: #F1E1CB,
+    95: #FFF0DE,
+    98: #FFF8F3,
+    99: #FFFBFF,
+    100: #FFFFFF,
+  ),
+  neutral: (0: #000000,
+    4: #0F0D09,
+    6: #14120E,
+    10: #1E1B16,
+    12: #221F1A,
+    17: #2D2A24,
+    20: #33302A,
+    22: #37342E,
+    24: #3B3832,
+    25: #3F3C35,
+    30: #4A4740,
+    35: #56534C,
+    40: #625F58,
+    50: #7C7870,
+    60: #979288,
+    70: #B2ACA2,
+    80: #CEC8BD,
+    87: #DDD8CE,
+    90: #EBE4D8,
+    92: #F0EAE0,
+    94: #F4EFE5,
+    95: #F9F2E7,
+    96: #FBEDE4,
+    99: #FFFBFF,
+    100: #FFFFFF,
+  ),
+  neutral-variant: (0: #000000,
+    10: #201C0F,
+    20: #363122,
+    25: #41382C,
+    30: #4D4337,
+    35: #594F42,
+    40: #655B4D,
+    50: #7F7465,
+    60: #9A8E7E,
+    70: #B5A897,
+    80: #D1C3B2,
+    90: #EFE0CE,
+    95: #FDEEDD,
+    98: #FFF8F3,
+    99: #FFFBFF,
+    100: #FFFFFF,
+  ),
+  error: (0: #000000,
+    10: #410002,
+    20: #690005,
+    25: #7E0007,
+    30: #93000A,
+    35: #A80710,
+    40: #BA1A1A,
+    50: #DE3730,
+    60: #FF5449,
+    70: #FF897D,
+    80: #FFB4AB,
+    90: #FFDAD6,
+    95: #FFEDEA,
+    98: #FFF8F7,
+    99: #FFFBFF,
+    100: #FFFFFF,
+  ),
+);
+
+// ── Theme ───────────────────────────────────────────────────────────────────
+html {
+  height: 100%;
+
+  @include mat.theme((color: (theme-type: dark,
+        primary: $gold-palette,
+      ),
+      typography: (plain-family: ('Inter', Helvetica, Arial, sans-serif),
+        brand-family: ('Inter', Helvetica, Arial, sans-serif),
+        bold-weight: 700,
+        medium-weight: 500,
+        regular-weight: 400,
+      ),
+      density: 0,
+    ));
+
+  // ── Override M3 surface tokens with our deep charcoal palette ────────────
+  --mat-sys-background: #0A0A0A;
+  --mat-sys-surface: #0A0A0A;
+  --mat-sys-surface-container: #141414;
+  --mat-sys-surface-container-high: #1E1E1E;
+  --mat-sys-surface-container-low: #0F0F0F;
+  --mat-sys-surface-container-lowest: #080808;
+  --mat-sys-on-background: #FFFFFF;
+  --mat-sys-on-surface: #FFFFFF;
+  --mat-sys-on-surface-variant: rgba(255, 255, 255, 0.6);
+  --mat-sys-outline: rgba(255, 255, 255, 0.12);
+  --mat-sys-outline-variant: rgba(255, 255, 255, 0.08);
+
+  // ── Brand design tokens (used directly in components) ────────────────────
+  --color-bg: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-elevated: #1E1E1E;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-accent: rgba(255, 191, 0, 0.25);
+  --color-white: #FFFFFF;
+  --color-muted: rgba(255, 255, 255, 0.5);
+  --color-subtle: rgba(255, 255, 255, 0.25);
+  --color-accent: #FFBF00;
+  --color-accent-hover: #e0a800;
+  --color-accent-dim: rgba(255, 59, 48, 0.15);
+  --color-brand: #FFBF00;
+  --color-brand-dim: rgba(255, 191, 0, 0.15);
+  --font-sans: 'Inter', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-panel: 8px;
+  --shadow-panel: 0 4px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --shadow-accent: 0 0 16px rgba(255, 191, 0, 0.3);
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}
+
+body {
+  color-scheme: dark;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  height: 100%;
+}

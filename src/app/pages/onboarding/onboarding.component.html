@@ -1,0 +1,100 @@
+<div class="onboarding">
+  <header class="onboarding__header">
+    <app-logo layout="horizontal" [width]="300" [height]="200" />
+
+    <div class="onboarding__locale-switcher">
+      @for (locale of locales; track locale) {
+        <button
+          class="onboarding__locale-btn"
+          [class.onboarding__locale-btn--active]="locale === activeLocale"
+          (click)="switchLocale(locale)"
+        >
+          {{ locale.toUpperCase() }}
+        </button>
+      }
+    </div>
+  </header>
+
+  <main class="onboarding__card">
+    <div class="onboarding__title-container">
+      <p class="onboarding__eyebrow" i18n="@@onboarding.eyebrow">Before we start</p>
+      <h1 class="onboarding__title" i18n="@@onboarding.title">Who are you?</h1>
+    </div>
+
+    <!-- Role -->
+    <section class="onboarding__question">
+      <mat-button-toggle-group
+        class="onboarding__toggle-group"
+        [value]="role()"
+        (change)="role.set($event.value)"
+        hideSingleSelectionIndicator
+      >
+        <mat-button-toggle value="developer">
+          <span i18n="@@onboarding.role.developer">Developer</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="recruiter">
+          <span i18n="@@onboarding.role.recruiter">Recruiter</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="client">
+          <span i18n="@@onboarding.role.client">Client</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </section>
+
+    <!-- Time available -->
+    <section class="onboarding__question">
+      <p class="onboarding__question-label" i18n="@@onboarding.time.label">
+        How much time do you have for me today?
+      </p>
+      <mat-button-toggle-group
+        class="onboarding__toggle-group"
+        [value]="timeAvailable()"
+        (change)="timeAvailable.set($event.value)"
+        hideSingleSelectionIndicator
+      >
+        <mat-button-toggle value="elevator">
+          <span i18n="@@onboarding.time.elevator">Elevator Pitch</span>
+          <span class="onboarding__toggle-sub" i18n="@@onboarding.time.elevator.sub">30s</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="coffee">
+          <span i18n="@@onboarding.time.coffee">Coffee Break</span>
+          <span class="onboarding__toggle-sub" i18n="@@onboarding.time.coffee.sub">5m</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="deep-dive">
+          <span i18n="@@onboarding.time.deep-dive">Deep Dive</span>
+          <span class="onboarding__toggle-sub" i18n="@@onboarding.time.deep-dive.sub">15m+</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </section>
+
+    <!-- Communication style -->
+    <section class="onboarding__question">
+      <p class="onboarding__question-label" i18n="@@onboarding.style.label">How should we talk?</p>
+      <mat-button-toggle-group
+        class="onboarding__toggle-group"
+        [value]="communicationStyle()"
+        (change)="communicationStyle.set($event.value)"
+        hideSingleSelectionIndicator
+      >
+        <mat-button-toggle value="formal">
+          <span i18n="@@onboarding.style.formal">Formal &amp; Precise</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="creative">
+          <span i18n="@@onboarding.style.creative">Creative &amp; Experimental</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="technical">
+          <span i18n="@@onboarding.style.technical">Fast &amp; Technical</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </section>
+
+    <div class="onboarding__actions">
+      <button mat-flat-button class="onboarding__submit" [disabled]="!isValid()" (click)="submit()">
+        <span i18n="@@onboarding.submit">Enter →</span>
+      </button>
+      <p class="onboarding__note" i18n="@@onboarding.note">
+        This portfolio adapts to you. Your answers shape the interface — every component is generated live by AI based on who you are and your preferences.
+      </p>
+    </div>
+  </main>
+</div>
