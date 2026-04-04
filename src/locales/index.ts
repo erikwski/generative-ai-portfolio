@@ -30,11 +30,20 @@ export function switchLocale(locale: SupportedLocale): void {
   window.location.reload();
 }
 
+// Flat translation map kept in memory so widgets can do runtime key lookups.
+// Populated by loadLocale() before bootstrap.
+let _translations: Record<string, string> = {};
+
+export function getTranslations(): Record<string, string> {
+  return _translations;
+}
+
 export async function loadLocale(locale: SupportedLocale): Promise<void> {
   const translations =
     locale === 'it' ? (await import('./it')).it
     : locale === 'de' ? (await import('./de')).de
     : en;
 
-  loadTranslations(flattenTranslations(translations));
+  _translations = flattenTranslations(translations);
+  loadTranslations(_translations);
 }
