@@ -10,7 +10,16 @@
 
   <!-- Widget grid (visible when active) -->
   <main class="canvas__grid">
-    <!-- Generated widgets will appear here -->
+    @for (message of assistantMessages(); track $index) {
+      <hb-render-message [message]="message" />
+    }
+    @if (isLoading()) {
+      <div class="canvas__loading">
+        <span class="canvas__loading-dot"></span>
+        <span class="canvas__loading-dot"></span>
+        <span class="canvas__loading-dot"></span>
+      </div>
+    }
   </main>
 
   <!-- Prompt area -->

@@ -8,7 +8,15 @@
       "WebFetch(domain:github.com)",
       "WebFetch(domain:www.npmjs.com)",
       "Bash(npx ng:*)",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "WebFetch(domain:www.angulararchitects.io)",
+      "WebFetch(domain:thenewstack.io)",
+      "Bash(npm info:*)",
+      "Bash(npm pack:*)",
+      "Bash(npx --yes json -f node_modules/@hashbrownai/anthropic/package.json peerDependencies)",
+      "Bash(npm install:*)"
     ]
   }
 }

@@ -51,10 +51,25 @@ export interface CanvasTranslation {
   };
 }
 
+export interface WidgetTranslationTree {
+  [roleOrDefault: string]: {
+    [styleOrLabel: string]:
+      | string
+      | {
+          [timeOrLabel: string]:
+            | string
+            | { [label: string]: string };
+        };
+  };
+}
+
 export interface AppTranslation {
   onboarding: OnboardingTranslation;
   guard: GuardTranslation;
   canvas: CanvasTranslation;
+  widgets?: {
+    [widgetName: string]: WidgetTranslationTree;
+  };
 }
 
 export function flattenTranslations(obj: AppTranslation, prefix = ''): Record<string, string> {
