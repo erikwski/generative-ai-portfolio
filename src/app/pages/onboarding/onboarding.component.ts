@@ -12,7 +12,7 @@ import {
 } from '../../shared/domain/visitor-profile';
 import { LogoComponent } from '../../shared/ui/logo/logo.component';
 import { SUPPORTED_LOCALES, switchLocale, type SupportedLocale } from '../../../locales';
-import { ProjectShowcaseWidgetComponent } from '../../widgets/project-showcase/project-showcase.component';
+import { SkillConstellationWidgetComponent } from '../../widgets/skill-constellation/skill-constellation.component';
 
 @Component({
   selector: 'app-onboarding',
@@ -22,7 +22,7 @@ import { ProjectShowcaseWidgetComponent } from '../../widgets/project-showcase/p
     MatButtonToggleModule,
     MatRippleModule,
     LogoComponent,
-    ProjectShowcaseWidgetComponent,
+    SkillConstellationWidgetComponent,
   ],
   templateUrl: './onboarding.component.html',
   styleUrl: './onboarding.component.scss',
@@ -34,9 +34,9 @@ export class OnboardingComponent {
   readonly activeLocale = inject(LOCALE_ID) as SupportedLocale;
   readonly locales = SUPPORTED_LOCALES;
 
-  role = signal<VisitorRole >(this.store.role());
-  timeAvailable = signal<TimeAvailable >(this.store.timeAvailable());
-  communicationStyle = signal<CommunicationStyle >(this.store.communicationStyle());
+  role = signal<VisitorRole>(this.store.role());
+  timeAvailable = signal<TimeAvailable>(this.store.timeAvailable());
+  communicationStyle = signal<CommunicationStyle>(this.store.communicationStyle());
 
   constructor() {
     // TODO: Remove when end creating widgets

@@ -1,0 +1,41 @@
+<div class="widget-panel skill-constellation">
+  <p class="skill-constellation__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="skill-constellation__headline">{{ headline() }}</h2>
+  @if (body()) {
+    <p class="skill-constellation__body">{{ body() }}</p>
+  }
+
+  <div class="skill-constellation__groups">
+    @for (group of groups(); track group.key) {
+      <div class="skill-constellation__group">
+        <h3 class="skill-constellation__group-label">{{ group.label }}</h3>
+        <div class="skill-constellation__skills">
+          @for (skill of group.skills; track skill.name) {
+            <div class="skill-constellation__skill">
+              <span class="skill-constellation__skill-name">{{ skill.name }}</span>
+              <span class="skill-constellation__dots">
+                @for (dot of dotRange; track dot) {
+                  <span
+                    class="skill-constellation__dot"
+                    [class.skill-constellation__dot--filled]="dot <= skill.level"
+                  ></span>
+                }
+              </span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  @if (isUpcomingVisible()) {
+    <div class="skill-constellation__upcoming">
+      <p class="skill-constellation__upcoming-label">{{ upcomingLabel() }}</p>
+      <div class="skill-constellation__upcoming-skills">
+        @for (skill of upcomingSkills; track skill.name) {
+          <span class="skill-constellation__upcoming-chip">{{ skill.name }}</span>
+        }
+      </div>
+    </div>
+  }
+</div>
