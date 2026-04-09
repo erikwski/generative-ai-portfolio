@@ -2,9 +2,14 @@
   "buildCommand": "ng build --configuration production",
   "outputDirectory": "dist/generative-ai-portfolio/browser",
   "framework": null,
+  "functions": {
+    "api/chat.ts": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
   ]
