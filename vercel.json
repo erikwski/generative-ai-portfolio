@@ -1,0 +1,11 @@
+{
+  "buildCommand": "ng build --configuration production",
+  "outputDirectory": "dist/generative-ai-portfolio/browser",
+  "framework": null,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
