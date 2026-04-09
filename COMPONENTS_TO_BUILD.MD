@@ -12,7 +12,7 @@
 
 7. The "Compatibility Engine" (The "Is he a fit?" Component)Visitor Question: "Does his experience match my specific job description or project needs?"Type: Text Input Analyzer.Description: A section where a recruiter can paste a Job Description or a client can paste a Project Brief. The AI then highlights the exact parts of your CV—like your work with Angular micro-frontends or Industry 4.0 systems —that match their needs.Parameters:inputSource: (Text paste or PDF upload).matchAccuracy: Percentage indicator (e.g., "95% Match for Frontend Architect").dynamicCitations: Automatically pulls relevant lines from your "Work Experience" .
 
-8. Core Identity & Physical ProfileComponent Type: Data Summary Card / Profile Header.Description: A clean, high-density information block that provides your essential personal data and current location.Parameters:Name: Erik Ferrari.Age: [Your Age] (e.g., 26).Height & Weight: [Your Data] (e.g., 180 cm / 75 kg).Location: Reggio Emilia, Italy.Current Role: Angular Frontend Developer & UI Library Owner.
+8. Core Identity & Physical ProfileComponent Type: Data Summary Card / Profile Header.Description: A clean, high-density information block that provides your essential personal data and current location.Parameters:Name: Erik Ferrari.Age: [Your Age] (e.g., 25).Height & Weight: [Your Data] (e.g., 168 cm / 68 kg).Location: Reggio Emilia, Italy.Current Role: Angular Frontend Developer.
 
 9. Professional Objective: Leadership & Architecture
    Component Type: Career Goal / Vision Statement.
@@ -55,13 +55,13 @@ Type: Dynamic Question & Answer Terminal
 Description: A smart interface that displays a set of 3-5 "High-Priority" questions tailored to the visitor's background. Each answer is generated or retrieved based on a hidden pre-prompt that ensures your professional trajectory and personal values are highlighted correctly for that specific audience.
 
 1. The Pre-Prompt Context (The "Brain")
-This is the hidden data fed to the AI to ensure the FAQ stays accurate and "on-brand" for you:
+   This is the hidden data fed to the AI to ensure the FAQ stays accurate and "on-brand" for you:
 
 "You are the AI agent for Erik Ferrari (Erikwski), a Strategic Frontend Architect. Erik is 26, 180cm, lives in Reggio Emilia, and is a Google Local Guide (Level 6). He is an Angular expert (NGRX, NX) and currently specializes in AI workflow integration at Datacolor. His goal is to become a Tech Lead who establishes architectural rules and guides teams. He is a runner, climber, and strategy board gamer. Answer questions using this context, staying professional but showing his personality."
 
 2. Persona-Based Customization (The "Output")
-A. For the Recruiter (The "Efficiency" View)
-Focus: Risk mitigation, stability, and technical leadership.
+   A. For the Recruiter (The "Efficiency" View)
+   Focus: Risk mitigation, stability, and technical leadership.
 
 Question 1: Why is Erik ready for a Tech Lead role?
 
@@ -94,7 +94,7 @@ Question 2: Is he easy to work with in a team?
 AI Answer: "Erik is the guy who organizes 'Dev Challenges' and after-work climbing or running sessions. He believes a team that competes and trains together, codes better together."
 
 3. Component Parameters for Design
-currentPersona: (Recruiter | Client | Peer) - Inherited from Onboarding.
+   currentPersona: (Recruiter | Client | Peer) - Inherited from Onboarding.
 
 interactionMode: (Click-to-reveal | Voice-trigger).
 
