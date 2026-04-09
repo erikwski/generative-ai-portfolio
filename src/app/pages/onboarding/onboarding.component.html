@@ -97,4 +97,17 @@
       </p>
     </div>
   </main>
+
+  <!-- ── DEBUG PREVIEW — remove before production ─────────────────────── -->
+  <div class="onboarding__widget-preview">
+    <p class="onboarding__preview-label">▶ Widget preview: ProjectShowcaseWidget</p>
+    <app-widget-project-showcase
+      [projects]="[
+        { title: 'Generative AI Portfolio', tags: ['Angular 21', 'Hashbrown', 'Claude API', 'SSR'], metric: 'Live', url: 'https://erikwski.dev' },
+        { title: 'Datacolor UI Library', tags: ['Angular', 'Design System', 'Storybook'], metric: '3× reuse', url: '' },
+        { title: 'AI Workflow Tool', tags: ['Angular', 'LangChain', 'Node.js'], metric: '40% faster', url: '' }
+      ]"
+    />
+  </div>
+  <!-- ─────────────────────────────────────────────────────────────────── -->
 </div>

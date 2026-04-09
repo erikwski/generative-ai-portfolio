@@ -3,13 +3,13 @@ export type TimeAvailable = 'elevator' | 'coffee' | 'deep-dive';
 export type CommunicationStyle = 'formal' | 'creative' | 'technical';
 
 export interface VisitorProfile {
-  role: VisitorRole | null;
-  timeAvailable: TimeAvailable | null;
-  communicationStyle: CommunicationStyle | null;
+  role: VisitorRole;
+  timeAvailable: TimeAvailable;
+  communicationStyle: CommunicationStyle;
 }
 
 export const EMPTY_PROFILE: VisitorProfile = {
-  role: null,
-  timeAvailable: null,
-  communicationStyle: null,
+  role: 'developer',
+  timeAvailable: 'elevator',
+  communicationStyle: 'formal',
 };

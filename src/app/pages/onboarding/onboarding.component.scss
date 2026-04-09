@@ -179,4 +179,22 @@
       opacity: 0.35;
     }
   }
+
+  &__widget-preview {
+    margin-top: 3rem;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  &__preview-label {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    letter-spacing: 0.1em;
+    color: var(--color-brand);
+    opacity: 0.6;
+  }
 }
