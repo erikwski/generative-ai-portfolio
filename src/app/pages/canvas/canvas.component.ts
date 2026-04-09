@@ -40,7 +40,7 @@ export class CanvasComponent {
   readonly prompt = signal('');
 
   readonly chat = uiChatResource({
-    model: 'claude-sonnet-4-6',
+    model: 'claude-haiku-4-5',
     system: computed(() =>
       `You are the AI powering Erik Ferrari's personal portfolio. Your only job is to compose a UI that answers the visitor's question.
 
@@ -50,7 +50,7 @@ Instructions:
 - Always respond by rendering one or more widgets — never with plain text.
 - Choose widgets that best match what the visitor is asking.
 - Pass the "highlights" prop with 2–4 short phrases (2–5 words each) that accent the most relevant facts for this specific visitor.
-- Do not add explanations or commentary outside of the widgets.`.trim()
+- Do not add explanations or commentary outside of the widgets.`.trim(),
     ),
     components: [ArchitectsIdentityWidget],
     debugName: 'portfolio-canvas',
@@ -60,7 +60,7 @@ Instructions:
   readonly isLoading = this.chat.isLoading;
 
   readonly assistantMessages = computed(() =>
-    (this.chat.value() ?? []).filter((m) => m.role === 'assistant')
+    (this.chat.value() ?? []).filter((m) => m.role === 'assistant'),
   );
 
   useSuggestion(label: string): void {

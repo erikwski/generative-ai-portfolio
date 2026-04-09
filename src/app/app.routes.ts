@@ -17,4 +17,8 @@ export const routes: Routes = [
     canActivate: [onboardedGuard],
     loadComponent: () => import('./pages/canvas/canvas.component').then((m) => m.CanvasComponent),
   },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
