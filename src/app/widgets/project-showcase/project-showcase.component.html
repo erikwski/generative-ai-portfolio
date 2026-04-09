@@ -1,0 +1,42 @@
+<div class="widget-panel project-showcase">
+  <p class="project-showcase__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="project-showcase__headline">{{ headline() }}</h2>
+  @if (body()) {
+    <p class="project-showcase__body">{{ body() }}</p>
+  }
+
+  @if (projects().length) {
+    <div class="project-showcase__grid">
+      @for (project of projects(); track project.title; let i = $index) {
+        <div
+          class="project-showcase__card"
+          [class.project-showcase__card--wide]="i === 0 && projects().length > 2"
+        >
+          <div class="project-showcase__card-top">
+            <span class="project-showcase__card-title">{{ project.title }}</span>
+            @if (project.metric) {
+              <span class="project-showcase__card-metric">{{ project.metric }}</span>
+            }
+          </div>
+
+          @if (project.tags.length) {
+            <div class="project-showcase__tags">
+              @for (tag of project.tags; track tag) {
+                <span class="project-showcase__tag">{{ tag }}</span>
+              }
+            </div>
+          }
+
+          @if (project.url) {
+            <a
+              class="project-showcase__link"
+              [href]="project.url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{ ctaLabel() }} ↗</a>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

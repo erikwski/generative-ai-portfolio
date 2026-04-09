@@ -1,0 +1,13 @@
+<div class="widget-panel architects-identity">
+  <p class="architects-identity__eyebrow">{{ eyebrow() }}</p>
+  <h1 class="architects-identity__headline">{{ headline() }}</h1>
+  <p class="architects-identity__tagline">{{ tagline() }}</p>
+  <p class="architects-identity__body">{{ body() }}</p>
+  @if (highlights().length) {
+    <div class="architects-identity__highlights">
+      @for (phrase of highlights(); track phrase) {
+        <span class="architects-identity__highlight">{{ phrase }}</span>
+      }
+    </div>
+  }
+</div>

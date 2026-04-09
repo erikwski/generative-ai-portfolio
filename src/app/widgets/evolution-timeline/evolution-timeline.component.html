@@ -1,0 +1,29 @@
+<div class="widget-panel evolution-timeline">
+  <p class="evolution-timeline__eyebrow">Erik Ferrari</p>
+  <h2 class="evolution-timeline__headline">{{ headline() }}</h2>
+
+  <div class="evolution-timeline__track">
+    @for (entry of entries(); track entry.key) {
+      <div
+        class="evolution-timeline__entry"
+        [class.evolution-timeline__entry--current]="entry.current"
+        [class.evolution-timeline__entry--focus]="focusCompany() === entry.key"
+      >
+        <div class="evolution-timeline__dot"></div>
+        <div class="evolution-timeline__content">
+          <div class="evolution-timeline__meta">
+            <span class="evolution-timeline__company">{{ entry.company }}</span>
+            @if (entry.current) {
+              <span class="evolution-timeline__badge">{{ currentLabel() }}</span>
+            }
+            <span class="evolution-timeline__period">{{ entry.period }}</span>
+          </div>
+          <p class="evolution-timeline__role">{{ entry.roleTitle }}</p>
+          @if (entry.desc) {
+            <p class="evolution-timeline__desc">{{ entry.desc }}</p>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

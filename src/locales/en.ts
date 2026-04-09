@@ -216,5 +216,375 @@ export const en: AppTranslation = {
         body:     'Full-stack developer specialising in generative UI and AI-native web applications.',
       },
     },
+    'evolution-timeline': {
+      developer: {
+        technical: {
+          elevator: {
+            headline:        'Career Stack',
+            'datacolor-desc': 'UI library owner · micro-frontends · AI workflow integration · Angular 21.',
+            'acsoftware-desc': 'Enterprise Angular · NX monorepos · NGRX state.',
+            'smarthy-desc':  'First prod role · Node.js + Angular · full-stack.',
+          },
+          coffee: {
+            headline:        'Technical Career',
+            'datacolor-desc': 'Currently owning Datacolor\'s Angular UI library — design tokens, shared components, micro-frontend architecture. Now leading AI-augmented workflows using Angular 21 and the Anthropic Claude API.',
+            'acsoftware-desc': 'Enterprise consulting at ACSoftware. Large-scale Angular apps with NX monorepos and NGRX for reactive state. Focus on long-term maintainability and cross-team reuse.',
+            'smarthy-desc':  'First engineering role. Full-stack features with Angular and Node.js in a startup environment. Shipped production code and developed an eye for clean architecture.',
+          },
+          'deep-dive': {
+            headline:        'Career Deep Dive',
+            'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (3+ years). Full ownership of the shared component library used by all product teams. Introduced micro-frontend integration, TypeScript standards, and currently leading the adoption of AI-augmented development workflows using Angular 21 and the Anthropic Claude API via Hashbrown.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware (1 year). Enterprise consultancy context — delivered maintainable, large-scale applications using NX for monorepo management and NGRX for reactive state. Strong focus on architectural quality, onboarding standards, and cross-team component reuse.',
+            'smarthy-desc':  'Full-Stack Developer at Smarthy Srl (2 years). First production engineering role. Owned full-stack features in Angular and Node.js, from spec to deployment. Developed production discipline and the fundamentals of real-world software delivery.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline:        'The Journey',
+            'datacolor-desc': 'Now: building the components others build with.',
+            'acsoftware-desc': 'Before: scaling enterprise Angular the right way.',
+            'smarthy-desc':  'Started: first code, first users, first lessons.',
+          },
+          coffee: {
+            headline:        'The Story So Far',
+            'datacolor-desc': 'Currently the person responsible for the tools that other Angular teams build from — the UI library at Datacolor. And now exploring what happens when Claude designs the interface instead of the developer.',
+            'acsoftware-desc': 'A year in the deep end of enterprise Angular — NX monorepos, NGRX, codebases that had to outlive the project. Learned how software really scales.',
+            'smarthy-desc':  'Where it started. A startup, a steep learning curve, and the first time shipping something real to real users.',
+          },
+          'deep-dive': {
+            headline:        'The Full Story',
+            'datacolor-desc': 'Currently at Datacolor Industrial — Angular UI Library Owner. The work is about building foundations: the design system, shared components, micro-frontend integration. And lately, experimenting with generative UI, where Claude composes the interface instead of a developer hardcoding it.',
+            'acsoftware-desc': 'At ACSoftware, a year of enterprise Angular consulting. The kind of codebase where NX monorepos and NGRX aren\'t luxuries — they\'re what keeps a 200k-line app from falling apart. Learned architectural discipline.',
+            'smarthy-desc':  'Smarthy Srl was the beginning — a startup, a small team, full ownership of features from day one. Built in Angular and Node.js, shipped in production, learned the difference between code that works and code that lasts.',
+          },
+        },
+        formal: {
+          elevator: {
+            headline:        'Professional Experience',
+            'datacolor-desc': 'Angular UI library ownership, micro-frontend architecture, AI workflow integration.',
+            'acsoftware-desc': 'Enterprise Angular development, architecture, and state management.',
+            'smarthy-desc':  'Full-stack Angular and Node.js development.',
+          },
+          coffee: {
+            headline:        'Professional Experience',
+            'datacolor-desc': 'Current: Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the shared design system, micro-frontend integration, and the introduction of AI-augmented development workflows.',
+            'acsoftware-desc': 'Angular developer at ACSoftware, an enterprise software consultancy. Delivered scalable Angular applications using NX monorepos and NGRX for state management.',
+            'smarthy-desc':  'Junior full-stack developer at Smarthy Srl. Built and shipped production web applications using Angular and Node.js.',
+          },
+        },
+      },
+      recruiter: {
+        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        headline:         'Work History',
+        'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (3+ years). Micro-frontend architecture, component library ownership, AI workflow integration with Angular 21 and the Anthropic Claude API.',
+        'acsoftware-desc': 'Angular Developer at ACSoftware (1 year). Enterprise consulting, NX monorepos, NGRX state management, long-term architectural quality.',
+        'smarthy-desc':   'Full-Stack Developer at Smarthy Srl (2 years). Angular + Node.js, first production engineering role in a startup environment.',
+        formal: {
+          elevator: {
+            headline:        'Work History',
+            'datacolor-desc': 'UI library ownership · micro-frontends · AI integration · 3+ yrs',
+            'acsoftware-desc': 'Enterprise Angular · NX · NGRX · 1 yr',
+            'smarthy-desc':  'Full-stack · Angular + Node.js · 2 yrs',
+          },
+          coffee: {
+            headline:        'Work History',
+            'datacolor-desc': 'Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the internal component library, micro-frontend architecture, and AI workflow integration. 3+ years.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware, an enterprise consultancy. Large-scale applications with NX monorepos and NGRX. Focus on long-term architectural quality. 1 year.',
+            'smarthy-desc':  'Full-Stack Developer at Smarthy Srl, a startup. Shipped production features in Angular and Node.js. First engineering role. 2 years.',
+          },
+          'deep-dive': {
+            headline:        'Employment History',
+            'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (3+ years). Owns the internal Angular component library used across all product teams. Responsibilities include micro-frontend integration, TypeScript standards, design system maintenance, and leading AI-augmented development workflows using Angular 21 and the Anthropic Claude API.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware (1 year). Enterprise software consultancy. Delivered maintainable large-scale web applications using NX for monorepo management and NGRX for reactive state. Focus on architectural robustness and cross-team component reuse.',
+            'smarthy-desc':  'Full-Stack Developer at Smarthy Srl (2 years). First professional engineering role in a startup environment. End-to-end ownership of production features in Angular and Node.js. Developed production discipline and software delivery fundamentals.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline:        'Work History',
+            'datacolor-desc': 'Datacolor · UI lib owner · Angular 21 · micro-frontends · AI workflows · 3+ yrs',
+            'acsoftware-desc': 'ACSoftware · Enterprise consulting · NX + NGRX · 1 yr',
+            'smarthy-desc':  'Smarthy · Full-stack · Angular + Node.js · 2 yrs',
+          },
+          coffee: {
+            headline:        'Work History',
+            'datacolor-desc': 'Datacolor Industrial — UI Library Owner. Owns the Angular component library used across all product teams. Leads micro-frontend integration + AI workflow adoption with Angular 21 + Claude API. 3+ yrs.',
+            'acsoftware-desc': 'ACSoftware — Enterprise Angular consulting. NX monorepo, NGRX reactive state, architectural standards. 1 yr.',
+            'smarthy-desc':  'Smarthy Srl — Startup, first prod role. Angular + Node.js, full feature ownership from spec to deploy. 2 yrs.',
+          },
+          'deep-dive': {
+            headline:        'Work History',
+            'datacolor-desc': 'Datacolor Industrial (3+ yrs) · UI Library Owner · Angular 21 · Micro-frontends · AI workflows via Hashbrown + Claude API · Full design-system-to-deployment ownership.',
+            'acsoftware-desc': 'ACSoftware (1 yr) · Enterprise consulting · NX monorepo · NGRX reactive state · TypeScript strict mode · Architectural quality + cross-team component reuse.',
+            'smarthy-desc':  'Smarthy Srl (2 yrs) · First prod eng role · Angular + Node.js · Full feature ownership · spec → deploy in startup environment.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline:        'Career Story',
+            'datacolor-desc': 'Now: the engineer who builds the tools everyone else builds with.',
+            'acsoftware-desc': 'Before: mastered enterprise-scale Angular for demanding clients.',
+            'smarthy-desc':  'Started: shipped real products from day one.',
+          },
+          coffee: {
+            headline:        'Career Story',
+            'datacolor-desc': 'Datacolor Industrial — currently the person who owns the components that all other Angular teams build from. And lately, the person rewriting what "building a UI" even means with generative AI.',
+            'acsoftware-desc': 'ACSoftware — a year inside enterprise Angular at its most demanding. Learned how software scales when it really has to.',
+            'smarthy-desc':  'Smarthy Srl — the beginning. First eng role, first production app, first real users.',
+          },
+        },
+      },
+      client: {
+        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        headline:         'Experience',
+        'datacolor-desc': 'Currently Angular Frontend Developer at Datacolor Industrial. Full ownership of the design system and micro-frontend architecture. Leading AI integration with Angular 21. 3+ years.',
+        'acsoftware-desc': 'Angular developer at an enterprise software consultancy. Delivered robust, scalable web applications for corporate clients.',
+        'smarthy-desc':   'Full-stack developer at a startup. Built production web applications from scratch using Angular and Node.js.',
+        formal: {
+          elevator: {
+            headline:        'Experience',
+            'datacolor-desc': 'Current: Angular UI library and micro-frontend architecture at an industrial tech company.',
+            'acsoftware-desc': 'Previous: scalable Angular solutions for enterprise clients.',
+            'smarthy-desc':  'Early career: full-stack web products for a startup.',
+          },
+          coffee: {
+            headline:        'Experience',
+            'datacolor-desc': 'Current: Angular Frontend Developer at Datacolor Industrial. Full ownership of the design system and leading AI integration for internal tooling. 3+ years.',
+            'acsoftware-desc': 'Previously: Angular developer at an enterprise consultancy. Robust, scalable web applications for corporate clients with demanding requirements.',
+            'smarthy-desc':  'Early career: Full-stack developer at a startup. Production web applications from scratch using Angular and Node.js.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline:        'The Story So Far',
+            'datacolor-desc': 'Now: building AI-powered tools for an industrial company.',
+            'acsoftware-desc': 'Before: enterprise-grade Angular for demanding clients.',
+            'smarthy-desc':  'Started: first product, first users, first lessons.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline:        'Experience',
+            'datacolor-desc': 'Datacolor · Angular UI lib · micro-frontends · AI integration · 3+ yrs',
+            'acsoftware-desc': 'ACSoftware · Enterprise Angular · NX + NGRX',
+            'smarthy-desc':  'Smarthy · Full-stack · Angular + Node.js',
+          },
+        },
+      },
+      default: {
+        headline:         'Experience',
+        'current-label':  'Current',
+        'datacolor-role': 'Angular Frontend Developer & UI Library Owner',
+        'acsoftware-role': 'Angular Developer',
+        'smarthy-role':   'Full-Stack Developer',
+        'datacolor-desc': 'Angular UI library, micro-frontends, AI integration.',
+        'acsoftware-desc': 'Enterprise Angular consulting.',
+        'smarthy-desc':   'Full-stack web development.',
+      },
+    },
+    'project-showcase': {
+      developer: {
+        technical: {
+          elevator: {
+            eyebrow:  'Shipped',
+            headline: "Things I've built.",
+            body:     'Angular + AI. Real output.',
+            ctaLabel: 'View',
+          },
+          coffee: {
+            eyebrow:  'Selected Projects',
+            headline: "A few things I've built.",
+            body:     "Side projects, client work, and internal tools — all Angular, most with some degree of AI. Each one solved a real problem.",
+            ctaLabel: 'View project',
+          },
+          'deep-dive': {
+            eyebrow:  'Project Portfolio',
+            headline: "What I've shipped — selected.",
+            body:     "A curated selection of projects across generative UI, Angular tooling, and AI integration. Architecture decisions, tech stack, and the interesting problems are all there.",
+            ctaLabel: 'View project',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow:  'Made Things',
+            headline: 'Stuff I built.',
+            body:     'Real projects. Real problems. Real Angular.',
+            ctaLabel: 'Open',
+          },
+          coffee: {
+            eyebrow:  'Made Things',
+            headline: "Projects I'm proud of.",
+            body:     "Not portfolio fluff — actual things I shipped, broke, fixed, and shipped again. Each one taught me something.",
+            ctaLabel: 'See it',
+          },
+          'deep-dive': {
+            eyebrow:  'Projects & Experiments',
+            headline: "Things I've built, broken, and rebuilt.",
+            body:     "From generative UI experiments to production tools — a selection of the work I'm most proud of. The interesting stuff is in the details.",
+            ctaLabel: 'Open',
+          },
+        },
+        formal: {
+          elevator: {
+            eyebrow:  'Portfolio',
+            headline: 'Selected Work.',
+            body:     'Production applications and internal tooling.',
+            ctaLabel: 'View',
+          },
+          coffee: {
+            eyebrow:  'Project Portfolio',
+            headline: 'Selected work.',
+            body:     'A selection of production applications and tools, spanning Angular front-end architecture, AI integration, and design system work.',
+            ctaLabel: 'View project',
+          },
+          'deep-dive': {
+            eyebrow:  'Professional Portfolio',
+            headline: 'Selected Projects.',
+            body:     'The following projects represent a cross-section of my professional and personal work. Each involved full end-to-end delivery: architecture, implementation, and deployment.',
+            ctaLabel: 'View project',
+          },
+        },
+      },
+      recruiter: {
+        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        eyebrow:  'Portfolio',
+        headline: 'Selected Work',
+        body:     'Production projects spanning Angular front-end, AI integration, and design systems.',
+        ctaLabel: 'View project',
+        formal: {
+          elevator: {
+            eyebrow:  'Portfolio',
+            headline: 'Key Deliverables.',
+            body:     'Production Angular applications. AI integration. Design system ownership.',
+            ctaLabel: 'View',
+          },
+          coffee: {
+            eyebrow:  'Project Portfolio',
+            headline: 'Selected Deliverables.',
+            body:     'A selection of production projects demonstrating full-stack Angular development, AI integration, and UI library ownership.',
+            ctaLabel: 'View project',
+          },
+          'deep-dive': {
+            eyebrow:  'Professional Portfolio',
+            headline: 'Key Projects & Deliverables.',
+            body:     "The following projects represent Erik's production output across Angular, AI integration, and front-end architecture. Each was delivered end to end — from architecture through deployment.",
+            ctaLabel: 'View project',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow:  'Built by Erik',
+            headline: 'Things that made it to production.',
+            body:     'Live products. Not mockups.',
+            ctaLabel: 'See it live',
+          },
+          coffee: {
+            eyebrow:  'Live Work',
+            headline: 'Projects that shipped.',
+            body:     "These aren't side experiments — they're production systems with real users. All Angular, most with AI baked in.",
+            ctaLabel: 'See it live',
+          },
+          'deep-dive': {
+            eyebrow:  'Portfolio',
+            headline: 'Production projects — the ones that count.',
+            body:     "Erik's portfolio centres on shipped, production-grade work. Generative UI, component libraries, AI-powered interfaces — built and deployed, not just prototyped.",
+            ctaLabel: 'Open',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow:  'Shipped',
+            headline: 'Production Output.',
+            body:     'Angular 21 · AI · Hashbrown · Vercel.',
+            ctaLabel: 'Repo / Live',
+          },
+          coffee: {
+            eyebrow:  'Production Work',
+            headline: "What's shipped in prod.",
+            body:     'Angular 21, NgRx, Hashbrown, Claude API, Vercel. All in production. Source and live links where available.',
+            ctaLabel: 'Repo / Live',
+          },
+          'deep-dive': {
+            eyebrow:  'Production Portfolio',
+            headline: 'Key deliverables, production-grade.',
+            body:     'Full-stack Angular applications, AI-integrated tools, and component libraries — each with tech stack, architecture notes, and measurable outcomes.',
+            ctaLabel: 'Repo / Live',
+          },
+        },
+      },
+      client: {
+        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        eyebrow:  'Portfolio',
+        headline: 'Selected Projects',
+        body:     'Web applications and tools built for real-world use.',
+        ctaLabel: 'View project',
+        formal: {
+          elevator: {
+            eyebrow:  'Portfolio',
+            headline: 'Selected Projects.',
+            body:     'Production web applications delivered for businesses.',
+            ctaLabel: 'View',
+          },
+          coffee: {
+            eyebrow:  'Client Work',
+            headline: 'Selected deliverables.',
+            body:     'A selection of production web applications — Angular front-ends with AI integration, delivered end to end.',
+            ctaLabel: 'View project',
+          },
+          'deep-dive': {
+            eyebrow:  'Portfolio',
+            headline: 'Selected Project Work.',
+            body:     "The following projects give a sense of what I deliver: full-stack Angular applications, AI-integrated features, and design system work — all shipped to production.",
+            ctaLabel: 'View project',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow:  'Work',
+            headline: "Products I've built.",
+            body:     'Live apps. Real users. AI inside.',
+            ctaLabel: 'See it',
+          },
+          coffee: {
+            eyebrow:  'Portfolio',
+            headline: 'Projects that went live.',
+            body:     "Angular applications with AI features, built from scratch and shipped. Not prototypes — products people actually use.",
+            ctaLabel: 'See it',
+          },
+          'deep-dive': {
+            eyebrow:  "Work I'm proud of",
+            headline: 'Projects built with intention.',
+            body:     "Every project here was built with care — thoughtful architecture, AI integrated where it adds value, and shipped all the way to production.",
+            ctaLabel: 'Open',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow:  'Delivered',
+            headline: 'Production stack.',
+            body:     'Angular · AI · Vercel. Shipped.',
+            ctaLabel: 'View',
+          },
+          coffee: {
+            eyebrow:  'Delivered Work',
+            headline: "What I've shipped.",
+            body:     'Angular 21 applications with AI integrations — full stack, SSR, Vercel deployment. Built and delivered, not just designed.',
+            ctaLabel: 'View',
+          },
+          'deep-dive': {
+            eyebrow:  'Technical Portfolio',
+            headline: 'End-to-end deliverables.',
+            body:     'Angular 21 front-ends, AI-powered features, server-side rendering, and Vercel deployment — all production-grade. Each project lists the stack, the challenge, and what shipped.',
+            ctaLabel: 'View',
+          },
+        },
+      },
+      default: {
+        eyebrow:  'Selected Work',
+        headline: 'Projects.',
+        body:     "A selection of things I've built.",
+        ctaLabel: 'View project',
+      },
+    },
   },
 };

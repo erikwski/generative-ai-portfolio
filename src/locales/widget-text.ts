@@ -16,9 +16,9 @@ export function resolveWidgetText(
   profile: VisitorProfile,
   fallback = '',
 ): string {
-  const role  = profile.role                ?? 'developer';
-  const style = profile.communicationStyle  ?? 'formal';
-  const time  = profile.timeAvailable       ?? 'elevator';
+  const role = profile.role ?? 'developer';
+  const style = profile.communicationStyle ?? 'formal';
+  const time = profile.timeAvailable ?? 'elevator';
 
   const candidates = [
     `widgets.${widgetName}.${role}.${style}.${time}.${label}`,
