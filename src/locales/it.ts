@@ -797,5 +797,174 @@ export const it: AppTranslation = {
         'group-ai': 'AI & Agenti',
       },
     },
+    'personal-interests': {
+      developer: {
+        technical: {
+          elevator: {
+            headline: 'Non solo codice.',
+            funFact: 'Correre mi dà una scusa per mangiare più pizza.',
+          },
+          coffee: {
+            headline: "Quando non sono nell'IDE…",
+            funFact:
+              "Le mezze maratone mi hanno insegnato che l'ottimizzazione delle performance è una mentalità.",
+          },
+          'deep-dive': {
+            headline: 'La vita fuori dal terminale',
+            funFact:
+              'Scalare vie e fare debug condividono lo stesso ciclo: osserva, ipotizza, tenta, ripeti.',
+          },
+        },
+        formal: {
+          elevator: {
+            headline: 'Oltre la tastiera.',
+            funFact:
+              "Gli sport di resistenza costruiscono la stessa disciplina che porto nell'engineering.",
+          },
+          coffee: {
+            headline: 'Uno sviluppatore equilibrato',
+            funFact:
+              'I giochi da tavola affilano il pensiero sistemico; la corsa affila la concentrazione sotto pressione.',
+          },
+          'deep-dive': {
+            headline: 'Chi sono lontano dallo schermo',
+            funFact:
+              "I giochi strategici mi hanno insegnato a pensare tre mosse avanti — un'abitudine che porto nelle decisioni architetturali.",
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Esisto anche IRL.',
+            funFact:
+              'Scalatore, runner, stratega da tavolo — e sì, faccio debug anche nel weekend.',
+          },
+          coffee: {
+            headline: 'Codice di giorno, avventura di notte',
+            funFact:
+              'Ogni sentiero di montagna è un problema UX: trova il percorso di minor resistenza, evita le scogliere.',
+          },
+          'deep-dive': {
+            headline: "L'umano dietro i pixel",
+            funFact:
+              'I giochi strategici mi hanno abituato a pensare in grafi prima ancora di scrivere un nodo. Catan e Angular condividono più architettura di quanto penseresti.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            headline: 'Professionista a tutto tondo.',
+            funFact:
+              'Gli sport di resistenza costruiscono la stessa disciplina che porto a ogni progetto.',
+          },
+          coffee: {
+            headline: 'Oltre il CV',
+            funFact:
+              'Uno sviluppatore che corre mezze maratone e organizza eventi sportivi di squadra è qualcuno che si presenta — sempre.',
+          },
+          'deep-dive': {
+            headline: 'Carattere oltre le credenziali',
+            funFact:
+              'Organizzo coding challenge al lavoro e weekend di arrampicata fuori. Il filo comune: costruire team che performano sotto pressione.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Essere umano. Verificato.',
+            funFact:
+              'Google Local Guide Lv.6 — trovo il miglior caffè in ogni città in cui metto piede.',
+          },
+          coffee: {
+            headline: 'La roba non nel CV',
+            funFact:
+              'Ho recensito 200+ posti come Google Local Guide. La stessa attenzione ai dettagli che uso nelle code review.',
+          },
+          'deep-dive': {
+            headline: 'Una persona, non un profilo',
+            funFact:
+              'Corsa, arrampicata, giochi da tavola — ognuno costruisce qualcosa che un CV non può mostrare: grinta, pazienza e capacità di pensare avanti.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Dev con una vita.',
+            funFact: 'Corre mezze maratone. Scrive codice pulito. Correlazione confermata.',
+          },
+          coffee: {
+            headline: "Fuori dall'IDE",
+            funFact:
+              'Applico la stessa mentalità iterativa dei giochi strategici allo sprint planning.',
+          },
+          'deep-dive': {
+            headline: 'Cosa mi muove fuori dal lavoro',
+            funFact:
+              "Trekking sui sentieri, mosse di Wingspan, i migliori espresso dell'Emilia — ogni hobby affila un muscolo cognitivo diverso.",
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            headline: 'Un professionista affidabile.',
+            funFact: 'Sport di resistenza e scadenze di progetto condividono la stessa disciplina.',
+          },
+          coffee: {
+            headline: 'La persona che assumeresti',
+            funFact:
+              "Un Google Local Guide che recensisce 200+ locali è qualcuno che presta attenzione all'esperienza — anche alla tua.",
+          },
+          'deep-dive': {
+            headline: 'Oltre il deliverable',
+            funFact:
+              'Uno sviluppatore che corre e scala si dà obiettivi, si impegna a raggiungerli e non molla quando diventa difficile. Questo è il contratto che porto al tuo progetto.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Vivo con curiosità.',
+            funFact: 'Scalatore, runner, critico del caffè. Anche: il tuo prossimo dev.',
+          },
+          coffee: {
+            headline: 'Più di un servizio',
+            funFact:
+              "Sono un Google Local Guide perché mi importa la qualità dell'esperienza — in un bar o in un prodotto.",
+          },
+          'deep-dive': {
+            headline: 'La mentalità del maker',
+            funFact:
+              "L'esplorazione è un'abitudine: nei giochi strategici, sui sentieri di montagna e nei prodotti che aiuto a costruire.",
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Diversamente fatto.',
+            funFact: 'Effetti collaterali della corsa: più focus, codice migliore.',
+          },
+          coffee: {
+            headline: 'Non solo chiuditore di ticket',
+            funFact:
+              'I giochi strategici hanno riconfigurato il mio cervello per il pensiero sistemico. Il tuo progetto ottiene quel cervello.',
+          },
+          'deep-dive': {
+            headline: "L'umano nel loop",
+            funFact:
+              'Arrampicata, corsa e giochi da tavola condividono uno schema: progressi incrementali, cicli di feedback chiari e sapere quando cambiare rotta.',
+          },
+        },
+      },
+      default: {
+        headline: 'Oltre il Codice',
+        funFact:
+          'Correre mi dà una scusa per mangiare più pizza — e una mentalità per consegnare sotto pressione.',
+        'hobby-games-label': 'Giochi da Tavola Strategici',
+        'hobby-games-sub': 'Catan, Risk & Wingspan',
+        'hobby-running-label': 'Corsa & Trekking',
+        'hobby-running-sub': 'Mezze maratone & sentieri di montagna',
+        'hobby-climbing-label': 'Arrampicata',
+        'hobby-climbing-sub': 'Indoor & outdoor bouldering',
+        'hobby-guide-label': 'Google Local Guide',
+        'hobby-guide-sub': 'Livello 6 · Specialista cibo & caffè',
+      },
+    },
   },
 };

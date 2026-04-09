@@ -13,6 +13,7 @@ import { ArchitectsIdentityWidget } from '../../widgets/architects-identity/arch
 import { EvolutionTimelineWidget } from '../../widgets/evolution-timeline/evolution-timeline.widget';
 import { ProjectShowcaseWidget } from '../../widgets/project-showcase/project-showcase.widget';
 import { SkillConstellationWidget } from '../../widgets/skill-constellation/skill-constellation.widget';
+import { PersonalInterestsWidget } from '../../widgets/personal-interests/personal-interests.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -62,6 +63,7 @@ Instructions:
       EvolutionTimelineWidget,
       ProjectShowcaseWidget,
       SkillConstellationWidget,
+      PersonalInterestsWidget,
     ],
     debugName: 'portfolio-canvas',
   });

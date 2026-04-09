@@ -11,6 +11,7 @@ import { ArchitectsIdentityWidgetComponent } from '../../widgets/architects-iden
 import { EvolutionTimelineWidgetComponent } from '../../widgets/evolution-timeline/evolution-timeline.component';
 import { ProjectShowcaseWidgetComponent } from '../../widgets/project-showcase/project-showcase.component';
 import { SkillConstellationWidgetComponent } from '../../widgets/skill-constellation/skill-constellation.component';
+import { PersonalInterestsWidgetComponent } from '../../widgets/personal-interests/personal-interests.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -43,6 +44,7 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     EvolutionTimelineWidgetComponent,
     ProjectShowcaseWidgetComponent,
     SkillConstellationWidgetComponent,
+    PersonalInterestsWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

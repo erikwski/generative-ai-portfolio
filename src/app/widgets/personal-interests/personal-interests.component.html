@@ -1,0 +1,22 @@
+<div class="widget-panel personal-interests">
+  <p class="personal-interests__eyebrow">Off the Clock</p>
+  <h2 class="personal-interests__headline">{{ headline() }}</h2>
+
+  <div class="personal-interests__grid">
+    @for (hobby of hobbies(); track hobby.icon) {
+      <div class="personal-interests__hobby">
+        <span class="personal-interests__hobby-icon">
+          <mat-icon>{{ hobby.icon }}</mat-icon>
+        </span>
+        <div class="personal-interests__hobby-text">
+          <span class="personal-interests__hobby-label">{{ hobby.label }}</span>
+          <span class="personal-interests__hobby-sub">{{ hobby.sub }}</span>
+        </div>
+      </div>
+    }
+  </div>
+
+  <blockquote class="personal-interests__fact">
+    <span class="personal-interests__fact-mark">"</span>{{ funFact() }}"
+  </blockquote>
+</div>

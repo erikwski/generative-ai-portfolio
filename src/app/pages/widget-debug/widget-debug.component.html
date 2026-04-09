@@ -67,5 +67,11 @@
         <app-widget-skill-constellation showUpcoming="true" />
       </app-widget-shell>
     }
+
+    @if (isVisible('personal-interests')) {
+      <app-widget-shell title="PersonalInterestsWidget" (removed)="dismiss('personal-interests')">
+        <app-widget-personal-interests />
+      </app-widget-shell>
+    }
   </main>
 </div>

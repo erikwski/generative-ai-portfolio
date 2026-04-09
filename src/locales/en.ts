@@ -809,5 +809,168 @@ export const en: AppTranslation = {
         'group-ai': 'AI & Agents',
       },
     },
+    'personal-interests': {
+      developer: {
+        technical: {
+          elevator: {
+            headline: 'Not just code.',
+            funFact: 'Running gives me an excuse to eat more pizza.',
+          },
+          coffee: {
+            headline: "When I'm not in the IDE…",
+            funFact:
+              'Half-marathons taught me performance optimisation is a mindset, not just a skill.',
+          },
+          'deep-dive': {
+            headline: 'Life outside the terminal',
+            funFact:
+              'Climbing routes and debugging share the same loop: observe, hypothesise, attempt, repeat.',
+          },
+        },
+        formal: {
+          elevator: {
+            headline: 'Beyond the keyboard.',
+            funFact: 'Endurance sports build the same discipline I bring to engineering.',
+          },
+          coffee: {
+            headline: 'A balanced developer',
+            funFact: 'Board games sharpen systems thinking; running sharpens focus under pressure.',
+          },
+          'deep-dive': {
+            headline: 'Who I am off-screen',
+            funFact:
+              'Strategy board games built my habit of thinking three moves ahead — a pattern I carry into architecture decisions.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'I also exist IRL.',
+            funFact: 'Climber, runner, board-game strategist — and yes, I debug on weekends too.',
+          },
+          coffee: {
+            headline: 'Code by day, adventure by night',
+            funFact:
+              'Every mountain trail is a UX problem: find the path of least resistance, avoid cliffs.',
+          },
+          'deep-dive': {
+            headline: 'The human behind the pixels',
+            funFact:
+              "Strategy games rewired my brain to think in graphs before I ever wrote a node. Turns out, Catan and Angular share more architecture than you'd think.",
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            headline: 'Well-rounded professional.',
+            funFact: 'Endurance sports build the same discipline I bring to every project.',
+          },
+          coffee: {
+            headline: 'Beyond the CV',
+            funFact:
+              'A developer who runs half-marathons and organises team sports events is one who shows up — consistently.',
+          },
+          'deep-dive': {
+            headline: 'Character beyond credentials',
+            funFact:
+              'I organise coding challenges at work and climbing weekends outside it. The common thread: building teams that perform under pressure.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Real human. Verified.',
+            funFact: 'Google Local Guide Lv.6 — I find the best coffee in every city I deploy to.',
+          },
+          coffee: {
+            headline: 'The non-CV stuff',
+            funFact:
+              "I've reviewed 200+ places as a Google Local Guide. Same eye for detail I use in code reviews.",
+          },
+          'deep-dive': {
+            headline: 'A person, not a profile',
+            funFact:
+              "Running, climbing, board games — each builds something a CV can't show: grit, patience, and the ability to think ahead.",
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Dev with a life.',
+            funFact: 'Runs half-marathons. Writes clean code. Correlation confirmed.',
+          },
+          coffee: {
+            headline: 'Outside the IDE',
+            funFact: 'I apply the same iterative mindset from strategy games to sprint planning.',
+          },
+          'deep-dive': {
+            headline: 'What drives me outside work',
+            funFact:
+              'Trekking mountain trails, planning Wingspan moves, reviewing the best espresso spots in Emilia — each hobby sharpens a different cognitive muscle.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            headline: 'A reliable professional.',
+            funFact: 'Endurance sports and project deadlines share the same discipline.',
+          },
+          coffee: {
+            headline: "The person you'd hire",
+            funFact:
+              'A Google Local Guide who reviews 200+ venues is someone who pays attention to experience — yours included.',
+          },
+          'deep-dive': {
+            headline: 'Beyond the deliverable',
+            funFact:
+              "A developer who runs and climbs sets goals, commits to them, and doesn't quit when it gets hard. That's the contract I bring to your project.",
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'I live curiously.',
+            funFact: 'Climber, runner, coffee critic. Also: your next dev.',
+          },
+          coffee: {
+            headline: 'More than a service',
+            funFact:
+              "I'm a Google Local Guide because I care about quality experiences — in a café or in a product.",
+          },
+          'deep-dive': {
+            headline: 'The maker mindset',
+            funFact:
+              'Exploration is a habit: in strategy games, mountain trails, and the products I help build.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Built different.',
+            funFact: 'Side-effects of running: better focus, better code.',
+          },
+          coffee: {
+            headline: 'Not just a ticket-closer',
+            funFact:
+              'Strategy board games rewired my brain for systems thinking. Your project gets that brain.',
+          },
+          'deep-dive': {
+            headline: 'The human in the loop',
+            funFact:
+              'Climbing, running, and board games share a pattern: incremental progress, clear feedback loops, and knowing when to change the route.',
+          },
+        },
+      },
+      default: {
+        headline: 'Beyond the Code',
+        funFact:
+          'Running gives me an excuse to eat more pizza — and a mindset for shipping under pressure.',
+        'hobby-games-label': 'Strategy Board Games',
+        'hobby-games-sub': 'Catan, Risk & Wingspan',
+        'hobby-running-label': 'Running & Trekking',
+        'hobby-running-sub': 'Half-marathons & mountain trails',
+        'hobby-climbing-label': 'Climbing',
+        'hobby-climbing-sub': 'Indoor & outdoor bouldering',
+        'hobby-guide-label': 'Google Local Guide',
+        'hobby-guide-sub': 'Level 6 · Food & coffee specialist',
+      },
+    },
   },
 };

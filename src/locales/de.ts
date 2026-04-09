@@ -799,5 +799,173 @@ export const de: AppTranslation = {
         'group-ai': 'KI & Agenten',
       },
     },
+    'personal-interests': {
+      developer: {
+        technical: {
+          elevator: {
+            headline: 'Nicht nur Code.',
+            funFact: 'Laufen gibt mir eine Ausrede, mehr Pizza zu essen.',
+          },
+          coffee: {
+            headline: 'Wenn ich nicht im IDE bin…',
+            funFact:
+              'Halbmarathons haben mir beigebracht, dass Performance-Optimierung eine Denkweise ist, nicht nur eine Fähigkeit.',
+          },
+          'deep-dive': {
+            headline: 'Leben außerhalb des Terminals',
+            funFact:
+              'Kletterrouten und Debugging teilen denselben Loop: beobachten, hypothetisieren, versuchen, wiederholen.',
+          },
+        },
+        formal: {
+          elevator: {
+            headline: 'Jenseits der Tastatur.',
+            funFact:
+              'Ausdauersport baut dieselbe Disziplin auf, die ich in die Entwicklung einbringe.',
+          },
+          coffee: {
+            headline: 'Ein ausgewogener Entwickler',
+            funFact:
+              'Brettspiele schärfen das Systemdenken; Laufen schärft die Konzentration unter Druck.',
+          },
+          'deep-dive': {
+            headline: 'Wer ich abseits des Bildschirms bin',
+            funFact:
+              'Strategiespiele haben mir angewöhnt, drei Züge vorauszudenken — ein Muster, das ich in Architekturentscheidungen einbringe.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Ich existiere auch IRL.',
+            funFact: 'Kletterer, Läufer, Brettspieler — und ja, ich debugge auch am Wochenende.',
+          },
+          coffee: {
+            headline: 'Code tagsüber, Abenteuer nachts',
+            funFact:
+              'Jeder Bergpfad ist ein UX-Problem: finde den Weg des geringsten Widerstands, vermeide Klippen.',
+          },
+          'deep-dive': {
+            headline: 'Der Mensch hinter den Pixeln',
+            funFact:
+              'Strategiespiele haben mein Gehirn umprogrammiert, in Graphen zu denken, bevor ich je einen Node geschrieben habe. Catan und Angular teilen mehr Architektur als man denkt.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            headline: 'Vielseitiger Profi.',
+            funFact:
+              'Ausdauersport baut dieselbe Disziplin auf, die ich in jeden Auftrag einbringe.',
+          },
+          coffee: {
+            headline: 'Jenseits des Lebenslaufs',
+            funFact:
+              'Ein Entwickler, der Halbmarathons läuft und Teamsportevents organisiert, erscheint — zuverlässig.',
+          },
+          'deep-dive': {
+            headline: 'Charakter jenseits der Zeugnisse',
+            funFact:
+              'Ich organisiere Coding Challenges bei der Arbeit und Kletterwochenenden außerhalb. Der rote Faden: Teams aufbauen, die unter Druck performen.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Echter Mensch. Bestätigt.',
+            funFact:
+              'Google Local Guide Lv.6 — ich finde den besten Kaffee in jeder Stadt, in der ich deploye.',
+          },
+          coffee: {
+            headline: 'Das Nicht-CV-Zeug',
+            funFact:
+              'Ich habe als Google Local Guide 200+ Orte bewertet. Dieselbe Detailgenauigkeit verwende ich in Code Reviews.',
+          },
+          'deep-dive': {
+            headline: 'Eine Person, kein Profil',
+            funFact:
+              'Laufen, Klettern, Brettspiele — jedes baut etwas auf, das ein CV nicht zeigen kann: Biss, Geduld und die Fähigkeit, vorauszudenken.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Dev mit Leben.',
+            funFact: 'Läuft Halbmarathons. Schreibt sauberen Code. Korrelation bestätigt.',
+          },
+          coffee: {
+            headline: 'Außerhalb der IDE',
+            funFact:
+              'Ich wende dieselbe iterative Denkweise aus Strategiespielen auf Sprint-Planung an.',
+          },
+          'deep-dive': {
+            headline: 'Was mich außerhalb der Arbeit antreibt',
+            funFact:
+              'Bergpfade wandern, Wingspan-Züge planen, die besten Espressi Emilias rezensieren — jedes Hobby schärft einen anderen kognitiven Muskel.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            headline: 'Ein verlässlicher Profi.',
+            funFact: 'Ausdauersport und Projektfristen teilen dieselbe Disziplin.',
+          },
+          coffee: {
+            headline: 'Die Person, die Sie einstellen würden',
+            funFact:
+              'Ein Google Local Guide, der 200+ Orte bewertet, ist jemand, der auf Erfahrung achtet — auch auf Ihre.',
+          },
+          'deep-dive': {
+            headline: 'Jenseits des Deliverables',
+            funFact:
+              'Ein Entwickler, der läuft und klettert, setzt sich Ziele, hält sie ein und gibt nicht auf, wenn es schwer wird. Das ist der Vertrag, den ich Ihrem Projekt bringe.',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Ich lebe neugierig.',
+            funFact: 'Kletterer, Läufer, Kaffee-Kritiker. Auch: Ihr nächster Dev.',
+          },
+          coffee: {
+            headline: 'Mehr als ein Service',
+            funFact:
+              'Ich bin Google Local Guide, weil mir Qualitätserfahrungen wichtig sind — in einem Café oder in einem Produkt.',
+          },
+          'deep-dive': {
+            headline: 'Die Macher-Mentalität',
+            funFact:
+              'Erkundung ist eine Gewohnheit: in Strategiespielen, auf Bergpfaden und in den Produkten, die ich mitbaue.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Anders gemacht.',
+            funFact: 'Nebenwirkungen des Laufens: besserer Fokus, besserer Code.',
+          },
+          coffee: {
+            headline: 'Nicht nur Ticket-Schließer',
+            funFact:
+              'Strategiespiele haben mein Gehirn für Systemdenken umprogrammiert. Ihr Projekt bekommt dieses Gehirn.',
+          },
+          'deep-dive': {
+            headline: 'Der Mensch im Loop',
+            funFact:
+              'Klettern, Laufen und Brettspiele teilen ein Muster: inkrementeller Fortschritt, klare Feedback-Schleifen und wissen, wann man die Route wechseln muss.',
+          },
+        },
+      },
+      default: {
+        headline: 'Jenseits des Codes',
+        funFact:
+          'Laufen gibt mir eine Ausrede, mehr Pizza zu essen — und eine Denkweise, unter Druck zu liefern.',
+        'hobby-games-label': 'Strategische Brettspiele',
+        'hobby-games-sub': 'Catan, Risk & Wingspan',
+        'hobby-running-label': 'Laufen & Wandern',
+        'hobby-running-sub': 'Halbmarathons & Bergpfade',
+        'hobby-climbing-label': 'Klettern',
+        'hobby-climbing-sub': 'Indoor & Outdoor Bouldern',
+        'hobby-guide-label': 'Google Local Guide',
+        'hobby-guide-sub': 'Level 6 · Spezialist für Essen & Kaffee',
+      },
+    },
   },
 };
