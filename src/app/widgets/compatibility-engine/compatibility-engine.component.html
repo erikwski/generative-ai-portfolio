@@ -1,0 +1,33 @@
+<div class="widget-panel compatibility-engine">
+  <p class="compatibility-engine__eyebrow">{{ scoreLabel() }}</p>
+  <h2 class="compatibility-engine__headline">{{ headline() }}</h2>
+  <p class="compatibility-engine__subline">{{ subline() }}</p>
+
+  <div class="compatibility-engine__score-row">
+    <div class="compatibility-engine__score-ring">
+      <svg viewBox="0 0 80 80" class="compatibility-engine__svg">
+        <circle class="compatibility-engine__track" cx="40" cy="40" r="34" />
+        <circle
+          class="compatibility-engine__fill"
+          cx="40"
+          cy="40"
+          r="34"
+          [style.stroke-dashoffset]="213.6 - (213.6 * scoreNumeric()) / 100"
+        />
+      </svg>
+      <span class="compatibility-engine__score-value">{{ matchScore() }}</span>
+    </div>
+
+    <div class="compatibility-engine__meta">
+      <p class="compatibility-engine__match-label">{{ matchLabel() }}</p>
+      <ul class="compatibility-engine__highlights">
+        @for (point of highlights(); track point) {
+          <li class="compatibility-engine__highlight-item">
+            <mat-icon class="compatibility-engine__check">check_circle</mat-icon>
+            <span>{{ point }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </div>
+</div>

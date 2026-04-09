@@ -15,6 +15,7 @@ import { ProjectShowcaseWidget } from '../../widgets/project-showcase/project-sh
 import { SkillConstellationWidget } from '../../widgets/skill-constellation/skill-constellation.widget';
 import { PersonalInterestsWidget } from '../../widgets/personal-interests/personal-interests.widget';
 import { ExperienceVaultWidget } from '../../widgets/experience-vault/experience-vault.widget';
+import { CompatibilityEngineWidget } from '../../widgets/compatibility-engine/compatibility-engine.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -66,6 +67,7 @@ Instructions:
       SkillConstellationWidget,
       PersonalInterestsWidget,
       ExperienceVaultWidget,
+      CompatibilityEngineWidget,
     ],
     debugName: 'portfolio-canvas',
   });

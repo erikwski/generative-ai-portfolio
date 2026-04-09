@@ -79,5 +79,14 @@
         <app-widget-experience-vault />
       </app-widget-shell>
     }
+
+    @if (isVisible('compatibility-engine')) {
+      <app-widget-shell title="CompatibilityEngineWidget" (removed)="dismiss('compatibility-engine')">
+        <app-widget-compatibility-engine
+          matchScore="87%"
+          [highlights]="['Angular expert', 'NX monorepo', 'AI integration']"
+        />
+      </app-widget-shell>
+    }
   </main>
 </div>

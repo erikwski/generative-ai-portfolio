@@ -1034,5 +1034,139 @@ export const en: AppTranslation = {
         'cred-english-status': 'In Progress',
       },
     },
+    'compatibility-engine': {
+      developer: {
+        formal: {
+          elevator: {
+            headline: 'Strong match detected.',
+            subline: 'Erik aligns with your technical requirements.',
+          },
+          coffee: {
+            headline: 'Compatibility analysis.',
+            subline: 'Here is how Erik maps to your engineering needs.',
+          },
+          'deep-dive': {
+            headline: 'Detailed compatibility report.',
+            subline: "A thorough mapping of Erik's skills against your stated requirements.",
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'Signals aligned.',
+            subline: 'Erik speaks your language — and then some.',
+          },
+          coffee: {
+            headline: 'You two would vibe.',
+            subline: "Here's the overlap between what you need and what Erik does.",
+          },
+          'deep-dive': {
+            headline: 'Deep signal match.',
+            subline: "Let's break down exactly where Erik fits — and where he'd push beyond.",
+          },
+        },
+        technical: {
+          elevator: { headline: 'Match: high.', subline: 'Stack overlap confirmed.' },
+          coffee: {
+            headline: 'Tech fit analysis.',
+            subline: "Erik's stack vs. your requirements — side by side.",
+          },
+          'deep-dive': {
+            headline: 'Compatibility breakdown.',
+            subline: 'Full technical alignment check: stack, patterns, architecture style.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            headline: 'Candidate fit: strong.',
+            subline: 'Erik meets your role criteria.',
+          },
+          coffee: {
+            headline: 'Fit assessment summary.',
+            subline: 'Key alignment points between Erik and your open position.',
+          },
+          'deep-dive': {
+            headline: 'Full candidate compatibility report.',
+            subline: "Erik's profile mapped against the role requirements in detail.",
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'This one fits.',
+            subline: "Erik checks the boxes — and adds a few you didn't think of.",
+          },
+          coffee: {
+            headline: 'Why Erik stands out.',
+            subline: 'Not just a match — a genuine add to your pipeline.',
+          },
+          'deep-dive': {
+            headline: 'The full picture.',
+            subline: "Here's a complete compatibility read for your requisition.",
+          },
+        },
+        technical: {
+          elevator: { headline: 'Role match: confirmed.', subline: 'Skills align with your spec.' },
+          coffee: {
+            headline: 'Spec vs. profile.',
+            subline: "Erik's experience mapped to your job requirements.",
+          },
+          'deep-dive': {
+            headline: 'Candidate compatibility matrix.',
+            subline: "Every requirement checked against Erik's documented track record.",
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            headline: 'Project fit: strong.',
+            subline: 'Erik is equipped for your requirements.',
+          },
+          coffee: {
+            headline: 'Service alignment check.',
+            subline: "How Erik's capabilities address your project goals.",
+          },
+          'deep-dive': {
+            headline: 'Full engagement compatibility report.',
+            subline: "A detailed look at how Erik's skills map to your project needs.",
+          },
+        },
+        creative: {
+          elevator: {
+            headline: 'He gets it.',
+            subline: "Erik understands what you're trying to build.",
+          },
+          coffee: {
+            headline: 'The fit is real.',
+            subline: "Here's why this collaboration would work.",
+          },
+          'deep-dive': {
+            headline: 'Why this works.',
+            subline: "A full breakdown of how Erik's approach aligns with your vision.",
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Scope match: solid.',
+            subline: 'Erik covers your technical requirements.',
+          },
+          coffee: {
+            headline: 'Project capability check.',
+            subline: "Erik's skills against your stated technical needs.",
+          },
+          'deep-dive': {
+            headline: 'Technical compatibility analysis.',
+            subline: "Full mapping of Erik's capabilities to your project specification.",
+          },
+        },
+      },
+      default: {
+        headline: 'Compatibility Score',
+        subline: "How well Erik matches what you're looking for.",
+        scoreLabel: 'Match Score',
+        matchLabel: 'Why it works',
+      },
+    },
   },
 };
