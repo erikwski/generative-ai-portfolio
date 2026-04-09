@@ -966,5 +966,67 @@ export const it: AppTranslation = {
         'hobby-guide-sub': 'Livello 6 · Specialista cibo & caffè',
       },
     },
+    'experience-vault': {
+      developer: {
+        technical: {
+          elevator: { headline: 'Credenziali.' },
+          coffee: { headline: 'Cosa dicono i diplomi' },
+          'deep-dive': { headline: 'Il registro formale' },
+        },
+        formal: {
+          elevator: { headline: 'Qualifiche formali.' },
+          coffee: { headline: 'Istruzione e certificazioni' },
+          'deep-dive': { headline: 'Background accademico' },
+        },
+        creative: {
+          elevator: { headline: 'La scia di carta.' },
+          coffee: { headline: 'Dove la scuola ha incontrato la curiosità' },
+          'deep-dive': { headline: 'I diplomi dietro al codice' },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: { headline: 'Qualifiche in sintesi.' },
+          coffee: { headline: 'Istruzione e certificati' },
+          'deep-dive': { headline: 'Profilo accademico' },
+        },
+        creative: {
+          elevator: { headline: 'Certificato e curioso.' },
+          coffee: { headline: 'La libreria delle credenziali' },
+          'deep-dive': { headline: 'Tutto ciò che il CV elenca sotto istruzione' },
+        },
+        technical: {
+          elevator: { headline: 'Lauree e cert.' },
+          coffee: { headline: 'Cosa ha studiato' },
+          'deep-dive': { headline: 'Storico accademico e certificazioni' },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { headline: 'Formalmente qualificato.' },
+          coffee: { headline: 'Background formativo' },
+          'deep-dive': { headline: 'Qualifiche accademiche e professionali' },
+        },
+        creative: {
+          elevator: { headline: 'Il vault.' },
+          coffee: { headline: 'Dove è iniziato tutto' },
+          'deep-dive': { headline: 'Scuola, certificazioni e cosa ne è venuto fuori' },
+        },
+        technical: {
+          elevator: { headline: 'Credenziali.' },
+          coffee: { headline: 'Lauree e certificazioni' },
+          'deep-dive': { headline: 'Le qualifiche formali dietro al lavoro' },
+        },
+      },
+      default: {
+        headline: 'Credenziali',
+        'cred-bsc-title': 'Laurea Triennale in Informatica',
+        'cred-bsc-institution': 'Università Unipegaso',
+        'cred-bsc-status': 'Completata',
+        'cred-english-title': 'Certificazione di Lingua Inglese',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Corso',
+      },
+    },
   },
 };

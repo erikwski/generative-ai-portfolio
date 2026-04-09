@@ -73,5 +73,11 @@
         <app-widget-personal-interests />
       </app-widget-shell>
     }
+
+    @if (isVisible('experience-vault')) {
+      <app-widget-shell title="ExperienceVaultWidget" (removed)="dismiss('experience-vault')">
+        <app-widget-experience-vault />
+      </app-widget-shell>
+    }
   </main>
 </div>

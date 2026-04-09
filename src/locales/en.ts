@@ -972,5 +972,67 @@ export const en: AppTranslation = {
         'hobby-guide-sub': 'Level 6 · Food & coffee specialist',
       },
     },
+    'experience-vault': {
+      developer: {
+        technical: {
+          elevator: { headline: 'Credentials.' },
+          coffee: { headline: 'What the diplomas say' },
+          'deep-dive': { headline: 'The formal record' },
+        },
+        formal: {
+          elevator: { headline: 'Formal qualifications.' },
+          coffee: { headline: 'Education & certifications' },
+          'deep-dive': { headline: 'Academic background' },
+        },
+        creative: {
+          elevator: { headline: 'Paper trail.' },
+          coffee: { headline: 'Where school met curiosity' },
+          'deep-dive': { headline: 'The diplomas behind the code' },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: { headline: 'Qualifications at a glance.' },
+          coffee: { headline: 'Education & certificates' },
+          'deep-dive': { headline: 'Academic profile' },
+        },
+        creative: {
+          elevator: { headline: 'Certified & curious.' },
+          coffee: { headline: 'The credential shelf' },
+          'deep-dive': { headline: 'Everything the CV lists under education' },
+        },
+        technical: {
+          elevator: { headline: 'Degrees & certs.' },
+          coffee: { headline: 'What he studied' },
+          'deep-dive': { headline: 'Academic and certification track record' },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { headline: 'Formally qualified.' },
+          coffee: { headline: 'Education background' },
+          'deep-dive': { headline: 'Academic and professional qualifications' },
+        },
+        creative: {
+          elevator: { headline: 'The vault.' },
+          coffee: { headline: 'Where it all started' },
+          'deep-dive': { headline: 'School, certs, and what came from them' },
+        },
+        technical: {
+          elevator: { headline: 'Credentials.' },
+          coffee: { headline: 'Degrees & certifications' },
+          'deep-dive': { headline: 'The formal qualifications behind the work' },
+        },
+      },
+      default: {
+        headline: 'Credentials',
+        'cred-bsc-title': "Bachelor's Degree in Computer Science",
+        'cred-bsc-institution': 'Unipegaso University',
+        'cred-bsc-status': 'Completed',
+        'cred-english-title': 'English Language Certification',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Progress',
+      },
+    },
   },
 };

@@ -967,5 +967,67 @@ export const de: AppTranslation = {
         'hobby-guide-sub': 'Level 6 · Spezialist für Essen & Kaffee',
       },
     },
+    'experience-vault': {
+      developer: {
+        technical: {
+          elevator: { headline: 'Qualifikationen.' },
+          coffee: { headline: 'Was die Zeugnisse sagen' },
+          'deep-dive': { headline: 'Der formale Nachweis' },
+        },
+        formal: {
+          elevator: { headline: 'Formale Qualifikationen.' },
+          coffee: { headline: 'Bildung & Zertifizierungen' },
+          'deep-dive': { headline: 'Akademischer Hintergrund' },
+        },
+        creative: {
+          elevator: { headline: 'Papierspur.' },
+          coffee: { headline: 'Wo Schule auf Neugier traf' },
+          'deep-dive': { headline: 'Die Abschlüsse hinter dem Code' },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: { headline: 'Qualifikationen auf einen Blick.' },
+          coffee: { headline: 'Bildung & Zertifikate' },
+          'deep-dive': { headline: 'Akademisches Profil' },
+        },
+        creative: {
+          elevator: { headline: 'Zertifiziert & neugierig.' },
+          coffee: { headline: 'Das Qualifikationsregal' },
+          'deep-dive': { headline: 'Alles, was der Lebenslauf unter Bildung auflistet' },
+        },
+        technical: {
+          elevator: { headline: 'Abschlüsse & Zerts.' },
+          coffee: { headline: 'Was er studiert hat' },
+          'deep-dive': { headline: 'Akademischer und Zertifizierungs-Werdegang' },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { headline: 'Formal qualifiziert.' },
+          coffee: { headline: 'Bildungshintergrund' },
+          'deep-dive': { headline: 'Akademische und berufliche Qualifikationen' },
+        },
+        creative: {
+          elevator: { headline: 'Der Tresor.' },
+          coffee: { headline: 'Wo alles begann' },
+          'deep-dive': { headline: 'Schule, Zerts und was daraus wurde' },
+        },
+        technical: {
+          elevator: { headline: 'Qualifikationen.' },
+          coffee: { headline: 'Abschlüsse & Zertifizierungen' },
+          'deep-dive': { headline: 'Die formalen Qualifikationen hinter der Arbeit' },
+        },
+      },
+      default: {
+        headline: 'Qualifikationen',
+        'cred-bsc-title': 'Bachelor of Science in Informatik',
+        'cred-bsc-institution': 'Universität Unipegaso',
+        'cred-bsc-status': 'Abgeschlossen',
+        'cred-english-title': 'Englisch-Sprachzertifikat',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Bearbeitung',
+      },
+    },
   },
 };

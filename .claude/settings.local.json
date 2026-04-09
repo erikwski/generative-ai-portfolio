@@ -20,7 +20,8 @@
       "Bash(npx prettier:*)",
       "mcp__ide__getDiagnostics",
       "Bash(powershell -Command \"Get-Content 'C:\\\\Users\\\\EFerrari\\\\Documents\\\\DEVELOPWSKI\\\\generative-ai-portfolio\\\\COMPONENTS_TO_BUILD.MD'\")",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(python3:*)"
     ]
   }
 }

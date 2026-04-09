@@ -12,6 +12,7 @@ import { EvolutionTimelineWidgetComponent } from '../../widgets/evolution-timeli
 import { ProjectShowcaseWidgetComponent } from '../../widgets/project-showcase/project-showcase.component';
 import { SkillConstellationWidgetComponent } from '../../widgets/skill-constellation/skill-constellation.component';
 import { PersonalInterestsWidgetComponent } from '../../widgets/personal-interests/personal-interests.component';
+import { ExperienceVaultWidgetComponent } from '../../widgets/experience-vault/experience-vault.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -45,6 +46,7 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     ProjectShowcaseWidgetComponent,
     SkillConstellationWidgetComponent,
     PersonalInterestsWidgetComponent,
+    ExperienceVaultWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

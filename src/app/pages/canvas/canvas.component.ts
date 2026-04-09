@@ -14,6 +14,7 @@ import { EvolutionTimelineWidget } from '../../widgets/evolution-timeline/evolut
 import { ProjectShowcaseWidget } from '../../widgets/project-showcase/project-showcase.widget';
 import { SkillConstellationWidget } from '../../widgets/skill-constellation/skill-constellation.widget';
 import { PersonalInterestsWidget } from '../../widgets/personal-interests/personal-interests.widget';
+import { ExperienceVaultWidget } from '../../widgets/experience-vault/experience-vault.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -64,6 +65,7 @@ Instructions:
       ProjectShowcaseWidget,
       SkillConstellationWidget,
       PersonalInterestsWidget,
+      ExperienceVaultWidget,
     ],
     debugName: 'portfolio-canvas',
   });
