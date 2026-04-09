@@ -1,0 +1,15 @@
+<div class="widget-panel contextual-faq">
+  <p class="contextual-faq__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="contextual-faq__headline">{{ headline() }}</h2>
+
+  <mat-accordion class="contextual-faq__accordion">
+    @for (item of faqs(); track item.question) {
+      <mat-expansion-panel class="contextual-faq__panel">
+        <mat-expansion-panel-header class="contextual-faq__header">
+          <mat-panel-title class="contextual-faq__question">{{ item.question }}</mat-panel-title>
+        </mat-expansion-panel-header>
+        <p class="contextual-faq__answer">{{ item.answer }}</p>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

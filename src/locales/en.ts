@@ -1677,5 +1677,393 @@ export const en: AppTranslation = {
         'activity-localguide': 'Google Local Guide',
       },
     },
+    'contextual-faq': {
+      developer: {
+        formal: {
+          elevator: {
+            eyebrow: 'Quick Answers',
+            headline: 'What developers ask.',
+            'q1-question': "What's your go-to stack for a complex SPA?",
+            'q1-answer':
+              'Angular 21 with SSR, NgRx Signal Store, and TailwindCSS or Angular Material depending on requirements. I default to a monorepo structure with clear domain boundaries and lazy-loaded feature modules.',
+            'q2-question': 'Is he easy to work with?',
+            'q2-answer':
+              'Yes. Erik is direct, document-as-you-go, and cares about PR quality. He prefers async communication with clear context and does not skip code reviews.',
+            'q3-question': 'How does he handle technical debt?',
+            'q3-answer':
+              'He tracks it explicitly, schedules refactor time in sprints, and makes a business case when escalation is needed. He does not let it silently accumulate.',
+          },
+          coffee: {
+            eyebrow: 'Developer FAQ',
+            headline: 'Common questions, honest answers.',
+            'q1-question': "What's your go-to stack for a complex SPA?",
+            'q1-answer':
+              'Angular 21 with SSR for isomorphic rendering, NgRx Signal Store for reactive state, Angular Material or a custom design system, and a monorepo (usually NX) for multi-team projects. I lean on strong type safety end-to-end.',
+            'q2-question': 'Is he easy to work with?',
+            'q2-answer':
+              "Erik codes with intent and communicates with context. He's comfortable disagreeing on architecture with well-reasoned arguments, but he ships what the team decides. Reviews are thorough but respectful.",
+            'q3-question': 'How does he approach testing?',
+            'q3-answer':
+              'Unit tests for business logic, integration tests for feature flows, and e2e for critical paths. He writes tests as part of development, not as an afterthought, and treats a broken test as a blocker.',
+          },
+          'deep-dive': {
+            eyebrow: 'Deep Dive FAQ',
+            headline: 'Technical questions, straight answers.',
+            'q1-question': "What's your go-to stack for a complex SPA?",
+            'q1-answer':
+              'Angular 21 with SSR (Express), NgRx Signal Store for reactive state management, Angular Material 3 with custom design tokens, and NX monorepo for scalable multi-app setups. For back-end: Node.js/Express or Vercel serverless. For AI: Anthropic Claude via Hashbrown. Every decision is type-safe, lint-enforced, and CI-tested.',
+            'q2-question': 'Is he easy to work with?',
+            'q2-answer':
+              "Very. Erik writes code others can maintain, reviews PRs with specific actionable feedback, and communicates blockers early. He's direct without being abrasive and invests in team knowledge sharing via internal documentation and architecture decision records.",
+            'q3-question': 'What does his development workflow look like?',
+            'q3-answer':
+              'Feature branch → TDD where logic is complex → PR with clear description and test evidence → code review → merge to main → CI gate. He maintains a strict no-broken-build policy and uses conventional commits for changelog automation.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Quick Q&A',
+            headline: 'Real talk.',
+            'q1-question': "What's your stack when things get complex?",
+            'q1-answer':
+              'Angular 21, NgRx signals, SSR, and usually Claude doing the interesting parts. I keep the architecture clean enough that adding AI is a feature, not a hack.',
+            'q2-question': "What's he like to pair with?",
+            'q2-answer':
+              'Fast, direct, and he actually reads the error messages. He brings ideas to PRs but lands them without drama.',
+            'q3-question': 'Does he know when to stop over-engineering?',
+            'q3-answer':
+              "Yes. He ships pragmatically first, refactors with purpose. He's learned the hard way that perfect is the enemy of deployed.",
+          },
+          coffee: {
+            eyebrow: 'Dev Q&A',
+            headline: 'The real answers.',
+            'q1-question': "What's your stack for serious SPAs?",
+            'q1-answer':
+              "Angular 21, SSR, NgRx signals. Monorepo when the scale justifies it. I'm also deep in Hashbrown for generative UI — that's where the interesting architecture happens lately.",
+            'q2-question': 'How does he handle code reviews?',
+            'q2-answer':
+              "He's opinionated but not precious. He'll push back on patterns he knows cause problems, but he also picks his battles. Reviews are thorough, and he approves fast when the code is clean.",
+            'q3-question': "What's his debugging style?",
+            'q3-answer':
+              'Systematic. He adds context breadcrumbs before reaching for the debugger. He keeps a mental model of data flow and narrows from there. He rarely needs to guess twice.',
+          },
+          'deep-dive': {
+            eyebrow: 'Full Q&A',
+            headline: 'No hedging.',
+            'q1-question': "What's the most complex Angular architecture you've built?",
+            'q1-answer':
+              'This portfolio — a generative UI system where Claude composes Angular component trees at runtime via Hashbrown. No hardcoded layouts. NgRx signal store for visitor profile. SSR for performance. The architecture had to be flexible enough for AI-generated structures while remaining type-safe and performant.',
+            'q2-question': 'What makes working with Erik different?',
+            'q2-answer':
+              "He thinks in systems. When he proposes a pattern, he's already considered the edge cases, the migration path, and the onboarding cost. He writes code that explains itself and documents what it can't.",
+            'q3-question': 'Where does he push back?',
+            'q3-answer':
+              "Shortcuts that create future pain. Skipping types. Merging without review. He's respectful about it, but he won't silently let the codebase degrade.",
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'FAQ',
+            headline: 'Tech Q&A.',
+            'q1-question': 'Default SPA stack?',
+            'q1-answer':
+              'Angular 21 + NgRx signals + SSR. NX for monorepos. Claude/Hashbrown for AI features.',
+            'q2-question': 'Code review style?',
+            'q2-answer':
+              'Specific, actionable comments. No nitpicks without fixes. Approves fast on clean code.',
+            'q3-question': 'Test philosophy?',
+            'q3-answer':
+              'TDD for logic-heavy code. Broken test = blocker. Coverage as a hygiene metric, not a target.',
+          },
+          coffee: {
+            eyebrow: 'Tech FAQ',
+            headline: 'Technical questions, direct answers.',
+            'q1-question': "What's the Angular stack you reach for?",
+            'q1-answer':
+              'Angular 21 SSR, NgRx Signal Store, Angular Material M3, NX monorepo. Anthropic/Hashbrown for AI-native features. TypeScript strict everywhere.',
+            'q2-question': 'How does he collaborate on architecture?',
+            'q2-answer':
+              "ADRs for significant decisions. He uses RFCs for major changes that affect multiple teams. He'll argue his position clearly and implement the team decision once it's made.",
+            'q3-question': 'CI/CD philosophy?',
+            'q3-answer':
+              'No broken builds. Conventional commits for changelog automation. Feature flags for risky changes. Environment parity between staging and prod.',
+          },
+          'deep-dive': {
+            eyebrow: 'Technical FAQ',
+            headline: 'Full technical Q&A.',
+            'q1-question': "What's your Angular architecture philosophy?",
+            'q1-answer':
+              'Feature-first folder structure, strict separation between smart/dumb components, reactive state via NgRx signals, and a data-access layer that abstracts all I/O. Components should have zero side effects. Side effects belong in services or effects.',
+            'q2-question': 'How does he handle performance?',
+            'q2-answer':
+              'OnPush everywhere by default. Signal-based reactivity to minimize change detection. Lazy-loaded routes. SSR for critical-path content. Core Web Vitals as a release gate, not a nice-to-have.',
+            'q3-question': "What's his AI integration pattern?",
+            'q3-answer':
+              'Anthropic API via Hashbrown for component generation. System prompts inject visitor profile context. Components are pre-registered and type-safe. The AI decides which components to render — it does not touch raw HTML. Streaming for perceived performance.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Recruiter FAQ',
+            headline: 'Key questions answered.',
+            'q1-question': 'Why is Erik ready for a Tech Lead role?',
+            'q1-answer':
+              'Five years of production Angular engineering, two of which include leading architecture decisions on AI-native systems. He has mentored junior developers and driven cross-team technical alignment.',
+            'q2-question': 'What enterprise experience does he have?',
+            'q2-answer':
+              'Erik has worked on large-scale Angular applications with strict accessibility, multi-locale, and SSR requirements. He has delivered inside regulated enterprise environments with CI/CD maturity requirements.',
+            'q3-question': 'What is his availability?',
+            'q3-answer':
+              'Erik is actively evaluating new opportunities. He is available for roles starting within standard notice period. He is open to both permanent positions and long-term contracts.',
+          },
+          coffee: {
+            eyebrow: 'Recruiter FAQ',
+            headline: 'What recruiters want to know.',
+            'q1-question': 'Why is Erik ready for a Tech Lead role?',
+            'q1-answer':
+              'He has been making architectural decisions in production for years — not just suggesting them. He has owned the technical roadmap on projects where there was no senior above him, and he has consistently delivered. The next step is formal recognition of what he has already been doing.',
+            'q2-question': 'What enterprise experience does he have?',
+            'q2-answer':
+              'Large-scale Angular SPA development, design system ownership, accessibility compliance (WCAG 2.1 AA), multi-locale architecture, and delivery within structured enterprise teams. He has experience working with QA, product management, and cross-functional stakeholders.',
+            'q3-question': 'Does he lead or support?',
+            'q3-answer':
+              "Both, depending on what the project needs. Erik can lead architecture for a team of 5-10 engineers or contribute as a senior IC. He adapts to the structure and fills gaps — he's not precious about titles.",
+          },
+          'deep-dive': {
+            eyebrow: 'Full Recruiter FAQ',
+            headline: 'Everything you need to qualify Erik.',
+            'q1-question': 'Why is Erik ready for a Tech Lead role?',
+            'q1-answer':
+              'Erik has the technical depth, the communication maturity, and the track record. He has architected front-end systems from scratch, led technical onboarding for new team members, established coding standards, and driven decisions under pressure. The gap between his current title and his actual responsibilities has been widening for two years.',
+            'q2-question': 'What enterprise experience does he have?',
+            'q2-answer':
+              'Multi-team Angular delivery, design system architecture, CI/CD pipeline ownership, accessibility and i18n compliance, Agile/Scrum process adherence, and working within enterprise-grade security and compliance requirements. He has interfaced with product management, UX, QA, and backend teams.',
+            'q3-question': 'What does a successful engagement look like for Erik?',
+            'q3-answer':
+              'Erik thrives when given architectural ownership, a team to lead or mentor, and a product with genuine technical complexity. He performs best when there is trust, clear business context, and a culture of quality. He is energized by AI-native projects and complex generative UI challenges.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Recruiter Q&A',
+            headline: 'The short version.',
+            'q1-question': 'Is Erik actually ready to lead?',
+            'q1-answer':
+              'Yes. He has been doing lead-level work for two years without the title. The role is the next logical step.',
+            'q2-question': 'Enterprise background?',
+            'q2-answer':
+              'Yes — large-scale Angular, design system ownership, multi-locale, accessibility, enterprise teams.',
+            'q3-question': "What's he looking for?",
+            'q3-answer':
+              'Ownership. A team to grow. Real technical complexity. AI-native projects are a bonus.',
+          },
+          coffee: {
+            eyebrow: 'Recruiter Q&A',
+            headline: 'What you actually want to know.',
+            'q1-question': 'Is Erik ready to lead a team?',
+            'q1-answer':
+              "He's been doing it without the title. He sets the direction, reviews the architecture, mentors the juniors, and ships the product. The title would just make it official.",
+            'q2-question': 'How deep is his enterprise experience?',
+            'q2-answer':
+              "Deep enough. He's delivered on multi-team Angular projects with real compliance requirements — accessibility, localisation, security. He knows how to work within enterprise structure without losing velocity.",
+            'q3-question': 'What would make him say yes to a role?',
+            'q3-answer':
+              "Technical complexity, a team to develop, and genuine ownership. He's not motivated by perks — he's motivated by impact.",
+          },
+          'deep-dive': {
+            eyebrow: 'Recruiter deep Q&A',
+            headline: 'Everything you need.',
+            'q1-question': "What's the evidence for Tech Lead readiness?",
+            'q1-answer':
+              'Two years of de facto tech lead responsibilities on production systems. Architecture ownership without a net. Junior developer mentoring. Cross-team alignment. The only thing missing is the headcount reporting to him.',
+            'q2-question': 'How broad is his enterprise delivery experience?',
+            'q2-answer':
+              'Multi-team delivery, design system architecture, CI/CD pipeline ownership, WCAG 2.1 AA compliance, i18n/l10n architecture, Agile/Scrum at scale, and stakeholder management across product, QA, UX, and back-end.',
+            'q3-question': 'What does his ideal next role look like?',
+            'q3-answer':
+              'Tech Lead or Engineering Lead at a company that is serious about front-end quality and genuinely exploring AI integration. He wants to own architecture, grow a team, and build something that lasts.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Recruiter FAQ',
+            headline: 'Fast answers.',
+            'q1-question': 'Tech Lead ready?',
+            'q1-answer': 'Yes. Two years of de facto lead work on production systems.',
+            'q2-question': 'Enterprise Angular experience?',
+            'q2-answer': 'Yes. Large-scale SPA, design systems, i18n, a11y, multi-team delivery.',
+            'q3-question': 'When available?',
+            'q3-answer':
+              'Actively looking. Standard notice period. Permanent or long-term contract.',
+          },
+          coffee: {
+            eyebrow: 'Recruiter FAQ',
+            headline: 'The technical case.',
+            'q1-question': 'What qualifies Erik for Tech Lead?',
+            'q1-answer':
+              '5 years Angular, 2 as de facto lead. Architecture ownership, ADRs, coding standards definition, junior mentoring, and delivery under pressure.',
+            'q2-question': 'Enterprise delivery scope?',
+            'q2-answer':
+              'Multi-team Angular SPA delivery, design system architecture, CI/CD, WCAG 2.1 AA, i18n/l10n, and cross-functional stakeholder management.',
+            'q3-question': 'Notice period and contract preference?',
+            'q3-answer':
+              'Standard notice period. Open to permanent roles or long-term contracts (12+ months). Remote-first preferred but open to hybrid.',
+          },
+          'deep-dive': {
+            eyebrow: 'Recruiter Technical FAQ',
+            headline: 'Full qualification data.',
+            'q1-question': 'Technical evidence for Tech Lead readiness?',
+            'q1-answer':
+              'Architecture decision ownership on multiple production Angular SPAs. Defined and enforced coding standards. Onboarded 3+ junior developers. Led cross-team technical alignment sessions. Delivered AI-native features (Hashbrown/Claude) in production.',
+            'q2-question': 'Enterprise delivery credentials?',
+            'q2-answer':
+              'Design system architecture and ownership, WCAG 2.1 AA compliance implementation, i18n/l10n for 3+ locales, NX monorepo governance, CI/CD pipeline ownership, Agile/Scrum process adherence at scale.',
+            'q3-question': 'Target role specification?',
+            'q3-answer':
+              'Tech Lead or Engineering Lead, Angular-centric or AI-native front-end team, 5-15 person engineering org, ownership over architecture and quality standards, 12+ month engagement minimum.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            eyebrow: 'Client FAQ',
+            headline: 'Quick answers for you.',
+            'q1-question': 'How can Erik help my business move faster?',
+            'q1-answer':
+              'Erik brings the full stack — Angular front-end, Node back-end, AI integration, and architectural discipline. He reduces ramp-up time and sets up the codebase so your future developers can move fast without breaking things.',
+            'q2-question': 'Can he handle full project setup?',
+            'q2-answer':
+              'Yes. Erik can set up the full project from scratch: repo structure, CI/CD, component architecture, design system integration, API layer, and deployment pipeline.',
+            'q3-question': 'What kind of projects does he take?',
+            'q3-answer':
+              'Complex Angular SPAs, AI-powered products, design-system-first builds, and projects that need both technical leadership and strong execution.',
+          },
+          coffee: {
+            eyebrow: 'Client FAQ',
+            headline: 'What you need to know before engaging.',
+            'q1-question': 'How can Erik help my business move faster?',
+            'q1-answer':
+              'Erik starts with architecture, not code. He maps your requirements to a technical structure that can scale, then delivers iteratively. He catches expensive mistakes early, documents as he builds, and hands off clean code that your team can own.',
+            'q2-question': 'Can he handle full project setup?',
+            'q2-answer':
+              'Completely. From empty repo to production: monorepo setup, CI/CD pipeline, design system, API integration, AI features, deployment to Vercel or your preferred cloud. He has done it multiple times.',
+            'q3-question': 'Does he work independently or need a team?',
+            'q3-answer':
+              'Both. Erik can work as a solo technical lead on smaller projects or collaborate inside a larger team. He adapts to your resourcing and brings the same discipline either way.',
+          },
+          'deep-dive': {
+            eyebrow: 'Client FAQ — Full',
+            headline: 'Everything before you engage.',
+            'q1-question': 'How can Erik help my business move faster?',
+            'q1-answer':
+              'Erik compresses the time between idea and working product by eliminating technical debt from day one, building for maintainability, and integrating AI features that automate repetitive work. His architectures are designed to onboard new developers quickly, which reduces your dependency on any single person.',
+            'q2-question': 'Can he handle full project setup?',
+            'q2-answer':
+              'Yes — from domain modelling to deployment. Repo setup, NX monorepo if needed, CI/CD with automated testing, Angular SSR, design system implementation, API layer (REST or GraphQL), AI integration via Claude/Hashbrown, and Vercel or custom deployment pipeline. He documents every decision so your team inherits context, not just code.',
+            'q3-question': 'What does a typical engagement with Erik look like?',
+            'q3-answer':
+              'Discovery session to understand business goals and constraints → architecture proposal with trade-off analysis → iterative delivery in 2-week sprints → weekly alignment → documented handoff. He stays engaged after delivery for a transition period and is available for ongoing technical advisory.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Client Q&A',
+            headline: 'Three things to know.',
+            'q1-question': 'How does Erik make my project move faster?',
+            'q1-answer':
+              'He builds clean from the start. No shortcuts that come back to bite. And he integrates AI where it actually saves time.',
+            'q2-question': 'Can he set everything up?',
+            'q2-answer':
+              "Yes — repo to production. He's done it before. It takes a week, not a month.",
+            'q3-question': 'What kind of projects excite him?',
+            'q3-answer':
+              'Ambitious products with real complexity. Especially anything where AI can be genuinely useful, not just a chatbot.',
+          },
+          coffee: {
+            eyebrow: 'Client Q&A',
+            headline: 'Straight answers.',
+            'q1-question': 'How can Erik make my product move faster?',
+            'q1-answer':
+              "He builds it right the first time. Architecture that doesn't need to be rewritten in six months. AI where it actually reduces work. And he delivers iteratively, so you're never waiting on a big reveal.",
+            'q2-question': 'Can he own the full tech side?',
+            'q2-answer':
+              'Yes. Front-end, back-end, AI features, CI/CD, deployment. He can be your entire technical team or the senior lead on top of yours.',
+            'q3-question': 'What should I expect from working with him?',
+            'q3-answer':
+              "Direct communication, early warnings on risks, clean deliverables, and a codebase you'll actually understand. No black boxes.",
+          },
+          'deep-dive': {
+            eyebrow: 'Client deep Q&A',
+            headline: 'Before you commit.',
+            'q1-question': 'What is the business case for hiring Erik?',
+            'q1-answer':
+              'You get senior-level Angular architecture, full-stack delivery capability, and AI integration expertise in one person. He reduces time-to-market, eliminates the expensive mid-project rewrites, and builds products that your future team can maintain without calling him.',
+            'q2-question': 'Can he own the complete technical scope?',
+            'q2-answer':
+              'Fully. Architecture, front-end, back-end, AI features, design system, CI/CD, deployment, documentation. He has done end-to-end delivery solo and as a lead on team projects.',
+            'q3-question': 'What makes an engagement with Erik work?',
+            'q3-answer':
+              'Clear business goals, trust in technical decisions, and a product worth building. He brings the discipline — you bring the vision. He does not do spec-less development or scope creep.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Client FAQ',
+            headline: 'Technical answers.',
+            'q1-question': 'How does Erik accelerate delivery?',
+            'q1-answer':
+              'Clean architecture from day 1. Automated CI/CD. AI where it reduces manual work. Iterative delivery with early feedback loops.',
+            'q2-question': 'Full-stack setup capability?',
+            'q2-answer':
+              'Yes. Angular SSR, Node/Express or serverless, CI/CD, Vercel deployment, API integration, AI features.',
+            'q3-question': 'Project types?',
+            'q3-answer':
+              'Complex Angular SPAs, AI-powered products, design system builds, greenfield and brownfield.',
+          },
+          coffee: {
+            eyebrow: 'Client technical FAQ',
+            headline: 'Technical scope answered.',
+            'q1-question': 'How does Erik make projects move faster?',
+            'q1-answer':
+              'Architecture-first delivery: feature structure, component boundaries, state management, and CI/CD are defined before the first PR. This eliminates refactor cycles later and speeds up onboarding for additional devs.',
+            'q2-question': 'Full setup scope?',
+            'q2-answer':
+              'NX monorepo, Angular 21 SSR, NgRx Signal Store, Angular Material M3, REST/GraphQL API, Claude/Hashbrown AI integration, automated test suite, GitHub Actions CI/CD, Vercel deployment.',
+            'q3-question': 'What tech does he not work with?',
+            'q3-answer':
+              'He is Angular-specialist but has working knowledge of React. He does not take on native mobile (iOS/Android) or embedded systems projects.',
+          },
+          'deep-dive': {
+            eyebrow: 'Client technical FAQ',
+            headline: 'Full technical scope.',
+            'q1-question': 'How does Erik accelerate time-to-market?',
+            'q1-answer':
+              'Pre-defined architecture ADRs eliminate decision overhead. NX workspace with enforced module boundaries prevents cross-team dependency issues. Automated test gates prevent regressions. AI-generated UI components (Hashbrown) reduce front-end development time by 40%+ on qualifying use cases.',
+            'q2-question': 'What does a full project setup include?',
+            'q2-answer':
+              'NX monorepo config, Angular 21 SSR with Express, NgRx Signal Store, Angular Material M3 with custom theme, REST API layer (OpenAPI-typed), Claude/Hashbrown AI integration, Vitest + Playwright test suite, GitHub Actions CI/CD, Vercel production deployment, architecture documentation, and onboarding guide.',
+            'q3-question': 'AI integration approach?',
+            'q3-answer':
+              'Anthropic Claude API via Hashbrown for component-level generative UI. Server-side API route for security. Visitor context injected via system prompt. Components pre-registered and type-safe. Streaming for performance. Cost monitoring via Anthropic usage API.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'FAQ',
+        headline: 'Common questions.',
+        'q1-question': "What's your go-to stack?",
+        'q1-answer':
+          'Angular 21, NgRx Signal Store, Angular Material, SSR. Claude/Hashbrown for AI features.',
+        'q2-question': 'Is Erik easy to work with?',
+        'q2-answer':
+          'Direct, collaborative, high standards. Reviews code carefully and communicates blockers early.',
+        'q3-question': "What's his availability?",
+        'q3-answer':
+          'Actively evaluating new opportunities. Available within standard notice period.',
+      },
+    },
   },
 };

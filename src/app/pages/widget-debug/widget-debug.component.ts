@@ -18,6 +18,7 @@ import { CoreIdentityWidgetComponent } from '../../widgets/core-identity/core-id
 import { ProfessionalObjectiveWidgetComponent } from '../../widgets/professional-objective/professional-objective.component';
 import { TeamCultureWidgetComponent } from '../../widgets/team-culture/team-culture.component';
 import { LifestyleActivitiesWidgetComponent } from '../../widgets/lifestyle-activities/lifestyle-activities.component';
+import { ContextualFaqWidgetComponent } from '../../widgets/contextual-faq/contextual-faq.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -57,6 +58,7 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     ProfessionalObjectiveWidgetComponent,
     TeamCultureWidgetComponent,
     LifestyleActivitiesWidgetComponent,
+    ContextualFaqWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

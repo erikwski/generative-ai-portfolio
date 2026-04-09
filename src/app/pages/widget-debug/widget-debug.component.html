@@ -118,5 +118,11 @@
         <app-widget-lifestyle-activities />
       </app-widget-shell>
     }
+
+    @if (isVisible('contextual-faq')) {
+      <app-widget-shell title="ContextualFaqWidget" (removed)="dismiss('contextual-faq')">
+        <app-widget-contextual-faq />
+      </app-widget-shell>
+    }
   </main>
 </div>
