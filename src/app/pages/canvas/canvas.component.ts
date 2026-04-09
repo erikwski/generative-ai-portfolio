@@ -4,11 +4,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-import { uiChatResource, RenderMessageComponent } from '@hashbrownai/angular';
+import { uiChatResource, RenderMessageComponent, UiAssistantMessage } from '@hashbrownai/angular';
 import { LogoComponent } from '../../shared/ui/logo/logo.component';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
 import { Router } from '@angular/router';
+import { WidgetShellComponent } from '../../shared/ui/widget-shell/widget-shell.component';
 import { ArchitectsIdentityWidget } from '../../widgets/architects-identity/architects-identity.widget';
+import { EvolutionTimelineWidget } from '../../widgets/evolution-timeline/evolution-timeline.widget';
+import { ProjectShowcaseWidget } from '../../widgets/project-showcase/project-showcase.widget';
+import { SkillConstellationWidget } from '../../widgets/skill-constellation/skill-constellation.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -20,6 +24,7 @@ import { ArchitectsIdentityWidget } from '../../widgets/architects-identity/arch
     MatIconModule,
     LogoComponent,
     RenderMessageComponent,
+    WidgetShellComponent,
   ],
   templateUrl: './canvas.component.html',
   styleUrl: './canvas.component.scss',
@@ -52,7 +57,12 @@ Instructions:
 - Pass the "highlights" prop with 2–4 short phrases (2–5 words each) that accent the most relevant facts for this specific visitor.
 - Do not add explanations or commentary outside of the widgets.`.trim(),
     ),
-    components: [ArchitectsIdentityWidget],
+    components: [
+      ArchitectsIdentityWidget,
+      EvolutionTimelineWidget,
+      ProjectShowcaseWidget,
+      SkillConstellationWidget,
+    ],
     debugName: 'portfolio-canvas',
   });
 
@@ -62,6 +72,16 @@ Instructions:
   readonly assistantMessages = computed(() =>
     (this.chat.value() ?? []).filter((m) => m.role === 'assistant'),
   );
+
+  readonly dismissedIndices = signal<Set<number>>(new Set());
+
+  dismissMessage(index: number): void {
+    this.dismissedIndices.update((s) => new Set([...s, index]));
+  }
+
+  getWidgetTitle(message: UiAssistantMessage): string {
+    return message.content?.ui[0].$tag ?? '';
+  }
 
   useSuggestion(label: string): void {
     this.prompt.set(label);

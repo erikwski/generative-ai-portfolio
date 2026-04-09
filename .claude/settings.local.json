@@ -17,7 +17,8 @@
       "Bash(npm pack:*)",
       "Bash(npx --yes json -f node_modules/@hashbrownai/anthropic/package.json peerDependencies)",
       "Bash(npm install:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

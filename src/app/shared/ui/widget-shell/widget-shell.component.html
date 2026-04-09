@@ -1,0 +1,9 @@
+<div class="widget-shell">
+  <div class="widget-shell__header">
+    <span class="widget-shell__title">{{ title() }}</span>
+    <button mat-icon-button class="widget-shell__close" (click)="removed.emit()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <ng-content />
+</div>

@@ -1,0 +1,71 @@
+<div class="widget-debug">
+  <!-- ── Sticky profile bar ───────────────────────────────────────────── -->
+  <header class="widget-debug__bar">
+    <div class="widget-debug__bar-inner">
+      <span class="widget-debug__bar-label">Visitor Profile</span>
+
+      <div class="widget-debug__controls">
+        <mat-button-toggle-group
+          [value]="role()"
+          (change)="role.set($event.value)"
+          hideSingleSelectionIndicator
+        >
+          <mat-button-toggle value="developer">Developer</mat-button-toggle>
+          <mat-button-toggle value="recruiter">Recruiter</mat-button-toggle>
+          <mat-button-toggle value="client">Client</mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <mat-button-toggle-group
+          [value]="timeAvailable()"
+          (change)="timeAvailable.set($event.value)"
+          hideSingleSelectionIndicator
+        >
+          <mat-button-toggle value="elevator">Elevator</mat-button-toggle>
+          <mat-button-toggle value="coffee">Coffee</mat-button-toggle>
+          <mat-button-toggle value="deep-dive">Deep Dive</mat-button-toggle>
+        </mat-button-toggle-group>
+
+        <mat-button-toggle-group
+          [value]="communicationStyle()"
+          (change)="communicationStyle.set($event.value)"
+          hideSingleSelectionIndicator
+        >
+          <mat-button-toggle value="formal">Formal</mat-button-toggle>
+          <mat-button-toggle value="creative">Creative</mat-button-toggle>
+          <mat-button-toggle value="technical">Technical</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+
+      @if (dismissed().size > 0) {
+        <button class="widget-debug__restore" (click)="resetDismissed()">Restore all</button>
+      }
+    </div>
+  </header>
+
+  <!-- ── Widget canvas ───────────────────────────────────────────────── -->
+  <main class="widget-debug__canvas">
+    @if (isVisible('identity')) {
+      <app-widget-shell title="ArchitectsIdentityWidget" (removed)="dismiss('identity')">
+        <app-widget-architects-identity [highlights]="identityHighlights" />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('timeline')) {
+      <app-widget-shell title="EvolutionTimelineWidget" (removed)="dismiss('timeline')">
+        <app-widget-evolution-timeline />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('projects')) {
+      <app-widget-shell title="ProjectShowcaseWidget" (removed)="dismiss('projects')">
+        <app-widget-project-showcase [projects]="sampleProjects" />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('skills')) {
+      <app-widget-shell title="SkillConstellationWidget" (removed)="dismiss('skills')">
+        <app-widget-skill-constellation showUpcoming="true" />
+      </app-widget-shell>
+    }
+  </main>
+</div>

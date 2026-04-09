@@ -1,5 +1,4 @@
 <div class="canvas" [class.canvas--active]="hasContent()">
-
   <!-- Top bar -->
   <header class="canvas__topbar">
     <app-logo layout="mobile" [width]="32" [height]="32" />
@@ -11,7 +10,11 @@
   <!-- Widget grid (visible when active) -->
   <main class="canvas__grid">
     @for (message of assistantMessages(); track $index) {
-      <hb-render-message [message]="message" />
+      @if (!dismissedIndices().has($index)) {
+        <app-widget-shell [title]="getWidgetTitle(message)" (removed)="dismissMessage($index)">
+          <hb-render-message [message]="message" />
+        </app-widget-shell>
+      }
     }
     @if (isLoading()) {
       <div class="canvas__loading">
@@ -24,13 +27,14 @@
 
   <!-- Prompt area -->
   <div class="canvas__prompt-area">
-
     <!-- Hero text (empty state only) -->
     @if (!hasContent()) {
       <div class="canvas__hero">
         <p class="canvas__eyebrow" i18n="@@canvas.eyebrow">Aura: Portfolio AI</p>
         <h1 class="canvas__headline" i18n="@@canvas.headline">Ask me anything about Erik.</h1>
-        <p class="canvas__subline" i18n="@@canvas.subline">I'll build the interface around your question.</p>
+        <p class="canvas__subline" i18n="@@canvas.subline">
+          I'll build the interface around your question.
+        </p>
       </div>
 
       <!-- Suggestion chips -->
@@ -67,6 +71,5 @@
         <mat-icon>arrow_upward</mat-icon>
       </button>
     </div>
-
   </div>
 </div>

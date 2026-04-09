@@ -18,6 +18,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/canvas/canvas.component').then((m) => m.CanvasComponent),
   },
   {
+    path: 'widget-debug',
+    loadComponent: () =>
+      import('./pages/widget-debug/widget-debug.component').then((m) => m.WidgetDebugComponent),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

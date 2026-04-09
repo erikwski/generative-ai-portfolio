@@ -1,4 +1,4 @@
-import { Component, inject, signal, effect, LOCALE_ID } from '@angular/core';
+import { Component, inject, signal, LOCALE_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -12,18 +12,10 @@ import {
 } from '../../shared/domain/visitor-profile';
 import { LogoComponent } from '../../shared/ui/logo/logo.component';
 import { SUPPORTED_LOCALES, switchLocale, type SupportedLocale } from '../../../locales';
-import { SkillConstellationWidgetComponent } from '../../widgets/skill-constellation/skill-constellation.component';
 
 @Component({
   selector: 'app-onboarding',
-  imports: [
-    FormsModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatRippleModule,
-    LogoComponent,
-    SkillConstellationWidgetComponent,
-  ],
+  imports: [FormsModule, MatButtonModule, MatButtonToggleModule, MatRippleModule, LogoComponent],
   templateUrl: './onboarding.component.html',
   styleUrl: './onboarding.component.scss',
 })
@@ -37,19 +29,6 @@ export class OnboardingComponent {
   role = signal<VisitorRole>(this.store.role());
   timeAvailable = signal<TimeAvailable>(this.store.timeAvailable());
   communicationStyle = signal<CommunicationStyle>(this.store.communicationStyle());
-
-  constructor() {
-    // TODO: Remove when end creating widgets
-    // Sync form selections → store live so the widget preview updates reactively.
-    // The route guard only fires on navigation, so this won't redirect mid-form.
-    effect(() => {
-      this.store.setProfile({
-        role: this.role(),
-        timeAvailable: this.timeAvailable(),
-        communicationStyle: this.communicationStyle(),
-      });
-    });
-  }
 
   switchLocale(locale: SupportedLocale): void {
     if (locale !== this.activeLocale) switchLocale(locale);
