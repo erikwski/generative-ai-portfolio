@@ -2,9 +2,17 @@ Create a new Hashbrown widget component for the generative AI portfolio.
 
 ## What to build
 
-The user will describe what the widget should show/do. Generate:
-1. The widget component at `src/app/widgets/<name>/<name>.widget.ts`
-2. Translation entries for the widget in **all three locale files** (`src/locales/en.ts`, `it.ts`, `de.ts`) and the type definition in `src/locales/types.ts`
+The user will describe what the widget should show/do. Generate **3 files** per widget:
+
+```
+src/app/widgets/<name>/
+├── <name>.component.ts    # Angular @Component class — store injection, computed signals, widget-specific interfaces
+├── <name>.component.html  # Template
+├── <name>.component.scss  # Styles (CSS variables only)
+└── <name>.widget.ts       # ONLY: exposeComponent() + Hashbrown input schema
+```
+
+Plus translation entries in **all three locale files** (`src/locales/en.ts`, `it.ts`, `de.ts`).
 
 ## Personalization model
 
@@ -22,160 +30,145 @@ widgets.<widgetName>.<role>.<style>.<time>.<label>
 | `style` | `formal` · `creative` · `technical` |
 | `time`  | `elevator` · `coffee` · `deep-dive` |
 
-Example — the main text of a "presentation" widget for a recruiter, formal tone, deep dive:
-```
-widgets.presentation.recruiter.formal.deep-dive.text
+### MANDATORY: fill all 27 combinations
+
+Every widget translation **must** include all 27 role×style×time combinations for every text label — no skipping. Use the fallback chain as a safety net, not as a design shortcut.
+
+Additionally, add **role-level string labels** (direct string values inside each role block) as a catch-all for any combination that might be missed in future:
+
+```typescript
+recruiter: {
+  // Role-level fallback — catches any style+time combo not explicitly defined
+  headline: 'Work History',
+  'some-label': 'Generic recruiter copy here',
+  formal: {
+    elevator: { headline: 'Work History', 'some-label': '...' },
+    coffee:   { headline: 'Work History', 'some-label': '...' },
+    'deep-dive': { headline: '...', 'some-label': '...' },
+  },
+  technical: {
+    elevator: { ... }, coffee: { ... }, 'deep-dive': { ... },
+  },
+  creative: {
+    elevator: { ... }, coffee: { ... }, 'deep-dive': { ... },
+  },
+},
 ```
 
 ### Fallback chain
 
 `resolveWidgetText` tries keys from most-specific to least-specific:
-1. `widgets.<name>.<role>.<style>.<time>.<label>`
-2. `widgets.<name>.<role>.<style>.<label>`
-3. `widgets.<name>.<role>.<label>`
-4. `widgets.<name>.default.<label>`
-
-So you only need to write the combinations that are meaningfully different. Shared copy can go under `default` or just `<role>`.
+1. `widgets.<name>.<role>.<style>.<time>.<label>` — exact match
+2. `widgets.<name>.<role>.<style>.<label>`        — role + style
+3. `widgets.<name>.<role>.<label>`                — role only (add these as safety!)
+4. `widgets.<name>.default.<label>`               — generic default
 
 ### How widgets read translations
 
+`resolveWidgetText` is already typed to accept `VisitorProfile` from the shared domain — use the store signals directly:
+
 ```typescript
-import { inject, computed } from '@angular/core';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
 import { resolveWidgetText } from '../../../locales/widget-text';
 
-// Inside the component class:
 private readonly store = inject(VisitorProfileStore);
+private readonly profile = computed(() => ({
+  role:               this.store.role(),
+  timeAvailable:      this.store.timeAvailable(),
+  communicationStyle: this.store.communicationStyle(),
+}));
 
-// Each translated text label becomes a computed signal:
-readonly text = computed(() =>
-  resolveWidgetText('<widgetName>', 'text', {
-    role: this.store.role(),
-    timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
-  })
-);
+readonly headline = computed(() => resolveWidgetText('<name>', 'headline', this.profile()));
 ```
 
-## Widget anatomy
+## Three-file anatomy
 
+### `<name>.component.ts`
 ```typescript
 import { Component, input, inject, computed } from '@angular/core';
-import { exposeComponent } from '@hashbrownai/angular';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
 import { resolveWidgetText } from '../../../locales/widget-text';
 // Angular Material imports as needed
 
+// Widget-specific data interfaces live here (if any)
+// export interface ProjectCard { title: string; tags: string[]; ... }
+
 @Component({
   selector: 'app-widget-<name>',
   imports: [/* Material modules */],
-  template: `...`,   // inline template preferred
-  styles: [`...`],   // inline styles using design system CSS variables
+  templateUrl: './<name>.component.html',
+  styleUrl: './<name>.component.scss',
 })
 export class <Name>WidgetComponent {
   private readonly store = inject(VisitorProfileStore);
 
-  // ── Translated text (computed from locale + visitor profile) ─────────────
+  private readonly profile = computed(() => ({
+    role:               this.store.role(),
+    timeAvailable:      this.store.timeAvailable(),
+    communicationStyle: this.store.communicationStyle(),
+  }));
+
+  // ── Translated text ───────────────────────────────────────────────────────
   readonly headline = computed(() => resolveWidgetText('<name>', 'headline', this.profile()));
   readonly body     = computed(() => resolveWidgetText('<name>', 'body',     this.profile()));
 
   // ── Dynamic props — Claude fills these at runtime ─────────────────────────
-  // Only non-text values: icon names, URLs, arrays of data, numbers, booleans
-  // ctaUrl = input<string>('');
-
-  // ── Private helper ────────────────────────────────────────────────────────
-  private readonly profile = computed(() => ({
-    role:                 this.store.role(),
-    timeAvailable:        this.store.timeAvailable(),
-    communicationStyle:   this.store.communicationStyle(),
-  }));
+  // Non-text only: icon names, URLs, arrays of data, numbers, booleans
+  // someUrl = input<string>('');
 }
+```
+
+### `<name>.component.html`
+```html
+<div class="widget-panel <name>">
+  <p class="<name>__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="<name>__headline">{{ headline() }}</h2>
+  <p class="<name>__body">{{ body() }}</p>
+</div>
+```
+
+### `<name>.component.scss`
+```scss
+.widget-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-panel);
+}
+
+.<name>__eyebrow { /* ... */ }
+.<name>__headline { /* ... */ }
+// SCSS nesting with & is fine
+```
+
+### `<name>.widget.ts`
+```typescript
+import { exposeComponent } from '@hashbrownai/angular';
+import { s } from '@hashbrownai/core';
+import { <Name>WidgetComponent } from './<name>.component';
+
+export { <Name>WidgetComponent };
 
 export const <Name>Widget = exposeComponent(<Name>WidgetComponent, {
   name: '<Name>Widget',
   description: '<when Claude should use this widget and what it communicates>',
-  props: {
-    // Only list input() props here (non-text, runtime-dynamic ones).
-    // Do NOT list computed text props — they are resolved internally.
-    // ctaUrl: { type: 'string', description: 'URL for the call-to-action button' },
+  input: {
+    // Only list input() props here — Claude-facing schema.
+    // someUrl: s.string('Description of what this URL is for'),
   },
 });
-```
-
-## Locale file structure
-
-Add a `widgets` section to `AppTranslation` in `src/locales/types.ts`:
-
-```typescript
-export interface AppTranslation {
-  onboarding: OnboardingTranslation;
-  guard: GuardTranslation;
-  canvas: CanvasTranslation;
-  widgets: {
-    [widgetName: string]: {
-      [role: string]: {         // developer | recruiter | client | default
-        [style: string]?: {    // formal | creative | technical (optional depth)
-          [time: string]?: {   // elevator | coffee | deep-dive (optional depth)
-            [label: string]: string;
-          } | { [label: string]: string };
-        } | { [label: string]: string };
-      };
-    };
-  };
-}
-```
-
-Then add entries in each locale file (`en.ts`, `it.ts`, `de.ts`):
-
-```typescript
-widgets: {
-  presentation: {
-    developer: {
-      technical: {
-        elevator:   { headline: 'Full-stack dev.', body: 'AI-native Angular apps.' },
-        coffee:     { headline: 'Hi, I\'m Erik.', body: 'I build full-stack Angular apps with AI integration...' },
-        'deep-dive':{ headline: 'Hi, I\'m Erik Ferrari.', body: 'I\'m a full-stack developer specialising in Angular and generative AI...' },
-      },
-      formal: {
-        elevator:   { headline: 'Software engineer.', body: 'Angular & generative AI specialist.' },
-        // ...
-      },
-      creative: {
-        elevator:   { headline: 'I build things that think.', body: 'Angular + AI, generative UI, real products.' },
-        // ...
-      },
-    },
-    recruiter: {
-      formal: {
-        elevator:   { headline: 'Erik Ferrari', body: 'Software Engineer · 5+ yrs · Angular · AI integration.' },
-        coffee:     { headline: 'Erik Ferrari — Software Engineer', body: 'Five years building production Angular apps...' },
-        'deep-dive':{ headline: 'Erik Ferrari — Full-Stack Engineer', body: 'I have five years of professional experience...' },
-      },
-      // ...
-    },
-    client: {
-      formal: {
-        elevator:   { headline: 'I build web apps.', body: 'Angular front-ends with AI features, delivered on time.' },
-        // ...
-      },
-    },
-    default: {
-      headline: 'Hi, I\'m Erik.',
-      body: 'I build Angular apps powered by AI.',
-    },
-  },
-},
 ```
 
 ## Design system rules
 
 - **Widget card shell** — always wrap in `.widget-panel`:
-  ```css
+  ```scss
   .widget-panel {
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-panel);
-    padding: 1.5rem;
+    padding: 1.75rem 2rem;
     box-shadow: var(--shadow-panel);
   }
   ```
@@ -191,100 +184,149 @@ widgets: {
 - **Angular Material** (`@angular/material/*`) for all interactive elements.
 - **BEM class naming** inside `.widget-panel`.
 - **`input()` signals** — never `@Input()` decorator.
-- One folder per widget: `src/app/widgets/<name>/`. Add sub-folders only when a second file of that type is needed.
+- **`s.*` schema** — always use `s.string()`, `s.array()`, `s.object()` from `@hashbrownai/core` in widget.ts.
+- **Never redeclare `VisitorProfile`** — use the shared domain type via the store; `resolveWidgetText` already accepts it.
 
-## Full example — PresentationWidget
+## Full example — EvolutionTimelineWidget
 
+### `evolution-timeline.component.ts`
 ```typescript
 import { Component, input, inject, computed } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import { exposeComponent } from '@hashbrownai/angular';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
 import { resolveWidgetText } from '../../../locales/widget-text';
 
-@Component({
-  selector: 'app-widget-presentation',
-  imports: [MatButtonModule, MatIconModule],
-  template: `
-    <div class="widget-panel presentation">
-      <p class="presentation__eyebrow">Erik Ferrari</p>
-      <h2 class="presentation__headline">{{ headline() }}</h2>
-      <p class="presentation__body">{{ body() }}</p>
-      @if (ctaUrl()) {
-        <a mat-stroked-button class="presentation__cta" [href]="ctaUrl()" target="_blank">
-          <mat-icon>open_in_new</mat-icon>
-          {{ ctaLabel() }}
-        </a>
-      }
-    </div>
-  `,
-  styles: [`
-    .widget-panel {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-panel);
-      padding: 1.5rem;
-      box-shadow: var(--shadow-panel);
-    }
-    .presentation__eyebrow {
-      margin: 0 0 0.375rem;
-      font-family: var(--font-mono);
-      font-size: 0.6875rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-accent);
-    }
-    .presentation__headline {
-      margin: 0 0 0.75rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--color-white);
-    }
-    .presentation__body {
-      margin: 0 0 1.25rem;
-      font-size: 0.9375rem;
-      line-height: 1.7;
-      color: var(--color-muted);
-    }
-    .presentation__cta {
-      border-color: var(--color-border-accent) !important;
-      color: var(--color-white) !important;
-      font-size: 0.8125rem;
-    }
-  `],
-})
-export class PresentationWidgetComponent {
-  private readonly store = inject(VisitorProfileStore);
+export interface TimelineEntry {
+  key: string; company: string; roleTitle: string;
+  period: string; desc: string; current: boolean;
+}
 
+@Component({
+  selector: 'app-widget-evolution-timeline',
+  imports: [],
+  templateUrl: './evolution-timeline.component.html',
+  styleUrl: './evolution-timeline.component.scss',
+})
+export class EvolutionTimelineWidgetComponent {
+  private readonly store = inject(VisitorProfileStore);
   private readonly profile = computed(() => ({
-    role:               this.store.role(),
-    timeAvailable:      this.store.timeAvailable(),
+    role: this.store.role(), timeAvailable: this.store.timeAvailable(),
     communicationStyle: this.store.communicationStyle(),
   }));
 
-  // Translated text — resolved from locale file based on visitor profile
-  readonly headline = computed(() => resolveWidgetText('presentation', 'headline', this.profile()));
-  readonly body     = computed(() => resolveWidgetText('presentation', 'body',     this.profile()));
-  readonly ctaLabel = computed(() => resolveWidgetText('presentation', 'ctaLabel', this.profile()));
+  readonly headline     = computed(() => resolveWidgetText('evolution-timeline', 'headline',      this.profile()));
+  readonly currentLabel = computed(() => resolveWidgetText('evolution-timeline', 'current-label', this.profile()));
+  focusCompany = input<string>('');
 
-  // Dynamic prop — Claude decides whether to show a CTA and which URL to use
-  ctaUrl = input<string>('');
+  readonly entries = computed<TimelineEntry[]>(() => {
+    const p = this.profile();
+    return [
+      { key: 'datacolor', company: 'Datacolor Industrial', current: true,
+        roleTitle: resolveWidgetText('evolution-timeline', 'datacolor-role', p, 'Angular Frontend Developer & UI Library Owner'),
+        period: '2022 – Present',
+        desc: resolveWidgetText('evolution-timeline', 'datacolor-desc', p) },
+      // ...
+    ];
+  });
+}
+```
+
+### `evolution-timeline.component.html`
+```html
+<div class="widget-panel evolution-timeline">
+  <p class="evolution-timeline__eyebrow">Erik Ferrari</p>
+  <h2 class="evolution-timeline__headline">{{ headline() }}</h2>
+  <div class="evolution-timeline__track">
+    @for (entry of entries(); track entry.key) {
+      <div class="evolution-timeline__entry"
+           [class.evolution-timeline__entry--current]="entry.current"
+           [class.evolution-timeline__entry--focus]="focusCompany() === entry.key">
+        <!-- ... -->
+      </div>
+    }
+  </div>
+</div>
+```
+
+### `evolution-timeline.component.scss`
+```scss
+.widget-panel { /* shell */ }
+
+.evolution-timeline__track {
+  position: relative;
+  &::before { /* vertical line */ }
 }
 
-export const PresentationWidget = exposeComponent(PresentationWidgetComponent, {
-  name: 'PresentationWidget',
-  description: 'Introduces Erik with a headline and bio tailored to the visitor. Use this as the opening widget for most conversations.',
-  props: {
-    ctaUrl: {
-      type: 'string',
-      description: 'Optional URL for a call-to-action button (e.g. LinkedIn, CV). Leave empty to hide the button.',
-    },
+.evolution-timeline__entry--current .evolution-timeline__dot {
+  background: var(--color-brand);
+}
+```
+
+### `evolution-timeline.widget.ts`
+```typescript
+import { exposeComponent } from '@hashbrownai/angular';
+import { s } from '@hashbrownai/core';
+import { EvolutionTimelineWidgetComponent } from './evolution-timeline.component';
+
+export { EvolutionTimelineWidgetComponent };
+
+export const EvolutionTimelineWidget = exposeComponent(EvolutionTimelineWidgetComponent, {
+  name: 'EvolutionTimelineWidget',
+  description: 'Displays Erik\'s career timeline...',
+  input: {
+    focusCompany: s.string('Company key to highlight: "datacolor" | "acsoftware" | "smarthy"'),
   },
 });
 ```
 
-## After generating the file
+## Translation structure — all 27 combinations
 
-1. Add the widget's translation entries to **all three** locale files (`en.ts`, `it.ts`, `de.ts`).
-2. Remind the user to register `<Name>Widget` in the `createUiKit` components array.
+```typescript
+'widget-name': {
+  developer: {
+    // Role-level fallback labels (step 3 safety net)
+    headline: 'Developer fallback headline',
+    body:     'Developer fallback body',
+    technical: {
+      elevator:    { headline: '...', body: '...', ctaLabel: '...' },
+      coffee:      { headline: '...', body: '...', ctaLabel: '...' },
+      'deep-dive': { headline: '...', body: '...', ctaLabel: '...' },
+    },
+    creative: {
+      elevator:    { headline: '...', body: '...', ctaLabel: '...' },
+      coffee:      { headline: '...', body: '...', ctaLabel: '...' },
+      'deep-dive': { headline: '...', body: '...', ctaLabel: '...' },
+    },
+    formal: {
+      elevator:    { headline: '...', body: '...', ctaLabel: '...' },
+      coffee:      { headline: '...', body: '...', ctaLabel: '...' },
+      'deep-dive': { headline: '...', body: '...', ctaLabel: '...' },
+    },
+  },
+  recruiter: {
+    headline: 'Recruiter fallback headline',
+    body:     'Recruiter fallback body',
+    formal:    { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+    technical: { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+    creative:  { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+  },
+  client: {
+    headline: 'Client fallback headline',
+    body:     'Client fallback body',
+    formal:    { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+    technical: { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+    creative:  { elevator: {...}, coffee: {...}, 'deep-dive': {...} },
+  },
+  default: {
+    headline:  'Generic headline',
+    body:      'Generic body',
+    ctaLabel:  'View',
+  },
+},
+```
+
+## After generating the files
+
+1. Add translation entries to **all three** locale files (`en.ts`, `it.ts`, `de.ts`) with all 27 combinations.
+2. Add the **component** (import from `component.ts`, not `widget.ts`) to the onboarding page debug preview.
+3. Remind the user to register `<Name>Widget` (from `widget.ts`) in the `components` array in `canvas.component.ts`.
+4. You can delete any leftover `*.types.ts` files — types belong in `component.ts`.
