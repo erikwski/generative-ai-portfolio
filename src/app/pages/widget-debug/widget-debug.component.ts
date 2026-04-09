@@ -14,6 +14,7 @@ import { SkillConstellationWidgetComponent } from '../../widgets/skill-constella
 import { PersonalInterestsWidgetComponent } from '../../widgets/personal-interests/personal-interests.component';
 import { ExperienceVaultWidgetComponent } from '../../widgets/experience-vault/experience-vault.component';
 import { CompatibilityEngineWidgetComponent } from '../../widgets/compatibility-engine/compatibility-engine.component';
+import { CoreIdentityWidgetComponent } from '../../widgets/core-identity/core-identity.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -49,6 +50,7 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     PersonalInterestsWidgetComponent,
     ExperienceVaultWidgetComponent,
     CompatibilityEngineWidgetComponent,
+    CoreIdentityWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

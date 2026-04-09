@@ -88,5 +88,11 @@
         />
       </app-widget-shell>
     }
+
+    @if (isVisible('core-identity')) {
+      <app-widget-shell title="CoreIdentityWidget" (removed)="dismiss('core-identity')">
+        <app-widget-core-identity />
+      </app-widget-shell>
+    }
   </main>
 </div>

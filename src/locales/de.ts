@@ -1168,5 +1168,96 @@ export const de: AppTranslation = {
         matchLabel: 'Warum es passt',
       },
     },
+    'core-identity': {
+      developer: {
+        formal: {
+          elevator: { headline: 'Der Ingenieur hinter dem Code.', eyebrow: 'Persönliche Daten' },
+          coffee: { headline: 'Lernen Sie Erik Ferrari kennen.', eyebrow: 'Wer ist Erik' },
+          'deep-dive': {
+            headline: 'Erik Ferrari — Ingenieurprofil.',
+            eyebrow: 'Identitätsübersicht',
+          },
+        },
+        creative: {
+          elevator: { headline: 'Das bin ich auf einer Karte.', eyebrow: 'Der Mensch' },
+          coffee: { headline: 'Das bin ich.', eyebrow: 'Hinter der Tastatur' },
+          'deep-dive': {
+            headline: 'Vollständiges Bild, kein Filter.',
+            eyebrow: 'Die Person & der Dev',
+          },
+        },
+        technical: {
+          elevator: { headline: 'Erik. Angular-Dev. Italien.', eyebrow: 'Profil' },
+          coffee: { headline: 'Der Dev hinter dem Stack.', eyebrow: 'Dev-Profil' },
+          'deep-dive': {
+            headline: 'Erik Ferrari — technisches Profil.',
+            eyebrow: 'Identitätskarte',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: { headline: 'Kandidat: Erik Ferrari.', eyebrow: 'Kandidatenübersicht' },
+          coffee: { headline: 'Wen Sie sich ansehen.', eyebrow: 'Kandidatenprofil' },
+          'deep-dive': {
+            headline: 'Vollständige Kandidatenidentität.',
+            eyebrow: 'Kandidatendaten',
+          },
+        },
+        creative: {
+          elevator: { headline: 'Das ist Erik.', eyebrow: 'Die Person, die Sie einstellen würden' },
+          coffee: { headline: 'Das Gesicht hinter dem Lebenslauf.', eyebrow: 'Jenseits des CV' },
+          'deep-dive': {
+            headline: 'Mehr als ein LinkedIn-Profil.',
+            eyebrow: 'Vollständige Identität',
+          },
+        },
+        technical: {
+          elevator: { headline: 'Erik Ferrari, Angular-Dev.', eyebrow: 'Kandidateninfo' },
+          coffee: { headline: 'Kandidaten-Grunddaten.', eyebrow: 'Schlüsselfakten' },
+          'deep-dive': { headline: 'Kandidaten-Identitätskarte.', eyebrow: 'Vollständiges Profil' },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { headline: 'Ihr Entwickler: Erik Ferrari.', eyebrow: 'Ansprechpartner' },
+          coffee: { headline: 'Mit wem Sie arbeiten würden.', eyebrow: 'Berufsprofil' },
+          'deep-dive': {
+            headline: 'Erik Ferrari — berufliche Identität.',
+            eyebrow: 'Kontakt & Rolle',
+          },
+        },
+        creative: {
+          elevator: { headline: 'Hallo, ich bin Erik.', eyebrow: 'Der Builder' },
+          coffee: {
+            headline: 'Die Person, die Ihr Produkt bauen würde.',
+            eyebrow: 'Wer ich bin',
+          },
+          'deep-dive': { headline: 'Erik Ferrari — das vollständige Bild.', eyebrow: 'Über mich' },
+        },
+        technical: {
+          elevator: { headline: 'Erik Ferrari, Frontend-Dev.', eyebrow: 'Kontaktinfo' },
+          coffee: { headline: 'Entwicklerübersicht.', eyebrow: 'Dev-Profil' },
+          'deep-dive': {
+            headline: 'Technische Identität: Erik Ferrari.',
+            eyebrow: 'Entwicklerkarte',
+          },
+        },
+      },
+      default: {
+        headline: 'Erik Ferrari',
+        eyebrow: 'Kernidentität',
+        'label-name': 'Vollständiger Name',
+        'label-age': 'Alter',
+        'label-height': 'Größe / Gewicht',
+        'label-location': 'Standort',
+        'label-role': 'Aktuelle Rolle',
+        'value-name': 'Erik Ferrari',
+        'value-age': '28',
+        'value-height': '180 cm / 75 kg',
+        'value-location': 'Reggio Emilia, Italien',
+        'value-role': 'Angular Frontend Developer & UI Library Owner',
+      },
+    },
   },
 };

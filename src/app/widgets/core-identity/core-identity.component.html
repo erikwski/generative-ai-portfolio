@@ -1,0 +1,16 @@
+<div class="widget-panel core-identity">
+  <p class="core-identity__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="core-identity__headline">{{ headline() }}</h2>
+
+  <dl class="core-identity__list">
+    @for (field of fields(); track field.label) {
+      <div class="core-identity__row">
+        <dt class="core-identity__label">
+          <mat-icon class="core-identity__icon">{{ field.icon }}</mat-icon>
+          <span>{{ field.label }}</span>
+        </dt>
+        <dd class="core-identity__value">{{ field.value }}</dd>
+      </div>
+    }
+  </dl>
+</div>
