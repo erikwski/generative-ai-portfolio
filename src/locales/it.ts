@@ -1590,5 +1590,103 @@ export const it: AppTranslation = {
           'Il lavoro migliore di Erik avviene in team con standard condivisi, feedback onesto e una cultura di miglioramento continuo.',
       },
     },
+    'lifestyle-activities': {
+      developer: {
+        formal: {
+          elevator: { eyebrow: 'Fuori dal Terminale', headline: 'Attivo per default.' },
+          coffee: { eyebrow: 'Stile di vita', headline: 'Il dashboard attività di Erik.' },
+          'deep-dive': {
+            eyebrow: 'Attività & Stile di vita',
+            headline: 'Oltre la scrivania: Erik in numeri.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Dopo il lavoro', headline: 'Erik nel suo habitat.' },
+          coffee: { eyebrow: "L'umano completo", headline: 'Quando non sta shippando.' },
+          'deep-dive': {
+            eyebrow: 'Vita in movimento',
+            headline: 'Ecco cosa tiene traccia Erik fuori dal lavoro.',
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Metriche', headline: 'Log attività.' },
+          coffee: { eyebrow: 'Dati attività', headline: 'I KPI personali di Erik.' },
+          'deep-dive': { eyebrow: 'Stats', headline: 'Attività tracciate & benchmark personali.' },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Stile di vita',
+            headline: 'Attivo e determinato anche fuori lavoro.',
+          },
+          coffee: { eyebrow: 'Profilo personale', headline: 'Il dashboard attività di Erik.' },
+          'deep-dive': {
+            eyebrow: 'Attività personali',
+            headline: 'Resistenza, outdoor e strategia.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Il quadro completo', headline: 'Porta la stessa energia ovunque.' },
+          coffee: { eyebrow: 'Oltre il CV', headline: 'Cosa fa Erik quando non programma.' },
+          'deep-dive': {
+            eyebrow: 'Vita fuori lavoro',
+            headline: 'Le metriche di attività di Erik — il dashboard umano.',
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Attività', headline: 'Tracciato. Misurato. Migliorato.' },
+          coffee: { eyebrow: 'Stats personali', headline: 'Profilo attività.' },
+          'deep-dive': {
+            eyebrow: 'Metriche stile di vita',
+            headline: 'Breakdown attività: resistenza, arrampicata, strategia.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { eyebrow: 'Stile di vita', headline: 'Attivo, disciplinato, outdoor.' },
+          coffee: { eyebrow: 'La persona', headline: 'Il profilo attività personale di Erik.' },
+          'deep-dive': {
+            eyebrow: 'Attività personali',
+            headline: 'Cosa muove Erik oltre lo schermo.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Fuori dal lavoro', headline: "L'atleta di resistenza." },
+          coffee: {
+            eyebrow: 'Vita reale',
+            headline: 'Mezze maratone, montagne, giochi da tavolo.',
+          },
+          'deep-dive': {
+            eyebrow: 'Oltre il lavoro',
+            headline: 'Il quadro attività completo di Erik — dalle vette ai giochi da tavolo.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Dati attività',
+            headline: 'Metriche di performance: edizione vita.',
+          },
+          coffee: {
+            eyebrow: 'Log attività',
+            headline: 'Le attività tracciate di Erik fuori dal codice.',
+          },
+          'deep-dive': {
+            eyebrow: 'Dati stile di vita',
+            headline: 'Profilo attività completo: resistenza, outdoor, strategia.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Stile di vita & Attività',
+        headline: 'Attivo per default.',
+        'activity-running': 'Runner di mezza maratona',
+        'activity-trekking': 'Trekking in montagna',
+        'activity-climbing': 'Bouldering / Arrampicata',
+        'activity-boardgames': 'Giochi da tavolo',
+        'activity-localguide': 'Google Local Guide',
+      },
+    },
   },
 };

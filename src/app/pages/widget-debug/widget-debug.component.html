@@ -109,5 +109,14 @@
         <app-widget-team-culture />
       </app-widget-shell>
     }
+
+    @if (isVisible('lifestyle-activities')) {
+      <app-widget-shell
+        title="LifestyleActivitiesWidget"
+        (removed)="dismiss('lifestyle-activities')"
+      >
+        <app-widget-lifestyle-activities />
+      </app-widget-shell>
+    }
   </main>
 </div>

@@ -19,6 +19,7 @@ import { CompatibilityEngineWidget } from '../../widgets/compatibility-engine/co
 import { CoreIdentityWidget } from '../../widgets/core-identity/core-identity.widget';
 import { ProfessionalObjectiveWidget } from '../../widgets/professional-objective/professional-objective.widget';
 import { TeamCultureWidget } from '../../widgets/team-culture/team-culture.widget';
+import { LifestyleActivitiesWidget } from '../../widgets/lifestyle-activities/lifestyle-activities.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -74,6 +75,7 @@ Instructions:
       CoreIdentityWidget,
       ProfessionalObjectiveWidget,
       TeamCultureWidget,
+      LifestyleActivitiesWidget,
     ],
     debugName: 'portfolio-canvas',
   });

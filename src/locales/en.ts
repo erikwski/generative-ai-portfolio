@@ -1588,5 +1588,94 @@ export const en: AppTranslation = {
           "Erik's best work happens in teams with shared standards, honest feedback, and a culture of continuous improvement.",
       },
     },
+    'lifestyle-activities': {
+      developer: {
+        formal: {
+          elevator: { eyebrow: 'Outside the Terminal', headline: 'Active by default.' },
+          coffee: { eyebrow: 'Lifestyle', headline: "Erik's activity dashboard." },
+          'deep-dive': {
+            eyebrow: 'Activities & Lifestyle',
+            headline: 'Beyond the desk: Erik in numbers.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'After hours', headline: 'Erik in the wild.' },
+          coffee: { eyebrow: 'The full human', headline: "When he's not shipping." },
+          'deep-dive': {
+            eyebrow: 'Life in motion',
+            headline: "Here's what Erik tracks outside of work.",
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Metrics', headline: 'Activity log.' },
+          coffee: { eyebrow: 'Activity data', headline: "Erik's personal KPIs." },
+          'deep-dive': { eyebrow: 'Stats', headline: 'Tracked activities & personal benchmarks.' },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: { eyebrow: 'Lifestyle', headline: 'Active and driven outside work too.' },
+          coffee: { eyebrow: 'Personal profile', headline: "Erik's activity dashboard." },
+          'deep-dive': {
+            eyebrow: 'Personal activities',
+            headline: 'Endurance, outdoors, and strategy.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'The full picture',
+            headline: 'He brings the same energy everywhere.',
+          },
+          coffee: { eyebrow: 'Beyond the CV', headline: "What Erik does when he's not coding." },
+          'deep-dive': {
+            eyebrow: 'Life outside work',
+            headline: "Erik's activity metrics — the human dashboard.",
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Activity', headline: 'Tracked. Measured. Improved.' },
+          coffee: { eyebrow: 'Personal stats', headline: 'Activity profile.' },
+          'deep-dive': {
+            eyebrow: 'Lifestyle metrics',
+            headline: 'Activity breakdown: endurance, climbing, strategy.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { eyebrow: 'Lifestyle', headline: 'Active, disciplined, outdoors.' },
+          coffee: { eyebrow: 'The person', headline: "Erik's personal activity profile." },
+          'deep-dive': {
+            eyebrow: 'Personal activities',
+            headline: 'What drives Erik beyond the screen.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Outside work', headline: 'The endurance athlete.' },
+          coffee: { eyebrow: 'Real life', headline: 'Half-marathons, mountains, board games.' },
+          'deep-dive': {
+            eyebrow: 'Beyond work',
+            headline: "Erik's full activity picture — from peaks to board games.",
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Activity data', headline: 'Performance metrics: life edition.' },
+          coffee: { eyebrow: 'Activity log', headline: "Erik's tracked pursuits outside code." },
+          'deep-dive': {
+            eyebrow: 'Lifestyle data',
+            headline: 'Full activity profile: endurance, outdoor, strategy.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Lifestyle & Activities',
+        headline: 'Active by default.',
+        'activity-running': 'Half-marathon runner',
+        'activity-trekking': 'Mountain trekking',
+        'activity-climbing': 'Bouldering / Climbing',
+        'activity-boardgames': 'Board games',
+        'activity-localguide': 'Google Local Guide',
+      },
+    },
   },
 };

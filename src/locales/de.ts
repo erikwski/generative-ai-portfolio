@@ -1603,5 +1603,109 @@ export const de: AppTranslation = {
           'Eriks bestes Werk entsteht in Teams mit gemeinsamen Standards, ehrlichem Feedback und einer Kultur der kontinuierlichen Verbesserung.',
       },
     },
+    'lifestyle-activities': {
+      developer: {
+        formal: {
+          elevator: { eyebrow: 'Außerhalb des Terminals', headline: 'Standardmäßig aktiv.' },
+          coffee: { eyebrow: 'Lebensstil', headline: 'Eriks Aktivitäts-Dashboard.' },
+          'deep-dive': {
+            eyebrow: 'Aktivitäten & Lebensstil',
+            headline: 'Jenseits des Schreibtisches: Erik in Zahlen.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Nach Feierabend', headline: 'Erik in der Wildnis.' },
+          coffee: { eyebrow: 'Der ganze Mensch', headline: 'Wenn er nicht shippt.' },
+          'deep-dive': {
+            eyebrow: 'Leben in Bewegung',
+            headline: 'Was Erik außerhalb der Arbeit trackt.',
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Metriken', headline: 'Aktivitätslog.' },
+          coffee: { eyebrow: 'Aktivitätsdaten', headline: 'Eriks persönliche KPIs.' },
+          'deep-dive': {
+            eyebrow: 'Stats',
+            headline: 'Getrackte Aktivitäten & persönliche Benchmarks.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Lebensstil',
+            headline: 'Auch außerhalb der Arbeit aktiv und zielstrebig.',
+          },
+          coffee: { eyebrow: 'Persönliches Profil', headline: 'Eriks Aktivitäts-Dashboard.' },
+          'deep-dive': {
+            eyebrow: 'Persönliche Aktivitäten',
+            headline: 'Ausdauer, Outdoor und Strategie.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Das vollständige Bild',
+            headline: 'Bringt überall dieselbe Energie.',
+          },
+          coffee: {
+            eyebrow: 'Jenseits des Lebenslaufs',
+            headline: 'Was Erik tut, wenn er nicht kodiert.',
+          },
+          'deep-dive': {
+            eyebrow: 'Leben außerhalb der Arbeit',
+            headline: 'Eriks Aktivitätsmetriken — das menschliche Dashboard.',
+          },
+        },
+        technical: {
+          elevator: { eyebrow: 'Aktivität', headline: 'Getrackt. Gemessen. Verbessert.' },
+          coffee: { eyebrow: 'Persönliche Stats', headline: 'Aktivitätsprofil.' },
+          'deep-dive': {
+            eyebrow: 'Lifestyle-Metriken',
+            headline: 'Aktivitäts-Breakdown: Ausdauer, Klettern, Strategie.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: { eyebrow: 'Lebensstil', headline: 'Aktiv, diszipliniert, im Freien.' },
+          coffee: { eyebrow: 'Die Person', headline: 'Eriks persönliches Aktivitätsprofil.' },
+          'deep-dive': {
+            eyebrow: 'Persönliche Aktivitäten',
+            headline: 'Was Erik jenseits des Bildschirms antreibt.',
+          },
+        },
+        creative: {
+          elevator: { eyebrow: 'Außerhalb der Arbeit', headline: 'Der Ausdauersportler.' },
+          coffee: { eyebrow: 'Echtes Leben', headline: 'Halbmarathons, Berge, Brettspiele.' },
+          'deep-dive': {
+            eyebrow: 'Jenseits der Arbeit',
+            headline: 'Eriks vollständiges Aktivitätsbild — von Gipfeln bis Brettspielen.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Aktivitätsdaten',
+            headline: 'Performance-Metriken: Life Edition.',
+          },
+          coffee: {
+            eyebrow: 'Aktivitätslog',
+            headline: 'Eriks getrackte Aktivitäten außerhalb des Codes.',
+          },
+          'deep-dive': {
+            eyebrow: 'Lifestyle-Daten',
+            headline: 'Vollständiges Aktivitätsprofil: Ausdauer, Outdoor, Strategie.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Lebensstil & Aktivitäten',
+        headline: 'Standardmäßig aktiv.',
+        'activity-running': 'Halbmarathon-Läufer',
+        'activity-trekking': 'Bergwandern',
+        'activity-climbing': 'Bouldern / Klettern',
+        'activity-boardgames': 'Brettspiele',
+        'activity-localguide': 'Google Local Guide',
+      },
+    },
   },
 };
