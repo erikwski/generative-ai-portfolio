@@ -1259,5 +1259,174 @@ export const de: AppTranslation = {
         'value-role': 'Angular Frontend Developer & UI Library Owner',
       },
     },
+    'professional-objective': {
+      developer: {
+        formal: {
+          elevator: {
+            eyebrow: 'Nächstes Ziel',
+            headline: 'Tech Lead.',
+            body: 'Von praktischer Entwicklung zur Führung von Teams. Architektur, Mentoring, KI-Integration.',
+          },
+          coffee: {
+            eyebrow: 'Karriereziel',
+            headline: 'Tech Lead / Engineering Leader.',
+            body: 'Mein Ziel ist eine Tech-Lead-Rolle, in der ich die Architekturrichtung festlegen, Muster etablieren und ein Team zu hochwertigen Ergebnissen führen kann. KI-Integration ist zentral in meinem Denken über modernes Engineering.',
+          },
+          'deep-dive': {
+            eyebrow: 'Berufliches Ziel',
+            headline: 'Engineering Leader werden.',
+            body: 'Fünf Jahre praktisches Engineering haben mir eine klare Sicht auf das gegeben, was Software-Teams zum Erfolg führt. Mein nächster Schritt ist eine Tech-Lead- oder Engineering-Lead-Rolle — nicht um aufzuhören zu programmieren, sondern um die Wirkung der Entwickler um mich herum zu multiplizieren.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Wohin ich gehe',
+            headline: 'Engineering-Teams führen.',
+            body: 'Vom Bauen zum Führen. Ich möchte die Richtung vorgeben — Architektur, KI, Kultur.',
+          },
+          coffee: {
+            eyebrow: 'Das Ziel',
+            headline: 'Tech Lead. Builder. KI-Evangelist.',
+            body: 'Ich will ein Team führen, das außergewöhnliche Software liefert. Das bedeutet, zu definieren, wie wir bauen, nicht nur was. Und ja, KI-natives Entwickeln ist in dieser Vision nicht verhandelbar.',
+          },
+          'deep-dive': {
+            eyebrow: 'Ziel',
+            headline: 'Vom Ingenieur zum Engineering Leader.',
+            body: 'Ich habe gebaut. Jetzt will ich anderen helfen, besser zu bauen. Der Sprung zum Tech Lead bedeutet Output zu multiplizieren — Standards, Architektur, KI in tägliche Engineering-Workflows einbetten.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Ziel',
+            headline: 'Tech Lead.',
+            body: 'Architektur, Standards, KI-Workflows. Team-Leadership.',
+          },
+          coffee: {
+            eyebrow: 'Karriereziel',
+            headline: 'Engineering Lead.',
+            body: 'Scope: Architektur-Ownership, Team-Coaching, KI-Integrations-Roadmap. Stack-agnostisch, Angular-first.',
+          },
+          'deep-dive': {
+            eyebrow: 'Engineering-Ziel',
+            headline: 'Tech Lead / Principal Engineer.',
+            body: 'Ich möchte Architekturentscheidungen besitzen, Coding-Standards definieren, technisches Onboarding leiten und KI auf jeder Ebene des Entwicklungs-Workflows integrieren.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Karriereziel',
+            headline: 'Tech Lead.',
+            body: 'Erik zielt auf eine Tech-Lead- oder Engineering-Leader-Position ab.',
+          },
+          coffee: {
+            eyebrow: 'Zielrolle',
+            headline: 'Tech Lead / Engineering Leader.',
+            body: 'Erik ist bereit für einen Führungsschritt. Er möchte Architektur besitzen, Entwicklungsteams leiten und eine KI-native Engineering-Kultur aufbauen.',
+          },
+          'deep-dive': {
+            eyebrow: 'Berufliches Ziel',
+            headline: 'Engineering-Leadership ist der nächste Schritt.',
+            body: 'Erik hat die technische Tiefe und kommunikative Reife, um Engineering-Teams zu führen. Er zielt auf Rollen ab, in denen er Architektur definieren, Entwickler mentoren und KI-Adoption vorantreiben kann.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Wohin er geht',
+            headline: 'Engineering-Teams führen.',
+            body: 'Erik ist bereit zu führen — nicht nur zu bauen.',
+          },
+          coffee: {
+            eyebrow: 'Das nächste Kapitel',
+            headline: 'Tech Lead. Architekt. Team-Multiplikator.',
+            body: 'Erik hat fünf Jahre gebaut. Jetzt will er die Führung übernehmen — Richtung vorgeben, Standards anheben, KI in das Teamdenken einbringen.',
+          },
+          'deep-dive': {
+            eyebrow: 'Ziel',
+            headline: 'Vom Senior Engineer zum Tech Leader.',
+            body: 'Erik möchte von individuellem Beitrag zur Team-Leadership wechseln — Architektur-Ownership, Standards, KI in Engineering-Workflows.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Zielrolle',
+            headline: 'Tech Lead.',
+            body: 'Architektur + Leadership + KI. Jetzt bereit.',
+          },
+          coffee: {
+            eyebrow: 'Karriereziel',
+            headline: 'Engineering Lead / Tech Lead.',
+            body: 'Erik zielt auf Architektur-Ownership, Team-Coaching und KI-natives Entwickeln ab. Er hat die Seniorität und den technischen Track Record.',
+          },
+          'deep-dive': {
+            eyebrow: 'Stellenziel',
+            headline: 'Principal Engineer / Tech Lead.',
+            body: 'Erik will vollständige Ownership über Architekturentscheidungen, Coding-Standards und KI-Integrations-Roadmaps. Er bringt fünf Jahre Angular-Produktionserfahrung mit.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            eyebrow: 'Berufliche Ausrichtung',
+            headline: 'Technische Führung.',
+            body: 'Erik zielt darauf ab, die technische Richtung bei komplexen Projekten zu führen.',
+          },
+          coffee: {
+            eyebrow: 'Was Erik mitbringt',
+            headline: 'Technischer Projektleiter.',
+            body: 'Über die Ausführung hinaus kann Erik technische Entscheidungen besitzen: Architektur, Stack-Auswahl, KI-Integrationsstrategie.',
+          },
+          'deep-dive': {
+            eyebrow: 'Eriks Ziel',
+            headline: 'Senior technische Führung für Ihr Projekt.',
+            body: 'Erik baut nicht nur — er kann die technische Richtung Ihres Projekts von Anfang bis Ende leiten: Architekturentscheidungen, Technologieauswahl, KI-Integrationsplanung.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Das Ziel',
+            headline: 'Technischer Lead für ambitionierte Projekte.',
+            body: 'Erik kodiert nicht nur. Er führt die technische Richtung.',
+          },
+          coffee: {
+            eyebrow: 'Was er sucht',
+            headline: 'Projekte führen, nicht nur bauen.',
+            body: 'Erik möchte der technische Partner für ambitionierte Projekte sein — nicht nur Code schreiben, sondern definieren, wie alles gebaut wird und sicherstellen, dass KI nützliche Arbeit leistet.',
+          },
+          'deep-dive': {
+            eyebrow: 'Sein Ziel',
+            headline: 'Das technische Gehirn ambitionierter digitaler Produkte sein.',
+            body: 'Eriks Ziel ist es, an Projekten zu arbeiten, bei denen er die gesamte technische Vision gestalten kann — nicht nur Features liefern. Architektur definieren, Stack wählen, KI sinnvoll integrieren.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Ziel',
+            headline: 'Technischer Lead.',
+            body: 'Architektur, KI-Integration, Delivery-Leadership.',
+          },
+          coffee: {
+            eyebrow: 'Projektscope',
+            headline: 'Tech Lead für Full-Stack-Projekte.',
+            body: 'Erik kann Architektur, Delivery und KI-Integration für Ihr Projekt leiten. Optimal für komplexe Angular + KI-Builds.',
+          },
+          'deep-dive': {
+            eyebrow: 'Technisches Ziel',
+            headline: 'Vollständige technische Ownership bei komplexen Projekten.',
+            body: 'Erik zielt auf Projekte ab, bei denen er den vollständigen technischen Scope besitzt: Architektur, Stack, KI-Integration, Qualitätsstandards.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Berufliches Ziel',
+        headline: 'Tech Lead / Engineering Leader',
+        body: 'Eriks Ziel ist es, in eine Führungsrolle zu wechseln, in der er Architektur definieren, Entwicklungsteams leiten und KI in Engineering-Workflows integrieren kann.',
+        'pillar-architecture': 'Architekturregeln & Coding-Standards',
+        'pillar-leadership': 'Team-Führung & Mentoring',
+        'pillar-ai': 'KI-native Engineering-Workflows',
+      },
+    },
   },
 };

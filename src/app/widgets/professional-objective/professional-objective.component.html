@@ -1,0 +1,16 @@
+<div class="widget-panel professional-objective">
+  <p class="professional-objective__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="professional-objective__headline">{{ headline() }}</h2>
+  <p class="professional-objective__body">{{ body() }}</p>
+
+  <div class="professional-objective__pillars">
+    @for (pillar of pillars(); track pillar.label) {
+      <div class="professional-objective__pillar">
+        <span class="professional-objective__pillar-icon">
+          <mat-icon>{{ pillar.icon }}</mat-icon>
+        </span>
+        <span class="professional-objective__pillar-label">{{ pillar.label }}</span>
+      </div>
+    }
+  </div>
+</div>

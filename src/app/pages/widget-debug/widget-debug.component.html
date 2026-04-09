@@ -94,5 +94,14 @@
         <app-widget-core-identity />
       </app-widget-shell>
     }
+
+    @if (isVisible('professional-objective')) {
+      <app-widget-shell
+        title="ProfessionalObjectiveWidget"
+        (removed)="dismiss('professional-objective')"
+      >
+        <app-widget-professional-objective />
+      </app-widget-shell>
+    }
   </main>
 </div>
