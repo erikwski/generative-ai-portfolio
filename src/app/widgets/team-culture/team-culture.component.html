@@ -1,0 +1,19 @@
+<div class="widget-panel team-culture">
+  <p class="team-culture__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="team-culture__headline">{{ headline() }}</h2>
+  <p class="team-culture__body">{{ body() }}</p>
+
+  <div class="team-culture__cards">
+    @for (card of cards(); track card.title) {
+      <div class="team-culture__card">
+        <span class="team-culture__card-icon">
+          <mat-icon>{{ card.icon }}</mat-icon>
+        </span>
+        <div class="team-culture__card-text">
+          <p class="team-culture__card-title">{{ card.title }}</p>
+          <p class="team-culture__card-desc">{{ card.desc }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

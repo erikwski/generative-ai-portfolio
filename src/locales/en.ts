@@ -1413,5 +1413,180 @@ export const en: AppTranslation = {
         'pillar-ai': 'AI-native engineering workflows',
       },
     },
+    'team-culture': {
+      developer: {
+        formal: {
+          elevator: {
+            eyebrow: 'Team Fit',
+            headline: 'Competitive. Collaborative.',
+            body: 'Erik thrives in high-performance dev environments — hackathons, code reviews, and team rituals that push quality.',
+          },
+          coffee: {
+            eyebrow: 'Culture Fit',
+            headline: 'Dev challenges, team sports, high standards.',
+            body: 'Erik participates in coding competitions, coordinates team sports, and brings the same competitive mindset to engineering. He works best in teams that care about both craft and culture.',
+          },
+          'deep-dive': {
+            eyebrow: 'Team & Culture',
+            headline: 'High-performance culture is non-negotiable.',
+            body: 'Erik is drawn to teams that take engineering seriously and celebrate excellence — dev challenges, architecture debates, code quality rituals. Outside of work he coordinates team sports, which has given him a clear understanding of how individual performance and team cohesion reinforce each other.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Team energy',
+            headline: 'Built for team play.',
+            body: 'Hackathons, code battles, five-a-side. Same competitive instinct, different arena.',
+          },
+          coffee: {
+            eyebrow: 'How Erik vibes',
+            headline: 'Competitive coder. Team player. Sports coordinator.',
+            body: "Erik shows up in dev challenges, code competitions, and team sports with the same energy. He's the person who lifts the room's level.",
+          },
+          'deep-dive': {
+            eyebrow: 'The culture fit',
+            headline: 'Erik builds teams like he builds software.',
+            body: 'Structured, high-performance, and fun. Erik is the kind of person who organizes the team hackathon, wins the code challenge, and books the five-a-side pitch on Friday. He believes great culture is a force multiplier — and he builds it deliberately.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Culture',
+            headline: 'Competitive. Collaborative.',
+            body: 'Dev challenges, code reviews, team sports. Same drive.',
+          },
+          coffee: {
+            eyebrow: 'Team culture',
+            headline: 'Dev challenges + team sports.',
+            body: 'Erik participates in coding competitions and coordinates team sports. He brings structured competitiveness to engineering teams.',
+          },
+          'deep-dive': {
+            eyebrow: 'Culture & team dynamics',
+            headline: 'Engineering excellence through team culture.',
+            body: 'Erik has participated in multiple dev challenges and coding competitions, and coordinates team sports outside work. He applies the same structured, competitive mindset to both — clear objectives, honest feedback, continuous improvement.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Cultural Fit',
+            headline: 'Competitive and collaborative.',
+            body: 'Erik thrives in high-performance engineering cultures.',
+          },
+          coffee: {
+            eyebrow: 'Team culture',
+            headline: 'Dev challenges. Team sports. High standards.',
+            body: "Erik participates in coding competitions and organizes team sports — both reflect his value for structured collaboration. He's a strong cultural addition to high-performance engineering teams.",
+          },
+          'deep-dive': {
+            eyebrow: 'Cultural Assessment',
+            headline: 'Erik raises the bar for team culture.',
+            body: "Erik's combination of technical competitiveness (dev challenges, code competitions) and interpersonal investment (team sports coordinator) signals a rare profile: someone who improves both the quality of the code and the cohesion of the team.",
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Culture vibes',
+            headline: 'He lifts the room.',
+            body: 'Code competitions, team sports — same energy, every time.',
+          },
+          coffee: {
+            eyebrow: 'The culture card',
+            headline: 'Your team would love working with Erik.',
+            body: 'He wins code competitions and books the football pitch. Erik makes teams better in ways that are hard to put on a CV.',
+          },
+          'deep-dive': {
+            eyebrow: 'Culture fit',
+            headline: 'The person who makes your team culture.',
+            body: 'Erik is both technically elite and genuinely invested in team dynamics. He participates in dev challenges and coordinates sports for exactly the same reason: he believes teams that compete together, build better together.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Culture fit',
+            headline: 'Dev challenges + team sports.',
+            body: 'Competitive in code. Collaborative in team.',
+          },
+          coffee: {
+            eyebrow: 'Team fit',
+            headline: 'High-performance team profile.',
+            body: 'Dev challenges, coding competitions, team sports. Erik brings structured competitiveness and genuine collaboration to engineering teams.',
+          },
+          'deep-dive': {
+            eyebrow: 'Technical & cultural fit',
+            headline: 'Elite contributor with strong team dynamics.',
+            body: 'Erik has a track record in coding competitions and dev challenges, and is a team sports coordinator. Both reflect the same competency: structured goal-orientation combined with team cohesion.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            eyebrow: 'Team Dynamics',
+            headline: 'Collaborative and driven.',
+            body: 'Erik works well in teams and brings structure to collaborative environments.',
+          },
+          coffee: {
+            eyebrow: 'How Erik collaborates',
+            headline: 'Dev challenges. Team sports. Structured collaboration.',
+            body: "Erik brings the same structured mindset to project collaboration that he brings to dev challenges and team sports. He's a reliable, high-performance team member.",
+          },
+          'deep-dive': {
+            eyebrow: 'Collaboration profile',
+            headline: 'A partner who raises the standard.',
+            body: "Erik's track record in dev challenges and team sports is not just personal — it signals how he shows up in collaborative work contexts. He brings structured ambition, clear communication, and a genuine investment in team outcomes.",
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Team energy',
+            headline: 'The teammate who makes things happen.',
+            body: 'Dev battles, team sports, building great products. Same instinct.',
+          },
+          coffee: {
+            eyebrow: 'Working with Erik',
+            headline: 'He makes collaboration fun and productive.',
+            body: 'Erik brings the same energy to building your product that he brings to coding competitions and five-a-side football — committed, energetic, and always pushing for the win.',
+          },
+          'deep-dive': {
+            eyebrow: 'The collaboration story',
+            headline: 'He builds the team around the project.',
+            body: "Erik is a natural team builder. His track record in dev challenges and team sports reflects a core belief: the best results come from teams that are both technically excellent and genuinely enjoy working together. That's what he brings to every project.",
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Collaboration',
+            headline: 'Competitive. Collaborative.',
+            body: 'Dev challenges + team sports = reliable team dynamics.',
+          },
+          coffee: {
+            eyebrow: 'Team profile',
+            headline: 'High-performance collaborator.',
+            body: 'Erik participates in coding competitions and coordinates team sports. Structured, competitive, and collaborative — same profile in project work.',
+          },
+          'deep-dive': {
+            eyebrow: 'Team dynamics',
+            headline: 'Structured team contributor with competitive edge.',
+            body: 'Dev challenges, coding competitions, team sports coordination — Erik brings deliberate structure and competitive drive to collaborative contexts. Ideal for project teams that need both technical leadership and cohesion.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Team & Culture',
+        headline: 'Built for high-performance teams.',
+        body: 'Erik thrives in environments that combine technical excellence with strong team culture — dev challenges, competitions, and collaborative rituals.',
+        'card-challenges-title': 'Dev challenges & coding competitions',
+        'card-challenges-desc':
+          'Active participant in hackathons and competitive coding events. Brings that same drive to team engineering.',
+        'card-sports-title': 'Team sports coordinator',
+        'card-sports-desc':
+          'Organises and coordinates team sports — football, team activities. Believes competition builds cohesion.',
+        'card-collaboration-title': 'High-performance collaboration',
+        'card-collaboration-desc':
+          "Erik's best work happens in teams with shared standards, honest feedback, and a culture of continuous improvement.",
+      },
+    },
   },
 };

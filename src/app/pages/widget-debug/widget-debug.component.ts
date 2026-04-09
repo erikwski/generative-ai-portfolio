@@ -16,6 +16,7 @@ import { ExperienceVaultWidgetComponent } from '../../widgets/experience-vault/e
 import { CompatibilityEngineWidgetComponent } from '../../widgets/compatibility-engine/compatibility-engine.component';
 import { CoreIdentityWidgetComponent } from '../../widgets/core-identity/core-identity.component';
 import { ProfessionalObjectiveWidgetComponent } from '../../widgets/professional-objective/professional-objective.component';
+import { TeamCultureWidgetComponent } from '../../widgets/team-culture/team-culture.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -53,6 +54,7 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     CompatibilityEngineWidgetComponent,
     CoreIdentityWidgetComponent,
     ProfessionalObjectiveWidgetComponent,
+    TeamCultureWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

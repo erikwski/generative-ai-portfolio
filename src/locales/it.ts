@@ -1415,5 +1415,180 @@ export const it: AppTranslation = {
         'pillar-ai': 'Flussi di lavoro ingegneristici AI-native',
       },
     },
+    'team-culture': {
+      developer: {
+        formal: {
+          elevator: {
+            eyebrow: 'Fit di Team',
+            headline: 'Competitivo. Collaborativo.',
+            body: 'Erik prospera in ambienti dev ad alta performance — hackathon, code review e rituali di team che spingono la qualità.',
+          },
+          coffee: {
+            eyebrow: 'Cultura',
+            headline: 'Dev challenge, sport di squadra, alti standard.',
+            body: "Erik partecipa a gare di programmazione, coordina sport di squadra e porta la stessa mentalità competitiva all'ingegneria. Lavora meglio in team che tengono sia alla qualità del codice che alla cultura.",
+          },
+          'deep-dive': {
+            eyebrow: 'Team & Cultura',
+            headline: 'La cultura ad alta performance non è negoziabile.',
+            body: "Erik è attratto da team che prendono l'ingegneria sul serio e celebrano l'eccellenza — dev challenge, dibattiti architetturali, rituali di qualità del codice. Fuori dal lavoro coordina sport di squadra, il che gli ha dato una chiara comprensione di come performance individuale e coesione del team si rafforzino a vicenda.",
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Energia di squadra',
+            headline: 'Fatto per il gioco di squadra.',
+            body: 'Hackathon, gare di codice, calcetto. Stesso istinto competitivo, arena diversa.',
+          },
+          coffee: {
+            eyebrow: 'Come vibra Erik',
+            headline: 'Coder competitivo. Team player. Coordinatore sportivo.',
+            body: 'Erik si presenta nelle dev challenge, nelle gare di codice e negli sport di squadra con la stessa energia. È la persona che alza il livello della stanza.',
+          },
+          'deep-dive': {
+            eyebrow: 'Il fit culturale',
+            headline: 'Erik costruisce team come costruisce software.',
+            body: "Strutturato, ad alta performance e divertente. Erik è il tipo che organizza l'hackathon del team, vince la gara di codice e prenota il campo da calcetto il venerdì. Crede che una grande cultura sia un moltiplicatore di forza — e la costruisce deliberatamente.",
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Cultura',
+            headline: 'Competitivo. Collaborativo.',
+            body: 'Dev challenge, code review, sport di squadra. Stessa spinta.',
+          },
+          coffee: {
+            eyebrow: 'Cultura di team',
+            headline: 'Dev challenge + sport di squadra.',
+            body: 'Erik partecipa a competizioni di programmazione e coordina sport di squadra. Porta competitività strutturata ai team di ingegneria.',
+          },
+          'deep-dive': {
+            eyebrow: 'Cultura & dinamiche di team',
+            headline: 'Eccellenza ingegneristica attraverso la cultura di team.',
+            body: 'Erik ha partecipato a molteplici dev challenge e gare di programmazione, ed è coordinatore di sport di squadra. Entrambi riflettono la stessa competenza: orientamento strutturato agli obiettivi combinato con coesione di team.',
+          },
+        },
+      },
+      recruiter: {
+        formal: {
+          elevator: {
+            eyebrow: 'Fit Culturale',
+            headline: 'Competitivo e collaborativo.',
+            body: 'Erik prospera nelle culture ingegneristiche ad alta performance.',
+          },
+          coffee: {
+            eyebrow: 'Cultura di team',
+            headline: 'Dev challenge. Sport di squadra. Alti standard.',
+            body: 'Erik partecipa a gare di programmazione e organizza sport di squadra — entrambi riflettono il suo valore per la collaborazione strutturata. È un forte aggiunto culturale a team di ingegneria ad alta performance.',
+          },
+          'deep-dive': {
+            eyebrow: 'Valutazione Culturale',
+            headline: "Erik alza l'asticella per la cultura di team.",
+            body: 'La combinazione di Erik di competitività tecnica (dev challenge, gare di codice) e investimento interpersonale (coordinatore di sport di squadra) segnala un profilo raro: qualcuno che migliora sia la qualità del codice che la coesione del team.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Vibrazioni culturali',
+            headline: 'Alza il livello della stanza.',
+            body: 'Gare di codice, sport di squadra — stessa energia, sempre.',
+          },
+          coffee: {
+            eyebrow: 'La carta culturale',
+            headline: 'Il tuo team adorerebbe lavorare con Erik.',
+            body: 'Vince le gare di codice e prenota il campo da calcetto. Erik rende i team migliori in modi difficili da mettere su un CV.',
+          },
+          'deep-dive': {
+            eyebrow: 'Fit culturale',
+            headline: 'La persona che costruisce la tua cultura di team.',
+            body: 'Erik è sia tecnicamente eccellente che genuinamente investito nelle dinamiche di team. Partecipa a dev challenge e coordina sport per esattamente la stessa ragione: crede che i team che competono insieme, costruiscano meglio insieme.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Fit culturale',
+            headline: 'Dev challenge + sport di squadra.',
+            body: 'Competitivo nel codice. Collaborativo nel team.',
+          },
+          coffee: {
+            eyebrow: 'Fit di team',
+            headline: 'Profilo team ad alta performance.',
+            body: 'Dev challenge, gare di programmazione, sport di squadra. Erik porta competitività strutturata e genuina collaborazione ai team di ingegneria.',
+          },
+          'deep-dive': {
+            eyebrow: 'Fit tecnico & culturale',
+            headline: "Contributore d'élite con forti dinamiche di team.",
+            body: 'Dev challenge, gare di programmazione, coordinazione di sport di squadra — Erik porta struttura deliberata e spinta competitiva ai contesti collaborativi.',
+          },
+        },
+      },
+      client: {
+        formal: {
+          elevator: {
+            eyebrow: 'Dinamiche di Team',
+            headline: 'Collaborativo e determinato.',
+            body: 'Erik lavora bene in team e porta struttura agli ambienti collaborativi.',
+          },
+          coffee: {
+            eyebrow: 'Come collabora Erik',
+            headline: 'Dev challenge. Sport di squadra. Collaborazione strutturata.',
+            body: 'Erik porta la stessa mentalità strutturata alla collaborazione di progetto che porta alle dev challenge e agli sport di squadra. È un membro del team affidabile e ad alta performance.',
+          },
+          'deep-dive': {
+            eyebrow: 'Profilo di collaborazione',
+            headline: 'Un partner che alza lo standard.',
+            body: 'Il track record di Erik nelle dev challenge e negli sport di squadra non è solo personale — segnala come si presenta nei contesti di lavoro collaborativo. Porta ambizione strutturata, comunicazione chiara e genuino investimento nei risultati del team.',
+          },
+        },
+        creative: {
+          elevator: {
+            eyebrow: 'Energia di squadra',
+            headline: 'Il compagno che fa accadere le cose.',
+            body: 'Dev battle, sport di squadra, prodotti fantastici. Stesso istinto.',
+          },
+          coffee: {
+            eyebrow: 'Lavorare con Erik',
+            headline: 'Rende la collaborazione divertente e produttiva.',
+            body: 'Erik porta la stessa energia alla costruzione del tuo prodotto che porta alle gare di programmazione e al calcetto — impegnato, energico e sempre spingendo per la vittoria.',
+          },
+          'deep-dive': {
+            eyebrow: 'La storia della collaborazione',
+            headline: 'Costruisce il team attorno al progetto.',
+            body: 'Erik è un costruttore naturale di team. Il suo track record nelle dev challenge e negli sport di squadra riflette una convinzione fondamentale: i migliori risultati vengono da team che sono sia tecnicamente eccellenti che si divertono genuinamente a lavorare insieme.',
+          },
+        },
+        technical: {
+          elevator: {
+            eyebrow: 'Collaborazione',
+            headline: 'Competitivo. Collaborativo.',
+            body: 'Dev challenge + sport di squadra = dinamiche di team affidabili.',
+          },
+          coffee: {
+            eyebrow: 'Profilo di team',
+            headline: 'Collaboratore ad alta performance.',
+            body: 'Erik partecipa a gare di programmazione e coordina sport di squadra. Strutturato, competitivo e collaborativo — stesso profilo nel lavoro di progetto.',
+          },
+          'deep-dive': {
+            eyebrow: 'Dinamiche di team',
+            headline: 'Contributore strutturato con vantaggio competitivo.',
+            body: 'Dev challenge, gare di programmazione, coordinazione di sport di squadra — Erik porta struttura deliberata e spinta competitiva ai contesti collaborativi.',
+          },
+        },
+      },
+      default: {
+        eyebrow: 'Team & Cultura',
+        headline: 'Fatto per team ad alta performance.',
+        body: 'Erik prospera in ambienti che combinano eccellenza tecnica con una forte cultura di team — dev challenge, competizioni e rituali collaborativi.',
+        'card-challenges-title': 'Dev challenge & gare di programmazione',
+        'card-challenges-desc':
+          "Partecipante attivo in hackathon ed eventi di programmazione competitiva. Porta la stessa spinta all'ingegneria di team.",
+        'card-sports-title': 'Coordinatore sport di squadra',
+        'card-sports-desc':
+          'Organizza e coordina sport di squadra — calcio, attività di team. Crede che la competizione costruisca coesione.',
+        'card-collaboration-title': 'Collaborazione ad alta performance',
+        'card-collaboration-desc':
+          'Il lavoro migliore di Erik avviene in team con standard condivisi, feedback onesto e una cultura di miglioramento continuo.',
+      },
+    },
   },
 };

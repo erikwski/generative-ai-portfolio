@@ -18,6 +18,7 @@ import { ExperienceVaultWidget } from '../../widgets/experience-vault/experience
 import { CompatibilityEngineWidget } from '../../widgets/compatibility-engine/compatibility-engine.widget';
 import { CoreIdentityWidget } from '../../widgets/core-identity/core-identity.widget';
 import { ProfessionalObjectiveWidget } from '../../widgets/professional-objective/professional-objective.widget';
+import { TeamCultureWidget } from '../../widgets/team-culture/team-culture.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -72,6 +73,7 @@ Instructions:
       CompatibilityEngineWidget,
       CoreIdentityWidget,
       ProfessionalObjectiveWidget,
+      TeamCultureWidget,
     ],
     debugName: 'portfolio-canvas',
   });

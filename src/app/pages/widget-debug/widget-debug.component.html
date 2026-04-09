@@ -103,5 +103,11 @@
         <app-widget-professional-objective />
       </app-widget-shell>
     }
+
+    @if (isVisible('team-culture')) {
+      <app-widget-shell title="TeamCultureWidget" (removed)="dismiss('team-culture')">
+        <app-widget-team-culture />
+      </app-widget-shell>
+    }
   </main>
 </div>
