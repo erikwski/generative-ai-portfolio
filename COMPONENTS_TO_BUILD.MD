@@ -1,103 +1,248 @@
-1. The "Architect's Identity" (Dynamic Bio)This component serves as the introduction, rewriting itself based on the onboarding data.Type: Liquid Typography / Adaptive Text Block.Description: A hero section that dynamically highlights your transition into AI-driven engineering leadership.Parameters: \_ visitorPersona: (Recruiter, Client, Peer).tone: (Professional, Creative, Technical).highlights: Selected phrases from your "Something to highlight" section .
+# Components to Build
 
-2. The "Evolution Timeline" (Experience)A visual journey of your career from Full-Stack developer to Frontend Specialist.Type: Minimalist Vertical Timeline / Interactive Scroll-Scrub.Description: Showcases your progression through Datacolor Industrial, ACSoftware, and Smarthy Srl.Parameters: \_ entries: List of roles and dates.achievementLevel: (High-level summary for recruiters vs. deep-dive architectural notes for peers).primaryColor: Golden-Yellow for active nodes.
+Planned widgets not yet implemented. Listed by priority with specs and open questions.
 
-3. The "Bento Portfolio" (Project Showcases)A grid-based view of your specific works, such as the NFT projects or warehouse management systems.Type: Bento Grid with Hover-States.Description: Individual cards for projects like the Angular micro-frontend for warehouse management or Next.js NFT static sites .Parameters:projectTitle: Name of the work.stackTags: (e.g., Angular, NX, NGRX, React) .impactMetric: A specific result (e.g., "Industry 4.0 workflow optimization").
+---
 
-4. The "Skill Constellation" (Tech Stack)An interactive visualization of your technical ecosystem.Type: 3D Force-Directed Graph or Radar Chart.Description: Maps your core competencies in Angular, TypeScript, and Node.js .Parameters:skillGroups: Frontend, Backend, AI & Agents .proficiencyValue: Derived from years of experience.interactive: Toggle to see "Upcoming Skills" (like your C1 English goal).
+## 1. `cv-download` — Priority: HIGH
 
-5. The "Dragon's Den" (Personal Interests)A "humanizing" section that shows you are "not just a coder".Type: Floating Icon Cloud / Polaroid Gallery.Description: Highlights your hobbies: Board Games enthusiast, Runner, and Google Local Guide (Level 6) .Parameters:hobbyType: (Gaming, Strategy, Fitness, Local Guide) .funFact: Short snippet (e.g., "Running gives me an excuse to eat more pizza").
+**Purpose:** Let visitors download Erik's CV as PDF. Simple, high-intent action.
 
-6. The "Credential Vault" (Education & Certs)A clean area for official recognition.Type: Badge Set / Glowing Card Grid.Description: Displays your Bachelor’s Degree in Computer Science and English certifications.Parameters:institution: (e.g., Unipegaso University, Wall Street English).grade: (e.g., 109/110).status: (Completed or Currently studying).
+**Labels needed:**
+- `headline` — widget title
+- `cta` — button label
+- `note` — subtext (e.g. "Last updated March 2026")
 
-7. The "Compatibility Engine" (The "Is he a fit?" Component)Visitor Question: "Does his experience match my specific job description or project needs?"Type: Text Input Analyzer.Description: A section where a recruiter can paste a Job Description or a client can paste a Project Brief. The AI then highlights the exact parts of your CV—like your work with Angular micro-frontends or Industry 4.0 systems —that match their needs.Parameters:inputSource: (Text paste or PDF upload).matchAccuracy: Percentage indicator (e.g., "95% Match for Frontend Architect").dynamicCitations: Automatically pulls relevant lines from your "Work Experience" .
+**Role behavior:**
+- Developer: "Download PDF résumé" — clean, no frills
+- Recruiter: prominent, top-of-fold, "Download CV" with last-updated date
+- Client: optional — could surface as "Download portfolio overview" or hidden
 
-8. Core Identity & Physical ProfileComponent Type: Data Summary Card / Profile Header.Description: A clean, high-density information block that provides your essential personal data and current location.Parameters:Name: Erik Ferrari.Age: [Your Age] (e.g., 25).Height & Weight: [Your Data] (e.g., 168 cm / 68 kg).Location: Reggio Emilia, Italy.Current Role: Angular Frontend Developer.
+**Open questions:**
+- **Q1:** Is the PDF ready to upload to `/public/`? What's the filename?
+- **Q2:** Should clicking open the PDF in a new tab or trigger a direct download?
+- **Q3:** One universal PDF or separate developer/recruiter versions?
 
-9. Professional Objective: Leadership & Architecture
-   Component Type: Career Goal / Vision Statement.
+---
 
-Description: A focused component outlining your specific trajectory towards technical leadership and your desire to define project standards.
+## 2. `hire-me` — Priority: HIGH
 
-Parameters:
-Target Role: Tech Lead / Engineering Leader.
-Core Objective: To establish modern development rules, guide cross-functional teams, and manage the complete architectural setup of new projects.
+**Purpose:** Direct CTA for job or freelance enquiries. The conversion widget.
 
-Focus Area: Scaling development workflows through AI integration and future-proof architectural decisions.
+**Labels needed:**
+- `headline`
+- `body` — 1-2 lines of context ("open to new opportunities", availability)
+- `cta_email` — email button label
+- `cta_linkedin` — LinkedIn button label
+- `availability` — short status string (e.g. "Available from June 2026")
 
-10. Team Culture & Engagement
-    Component Type: Workplace Value / Soft Skills Highlight.
+**Role behavior:**
+- Recruiter: leads with availability + preferred role type
+- Client: leads with "Let's work together" + project scope framing
+- Developer: peers don't need this — could show GitHub link instead
 
-Description: This component demonstrates your contribution to company culture beyond coding, highlighting your role in organizing internal events and team-building activities.
+**Open questions:**
+- **Q4:** Contact form inside the widget, or just mailto + LinkedIn links?
+- **Q5:** Should current availability be visible? If yes, what is the current status?
 
-Parameters:
+---
 
-Technical Engagement: Organizing "Dev Challenges" and coding competitions to drive peer growth.
+## 3. `philosophy` — Priority: HIGH
 
-Social Engagement: Coordinating sports activities and team outings to improve office synergy.
+**Purpose:** Signature quote + 3 core beliefs about software. Shows what Erik stands for.
 
-Value Proposition: Strengthening team bonds and maintaining a high-performance, collaborative environment.
+**Labels needed:**
+- `headline`
+- `quote` — the signature line
+- `belief_1_title`, `belief_1_body`
+- `belief_2_title`, `belief_2_body`
+- `belief_3_title`, `belief_3_body`
 
-11. Lifestyle & Personal Interests
-    Component Type: Activity Dashboard.
-    Description: A breakdown of your interests outside of work, focusing on high-endurance physical activities and strategic thinking.
+**Proposed beliefs (to confirm):**
+1. Architecture first — "Build the thing right, not just build the right thing"
+2. Domain-Driven Design — separation and detachability over monolithic coupling
+3. Quality over speed — never miss a deadline, never ship broken trust
 
-Parameters:
-Endurance Sports: Intensive Running and Trekking.
-Technical Sports: Climbing.
-Strategic Hobbies: Strategy Board Games.
-Community Contribution: Google Local Guide Level 6 (Specializing in culinary and coffee recommendations).
+**Open questions:**
+- **Q6:** Are these 3 beliefs accurate? Would you phrase them differently?
+- **Q7:** Should the signature quote be attributed to Erik explicitly, or left unattributed?
 
-12 FAQ component
-Component Name: The Contextual FAQ Engine
-Type: Dynamic Question & Answer Terminal
+---
 
-Description: A smart interface that displays a set of 3-5 "High-Priority" questions tailored to the visitor's background. Each answer is generated or retrieved based on a hidden pre-prompt that ensures your professional trajectory and personal values are highlighted correctly for that specific audience.
+## 4. `music-taste` — Priority: MEDIUM-HIGH
 
-1. The Pre-Prompt Context (The "Brain")
-   This is the hidden data fed to the AI to ensure the FAQ stays accurate and "on-brand" for you:
+**Purpose:** Personal dimension. Shows the vinyl/hi-fi obsession and taste. Humanises the portfolio.
 
-"You are the AI agent for Erik Ferrari (Erikwski), a Strategic Frontend Architect. Erik is 26, 180cm, lives in Reggio Emilia, and is a Google Local Guide (Level 6). He is an Angular expert (NGRX, NX) and currently specializes in AI workflow integration at Datacolor. His goal is to become a Tech Lead who establishes architectural rules and guides teams. He is a runner, climber, and strategy board gamer. Answer questions using this context, staying professional but showing his personality."
+**Labels needed:**
+- `headline`
+- `intro` — 1 sentence framing (e.g. "Music is where the architecture disappears.")
+- `artist_1` through `artist_5` — artist names
+- `note_1` through `note_5` — one personal note per artist
+- `setup_note` — brief mention of the vinyl + hi-fi setup
 
-2. Persona-Based Customization (The "Output")
-   A. For the Recruiter (The "Efficiency" View)
-   Focus: Risk mitigation, stability, and technical leadership.
+**Artists:**
+1. Salmo
+2. Franco Battiato
+3. Lucio Dalla
+4. Nayt
+5. Venerus
 
-Question 1: Why is Erik ready for a Tech Lead role?
+**Role behavior:**
+- Developer/Recruiter: lighter treatment — only shown in creative + deep-dive contexts
+- Client: likely hidden or minimal — not relevant to business trust
 
-AI Answer: "With 4+ years of specialized experience, including owning the UI library at Datacolor and managing micro-frontend architectures, Erik has shifted from 'doing' to 'defining.' He’s ready to establish the rules that help your team scale."
+**Open questions:**
+- **Q8:** Do you have a personal note for each artist (why they matter to you)?
+- **Q9:** Should the Salmo/Lebonski/brand-origin story appear inside this widget, or stay separate (creative deep-dive only as agreed)?
+- **Q10:** Want album cover images, or keep it text-only?
 
-Question 2: What is his experience with enterprise-scale projects?
+---
 
-AI Answer: "Erik has a proven track record in Industry 4.0 and enterprise consulting (ACSoftware), managing complex state with NGRX and modularizing apps with NX to ensure long-term maintainability."
+## 5. `reading-list` — Priority: MEDIUM-HIGH
 
-B. For the Potential Client (The "Solution" View)
-Focus: Problem solving, ROI, and delivery.
+**Purpose:** Books that shaped how Erik thinks. Shows intellectual depth and self-direction.
 
-Question 1: How can Erik help my business move faster?
+**Labels needed:**
+- `headline`
+- `intro`
+- Per book: `title`, `author`, `note` (personal takeaway)
+- `anchor_quote` — the Clean Code quote as closing line
 
-AI Answer: "Erik specializes in redefining workflows through AI integration. By automating boilerplate and using a modular 'Design System' approach, he reduces time-to-market for new features while keeping the code robust."
+**Books (confirmed):**
+1. *Clean Code* — Robert C. Martin
+2. *Clean Architecture* — Robert C. Martin
+3. *Residues: Time, Uncertainty and Change in Software Architecture* — (author TBC)
+4. *AI Engineering* — (author TBC)
+5. *Building Evolutionary Architectures* — Ford, Parsons, Kua
+6. *JavaScript & jQuery: Sviluppare interfacce web interattive* — (Italian edition, starter book)
 
-Question 2: Can he handle the full setup of a new project?
+**Open questions:**
+- **Q11:** Do you have a short personal note for each book (what it changed or taught you)?
+- **Q12:** Are you currently reading anything? Should there be a "currently reading" slot?
 
-AI Answer: "Yes. Erik’s goal is to lead the setup of projects, establishing the technical foundations (Architecture, CI/CD, UI kits) so the project starts correctly and stays scalable."
+---
 
-C. For the Peer Developer (The "Technical" View)
-Focus: Stack, performance, and culture.
+## 6. `origin-story` — Priority: MEDIUM
 
-Question 1: What’s his 'go-to' stack for a complex SPA?
+**Purpose:** Narrative arc: waiter → self-taught dev → Angular → Datacolor. The human story behind the CV.
 
-AI Answer: "Angular for the core, NX for monorepo management, NGRX for reactive state, and SCSS for styling. He’s currently deep-diving into AI Agents to automate the 'boring parts' of frontend dev."
+**Labels needed:**
+- `headline`
+- `act_1_title`, `act_1_body` — waiter years, overlap period, physical + social cost
+- `act_2_title`, `act_2_body` — first internships, misterWeb, infoErre
+- `act_3_title`, `act_3_body` — Smarthy/ACSoftware, Angular discovery via MFE research
+- `act_4_title`, `act_4_body` — ng-rome 2022, Gabriele Campi, domain architecture
+- `act_5_title`, `act_5_body` — Datacolor, DDD in production, now
 
-Question 2: Is he easy to work with in a team?
+**Role behavior:**
+- Developer: architecture evolution arc; ng-rome as turning point
+- Recruiter: career progression, seniority, growth trajectory
+- Client: simplified — from "started building things" to "now I build serious software"
 
-AI Answer: "Erik is the guy who organizes 'Dev Challenges' and after-work climbing or running sessions. He believes a team that competes and trains together, codes better together."
+**Open questions:**
+- **Q13:** Are you comfortable with the waiter-overlap struggle being public? (physical exhaustion, social isolation)
+- **Q14:** Should ng-rome 2022 be named as a turning point explicitly?
 
-3. Component Parameters for Design
-   currentPersona: (Recruiter | Client | Peer) - Inherited from Onboarding.
+---
 
-interactionMode: (Click-to-reveal | Voice-trigger).
+## 7. `meta-explainer` — Priority: MEDIUM
 
-visualAccent: Golden-Yellow glow on the active question.
+**Purpose:** Explains to the visitor what this portfolio *is* — a generative UI powered by Claude. The portfolio explains itself.
 
-toneSetting: (Direct/Succinct for Recruiters | Collaborative/Technical for Peers).
+**Labels needed:**
+- `headline`
+- `body` — how it works
+- `tech_note` — brief stack callout (Hashbrown, Angular, Claude)
+- `invitation` — closing line inviting exploration
+
+**Role behavior:**
+- Developer: technical detail — Hashbrown, Angular SSR, Claude API, NgRx signal store
+- Recruiter: high-level concept — "Claude composes the UI in real time based on who you are"
+- Client: plain language — "This page changes depending on who's reading it"
+
+**Open questions:**
+- **Q15:** How technical do you want this for the developer audience? Full Hashbrown implementation detail, or conceptual?
+
+---
+
+## 8. `conference-activity` — Priority: LOW-MEDIUM
+
+**Purpose:** Shows Erik as part of the community. Conferences attended, aspiration to speak.
+
+**Labels needed:**
+- `headline`
+- `intro`
+- Per conference: `name`, `year`, `note`
+- `speaking_note` — "Working toward my first talk: architecture in the AI era"
+
+**Conferences (confirmed):**
+- AWS Summit
+- ng-rome 2022 (Angular discovery turning point)
+- ng-rome 2024 (Manfred Steyer workshop)
+- DevFest
+- WebDay
+
+**Open questions:**
+- **Q16:** Was there a specific conference moment that changed something for you, beyond ng-rome 2022 and ng-rome 2024?
+
+---
+
+## 9. `open-source` — Priority: LOW
+
+**Purpose:** HyperIoT + openapi-ts contributions. Evidence of public technical work.
+
+**Labels needed:**
+- `headline`
+- `intro`
+- Per project: `name`, `role`, `description`, `link`
+
+**Projects:**
+1. **HyperIoT** — main contributor, IoT/BigData Angular platform
+2. **openapi-ts** — community contributor
+
+**Open questions:**
+- **Q17:** Should this be a standalone widget, or fold into `project-showcase` as a section?
+
+---
+
+## 10. `mentors` — Priority: LOW
+
+**Purpose:** The people who shaped Erik's approach. Rare in a portfolio — shows humility and relationship depth.
+
+**Labels needed:**
+- `headline`
+- `intro`
+- Per mentor: `name`, `role_context`, `what_they_gave`
+
+**Mentors (confirmed, 6 people):**
+1. **Paolo Nobile** — taught him Angular, still at Smarthy
+2. **Gabriele Campi** — architect, made him love architecture (ng-rome 2022 + 2024)
+3. **Giovanni Colacitti** — Angular design patterns
+4. **Fabio Biondi** — represents Angular in Italy, "pure gold"
+5. **Soumaya Erradi** — different actionable items every speech
+6. **Best friend (name?)** — Angular dev at Datacolor, brought via referral
+
+**Open questions:**
+- **Q18:** Are you comfortable naming current/former managers publicly? (Paolo Nobile was at Smarthy)
+- **Q19:** How do you want to frame Fabio Biondi and Soumaya Erradi — as mentors you've met in person, or community figures who influenced you remotely?
+
+---
+
+## Summary
+
+| Widget | Priority | Labels | Status |
+|---|---|---|---|
+| `cv-download` | HIGH | 3 | Not built |
+| `hire-me` | HIGH | 5 | Not built |
+| `philosophy` | HIGH | 8 | Not built |
+| `music-taste` | MED-HIGH | 12 | Not built |
+| `reading-list` | MED-HIGH | ~14 | Not built |
+| `origin-story` | MEDIUM | 10 | Not built |
+| `meta-explainer` | MEDIUM | 4 | Not built |
+| `conference-activity` | LOW-MED | ~8 | Not built |
+| `open-source` | LOW | ~6 | Not built |
+| `mentors` | LOW | ~14 | Not built |
+
+**Total open questions: 19 (Q1–Q19)**
+
+Once Q1–Q19 are answered, run `/fill-widget <name>` on each with ERIKWSKI.MD as the content brief.
