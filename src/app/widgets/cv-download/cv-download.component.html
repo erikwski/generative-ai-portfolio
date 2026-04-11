@@ -1,0 +1,18 @@
+<div class="widget-panel cv-download">
+  <p class="cv-download__eyebrow">Erik Ferrari</p>
+  <h2 class="cv-download__headline">{{ headline() }}</h2>
+
+  <div class="cv-download__actions">
+    <a
+      [href]="cvUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      mat-stroked-button
+      class="cv-download__button"
+    >
+      {{ cta() }}
+    </a>
+  </div>
+
+  <p class="cv-download__note">{{ note() }}</p>
+</div>

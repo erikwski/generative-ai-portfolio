@@ -21,6 +21,16 @@ import { ProfessionalObjectiveWidget } from '../../widgets/professional-objectiv
 import { TeamCultureWidget } from '../../widgets/team-culture/team-culture.widget';
 import { LifestyleActivitiesWidget } from '../../widgets/lifestyle-activities/lifestyle-activities.widget';
 import { ContextualFaqWidget } from '../../widgets/contextual-faq/contextual-faq.widget';
+import { CvDownloadWidget } from '../../widgets/cv-download/cv-download.widget';
+import { HireMeWidget } from '../../widgets/hire-me/hire-me.widget';
+import { PhilosophyWidget } from '../../widgets/philosophy/philosophy.widget';
+import { MusicTasteWidget } from '../../widgets/music-taste/music-taste.widget';
+import { ReadingListWidget } from '../../widgets/reading-list/reading-list.widget';
+import { OriginStoryWidget } from '../../widgets/origin-story/origin-story.widget';
+import { MetaExplainerWidget } from '../../widgets/meta-explainer/meta-explainer.widget';
+import { ConferenceActivityWidget } from '../../widgets/conference-activity/conference-activity.widget';
+import { OpenSourceWidget } from '../../widgets/open-source/open-source.widget';
+import { MentorsWidget } from '../../widgets/mentors/mentors.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -78,6 +88,16 @@ Instructions:
       TeamCultureWidget,
       LifestyleActivitiesWidget,
       ContextualFaqWidget,
+      CvDownloadWidget,
+      HireMeWidget,
+      PhilosophyWidget,
+      MusicTasteWidget,
+      ReadingListWidget,
+      OriginStoryWidget,
+      MetaExplainerWidget,
+      ConferenceActivityWidget,
+      OpenSourceWidget,
+      MentorsWidget,
     ],
     debugName: 'portfolio-canvas',
   });

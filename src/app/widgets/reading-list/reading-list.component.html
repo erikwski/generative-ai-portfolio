@@ -1,0 +1,17 @@
+<div class="widget-panel reading-list">
+  <p class="reading-list__eyebrow">Shelf</p>
+  <h2 class="reading-list__headline">{{ headline() }}</h2>
+  <p class="reading-list__intro">{{ intro() }}</p>
+
+  <ul class="reading-list__books">
+    @for (book of books(); track book.title) {
+      <li class="reading-list__book">
+        <span class="reading-list__book-title">{{ book.title }}</span>
+        <span class="reading-list__book-author">{{ book.author }}</span>
+        <span class="reading-list__book-note">{{ book.note }}</span>
+      </li>
+    }
+  </ul>
+
+  <blockquote class="reading-list__quote">{{ anchorQuote() }}</blockquote>
+</div>

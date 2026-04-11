@@ -19,6 +19,16 @@ import { ProfessionalObjectiveWidgetComponent } from '../../widgets/professional
 import { TeamCultureWidgetComponent } from '../../widgets/team-culture/team-culture.component';
 import { LifestyleActivitiesWidgetComponent } from '../../widgets/lifestyle-activities/lifestyle-activities.component';
 import { ContextualFaqWidgetComponent } from '../../widgets/contextual-faq/contextual-faq.component';
+import { CvDownloadWidgetComponent } from '../../widgets/cv-download/cv-download.component';
+import { HireMeWidgetComponent } from '../../widgets/hire-me/hire-me.component';
+import { PhilosophyWidgetComponent } from '../../widgets/philosophy/philosophy.component';
+import { MusicTasteWidgetComponent } from '../../widgets/music-taste/music-taste.component';
+import { ReadingListWidgetComponent } from '../../widgets/reading-list/reading-list.component';
+import { OriginStoryWidgetComponent } from '../../widgets/origin-story/origin-story.component';
+import { MetaExplainerWidgetComponent } from '../../widgets/meta-explainer/meta-explainer.component';
+import { ConferenceActivityWidgetComponent } from '../../widgets/conference-activity/conference-activity.component';
+import { OpenSourceWidgetComponent } from '../../widgets/open-source/open-source.component';
+import { MentorsWidgetComponent } from '../../widgets/mentors/mentors.component';
 import type { ProjectCard } from '../../widgets/project-showcase/project-showcase.component';
 
 const SAMPLE_PROJECTS: ProjectCard[] = [
@@ -59,6 +69,16 @@ const SAMPLE_PROJECTS: ProjectCard[] = [
     TeamCultureWidgetComponent,
     LifestyleActivitiesWidgetComponent,
     ContextualFaqWidgetComponent,
+    CvDownloadWidgetComponent,
+    HireMeWidgetComponent,
+    PhilosophyWidgetComponent,
+    MusicTasteWidgetComponent,
+    ReadingListWidgetComponent,
+    OriginStoryWidgetComponent,
+    MetaExplainerWidgetComponent,
+    ConferenceActivityWidgetComponent,
+    OpenSourceWidgetComponent,
+    MentorsWidgetComponent,
   ],
   templateUrl: './widget-debug.component.html',
   styleUrl: './widget-debug.component.scss',

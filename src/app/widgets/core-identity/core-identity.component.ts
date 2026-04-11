@@ -11,8 +11,8 @@ export interface IdentityField {
 
 const FIELD_KEYS = [
   { key: 'name', icon: 'person', static: 'Erik Ferrari' },
-  { key: 'age', icon: 'cake', static: '28' },
-  { key: 'height', icon: 'height', static: '180 cm / 75 kg' },
+  { key: 'age', icon: 'cake', static: '25' },
+  { key: 'height', icon: 'height', static: '169 cm / 68 kg' },
   { key: 'location', icon: 'location_on', static: 'Reggio Emilia, Italy' },
   { key: 'role', icon: 'work', static: 'Angular Frontend Developer & UI Library Owner' },
 ] as const;

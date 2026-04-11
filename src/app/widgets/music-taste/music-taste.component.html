@@ -1,0 +1,16 @@
+<div class="widget-panel music-taste">
+  <p class="music-taste__eyebrow">Erik / Playlist</p>
+  <h2 class="music-taste__headline">{{ headline() }}</h2>
+  <p class="music-taste__intro">{{ intro() }}</p>
+
+  <ul class="music-taste__artists">
+    @for (artist of artists(); track artist.name) {
+      <li class="music-taste__artist">
+        <span class="music-taste__artist-name">{{ artist.name }}</span>
+        <span class="music-taste__artist-note">{{ artist.note }}</span>
+      </li>
+    }
+  </ul>
+
+  <p class="music-taste__setup-note">{{ setupNote() }}</p>
+</div>

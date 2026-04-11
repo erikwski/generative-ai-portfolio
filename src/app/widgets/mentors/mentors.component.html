@@ -1,0 +1,23 @@
+<div class="widget-panel mentors">
+  <p class="mentors__eyebrow">Shaped By</p>
+  <h2 class="mentors__headline">{{ headline() }}</h2>
+  @if (intro()) {
+    <p class="mentors__intro">{{ intro() }}</p>
+  }
+
+  <ul class="mentors__list">
+    @for (mentor of mentors(); track mentor.name) {
+      <li class="mentors__item">
+        <span class="mentors__name">{{ mentor.name }}</span>
+        <span class="mentors__context">{{ mentor.context }}</span>
+        @if (mentor.gave) {
+          <p class="mentors__gave">{{ mentor.gave }}</p>
+        }
+      </li>
+    }
+  </ul>
+
+  @if (friendNote()) {
+    <p class="mentors__friend-note">{{ friendNote() }}</p>
+  }
+</div>

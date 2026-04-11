@@ -1,0 +1,19 @@
+<div class="widget-panel origin-story">
+  <p class="origin-story__eyebrow">Origin</p>
+  <h2 class="origin-story__headline">{{ headline() }}</h2>
+
+  <div class="origin-story__timeline">
+    @for (act of acts(); track act.title) {
+      <div
+        class="origin-story__act"
+        [class.origin-story__act--current]="act.current"
+      >
+        <div class="origin-story__dot"></div>
+        <div class="origin-story__content">
+          <p class="origin-story__act-title">{{ act.title }}</p>
+          <p class="origin-story__act-body">{{ act.body }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

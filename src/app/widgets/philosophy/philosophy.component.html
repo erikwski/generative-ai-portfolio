@@ -1,0 +1,17 @@
+<div class="widget-panel philosophy">
+  <p class="philosophy__eyebrow">Engineering Philosophy</p>
+  <h2 class="philosophy__headline">{{ headline() }}</h2>
+
+  <ul class="philosophy__beliefs">
+    @for (belief of beliefs(); track belief.title) {
+      <li class="philosophy__belief">
+        <span class="philosophy__belief-title">{{ belief.title }}</span>
+        <span class="philosophy__belief-body">{{ belief.body }}</span>
+      </li>
+    }
+  </ul>
+
+  <blockquote class="philosophy__quote">
+    "{{ quote() }}"
+  </blockquote>
+</div>

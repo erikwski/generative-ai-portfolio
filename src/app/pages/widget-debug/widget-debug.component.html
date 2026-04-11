@@ -124,5 +124,65 @@
         <app-widget-contextual-faq />
       </app-widget-shell>
     }
+
+    @if (isVisible('cv-download')) {
+      <app-widget-shell title="CvDownloadWidget" (removed)="dismiss('cv-download')">
+        <app-widget-cv-download />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('hire-me')) {
+      <app-widget-shell title="HireMeWidget" (removed)="dismiss('hire-me')">
+        <app-widget-hire-me />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('philosophy')) {
+      <app-widget-shell title="PhilosophyWidget" (removed)="dismiss('philosophy')">
+        <app-widget-philosophy />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('music-taste')) {
+      <app-widget-shell title="MusicTasteWidget" (removed)="dismiss('music-taste')">
+        <app-widget-music-taste />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('reading-list')) {
+      <app-widget-shell title="ReadingListWidget" (removed)="dismiss('reading-list')">
+        <app-widget-reading-list />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('origin-story')) {
+      <app-widget-shell title="OriginStoryWidget" (removed)="dismiss('origin-story')">
+        <app-widget-origin-story />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('meta-explainer')) {
+      <app-widget-shell title="MetaExplainerWidget" (removed)="dismiss('meta-explainer')">
+        <app-widget-meta-explainer />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('conference-activity')) {
+      <app-widget-shell title="ConferenceActivityWidget" (removed)="dismiss('conference-activity')">
+        <app-widget-conference-activity />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('open-source')) {
+      <app-widget-shell title="OpenSourceWidget" (removed)="dismiss('open-source')">
+        <app-widget-open-source />
+      </app-widget-shell>
+    }
+
+    @if (isVisible('mentors')) {
+      <app-widget-shell title="MentorsWidget" (removed)="dismiss('mentors')">
+        <app-widget-mentors />
+      </app-widget-shell>
+    }
   </main>
 </div>

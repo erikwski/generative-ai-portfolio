@@ -1,0 +1,26 @@
+<div class="widget-panel hire-me">
+  <span class="hire-me__availability">{{ availability() }}</span>
+
+  <h2 class="hire-me__headline">{{ headline() }}</h2>
+  <p class="hire-me__body">{{ body() }}</p>
+
+  <div class="hire-me__actions">
+    <a
+      [href]="emailUrl"
+      mat-flat-button
+      color="primary"
+      class="hire-me__btn hire-me__btn--email"
+    >
+      {{ ctaEmail() }}
+    </a>
+    <a
+      [href]="linkedinUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+      mat-stroked-button
+      class="hire-me__btn hire-me__btn--linkedin"
+    >
+      {{ ctaLinkedin() }}
+    </a>
+  </div>
+</div>

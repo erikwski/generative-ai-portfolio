@@ -1,0 +1,23 @@
+<div class="widget-panel conference-activity">
+  <p class="conference-activity__eyebrow">Community</p>
+  <h2 class="conference-activity__headline">{{ headline() }}</h2>
+  @if (intro()) {
+    <p class="conference-activity__intro">{{ intro() }}</p>
+  }
+
+  <ul class="conference-activity__list">
+    @for (conf of conferences(); track conf.name + conf.year) {
+      <li class="conference-activity__item">
+        <span class="conference-activity__name">{{ conf.name }}</span>
+        <span class="conference-activity__year">{{ conf.year }}</span>
+        @if (conf.note) {
+          <span class="conference-activity__note">{{ conf.note }}</span>
+        }
+      </li>
+    }
+  </ul>
+
+  @if (speakingNote()) {
+    <p class="conference-activity__speaking-note">{{ speakingNote() }}</p>
+  }
+</div>
