@@ -26,7 +26,6 @@ export class TeamCultureWidgetComponent {
   private readonly profile = computed(() => ({
     role: this.store.role(),
     timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
 
   readonly eyebrow = computed(() => resolveWidgetText('team-culture', 'eyebrow', this.profile()));

@@ -22,7 +22,6 @@ export class ContextualFaqWidgetComponent {
   private readonly profile = computed(() => ({
     role: this.store.role(),
     timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
 
   readonly eyebrow = computed(() => resolveWidgetText('contextual-faq', 'eyebrow', this.profile()));

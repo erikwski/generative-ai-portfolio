@@ -29,8 +29,11 @@ export class ExperienceVaultWidgetComponent {
   private readonly profile = computed(() => ({
     role: this.store.role(),
     timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
+
+  readonly eyebrow = computed(() =>
+    resolveWidgetText('experience-vault', 'eyebrow', this.profile(), 'Education & Certifications'),
+  );
 
   readonly headline = computed(() =>
     resolveWidgetText('experience-vault', 'headline', this.profile()),

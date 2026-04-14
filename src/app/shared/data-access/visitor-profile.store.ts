@@ -31,37 +31,27 @@ export const VisitorProfileStore = signalStore(
   withState<VisitorProfile>(() => loadFromStorage()),
   withComputed((store) => ({
     isOnboarded: computed(
-      () =>
-        store.role() !== null &&
-        store.timeAvailable() !== null &&
-        store.communicationStyle() !== null,
+      () => store.role() !== null && store.timeAvailable() !== null,
     ),
     systemPromptContext: computed(() => {
       const role = store.role();
       const time = store.timeAvailable();
-      const style = store.communicationStyle();
       if (!role) return '';
 
       const roleLabel: Record<string, string> = {
-        developer: 'a peer software developer',
-        recruiter: 'a recruiter or talent scout',
-        client: 'a potential client or customer',
+        'tech-peer': 'a fellow software engineer reviewing this portfolio as a technical peer',
+        recruiter: 'a recruiter or talent scout evaluating Erik as a candidate',
+        client: 'a potential client or customer considering hiring Erik for a project',
       };
       const timeLabel: Record<string, string> = {
         elevator: 'only 30 seconds (elevator pitch)',
         coffee: 'about 5 minutes (coffee break)',
         'deep-dive': 'plenty of time for a deep dive (15+ minutes)',
       };
-      const styleLabel: Record<string, string> = {
-        formal: 'formal and precise',
-        creative: 'creative and experimental',
-        technical: 'fast and highly technical',
-      };
 
       return [
         `The visitor is ${roleLabel[role]}.`,
         time ? `They have ${timeLabel[time]}.` : '',
-        style ? `They prefer communication that is ${styleLabel[style]}.` : '',
       ]
         .filter(Boolean)
         .join(' ');

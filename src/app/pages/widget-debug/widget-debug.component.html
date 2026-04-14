@@ -10,7 +10,7 @@
           (change)="role.set($event.value)"
           hideSingleSelectionIndicator
         >
-          <mat-button-toggle value="developer">Developer</mat-button-toggle>
+          <mat-button-toggle value="tech-peer">Tech Peer</mat-button-toggle>
           <mat-button-toggle value="recruiter">Recruiter</mat-button-toggle>
           <mat-button-toggle value="client">Client</mat-button-toggle>
         </mat-button-toggle-group>
@@ -23,16 +23,6 @@
           <mat-button-toggle value="elevator">Elevator</mat-button-toggle>
           <mat-button-toggle value="coffee">Coffee</mat-button-toggle>
           <mat-button-toggle value="deep-dive">Deep Dive</mat-button-toggle>
-        </mat-button-toggle-group>
-
-        <mat-button-toggle-group
-          [value]="communicationStyle()"
-          (change)="communicationStyle.set($event.value)"
-          hideSingleSelectionIndicator
-        >
-          <mat-button-toggle value="formal">Formal</mat-button-toggle>
-          <mat-button-toggle value="creative">Creative</mat-button-toggle>
-          <mat-button-toggle value="technical">Technical</mat-button-toggle>
         </mat-button-toggle-group>
       </div>
 

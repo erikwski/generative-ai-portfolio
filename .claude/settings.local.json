@@ -24,7 +24,9 @@
       "Bash(python3:*)",
       "Bash(xargs grep:*)",
       "Bash(npm run:*)",
-      "Bash(grep -v '\\\\\\\\\\\\\\\\')"
+      "Bash(grep -v '\\\\\\\\\\\\\\\\')",
+      "Bash(grep -E \"\\\\.widget\\\\.ts$\")",
+      "Bash(grep -i \"\\\\.md$\")"
     ]
   }
 }

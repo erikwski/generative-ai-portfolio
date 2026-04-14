@@ -25,7 +25,6 @@ export class SkillConstellationWidgetComponent {
   private readonly profile = computed(() => ({
     role: this.store.role(),
     timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
 
   // ── Translated text ───────────────────────────────────────────────────────

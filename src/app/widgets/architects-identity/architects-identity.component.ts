@@ -14,7 +14,6 @@ export class ArchitectsIdentityWidgetComponent {
   private readonly profile = computed(() => ({
     role:               this.store.role(),
     timeAvailable:      this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
 
   // ── Translated text — resolved from locale + visitor profile ─────────────

@@ -5,7 +5,7 @@ export const de: AppTranslation = {
     eyebrow: 'Bevor wir beginnen',
     title: 'Wer bist du?',
     role: {
-      developer: 'Entwickler',
+      'tech-peer': 'Tech Peer',
       recruiter: 'Recruiter',
       client: 'Kunde',
     },
@@ -17,12 +17,6 @@ export const de: AppTranslation = {
       'coffee.sub': '5m',
       'deep-dive': 'Tiefgang',
       'deep-dive.sub': '15m+',
-    },
-    style: {
-      label: 'Wie sollen wir sprechen?',
-      formal: 'Formal & Präzise',
-      creative: 'Kreativ & Experimentell',
-      technical: 'Schnell & Technisch',
     },
     submit: 'Eintreten →',
     note: 'Dieses Portfolio passt sich dir an. Deine Antworten formen die Oberfläche — jede Komponente wird live von der KI generiert, basierend auf wer du bist und deinen Präferenzen.',
@@ -54,7 +48,7 @@ export const de: AppTranslation = {
   },
   widgets: {
     'architects-identity': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             eyebrow: 'Full-Stack Engineer',
@@ -207,7 +201,7 @@ export const de: AppTranslation = {
       },
     },
     'evolution-timeline': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             headline: 'Career Stack',
@@ -418,7 +412,7 @@ export const de: AppTranslation = {
       },
     },
     'project-showcase': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             eyebrow: 'Ausgeliefert',
@@ -622,7 +616,11 @@ export const de: AppTranslation = {
       },
     },
     'skill-constellation': {
-      developer: {
+      'tech-peer': {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Technischer Stack',
+        headline: 'Womit ich baue.',
+        body: 'Angular-first, KI-fähig, Full-Stack-Lieferung.',
         technical: {
           elevator: {
             eyebrow: 'Tech Stack',
@@ -632,12 +630,12 @@ export const de: AppTranslation = {
           coffee: {
             eyebrow: 'Technischer Stack',
             headline: 'Womit ich baue.',
-            body: 'Fünf Jahre Angular, jetzt tief in der KI-Integration. Angular 21 und NgRx im Frontend, Node + Vercel im Backend, und die Anthropic Claude API verbindet alles.',
+            body: 'Fünf Jahre Angular — jetzt tief in der KI-Integration. Angular 21 und NgRx Signal Store im Frontend, Node + Vercel im Backend, Anthropic Claude API und Hashbrown verbinden alles.',
           },
           'deep-dive': {
             eyebrow: 'Technisches Ökosystem',
             headline: 'Vollständiger Stack-Überblick.',
-            body: 'Eine vollständige Karte meines technischen Profils über drei Domänen: den Angular-first-Frontend-Stack, den ich fünf Jahre gemeistert habe, eine Backend-Schicht auf Node.js und Vercel Serverless, und das KI-Tooling — Claude API, Hashbrown und LLM-Orchestrierung — das meine aktuelle Spezialisierung definiert.',
+            body: 'Angular 21 (5/5) · TypeScript (5/5) · RxJS (4/5) · NgRx Signals (4/5) · SCSS (4/5) · SSR (4/5) · NX (3/5) · Storybook (3/5). Node.js (3/5) · Express (3/5) · REST APIs (4/5) · Vercel (3/5). Claude API (4/5) · Hashbrown (4/5) · Prompt Engineering (4/5) · LLM-Orchestrierung (3/5). Drei Domänen: Angular-first Frontend, leichtes Backend, KI-Toolchain in Produktion.',
           },
         },
         creative: {
@@ -649,12 +647,12 @@ export const de: AppTranslation = {
           coffee: {
             eyebrow: 'Der Werkzeugkasten',
             headline: 'Der Stack, der es möglich macht.',
-            body: 'Angular im Kern, KI überall sinnvoll integriert, Node im Backend wenn nötig. Dazu eine wachsende Konstellation von KI-Tools — Claude, Hashbrown, Prompt Engineering.',
+            body: 'Angular im Kern, KI überall sinnvoll integriert. NgRx Signals, SSR, NX für die Architektur. Node.js und Vercel im Backend. Der Teil, der mich am meisten begeistert: Claude API, Hashbrown und die entstehende KI-Toolchain.',
           },
           'deep-dive': {
             eyebrow: 'Skills & Stack',
             headline: 'Jedes Werkzeug in meinem Gürtel.',
-            body: 'Angular und TypeScript sind die Heimat. NgRx Signals, SSR, NX — die Frontend-Architekturschicht. Node.js und Vercel im Backend. Und dann der Teil, der mich am meisten begeistert: Claude API, Hashbrown und die entstehende KI-Toolchain. Plus die Dinge am Horizont.',
+            body: 'Angular und TypeScript sind die Heimat — fünf Jahre, produktionsreif, volle Architektur-Ownership. Die mittlere Schicht: NgRx Signals, SSR, NX Monorepos, Storybook, SCSS Design-Systeme. Im Backend: Node.js, Express, Vercel. Die Frontier: Claude API, Hashbrown, Prompt Engineering, LLM-Orchestrierung. Und als nächstes: LangChain, LangGraph, React-Exploration.',
           },
         },
         formal: {
@@ -666,12 +664,12 @@ export const de: AppTranslation = {
           coffee: {
             eyebrow: 'Technische Kompetenzen',
             headline: 'Technische Kernkompetenzen.',
-            body: 'Primärspezialisierung: Angular 21 mit SSR, NgRx Signal Store, TypeScript und SCSS Design-Systeme. Sekundär: Node.js, Express und Vercel Serverless. Im Ausbau: Anthropic Claude API, Hashbrown und LLM-Orchestrierung.',
+            body: 'Primär: Angular 21 mit SSR, NgRx Signal Store, TypeScript, SCSS Design-Systeme. Sekundär: Node.js, Express, Vercel Serverless. KI: Anthropic Claude API, Hashbrown Generative UI, Prompt Engineering, LLM-Orchestrierung.',
           },
           'deep-dive': {
             eyebrow: 'Technisches Profil',
             headline: 'Umfassende technische Fähigkeiten.',
-            body: 'Mein technisches Profil umfasst drei Domänen. Frontend: Angular 21 (Standalone, Signals, SSR), NgRx Signal Store, TypeScript, RxJS, SCSS Design-Systeme, NX Monorepos und Storybook. Backend: Node.js, Express, REST APIs und Vercel Serverless. KI & Agents: Anthropic Claude API, Hashbrown Generative UI, Prompt Engineering und LLM-Workflow-Integration.',
+            body: 'Frontend: Angular 21 (Standalone, Signals, SSR), NgRx Signal Store, TypeScript (5/5), RxJS (4/5), SCSS Design-Token, NX Monorepos, Storybook. Backend: Node.js, Express, REST APIs, Vercel Serverless. KI & Agents: Claude API (4/5), Hashbrown (4/5), Prompt Engineering (4/5), LLM-Workflow-Integration. Folgt: LangChain/LangGraph, React-Exploration.',
           },
         },
       },
@@ -679,7 +677,7 @@ export const de: AppTranslation = {
         // ── Fallback auf Rollenebene ──
         eyebrow: 'Technische Fähigkeiten',
         headline: 'Kernkompetenzen',
-        body: 'Angular Produktionsstack mit KI-Integration und Node.js/Vercel Backend-Fähigkeiten.',
+        body: 'Angular Produktionsstack mit 5 Jahren Erfahrung, KI-Integration und Node.js/Vercel Backend-Fähigkeiten.',
         formal: {
           elevator: {
             eyebrow: 'Technische Fähigkeiten',
@@ -734,9 +732,9 @@ export const de: AppTranslation = {
       },
       client: {
         // ── Fallback auf Rollenebene ──
-        eyebrow: 'Technische Fähigkeiten',
-        headline: 'Mein Stack',
-        body: 'Angular Web-Anwendungen mit KI-Integration und Full-Stack-Fähigkeiten.',
+        eyebrow: 'Was ich mitbringe',
+        headline: 'Meine Fähigkeiten',
+        body: 'Ich baue Webanwendungen mit den besten Tools — schnell, zuverlässig und skalierbar.',
         formal: {
           elevator: {
             eyebrow: 'Technische Fähigkeiten',
@@ -791,8 +789,8 @@ export const de: AppTranslation = {
       },
       default: {
         eyebrow: 'Tech Stack',
-        headline: 'Skills & Werkzeuge.',
-        body: '',
+        headline: 'Skills & Werkzeuge',
+        body: 'Angular-first Frontend-Entwickler mit KI-Integration und Full-Stack-Fähigkeiten.',
         'upcoming-label': 'Am Horizont',
         'group-frontend': 'Frontend',
         'group-backend': 'Backend',
@@ -800,7 +798,7 @@ export const de: AppTranslation = {
       },
     },
     'personal-interests': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             headline: 'Nicht nur Code.',
@@ -968,69 +966,97 @@ export const de: AppTranslation = {
       },
     },
     'experience-vault': {
-      developer: {
-        technical: {
-          elevator: { headline: 'Qualifikationen.' },
-          coffee: { headline: 'Was die Zeugnisse sagen' },
-          'deep-dive': { headline: 'Der formale Nachweis' },
-        },
+      'tech-peer': {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Bildung & Zertifizierungen',
+        headline: 'Qualifikationen.',
+        'cred-bsc-title': 'Bachelor of Science Informatik — WebAssembly-Thesis',
+        'cred-bsc-institution': 'Universität Unipegaso',
+        'cred-bsc-status': 'Abgeschlossen · 109/110',
+        'cred-english-title': 'C1-Englisch-Zertifizierung',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Bearbeitung',
         formal: {
-          elevator: { headline: 'Formale Qualifikationen.' },
-          coffee: { headline: 'Bildung & Zertifizierungen' },
-          'deep-dive': { headline: 'Akademischer Hintergrund' },
+          elevator: { eyebrow: 'Qualifikationen', headline: 'Formale Qualifikationen.' },
+          coffee: { eyebrow: 'Bildung & Zertifizierungen', headline: 'Bildung & Zertifizierungen.' },
+          'deep-dive': { eyebrow: 'Akademischer Hintergrund', headline: 'Akademischer Hintergrund.' },
         },
         creative: {
-          elevator: { headline: 'Papierspur.' },
-          coffee: { headline: 'Wo Schule auf Neugier traf' },
-          'deep-dive': { headline: 'Die Abschlüsse hinter dem Code' },
+          elevator: { eyebrow: 'Die Papierspur', headline: 'Papierspur.' },
+          coffee: { eyebrow: 'Bildung', headline: 'Wo Schule auf Neugier traf.' },
+          'deep-dive': { eyebrow: 'Bildung & Zerts', headline: 'Die Abschlüsse hinter dem Code.' },
+        },
+        technical: {
+          elevator: { eyebrow: 'Qualifikationen', headline: 'Qualifikationen.' },
+          coffee: { eyebrow: 'Akademischer Nachweis', headline: 'Was die Zeugnisse sagen.' },
+          'deep-dive': { eyebrow: 'Formaler Nachweis', headline: 'Der formale Nachweis.' },
         },
       },
       recruiter: {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Bildung',
+        headline: 'Qualifikationen',
+        'cred-bsc-title': 'Bachelor of Science, Informatik',
+        'cred-bsc-institution': 'Universität Unipegaso',
+        'cred-bsc-status': 'Abgeschlossen · 109/110',
+        'cred-english-title': 'Englisch-Sprachzertifikat — C1',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Bearbeitung',
         formal: {
-          elevator: { headline: 'Qualifikationen auf einen Blick.' },
-          coffee: { headline: 'Bildung & Zertifikate' },
-          'deep-dive': { headline: 'Akademisches Profil' },
+          elevator: { eyebrow: 'Qualifikationen', headline: 'Qualifikationen auf einen Blick.' },
+          coffee: { eyebrow: 'Bildung & Zertifikate', headline: 'Bildung & Zertifikate.' },
+          'deep-dive': { eyebrow: 'Akademisches Profil', headline: 'Akademisches Profil.' },
         },
         creative: {
-          elevator: { headline: 'Zertifiziert & neugierig.' },
-          coffee: { headline: 'Das Qualifikationsregal' },
-          'deep-dive': { headline: 'Alles, was der Lebenslauf unter Bildung auflistet' },
+          elevator: { eyebrow: 'Zertifiziert', headline: 'Zertifiziert & neugierig.' },
+          coffee: { eyebrow: 'Qualifikationen', headline: 'Das Qualifikationsregal.' },
+          'deep-dive': { eyebrow: 'Bildung', headline: 'Alles, was der Lebenslauf unter Bildung auflistet.' },
         },
         technical: {
-          elevator: { headline: 'Abschlüsse & Zerts.' },
-          coffee: { headline: 'Was er studiert hat' },
-          'deep-dive': { headline: 'Akademischer und Zertifizierungs-Werdegang' },
+          elevator: { eyebrow: 'Abschlüsse & Zerts', headline: 'Abschlüsse & Zerts.' },
+          coffee: { eyebrow: 'Bildung', headline: 'Was er studiert hat.' },
+          'deep-dive': { eyebrow: 'Akademischer Werdegang', headline: 'Akademischer und Zertifizierungs-Werdegang.' },
         },
       },
       client: {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Qualifikationen',
+        headline: 'Formal qualifiziert.',
+        'cred-bsc-title': 'Universitätsabschluss in Informatik',
+        'cred-bsc-institution': 'Universität Unipegaso',
+        'cred-bsc-status': 'Abgeschlossen mit Auszeichnung',
+        'cred-english-title': 'Englisch-Sprachzertifikat',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In Bearbeitung',
         formal: {
-          elevator: { headline: 'Formal qualifiziert.' },
-          coffee: { headline: 'Bildungshintergrund' },
-          'deep-dive': { headline: 'Akademische und berufliche Qualifikationen' },
+          elevator: { eyebrow: 'Qualifikationen', headline: 'Formal qualifiziert.' },
+          coffee: { eyebrow: 'Bildung', headline: 'Bildungshintergrund.' },
+          'deep-dive': { eyebrow: 'Akademisch & Beruflich', headline: 'Akademische und berufliche Qualifikationen.' },
         },
         creative: {
-          elevator: { headline: 'Der Tresor.' },
-          coffee: { headline: 'Wo alles begann' },
-          'deep-dive': { headline: 'Schule, Zerts und was daraus wurde' },
+          elevator: { eyebrow: 'Der Tresor', headline: 'Der Tresor.' },
+          coffee: { eyebrow: 'Bildung', headline: 'Wo alles begann.' },
+          'deep-dive': { eyebrow: 'Hintergrund', headline: 'Schule, Zerts und was daraus wurde.' },
         },
         technical: {
-          elevator: { headline: 'Qualifikationen.' },
-          coffee: { headline: 'Abschlüsse & Zertifizierungen' },
-          'deep-dive': { headline: 'Die formalen Qualifikationen hinter der Arbeit' },
+          elevator: { eyebrow: 'Qualifikationen', headline: 'Qualifikationen.' },
+          coffee: { eyebrow: 'Bildung', headline: 'Abschlüsse & Zertifizierungen.' },
+          'deep-dive': { eyebrow: 'Formale Qualifikationen', headline: 'Die formalen Qualifikationen hinter der Arbeit.' },
         },
       },
       default: {
+        eyebrow: 'Bildung & Zertifizierungen',
         headline: 'Qualifikationen',
         'cred-bsc-title': 'Bachelor of Science in Informatik',
         'cred-bsc-institution': 'Universität Unipegaso',
-        'cred-bsc-status': 'Abgeschlossen',
+        'cred-bsc-status': 'Abgeschlossen · 109/110',
         'cred-english-title': 'Englisch-Sprachzertifikat',
         'cred-english-institution': 'Wall Street English',
         'cred-english-status': 'In Bearbeitung',
       },
     },
     'compatibility-engine': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             headline: 'Hohe Übereinstimmung erkannt.',
@@ -1169,78 +1195,441 @@ export const de: AppTranslation = {
       },
     },
     'core-identity': {
-      developer: {
+      'tech-peer': {
+        headline: 'Der Ingenieur hinter dem Code.',
+        eyebrow: 'Ingenieurprofil',
+        'label-name': 'Name',
+        'label-age': 'Alter',
+        'label-height': 'Größe / Gewicht',
+        'label-location': 'Standort',
+        'label-role': 'Aktuelle Rolle',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italien',
+        'value-role': 'Frontend Developer (de facto Tech Lead) @ Datacolor',
         formal: {
-          elevator: { headline: 'Der Ingenieur hinter dem Code.', eyebrow: 'Persönliche Daten' },
-          coffee: { headline: 'Lernen Sie Erik Ferrari kennen.', eyebrow: 'Wer ist Erik' },
+          elevator: {
+            headline: 'Der Ingenieur hinter dem Code.',
+            eyebrow: 'Ingenieurprofil',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend Developer (de facto Tech Lead) @ Datacolor',
+          },
+          coffee: {
+            headline: 'Lernen Sie Erik Ferrari kennen — Angular-Entwickler aus Reggio Emilia.',
+            eyebrow: 'Entwickleridentität',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien',
+            'value-role': 'Frontend Developer & de facto Tech Lead bei Datacolor',
+          },
           'deep-dive': {
-            headline: 'Erik Ferrari — Ingenieurprofil.',
-            eyebrow: 'Identitätsübersicht',
+            headline: 'Erik Ferrari — Ingenieur, Architekt, KI-Integrator.',
+            eyebrow: 'Vollständige Identität',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Titel & Verantwortungsbereich',
+            'value-name': 'Erik Ferrari (Erikwski)',
+            'value-age': '25 — geboren am 4. August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien',
+            'value-role': 'Frontend Developer (de facto Tech Lead) bei Datacolor — Angular, SSR, UI-Library-Eigentümer, KI-Agenten-Architekt',
           },
         },
         creative: {
-          elevator: { headline: 'Das bin ich auf einer Karte.', eyebrow: 'Der Mensch' },
-          coffee: { headline: 'Das bin ich.', eyebrow: 'Hinter der Tastatur' },
+          elevator: {
+            headline: 'Das bin ich auf einer Karte.',
+            eyebrow: 'Der Mensch',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Heimatbasis',
+            'label-role': 'Was ich tue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Angular-Apps bauen. Architektur leiten. KI integrieren.',
+          },
+          coffee: {
+            headline: 'Das bin ich — jenseits des GitHub-Profils.',
+            eyebrow: 'Hinter der Tastatur',
+            'label-name': 'Ich bin bekannt als',
+            'label-age': 'Jahre auf der Erde',
+            'label-height': 'Körperliche Daten',
+            'label-location': 'Heimatbasis',
+            'label-role': 'Tagesjob',
+            'value-name': 'Erik Ferrari / Erikwski',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Angular Tech Lead bei Datacolor (und nach Feierabend: das hier bauen)',
+          },
           'deep-dive': {
             headline: 'Vollständiges Bild, kein Filter.',
             eyebrow: 'Die Person & der Dev',
+            'label-name': 'Name / Alias',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Wo ich arbeite',
+            'label-role': 'Offizieller Titel (und was er wirklich bedeutet)',
+            'value-name': 'Erik Ferrari — online als Erikwski',
+            'value-age': '25 (geboren am 4. August 2000)',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna — remote-freundlich',
+            'value-role': 'Frontend Developer bei Datacolor — in der Praxis verantworte ich Architektur, UI-Library und KI-Tooling-Roadmap',
           },
         },
         technical: {
-          elevator: { headline: 'Erik. Angular-Dev. Italien.', eyebrow: 'Profil' },
-          coffee: { headline: 'Der Dev hinter dem Stack.', eyebrow: 'Dev-Profil' },
+          elevator: {
+            headline: 'Erik. Angular. Italien.',
+            eyebrow: 'Dev-Profil',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Stack / Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Angular + NgRx + SSR — de facto Tech Lead @ Datacolor',
+          },
+          coffee: {
+            headline: 'Der Dev hinter dem Stack.',
+            eyebrow: 'Technisches Profil',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Rolle & Umfang',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend Developer (de facto Tech Lead) — Angular, NgRx Signal Store, SSR, KI-Agenten',
+          },
           'deep-dive': {
-            headline: 'Erik Ferrari — technisches Profil.',
-            eyebrow: 'Identitätskarte',
+            headline: 'Erik Ferrari — technische Profilkarte.',
+            eyebrow: 'Identität',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle & Verantwortlichkeiten',
+            'value-name': 'Erik Ferrari (Alias: Erikwski)',
+            'value-age': '25 — Geburtsdatum 2000-08-04',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien (Remote bevorzugt)',
+            'value-role': 'Frontend Developer @ Datacolor — de facto Tech Lead: Angular-Architektur, geteilte UI-Library, KI-unterstütztes Linting, DDD-Forschung',
           },
         },
       },
       recruiter: {
+        headline: 'Kandidat: Erik Ferrari.',
+        eyebrow: 'Kandidatenübersicht',
+        'label-name': 'Vollständiger Name',
+        'label-age': 'Alter',
+        'label-height': 'Größe / Gewicht',
+        'label-location': 'Standort',
+        'label-role': 'Aktuelle Position',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italien',
+        'value-role': 'Frontend Developer (de facto Tech Lead) bei Datacolor',
         formal: {
-          elevator: { headline: 'Kandidat: Erik Ferrari.', eyebrow: 'Kandidatenübersicht' },
-          coffee: { headline: 'Wen Sie sich ansehen.', eyebrow: 'Kandidatenprofil' },
+          elevator: {
+            headline: 'Kandidat: Erik Ferrari.',
+            eyebrow: 'Kandidatenübersicht',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Position',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend Developer (de facto Tech Lead) bei Datacolor',
+          },
+          coffee: {
+            headline: 'Wen Sie sich ansehen.',
+            eyebrow: 'Kandidatenprofil',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Aktueller Standort',
+            'label-role': 'Aktuelle Position',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien',
+            'value-role': 'Frontend Developer & de facto Tech Lead bei Datacolor (seit Juni 2024)',
+          },
           'deep-dive': {
-            headline: 'Vollständige Kandidatenidentität.',
+            headline: 'Vollständige Kandidatenidentität: Erik Ferrari.',
             eyebrow: 'Kandidatendaten',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperliche Daten',
+            'label-location': 'Aktueller Standort',
+            'label-role': 'Aktuelle Rolle & Umfang',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — geboren am 4. August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien — offen für Remote',
+            'value-role': 'Frontend Developer bei Datacolor — de facto Tech Lead, Angular-Architektur-Eigentümer, UI-Library-Maintainer, KI-Tooling-Forscher',
           },
         },
         creative: {
-          elevator: { headline: 'Das ist Erik.', eyebrow: 'Die Person, die Sie einstellen würden' },
-          coffee: { headline: 'Das Gesicht hinter dem Lebenslauf.', eyebrow: 'Jenseits des CV' },
+          elevator: {
+            headline: 'Das ist Erik.',
+            eyebrow: 'Der Kandidat, den Sie anrufen würden',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend Tech Lead — Architektur, Angular, KI',
+          },
+          coffee: {
+            headline: 'Das Gesicht hinter dem Lebenslauf.',
+            eyebrow: 'Jenseits des CV',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Lebt in',
+            'label-role': 'Was er macht',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien — stark präferiert Remote',
+            'value-role': 'De facto Tech Lead bei Datacolor — verantwortet Architektur, liefert Qualität, baut mit KI',
+          },
           'deep-dive': {
             headline: 'Mehr als ein LinkedIn-Profil.',
             eyebrow: 'Vollständige Identität',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle (und was das wirklich bedeutet)',
+            'value-name': 'Erik Ferrari / Erikwski',
+            'value-age': '25 — geboren August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien — Remote-first',
+            'value-role': 'Frontend Developer bei Datacolor — trifft Architekturentscheidungen, besitzt die geteilte UI-Library, leitet KI-Integrationsforschung für das Team',
           },
         },
         technical: {
-          elevator: { headline: 'Erik Ferrari, Angular-Dev.', eyebrow: 'Kandidateninfo' },
-          coffee: { headline: 'Kandidaten-Grunddaten.', eyebrow: 'Schlüsselfakten' },
-          'deep-dive': { headline: 'Kandidaten-Identitätskarte.', eyebrow: 'Vollständiges Profil' },
+          elevator: {
+            headline: 'Erik Ferrari, Angular-Dev.',
+            eyebrow: 'Kandidateninfo',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Aktueller Stack',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Angular, NgRx, SSR — Tech Lead bei Datacolor',
+          },
+          coffee: {
+            headline: 'Kandidaten-Grunddaten.',
+            eyebrow: 'Schlüsselfakten',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Rolle & Stack',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend Developer (de facto Tech Lead) — Angular, NgRx Signal Store, SSR, KI-Agenten',
+          },
+          'deep-dive': {
+            headline: 'Kandidaten-Identitätskarte: Erik Ferrari.',
+            eyebrow: 'Vollständiges Profil',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter / Geburtsdatum',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Aktuelle Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — Geburtsdatum 2000-08-04',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien — Remote bevorzugt',
+            'value-role': 'Frontend Developer bei Datacolor — de facto Tech Lead (Angular-Architektur, UI-Library, KI-Tooling)',
+          },
         },
       },
       client: {
+        headline: 'Ihr Entwickler: Erik Ferrari.',
+        eyebrow: 'Ansprechpartner',
+        'label-name': 'Name',
+        'label-age': 'Alter',
+        'label-height': 'Körperbau',
+        'label-location': 'Standort',
+        'label-role': 'Was ich tue',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italien',
+        'value-role': 'Frontend-Entwickler — ich baue Webanwendungen, die gut aussehen und zuverlässig funktionieren',
         formal: {
-          elevator: { headline: 'Ihr Entwickler: Erik Ferrari.', eyebrow: 'Ansprechpartner' },
-          coffee: { headline: 'Mit wem Sie arbeiten würden.', eyebrow: 'Berufsprofil' },
+          elevator: {
+            headline: 'Ihr Entwickler: Erik Ferrari.',
+            eyebrow: 'Ansprechpartner',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Was ich tue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend-Entwickler — ich baue Webanwendungen, die gut aussehen und zuverlässig funktionieren',
+          },
+          coffee: {
+            headline: 'Mit wem Sie arbeiten würden.',
+            eyebrow: 'Berufsprofil',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Spezialisierung',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend-Entwickler spezialisiert auf moderne Web-Apps — derzeit Tech Lead bei Datacolor',
+          },
           'deep-dive': {
             headline: 'Erik Ferrari — berufliche Identität.',
             eyebrow: 'Kontakt & Rolle',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Was ich liefere',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italien',
+            'value-role': 'Frontend-Entwickler mit 5+ Jahren Erfahrung in Produktionsprojekten — von Startup-Tools bis Enterprise-Plattformen bei Datacolor',
           },
         },
         creative: {
-          elevator: { headline: 'Hallo, ich bin Erik.', eyebrow: 'Der Builder' },
+          elevator: {
+            headline: 'Hallo, ich bin Erik.',
+            eyebrow: 'Der Builder',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Heimat',
+            'label-role': 'Was ich tue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Ich baue Web-Produkte, die schnell, sauber und dauerhaft sind',
+          },
           coffee: {
             headline: 'Die Person, die Ihr Produkt bauen würde.',
             eyebrow: 'Wer ich bin',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Wo ich bin',
+            'label-role': 'Was ich für Sie tue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Ich designe und baue Webanwendungen — derzeit leite ich das Frontend bei Datacolor und suche das richtige Projekt',
           },
-          'deep-dive': { headline: 'Erik Ferrari — das vollständige Bild.', eyebrow: 'Über mich' },
+          'deep-dive': {
+            headline: 'Erik Ferrari — das vollständige Bild.',
+            eyebrow: 'Über mich',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Was ich wirklich tue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — habe 2020 angefangen zu coden und nie aufgehört',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien — arbeite remote über Zeitzonen hinweg',
+            'value-role': 'Frontend-Entwickler — ich verwandle Ideen in schnelle, zuverlässige Web-Produkte. Derzeit Tech Lead des Frontend-Teams bei Datacolor.',
+          },
         },
         technical: {
-          elevator: { headline: 'Erik Ferrari, Frontend-Dev.', eyebrow: 'Kontaktinfo' },
-          coffee: { headline: 'Entwicklerübersicht.', eyebrow: 'Dev-Profil' },
+          elevator: {
+            headline: 'Erik Ferrari, Frontend-Dev.',
+            eyebrow: 'Kontaktinfo',
+            'label-name': 'Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Rolle',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend-Entwickler — Web-Apps, schnell ladende Seiten, sauberer Code',
+          },
+          coffee: {
+            headline: 'Entwicklerübersicht.',
+            eyebrow: 'Dev-Profil',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Körperbau',
+            'label-location': 'Standort',
+            'label-role': 'Spezialisierung',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend-Entwickler — schnell ladende Seiten, App-Zustandsverwaltung, sauberer wartbarer Code',
+          },
           'deep-dive': {
             headline: 'Technische Identität: Erik Ferrari.',
             eyebrow: 'Entwicklerkarte',
+            'label-name': 'Vollständiger Name',
+            'label-age': 'Alter',
+            'label-height': 'Größe / Gewicht',
+            'label-location': 'Standort',
+            'label-role': 'Was ich baue',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italien',
+            'value-role': 'Frontend-Entwickler bei Datacolor — Web-Oberflächen, schnell ladende Seiten und App-Zustandsverwaltungssysteme für den Produktionseinsatz',
           },
         },
       },
@@ -1253,14 +1642,21 @@ export const de: AppTranslation = {
         'label-location': 'Standort',
         'label-role': 'Aktuelle Rolle',
         'value-name': 'Erik Ferrari',
-        'value-age': '28',
-        'value-height': '180 cm / 75 kg',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
         'value-location': 'Reggio Emilia, Italien',
-        'value-role': 'Angular Frontend Developer & UI Library Owner',
+        'value-role': 'Angular Frontend Developer & de facto Tech Lead bei Datacolor',
       },
     },
     'professional-objective': {
-      developer: {
+      'tech-peer': {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Nächstes Ziel',
+        headline: 'Tech Lead.',
+        body: 'Von praktischer Entwicklung zur Führung von Teams. Architektur, Mentoring, KI-Integration.',
+        'pillar-architecture': 'Architektur-Ownership & Coding-Standards',
+        'pillar-leadership': 'Team-Führung & technisches Mentoring',
+        'pillar-ai': 'KI-native Engineering-Workflows',
         formal: {
           elevator: {
             eyebrow: 'Nächstes Ziel',
@@ -1314,6 +1710,13 @@ export const de: AppTranslation = {
         },
       },
       recruiter: {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Karriereziel',
+        headline: 'Tech Lead.',
+        body: 'Erik zielt auf eine Tech-Lead- oder Engineering-Leader-Position ab — bereit, Architektur zu besitzen, Teams zu leiten und KI-Adoption voranzutreiben.',
+        'pillar-architecture': 'Architekturentscheidungen',
+        'pillar-leadership': 'Team-Leadership & Mentoring',
+        'pillar-ai': 'KI-Integrationsstrategie',
         formal: {
           elevator: {
             eyebrow: 'Karriereziel',
@@ -1367,6 +1770,13 @@ export const de: AppTranslation = {
         },
       },
       client: {
+        // ── Fallback auf Rollenebene ──
+        eyebrow: 'Berufliche Ausrichtung',
+        headline: 'Technische Führung.',
+        body: 'Erik führt die technische Richtung bei ambitionierten Projekten — Architektur, KI-Integration und Delivery-Ownership.',
+        'pillar-architecture': 'Technische Architektur',
+        'pillar-leadership': 'Projektführung',
+        'pillar-ai': 'KI-Feature-Integration',
         formal: {
           elevator: {
             eyebrow: 'Berufliche Ausrichtung',
@@ -1429,7 +1839,7 @@ export const de: AppTranslation = {
       },
     },
     'team-culture': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             eyebrow: 'Team-Fit',
@@ -1604,7 +2014,7 @@ export const de: AppTranslation = {
       },
     },
     'lifestyle-activities': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: { eyebrow: 'Außerhalb des Terminals', headline: 'Standardmäßig aktiv.' },
           coffee: { eyebrow: 'Lebensstil', headline: 'Eriks Aktivitäts-Dashboard.' },
@@ -1708,7 +2118,7 @@ export const de: AppTranslation = {
       },
     },
     'contextual-faq': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             eyebrow: 'Schnelle Antworten',
@@ -2096,7 +2506,7 @@ export const de: AppTranslation = {
       },
     },
     'cv-download': {
-    developer: {
+    'tech-peer': {
       headline: 'Lebenslauf herunterladen',
       cta: 'PDF herunterladen',
       note: 'Zuletzt aktualisiert April 2026',
@@ -2163,7 +2573,7 @@ export const de: AppTranslation = {
     },
   },
   'hire-me': {
-    developer: {
+    'tech-peer': {
       headline: 'Lass uns reden.',
       body: 'Offen für Senior- und Lead-Rollen. Angular-fokussiert, KI-nativ, remote.',
       'cta-email': 'E-Mail senden',
@@ -2400,7 +2810,7 @@ export const de: AppTranslation = {
     },
   },
   'philosophy': {
-    developer: {
+    'tech-peer': {
       headline: 'Ingenieursphilosophie',
       quote: 'Sauberer Code sollte dich zum Lächeln bringen wie ein gut gestaltetes Auto.',
       'belief-1-title': 'Architektur vor Code',
@@ -2730,7 +3140,7 @@ export const de: AppTranslation = {
     },
   },
   'music-taste': {
-    developer: {
+    'tech-peer': {
       headline: 'Abseits der Arbeit',
       intro: 'Die Playlist, wenn das Terminal geschlossen ist.',
       'artist-1': 'Salmo',
@@ -3034,7 +3444,7 @@ export const de: AppTranslation = {
     },
   },
   'reading-list': {
-    developer: {
+    'tech-peer': {
       headline: 'Das Regal',
       intro: 'Bücher, die mein Denken über Software verändert haben.',
       'book-1-title': 'Clean Code', 'book-1-author': 'Robert C. Martin', 'book-1-note': "Das Lieblingsbuch aller Zeiten. Qualität als täglicher Standard, kein Sprint-Ziel.",
@@ -3341,7 +3751,7 @@ export const de: AppTranslation = {
     },
   },
   'origin-story': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Herkunftsgeschichte',
           'act-1-title': 'Kellner tagsüber', 'act-1-body': 'Drei Jahre Bedienen, nachts Coden. Sechs Monate Überlappung — körperliche Erschöpfung, soziale Isolation. Jede Stunde wert.',
@@ -3537,7 +3947,7 @@ export const de: AppTranslation = {
     },
   },
   'meta-explainer': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'So funktioniert das', body: 'Hashbrown + Angular SSR + Claude API. Dein Profil steuert, welche Komponenten gerendert werden.', 'tech-note': 'Angular 21 · Hashbrown · Claude API · NgRx Signals', invitation: 'Schau dir den Quellcode an.' },
         coffee: { headline: 'Generative-UI-Architektur', body: 'Dieses Portfolio ist eine Generative-UI-Anwendung. Bei jedem Prompt entscheidet Claude, welche Angular-Komponenten gerendert werden und wie ihr Inhalt gerahmt wird — basierend auf deinem Besucherprofil, gespeichert in einem NgRx Signal Store.', 'tech-note': 'Stack: Angular 21 SSR · Hashbrown · @hashbrownai/anthropic · NgRx Signals · Vercel', invitation: 'Versuche, etwas Ungewöhnliches zu fragen, und beobachte, wie sich das Layout anpasst.' },
@@ -3596,7 +4006,7 @@ export const de: AppTranslation = {
     },
   },
   'conference-activity': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Konferenzen',
           'conf-1-name': 'AWS Summit', 'conf-1-year': 'Mai 2022', 'conf-1-note': 'Cloud-Infrastruktur in der Skalierung.',
@@ -3847,7 +4257,7 @@ export const de: AppTranslation = {
     },
   },
   'open-source': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Open Source', intro: 'HyperIoT Hauptcontributor. openapi-ts PR #3552.',
           'proj-1-name': 'HyperIoT', 'proj-1-role': 'Hauptcontributor', 'proj-1-desc': 'Angular-basierte IoT- & BigData-Plattform.',
@@ -3960,7 +4370,7 @@ export const de: AppTranslation = {
     },
   },
   mentors: {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Mentoren',
           intro: 'Die Menschen, die den Ansatz geprägt haben.',

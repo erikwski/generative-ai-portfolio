@@ -5,7 +5,7 @@ export const en: AppTranslation = {
     eyebrow: 'Before we start',
     title: 'Who are you?',
     role: {
-      developer: 'Developer',
+      'tech-peer': 'Tech Peer',
       recruiter: 'Recruiter',
       client: 'Client',
     },
@@ -17,12 +17,6 @@ export const en: AppTranslation = {
       'coffee.sub': '5m',
       'deep-dive': 'Deep Dive',
       'deep-dive.sub': '15m+',
-    },
-    style: {
-      label: 'How should we talk?',
-      formal: 'Formal & Precise',
-      creative: 'Creative & Experimental',
-      technical: 'Fast & Technical',
     },
     submit: 'Enter →',
     note: 'This portfolio adapts to you. Your answers shape the interface — every component is generated live by AI based on who you are and your preferences.',
@@ -53,7 +47,7 @@ export const en: AppTranslation = {
   },
   widgets: {
     'architects-identity': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             eyebrow: 'Full-Stack Engineer',
@@ -217,140 +211,125 @@ export const en: AppTranslation = {
       },
     },
     'evolution-timeline': {
-      developer: {
-        technical: {
+      'tech-peer': {
+        // ── Role-level fallback ──
+        headline: 'Career',
+        'current-label': 'Current',
+        'datacolor-role': 'Angular Frontend Developer & UI Library Owner',
+        'acsoftware-role': 'Angular Developer / Consultant',
+        'smarthy-role': 'Full-Stack Developer',
+        'datacolor-desc': 'UI library owner · micro-frontends · DDD research · AI workflow integration · Angular 21.',
+        'acsoftware-desc': 'Enterprise Angular · NX monorepos · NgRx · insurance & gov clients.',
+        'smarthy-desc': 'First prod role · jQuery + ASP.NET + Angular · full-stack.',
+        formal: {
           elevator: {
-            headline: 'Career Stack',
-            'datacolor-desc':
-              'UI library owner · micro-frontends · AI workflow integration · Angular 21.',
-            'acsoftware-desc': 'Enterprise Angular · NX monorepos · NGRX state.',
-            'smarthy-desc': 'First prod role · Node.js + Angular · full-stack.',
+            headline: 'Professional Experience',
+            'datacolor-desc': 'Angular UI library ownership, micro-frontend architecture, AI workflow integration.',
+            'acsoftware-desc': 'Enterprise Angular development, architecture, NX monorepos, NgRx state management.',
+            'smarthy-desc': 'Full-stack Angular and Node.js development in a startup context.',
           },
           coffee: {
-            headline: 'Technical Career',
-            'datacolor-desc':
-              "Currently owning Datacolor's Angular UI library — design tokens, shared components, micro-frontend architecture. Now leading AI-augmented workflows using Angular 21 and the Anthropic Claude API.",
-            'acsoftware-desc':
-              'Enterprise consulting at ACSoftware. Large-scale Angular apps with NX monorepos and NGRX for reactive state. Focus on long-term maintainability and cross-team reuse.',
-            'smarthy-desc':
-              'First engineering role. Full-stack features with Angular and Node.js in a startup environment. Shipped production code and developed an eye for clean architecture.',
+            headline: 'Professional Experience',
+            'datacolor-desc': 'Current: Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the shared design system, micro-frontend integration, DDD research, and the introduction of AI-augmented development workflows.',
+            'acsoftware-desc': 'Angular developer at ACSoftware, an enterprise software consultancy. Delivered scalable Angular applications for insurance and government clients using NX monorepos and NgRx for state management.',
+            'smarthy-desc': 'Junior full-stack developer at Smarthy Srl. Built and shipped production web applications using Angular and Node.js across multiple concurrent products.',
           },
           'deep-dive': {
-            headline: 'Career Deep Dive',
-            'datacolor-desc':
-              'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Full ownership of the shared component library used by all product teams. Introduced micro-frontend integration, TypeScript standards, and currently leading the adoption of AI-augmented development workflows using Angular 21 and the Anthropic Claude API via Hashbrown.',
-            'acsoftware-desc':
-              'Angular Developer at ACSoftware (1 year). Enterprise consultancy context — delivered maintainable, large-scale applications using NX for monorepo management and NGRX for reactive state. Strong focus on architectural quality, onboarding standards, and cross-team component reuse.',
-            'smarthy-desc':
-              'Full-Stack Developer at Smarthy Srl (2 years). First production engineering role. Owned full-stack features in Angular and Node.js, from spec to deployment. Developed production discipline and the fundamentals of real-world software delivery.',
+            headline: 'Professional Experience',
+            'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Full ownership of the shared component library used by all product teams in the textile division. Responsibilities: micro-frontend architecture, TypeScript standards, design system maintenance, DDD-on-frontend research, and leading AI-augmented workflows using Angular 21 and the Anthropic Claude API via Hashbrown.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware (2 years). Enterprise software consultancy serving insurance companies and public administration. Delivered maintainable large-scale applications using NX monorepo management and NgRx for reactive state. Strong focus on architectural robustness, cross-team component reuse, and long-term maintainability.',
+            'smarthy-desc': 'Full-Stack Developer at Smarthy Srl (2 years). First production engineering role. Owned full-stack features across multiple concurrent products — Angular client-side, ASP.NET back-end, some Node.js. From spec to deployment. Developed production discipline and software delivery fundamentals.',
           },
         },
         creative: {
           elevator: {
             headline: 'The Journey',
-            'datacolor-desc': 'Now: building the components others build with.',
-            'acsoftware-desc': 'Before: scaling enterprise Angular the right way.',
+            'datacolor-desc': 'Now: building the foundations others build on.',
+            'acsoftware-desc': 'Before: scaling enterprise Angular for demanding clients.',
             'smarthy-desc': 'Started: first code, first users, first lessons.',
           },
           coffee: {
             headline: 'The Story So Far',
-            'datacolor-desc':
-              'Currently the person responsible for the tools that other Angular teams build from — the UI library at Datacolor. And now exploring what happens when Claude designs the interface instead of the developer.',
-            'acsoftware-desc':
-              'A year in the deep end of enterprise Angular — NX monorepos, NGRX, codebases that had to outlive the project. Learned how software really scales.',
-            'smarthy-desc':
-              'Where it started. A startup, a steep learning curve, and the first time shipping something real to real users.',
+            'datacolor-desc': 'Currently the person responsible for the tools that other Angular teams build from — the UI library at Datacolor. And now exploring what happens when Claude designs the interface instead of the developer.',
+            'acsoftware-desc': 'Two years in the deep end of enterprise Angular — NX monorepos, NgRx, codebases that had to outlive the project. Learned how software really scales.',
+            'smarthy-desc': 'Where it started. A startup, a steep learning curve, and the first time shipping something real to real users.',
           },
           'deep-dive': {
             headline: 'The Full Story',
-            'datacolor-desc':
-              'Currently at Datacolor Industrial — Angular UI Library Owner. The work is about building foundations: the design system, shared components, micro-frontend integration. And lately, experimenting with generative UI, where Claude composes the interface instead of a developer hardcoding it.',
-            'acsoftware-desc':
-              "At ACSoftware, a year of enterprise Angular consulting. The kind of codebase where NX monorepos and NGRX aren't luxuries — they're what keeps a 200k-line app from falling apart. Learned architectural discipline.",
-            'smarthy-desc':
-              'Smarthy Srl was the beginning — a startup, a small team, full ownership of features from day one. Built in Angular and Node.js, shipped in production, learned the difference between code that works and code that lasts.',
+            'datacolor-desc': 'Currently at Datacolor Industrial — Angular UI Library Owner. The work is about building foundations: the design system, shared components, micro-frontend integration, DDD research. And lately, experimenting with generative UI, where Claude composes the interface instead of a developer hardcoding it.',
+            'acsoftware-desc': "At ACSoftware, two years of enterprise Angular consulting for insurance companies and government institutions. The kind of codebase where NX monorepos and NgRx aren't luxuries — they're what keeps a large app from falling apart. Learned architectural discipline.",
+            'smarthy-desc': 'Smarthy Srl was the beginning — a startup, a small team, full ownership of features from day one. Built in Angular, ASP.NET, and Node.js, shipped in production, learned the difference between code that works and code that lasts.',
           },
         },
-        formal: {
+        technical: {
           elevator: {
-            headline: 'Professional Experience',
-            'datacolor-desc':
-              'Angular UI library ownership, micro-frontend architecture, AI workflow integration.',
-            'acsoftware-desc':
-              'Enterprise Angular development, architecture, and state management.',
-            'smarthy-desc': 'Full-stack Angular and Node.js development.',
+            headline: 'Career Stack',
+            'datacolor-desc': 'UI lib owner · DDD · micro-frontends · AI workflow integration · Angular 21.',
+            'acsoftware-desc': 'Enterprise Angular · NX monorepos · NgRx · insurance & gov.',
+            'smarthy-desc': 'First prod role · jQuery + ASP.NET + Angular · full-stack.',
           },
           coffee: {
-            headline: 'Professional Experience',
-            'datacolor-desc':
-              'Current: Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the shared design system, micro-frontend integration, and the introduction of AI-augmented development workflows.',
-            'acsoftware-desc':
-              'Angular developer at ACSoftware, an enterprise software consultancy. Delivered scalable Angular applications using NX monorepos and NGRX for state management.',
-            'smarthy-desc':
-              'Junior full-stack developer at Smarthy Srl. Built and shipped production web applications using Angular and Node.js.',
+            headline: 'Technical Career',
+            'datacolor-desc': "Currently owning Datacolor's Angular UI library — design tokens, shared components, micro-frontend architecture, DDD-on-frontend research. Now leading AI-augmented workflows using Angular 21 and the Anthropic Claude API.",
+            'acsoftware-desc': 'Enterprise consulting at ACSoftware. Large-scale Angular apps with NX monorepos and NgRx for reactive state. Clients: insurance companies and public administration. Focus on long-term maintainability and cross-team reuse.',
+            'smarthy-desc': 'First engineering role at Smarthy Srl. Full-stack features across multiple concurrent products — Angular front-end, ASP.NET back-end, some Node.js. Shipped production code, developed clean architecture instincts.',
+          },
+          'deep-dive': {
+            headline: 'Career Deep Dive',
+            'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Full ownership of the shared component library — design tokens to micro-frontend integration. Leading DDD-on-frontend research (Manfred Steyer influence) and AI-augmented development workflows via Angular 21 + Hashbrown + Claude API.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware (2 years). Enterprise consultancy context — delivered maintainable, large-scale applications using NX for monorepo management and NgRx for reactive state. Clients in insurance and government. Strong focus on architectural quality, onboarding standards, and cross-team component reuse.',
+            'smarthy-desc': 'Full-Stack Developer at Smarthy Srl (2 years). First production engineering role. Owned full-stack features across multiple concurrent products (jQuery + ASP.NET + some Node.js), from spec to deployment. Developed production discipline and the fundamentals of real-world software delivery.',
           },
         },
       },
       recruiter: {
-        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        // ── Role-level fallback ──
         headline: 'Work History',
-        'datacolor-desc':
-          'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Micro-frontend architecture, component library ownership, AI workflow integration with Angular 21 and the Anthropic Claude API.',
-        'acsoftware-desc':
-          'Angular Developer at ACSoftware (1 year). Enterprise consulting, NX monorepos, NGRX state management, long-term architectural quality.',
-        'smarthy-desc':
-          'Full-Stack Developer at Smarthy Srl (2 years). Angular + Node.js, first production engineering role in a startup environment.',
+        'current-label': 'Current',
+        'datacolor-role': 'Angular Frontend Developer (de facto Tech Lead)',
+        'acsoftware-role': 'Angular Developer / Consultant',
+        'smarthy-role': 'Full-Stack Developer',
+        'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Micro-frontend architecture, shared component library, AI workflow integration with Angular 21 and the Anthropic Claude API.',
+        'acsoftware-desc': 'Angular Developer at ACSoftware (2 years). Enterprise consulting for insurance and government clients. NX monorepos, NgRx state management, long-term architectural quality.',
+        'smarthy-desc': 'Full-Stack Developer at Smarthy Srl (2 years). Angular + ASP.NET, first production engineering role in a startup environment.',
         formal: {
           elevator: {
             headline: 'Work History',
             'datacolor-desc': 'UI library ownership · micro-frontends · AI integration · ~2 yrs',
-            'acsoftware-desc': 'Enterprise Angular · NX · NGRX · 2 yrs',
-            'smarthy-desc': 'Full-stack · Angular + Node.js · 2 yrs',
+            'acsoftware-desc': 'Enterprise Angular · NX · NgRx · insurance & gov · 2 yrs',
+            'smarthy-desc': 'Full-stack · Angular + ASP.NET · startup · 2 yrs',
           },
           coffee: {
             headline: 'Work History',
-            'datacolor-desc':
-              'Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the internal component library, micro-frontend architecture, and AI workflow integration. ~2 years.',
-            'acsoftware-desc':
-              'Angular Developer at ACSoftware, an enterprise consultancy. Large-scale applications with NX monorepos and NGRX. Focus on long-term architectural quality. 1 year.',
-            'smarthy-desc':
-              'Full-Stack Developer at Smarthy Srl, a startup. Shipped production features in Angular and Node.js. First engineering role. 2 years.',
+            'datacolor-desc': 'Angular Frontend Developer and UI Library Owner at Datacolor Industrial. Responsible for the internal component library, micro-frontend architecture, and AI workflow integration. ~2 years.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware, an enterprise consultancy. Large-scale applications for insurance companies and government clients. NX monorepos, NgRx. 2 years.',
+            'smarthy-desc': 'Full-Stack Developer at Smarthy Srl, a startup. Shipped production features across multiple concurrent products. Angular + ASP.NET. First engineering role. 2 years.',
           },
           'deep-dive': {
             headline: 'Employment History',
-            'datacolor-desc':
-              'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Owns the internal Angular component library used across all product teams. Responsibilities include micro-frontend integration, TypeScript standards, design system maintenance, and leading AI-augmented development workflows using Angular 21 and the Anthropic Claude API.',
-            'acsoftware-desc':
-              'Angular Developer at ACSoftware (1 year). Enterprise software consultancy. Delivered maintainable large-scale web applications using NX for monorepo management and NGRX for reactive state. Focus on architectural robustness and cross-team component reuse.',
-            'smarthy-desc':
-              'Full-Stack Developer at Smarthy Srl (2 years). First professional engineering role in a startup environment. End-to-end ownership of production features in Angular and Node.js. Developed production discipline and software delivery fundamentals.',
+            'datacolor-desc': 'Angular Frontend Developer & UI Library Owner at Datacolor Industrial (~2 years). Owns the internal Angular component library used across all product teams. Responsibilities include micro-frontend integration, TypeScript standards, design system maintenance, DDD research, and leading AI-augmented development workflows using Angular 21 and the Anthropic Claude API.',
+            'acsoftware-desc': 'Angular Developer at ACSoftware (2 years). Enterprise software consultancy. Delivered maintainable large-scale web applications for insurance companies and public administration using NX for monorepo management and NgRx for reactive state. Focus on architectural robustness and cross-team component reuse.',
+            'smarthy-desc': 'Full-Stack Developer at Smarthy Srl (2 years). First professional engineering role in a startup environment. End-to-end ownership of production features in Angular and ASP.NET across multiple concurrent products. Developed production discipline and software delivery fundamentals.',
           },
         },
         technical: {
           elevator: {
             headline: 'Work History',
-            'datacolor-desc':
-              'Datacolor · UI lib owner · Angular 21 · micro-frontends · AI workflows · ~2 yrs',
-            'acsoftware-desc': 'ACSoftware · Enterprise consulting · NX + NGRX · 2 yrs',
-            'smarthy-desc': 'Smarthy · Full-stack · Angular + Node.js · 2 yrs',
+            'datacolor-desc': 'Datacolor · UI lib owner · Angular 21 · micro-frontends · AI workflows · ~2 yrs',
+            'acsoftware-desc': 'ACSoftware · Enterprise consulting · NX + NgRx · insurance & gov · 2 yrs',
+            'smarthy-desc': 'Smarthy · Full-stack · Angular + ASP.NET · 2 yrs',
           },
           coffee: {
             headline: 'Work History',
-            'datacolor-desc':
-              'Datacolor Industrial — UI Library Owner. Owns the Angular component library used across all product teams. Leads micro-frontend integration + AI workflow adoption with Angular 21 + Claude API. ~2 yrs.',
-            'acsoftware-desc':
-              'ACSoftware — Enterprise Angular consulting. NX monorepo, NGRX reactive state, architectural standards. 1 yr.',
-            'smarthy-desc':
-              'Smarthy Srl — Startup, first prod role. Angular + Node.js, full feature ownership from spec to deploy. 2 yrs.',
+            'datacolor-desc': 'Datacolor Industrial — UI Library Owner. Owns the Angular component library used across all product teams. Leads micro-frontend integration + AI workflow adoption with Angular 21 + Claude API. ~2 yrs.',
+            'acsoftware-desc': 'ACSoftware — Enterprise Angular consulting for insurance and government. NX monorepo, NgRx reactive state, architectural standards. 2 yrs.',
+            'smarthy-desc': 'Smarthy Srl — Startup, first prod role. Angular + ASP.NET, full feature ownership from spec to deploy. 2 yrs.',
           },
           'deep-dive': {
             headline: 'Work History',
-            'datacolor-desc':
-              'Datacolor Industrial (~2 yrs) · UI Library Owner · Angular 21 · Micro-frontends · AI workflows via Hashbrown + Claude API · Full design-system-to-deployment ownership.',
-            'acsoftware-desc':
-              'ACSoftware (1 yr) · Enterprise consulting · NX monorepo · NGRX reactive state · TypeScript strict mode · Architectural quality + cross-team component reuse.',
-            'smarthy-desc':
-              'Smarthy Srl (2 yrs) · First prod eng role · Angular + Node.js · Full feature ownership · spec → deploy in startup environment.',
+            'datacolor-desc': 'Datacolor Industrial (~2 yrs) · UI Library Owner · Angular 21 · Micro-frontends · DDD research · AI workflows via Hashbrown + Claude API · Full design-system-to-deployment ownership.',
+            'acsoftware-desc': 'ACSoftware (2 yrs) · Enterprise consulting · NX monorepo · NgRx reactive state · TypeScript strict mode · Insurance + government clients · Architectural quality + cross-team component reuse.',
+            'smarthy-desc': 'Smarthy Srl (2 yrs) · First prod eng role · Angular + ASP.NET + Node.js · Full feature ownership across multiple concurrent products · spec → deploy in startup environment.',
           },
         },
         creative: {
@@ -362,57 +341,86 @@ export const en: AppTranslation = {
           },
           coffee: {
             headline: 'Career Story',
-            'datacolor-desc':
-              'Datacolor Industrial — currently the person who owns the components that all other Angular teams build from. And lately, the person rewriting what "building a UI" even means with generative AI.',
-            'acsoftware-desc':
-              'ACSoftware — a year inside enterprise Angular at its most demanding. Learned how software scales when it really has to.',
-            'smarthy-desc':
-              'Smarthy Srl — the beginning. First eng role, first production app, first real users.',
+            'datacolor-desc': "Datacolor Industrial — currently the person who owns the components that all other Angular teams build from. And lately, the person rewriting what 'building a UI' even means with generative AI.",
+            'acsoftware-desc': 'ACSoftware — two years inside enterprise Angular at its most demanding. Insurance companies and government institutions. Learned how software scales when it really has to.',
+            'smarthy-desc': 'Smarthy Srl — the beginning. First eng role, first production app, first real users.',
+          },
+          'deep-dive': {
+            headline: 'Career Story',
+            'datacolor-desc': 'Datacolor Industrial is where Erik currently works as UI Library Owner — the person responsible for the foundations that entire product teams build on. Design system, micro-frontend integration, DDD research, and now generative UI: Claude composing the interface at runtime.',
+            'acsoftware-desc': "ACSoftware gave Erik two years inside the most demanding side of Angular consulting — insurance and government codebases where NX and NgRx aren't options, they're requirements. He learned what architectural quality means when clients can't afford to refactor in six months.",
+            'smarthy-desc': "Smarthy Srl is where it all began — a startup, multiple concurrent products, full ownership from day one. Erik shipped Angular + ASP.NET features to production users before he'd been coding professionally for a year.",
           },
         },
       },
       client: {
-        // ── Role-level fallback — catches any style+time combo not explicitly defined ──
+        // ── Role-level fallback ──
         headline: 'Experience',
-        'datacolor-desc':
-          'Currently Angular Frontend Developer at Datacolor Industrial. Full ownership of the design system and micro-frontend architecture. Leading AI integration with Angular 21. ~2 years.',
-        'acsoftware-desc':
-          'Angular developer at an enterprise software consultancy. Delivered robust, scalable web applications for corporate clients.',
-        'smarthy-desc':
-          'Full-stack developer at a startup. Built production web applications from scratch using Angular and Node.js.',
+        'current-label': 'Current',
+        'datacolor-role': 'Frontend Developer & Tech Lead',
+        'acsoftware-role': 'Web Developer',
+        'smarthy-role': 'Full-Stack Developer',
+        'datacolor-desc': 'Currently building web applications and AI-powered tools at Datacolor — a technology company in the textile industry. Leading the frontend team. ~2 years.',
+        'acsoftware-desc': 'Previously: web developer at an enterprise consultancy. Delivered reliable web applications for corporate clients in insurance and government.',
+        'smarthy-desc': 'Early career: full-stack developer at a startup. Built production web products from scratch.',
         formal: {
           elevator: {
             headline: 'Experience',
-            'datacolor-desc':
-              'Current: Angular UI library and micro-frontend architecture at an industrial tech company.',
-            'acsoftware-desc': 'Previous: scalable Angular solutions for enterprise clients.',
-            'smarthy-desc': 'Early career: full-stack web products for a startup.',
+            'datacolor-desc': 'Current: frontend developer and tech lead at an industrial technology company.',
+            'acsoftware-desc': 'Previous: web developer for enterprise clients in insurance and government.',
+            'smarthy-desc': 'Early career: full-stack web development at a startup.',
           },
           coffee: {
             headline: 'Experience',
-            'datacolor-desc':
-              'Current: Angular Frontend Developer at Datacolor Industrial. Full ownership of the design system and leading AI integration for internal tooling. ~2 years.',
-            'acsoftware-desc':
-              'Previously: Angular developer at an enterprise consultancy. Robust, scalable web applications for corporate clients with demanding requirements.',
-            'smarthy-desc':
-              'Early career: Full-stack developer at a startup. Production web applications from scratch using Angular and Node.js.',
+            'datacolor-desc': 'Current: Frontend Developer at Datacolor Industrial. Leading the frontend team, building the shared design system, and integrating AI into the product. ~2 years.',
+            'acsoftware-desc': 'Previously: web developer at an enterprise consultancy. Delivered robust, scalable web applications for corporate clients with demanding quality requirements.',
+            'smarthy-desc': 'Early career: Full-stack developer at a startup. Built production web applications from scratch — from design to deployment.',
+          },
+          'deep-dive': {
+            headline: 'Professional Experience',
+            'datacolor-desc': "Currently at Datacolor Industrial — a technology company that works in colour measurement for the textile industry. Erik leads the frontend team, owns the shared component library used across all products, and is leading the integration of AI into the development workflow. He's been there for ~2 years and is the de facto technical decision-maker for all frontend matters.",
+            'acsoftware-desc': 'Previously at ACSoftware, an enterprise software consultancy. Erik built web applications for insurance companies and government institutions — environments with strict quality requirements and long maintenance horizons. 2 years of delivering reliable, scalable software under demanding conditions.',
+            'smarthy-desc': "Erik's career started at Smarthy Srl, a startup where he worked as a full-stack developer for 2 years. He owned features end-to-end — from requirements to deployment — across multiple concurrent products. This is where he developed his production discipline and his instinct for building things that last.",
           },
         },
         creative: {
           elevator: {
             headline: 'The Story So Far',
             'datacolor-desc': 'Now: building AI-powered tools for an industrial company.',
-            'acsoftware-desc': 'Before: enterprise-grade Angular for demanding clients.',
+            'acsoftware-desc': 'Before: web applications for enterprise clients.',
             'smarthy-desc': 'Started: first product, first users, first lessons.',
+          },
+          coffee: {
+            headline: 'The Story So Far',
+            'datacolor-desc': "Currently at Datacolor — building the tools the whole team relies on, and now wiring in AI to make them smarter. It's the kind of project that challenges you every day.",
+            'acsoftware-desc': 'Before that, two years building web applications for insurance companies and government clients — the kind of work that teaches you what "reliable software" actually means.',
+            'smarthy-desc': "It started at a startup called Smarthy — learning fast, shipping faster, and discovering that building something real for real users is the best education there is.",
+          },
+          'deep-dive': {
+            headline: 'The Journey',
+            'datacolor-desc': "Erik is currently at Datacolor Industrial, where he leads the frontend team and owns the shared design system used across all the company's products. The most exciting part of his current work: integrating AI into web interfaces in ways that feel genuinely useful, not gimmicky. This portfolio is the public face of that exploration.",
+            'acsoftware-desc': 'Before Datacolor, Erik spent two years at ACSoftware building web applications for insurance companies and government institutions. Demanding clients, strict quality standards, long maintenance horizons — exactly the kind of environment where you learn to build software that lasts.',
+            'smarthy-desc': "The beginning: Smarthy Srl, a startup, where Erik built multiple web products simultaneously as a full-stack developer. He owned features from idea to production — and discovered early that he loves the whole process, not just writing code.",
           },
         },
         technical: {
           elevator: {
             headline: 'Experience',
-            'datacolor-desc':
-              'Datacolor · Angular UI lib · micro-frontends · AI integration · ~2 yrs',
-            'acsoftware-desc': 'ACSoftware · Enterprise Angular · NX + NGRX',
-            'smarthy-desc': 'Smarthy · Full-stack · Angular + Node.js',
+            'datacolor-desc': 'Datacolor · frontend tech lead · AI integration · ~2 yrs',
+            'acsoftware-desc': 'ACSoftware · enterprise web apps · insurance & gov',
+            'smarthy-desc': 'Smarthy · full-stack · startup',
+          },
+          coffee: {
+            headline: 'Experience',
+            'datacolor-desc': 'Datacolor Industrial — frontend tech lead. Owns the shared design system, leads the frontend team, integrates AI into the product. Fast-loading pages, reliable apps. ~2 years.',
+            'acsoftware-desc': 'ACSoftware — enterprise web developer for insurance and government clients. Delivered robust, scalable web applications with reliable performance. 2 years.',
+            'smarthy-desc': 'Smarthy Srl — startup, full-stack developer. Built and shipped web products from scratch. Full ownership from design to deployment. 2 years.',
+          },
+          'deep-dive': {
+            headline: 'Experience',
+            'datacolor-desc': 'Datacolor Industrial (~2 years) — Frontend Developer & tech lead for the textile technology division. Owns the shared design system, leads architectural decisions, and integrates AI features into the product suite. Fast-loading, reliable web applications. De facto technical decision-maker for all frontend matters.',
+            'acsoftware-desc': 'ACSoftware (2 years) — Enterprise web developer. Delivered reliable, scalable web applications for insurance companies and government institutions. High-quality delivery in demanding, regulated environments.',
+            'smarthy-desc': 'Smarthy Srl (2 years) — Startup, full-stack developer. Built and shipped multiple concurrent web products from scratch — frontend, backend, deployment. First professional engineering role.',
           },
         },
       },
@@ -420,15 +428,15 @@ export const en: AppTranslation = {
         headline: 'Experience',
         'current-label': 'Current',
         'datacolor-role': 'Angular Frontend Developer & UI Library Owner',
-        'acsoftware-role': 'Angular Developer',
+        'acsoftware-role': 'Angular Developer / Consultant',
         'smarthy-role': 'Full-Stack Developer',
-        'datacolor-desc': 'Angular UI library, micro-frontends, AI integration.',
-        'acsoftware-desc': 'Enterprise Angular consulting.',
-        'smarthy-desc': 'Full-stack web development.',
+        'datacolor-desc': 'Angular UI library, micro-frontends, DDD research, AI integration. De facto tech lead.',
+        'acsoftware-desc': 'Enterprise Angular consulting — NX monorepos, NgRx, insurance & government clients.',
+        'smarthy-desc': 'First production engineering role. Full-stack web development in a startup environment.',
       },
     },
     'project-showcase': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             eyebrow: 'Shipped',
@@ -632,22 +640,26 @@ export const en: AppTranslation = {
       },
     },
     'skill-constellation': {
-      developer: {
-        technical: {
+      'tech-peer': {
+        // ── Role-level fallback ──
+        eyebrow: 'Technical Stack',
+        headline: 'What I build with.',
+        body: 'Angular-first, AI-capable, full-stack delivery.',
+        formal: {
           elevator: {
-            eyebrow: 'Tech Stack',
-            headline: 'My Stack.',
+            eyebrow: 'Core Competencies',
+            headline: 'Technical Skill Set.',
             body: '',
           },
           coffee: {
-            eyebrow: 'Technical Stack',
-            headline: 'What I build with.',
-            body: 'Five years of Angular, now deep in AI integration. Angular 21 and NgRx on the front, Node + Vercel on the back, and the Anthropic Claude API wiring it all together.',
+            eyebrow: 'Technical Proficiencies',
+            headline: 'Core Technical Competencies.',
+            body: 'Primary: Angular 21 with SSR, NgRx Signal Store, TypeScript, SCSS design systems. Secondary: Node.js, Express, Vercel serverless. AI: Anthropic Claude API, Hashbrown generative UI, prompt engineering, LLM orchestration.',
           },
           'deep-dive': {
-            eyebrow: 'Technical Ecosystem',
-            headline: 'Full Stack Breakdown.',
-            body: "A full map of my technical profile across three domains: the Angular-first front-end stack I've spent five years mastering, a backend layer built on Node.js and Vercel serverless, and the AI tooling — Claude API, Hashbrown, and LLM orchestration — that defines my current specialisation.",
+            eyebrow: 'Technical Profile',
+            headline: 'Comprehensive Technical Skill Set.',
+            body: 'Front-end core: Angular 21 (standalone, signals, SSR), NgRx Signal Store, TypeScript (5/5), RxJS (4/5), SCSS design tokens, NX monorepos, Storybook. Back-end: Node.js, Express, REST APIs, Vercel serverless. AI & Agents: Anthropic Claude API (4/5), Hashbrown generative UI (4/5), prompt engineering (4/5), LLM workflow integration. Upcoming: LangChain / LangGraph, React exploration.',
           },
         },
         creative: {
@@ -659,29 +671,29 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'The Toolbox',
             headline: 'The stack that makes it happen.',
-            body: 'Angular at the core, AI wired in everywhere it makes sense, Node on the back when needed. Plus a growing constellation of AI tooling — Claude, Hashbrown, prompt engineering.',
+            body: 'Angular at the core, AI wired in everywhere it makes sense. NgRx Signals, SSR, NX for architecture. Node.js and Vercel on the back. The part that excites me most: Claude API, Hashbrown, and the emerging AI toolchain.',
           },
           'deep-dive': {
             eyebrow: 'Skills & Stack',
             headline: 'Every tool in my belt.',
-            body: "Angular and TypeScript are home base. NgRx signals, SSR, NX — the front-end architecture layer. Node.js and Vercel for the back. And then the part I'm most excited about: Claude API, Hashbrown, and the emerging AI toolchain. Plus the things on the horizon.",
+            body: "Angular and TypeScript are home base — five years, production-grade, full architecture ownership. The middle layer: NgRx Signals, SSR, NX monorepos, Storybook, SCSS design systems. On the back: Node.js, Express, Vercel. The frontier: Claude API, Hashbrown generative UI, prompt engineering, LLM orchestration. And coming next: LangChain, LangGraph, React exploration.",
           },
         },
-        formal: {
+        technical: {
           elevator: {
-            eyebrow: 'Core Competencies',
-            headline: 'Technical Skill Set.',
+            eyebrow: 'Tech Stack',
+            headline: 'My Stack.',
             body: '',
           },
           coffee: {
-            eyebrow: 'Technical Proficiencies',
-            headline: 'Core Technical Competencies.',
-            body: 'Primary specialisation: Angular 21 with SSR, NgRx Signal Store, TypeScript, and SCSS design systems. Secondary: Node.js, Express, and Vercel serverless. Expanding: Anthropic Claude API, Hashbrown generative UI, and LLM orchestration.',
+            eyebrow: 'Technical Stack',
+            headline: 'What I build with.',
+            body: 'Five years of Angular — now deep in AI integration. Angular 21 and NgRx Signal Store on the front, Node + Vercel on the back, Anthropic Claude API and Hashbrown wiring it all together.',
           },
           'deep-dive': {
-            eyebrow: 'Technical Profile',
-            headline: 'Comprehensive Technical Skill Set.',
-            body: 'My technical profile spans three domains. Front-end: Angular 21 (standalone, signals, SSR), NgRx Signal Store, TypeScript, RxJS, SCSS design systems, NX monorepos, and Storybook. Back-end: Node.js, Express, REST APIs, and Vercel serverless. AI & Agents: Anthropic Claude API, Hashbrown generative UI, prompt engineering, and LLM workflow integration.',
+            eyebrow: 'Technical Ecosystem',
+            headline: 'Full Stack Breakdown.',
+            body: 'Angular 21 (5/5) · TypeScript (5/5) · RxJS (4/5) · NgRx Signals (4/5) · SCSS (4/5) · SSR (4/5) · NX (3/5) · Storybook (3/5). Node.js (3/5) · Express (3/5) · REST APIs (4/5) · Vercel (3/5). Claude API (4/5) · Hashbrown (4/5) · Prompt Engineering (4/5) · LLM Orchestration (3/5). Three domains: Angular-first front-end, lightweight back-end delivery, production AI toolchain.',
           },
         },
       },
@@ -689,7 +701,7 @@ export const en: AppTranslation = {
         // ── Role-level fallback ──
         eyebrow: 'Technical Skills',
         headline: 'Core Competencies',
-        body: 'Angular production stack with AI integration and Node.js / Vercel back-end capability.',
+        body: 'Angular production stack with 5 years of experience, AI integration, and Node.js / Vercel back-end capability.',
         formal: {
           elevator: {
             eyebrow: 'Technical Skills',
@@ -699,12 +711,12 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Technical Skills',
             headline: 'Key Technical Competencies.',
-            body: 'Primary: Angular 21 with SSR, NgRx, TypeScript, SCSS. Secondary: Node.js, Express, Vercel. AI: Anthropic Claude API, Hashbrown, prompt engineering. 5 years production experience in Angular.',
+            body: 'Primary: Angular 21 with SSR, NgRx, TypeScript, SCSS. Secondary: Node.js, Express, Vercel. AI: Anthropic Claude API, Hashbrown, prompt engineering. 5 years production experience in Angular across startup, enterprise consultancy, and product company contexts.',
           },
           'deep-dive': {
             eyebrow: 'Technical Skills Profile',
             headline: 'Full Technical Competency Overview.',
-            body: "Erik's profile covers Angular 21 (SSR, standalone components, signal store), NgRx, RxJS, TypeScript, SCSS design systems, and NX monorepos on the front-end. Node.js, Express, REST APIs, and Vercel serverless on the back-end. AI & Agents: Anthropic Claude API, Hashbrown generative UI, prompt engineering, and LLM workflow integration.",
+            body: "Erik's profile covers Angular 21 (SSR, standalone, NgRx Signal Store), TypeScript (5/5), RxJS (4/5), SCSS design systems, and NX monorepos on the front-end. Node.js, Express, REST APIs, and Vercel serverless on the back-end. AI: Claude API (4/5), Hashbrown generative UI (4/5), prompt engineering (4/5), LLM workflow integration. 5 years production Angular across startup, enterprise consultancy, and product company.",
           },
         },
         creative: {
@@ -716,12 +728,12 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Technical Toolkit',
             headline: 'The tools, the knowledge, the stack.',
-            body: "Angular at expert level. Node.js as a solid secondary. AI integration at the cutting edge — Claude API, Hashbrown, generative UI. The dots show proficiency; the upcoming section shows where he's heading.",
+            body: "Angular at expert level. Node.js as a solid secondary. AI integration at the cutting edge — Claude API, Hashbrown, generative UI. Five years of production work across startup, enterprise, and product contexts. The upcoming section shows where he's heading next.",
           },
           'deep-dive': {
             eyebrow: 'Full Toolkit',
             headline: 'The complete technical picture.',
-            body: 'Angular 21 is where Erik lives — five years of production-grade work, from component libraries to micro-frontend architectures to AI-native applications. The back-end layer covers Node.js and Vercel. The AI layer — Claude API, Hashbrown, prompt engineering — is his current leading edge.',
+            body: 'Angular 21 is where Erik lives — five years of production-grade work, from shared UI libraries to micro-frontend architectures to AI-native applications. Back-end: Node.js and Vercel. The AI layer — Claude API, Hashbrown, prompt engineering — is his current leading edge. Upcoming: LangChain, LangGraph, React.',
           },
         },
         technical: {
@@ -733,20 +745,20 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Stack',
             headline: 'Tech stack, grouped and levelled.',
-            body: 'Angular 21 · NgRx · RxJS · SSR · NX · Storybook. Node.js · Express · Vercel Serverless. Claude API · Hashbrown · Prompt Engineering · LLM Orchestration. Levels 1–5. 5 yrs prod Angular.',
+            body: 'Angular 21 · NgRx · RxJS · SSR · NX · Storybook. Node.js · Express · Vercel Serverless. Claude API · Hashbrown · Prompt Engineering · LLM Orchestration. Proficiency: 1–5. 5 yrs prod Angular.',
           },
           'deep-dive': {
             eyebrow: 'Stack & Coverage',
             headline: 'Full stack with proficiency levels.',
-            body: 'Angular 21 (5/5) · TypeScript (5/5) · RxJS (4/5) · NgRx Signals (4/5) · SCSS (4/5) · SSR (4/5) · NX (3/5) · Storybook (3/5). Node.js (3/5) · Express (3/5) · REST APIs (4/5) · Vercel (3/5). Claude API (4/5) · Hashbrown (4/5) · Prompt Engineering (4/5) · LLM Orchestration (3/5).',
+            body: 'Angular 21 (5/5) · TypeScript (5/5) · RxJS (4/5) · NgRx Signals (4/5) · SCSS (4/5) · SSR (4/5) · NX (3/5) · Storybook (3/5). Node.js (3/5) · Express (3/5) · REST APIs (4/5) · Vercel (3/5). Claude API (4/5) · Hashbrown (4/5) · Prompt Engineering (4/5) · LLM Orchestration (3/5). 5 years production Angular. Now extending into AI-native engineering.',
           },
         },
       },
       client: {
         // ── Role-level fallback ──
-        eyebrow: 'Technical Capabilities',
-        headline: 'My Stack',
-        body: 'Angular web applications with AI integration and full-stack capability.',
+        eyebrow: 'What I Work With',
+        headline: 'My Capabilities',
+        body: 'I build web applications using the best tools for the job — fast-loading, reliable, and built to scale.',
         formal: {
           elevator: {
             eyebrow: 'Technical Capabilities',
@@ -756,12 +768,12 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Technical Capabilities',
             headline: 'My technical capabilities.',
-            body: 'Angular front-end specialist with five years of production experience, complemented by Node.js and Vercel back-end capability. Offering AI feature integration via the Anthropic Claude API.',
+            body: 'Frontend specialist with five years of production experience, complemented by back-end and server capability. I also integrate AI features — smarter interactions, personalised content, AI-driven flows — using the Anthropic Claude API.',
           },
           'deep-dive': {
             eyebrow: 'Technical Profile',
             headline: 'Full Technical Capabilities.',
-            body: 'My front-end expertise centres on Angular 21 with SSR, NgRx, TypeScript, and design system development. On the back-end I work with Node.js, Express, and Vercel serverless. I integrate AI features using the Anthropic Claude API, Hashbrown, and prompt engineering.',
+            body: 'My front-end expertise centres on building fast-loading, SEO-friendly web applications with clean, maintainable code. I handle the back-end with Node.js and Vercel for server and API needs. And I integrate AI features — from smart content generation to AI-driven interfaces — using the Claude API. 5+ years of production delivery across multiple sectors.',
           },
         },
         creative: {
@@ -773,12 +785,12 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'The Toolkit',
             headline: 'The tools I bring to your project.',
-            body: 'Angular, TypeScript, and SCSS for the front-end. Node.js and Vercel for the back. Claude API and Hashbrown to wire in AI where it genuinely helps. Five years of Angular expertise, deployed for you.',
+            body: 'Fast-loading, beautifully built web applications are the core. I layer in back-end and server capabilities where needed. And I can wire in AI — smarter search, personalised experiences, AI-powered features — where it genuinely adds value to your product.',
           },
           'deep-dive': {
             eyebrow: 'Skills & Tools',
             headline: 'Everything I bring to the table.',
-            body: 'Angular 21 and its full ecosystem — signals, SSR, NgRx, NX, Storybook, design systems — is my specialisation. I cover Node.js and Vercel for the back-end. And I bring genuine, production-tested AI expertise: Claude API, Hashbrown generative UI, prompt engineering.',
+            body: "Five years of frontend expertise, deployed for your project. Fast-loading pages, clean design implementation, maintainable code that doesn't need replacing in 18 months. I cover back-end too — Node.js and Vercel for servers and APIs. And I'm one of the few people who can genuinely integrate AI into your product in ways that work: not gimmicks, but real, useful features.",
           },
         },
         technical: {
@@ -790,19 +802,19 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Delivered with',
             headline: 'Stack and capabilities.',
-            body: 'Angular 21 · NgRx · SSR · Vercel. Claude API · Hashbrown. Full-stack delivery. Proficiency levels shown per skill.',
+            body: 'Angular for fast-loading, reliable web apps. Node.js and Vercel for back-end and APIs. Claude API for AI integration. Five years of production experience. All shipped and maintainable.',
           },
           'deep-dive': {
             eyebrow: 'Technical Stack',
-            headline: 'Full stack, tools, and coverage.',
-            body: 'Angular 21 (5/5), TypeScript (5/5), NgRx Signals (4/5), SSR (4/5), NX (3/5). Node.js (3/5), Express (3/5), Vercel (3/5). Claude API (4/5), Hashbrown (4/5), Prompt Engineering (4/5). Production-grade, all shipped.',
+            headline: 'Full stack, tools, and capabilities.',
+            body: 'Angular (fast-loading, SEO-ready, interactive web apps), TypeScript (reliable, maintainable code), SSR (fast page loads, strong search ranking). Node.js + Express + Vercel (back-end and APIs). Claude API + Hashbrown (AI features, smart interfaces). Five years delivering in production.',
           },
         },
       },
       default: {
         eyebrow: 'Tech Stack',
-        headline: 'Skills & Tools.',
-        body: '',
+        headline: 'Skills & Tools',
+        body: 'Angular-first frontend developer with AI integration and full-stack capability.',
         'upcoming-label': 'On the horizon',
         'group-frontend': 'Frontend',
         'group-backend': 'Backend',
@@ -810,7 +822,7 @@ export const en: AppTranslation = {
       },
     },
     'personal-interests': {
-      developer: {
+      'tech-peer': {
         technical: {
           elevator: {
             headline: 'Not just code.',
@@ -973,69 +985,97 @@ export const en: AppTranslation = {
       },
     },
     'experience-vault': {
-      developer: {
-        technical: {
-          elevator: { headline: 'Credentials.' },
-          coffee: { headline: 'What the diplomas say' },
-          'deep-dive': { headline: 'The formal record' },
-        },
+      'tech-peer': {
+        // ── Role-level fallback ──
+        eyebrow: 'Education & Certifications',
+        headline: 'Credentials.',
+        'cred-bsc-title': 'BSc Computer Science — WebAssembly thesis',
+        'cred-bsc-institution': 'Unipegaso University',
+        'cred-bsc-status': 'Graduated · 109/110',
+        'cred-english-title': 'C1 English Certification',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In progress',
         formal: {
-          elevator: { headline: 'Formal qualifications.' },
-          coffee: { headline: 'Education & certifications' },
-          'deep-dive': { headline: 'Academic background' },
+          elevator: { eyebrow: 'Qualifications', headline: 'Formal qualifications.' },
+          coffee: { eyebrow: 'Education & Certifications', headline: 'Education & certifications.' },
+          'deep-dive': { eyebrow: 'Academic Background', headline: 'Academic background.' },
         },
         creative: {
-          elevator: { headline: 'Paper trail.' },
-          coffee: { headline: 'Where school met curiosity' },
-          'deep-dive': { headline: 'The diplomas behind the code' },
+          elevator: { eyebrow: 'The Paper Trail', headline: 'Paper trail.' },
+          coffee: { eyebrow: 'Education', headline: 'Where school met curiosity.' },
+          'deep-dive': { eyebrow: 'Education & Certs', headline: 'The diplomas behind the code.' },
+        },
+        technical: {
+          elevator: { eyebrow: 'Credentials', headline: 'Credentials.' },
+          coffee: { eyebrow: 'Academic Record', headline: 'What the diplomas say.' },
+          'deep-dive': { eyebrow: 'Formal Record', headline: 'The formal record.' },
         },
       },
       recruiter: {
+        // ── Role-level fallback ──
+        eyebrow: 'Education',
+        headline: 'Qualifications',
+        'cred-bsc-title': "Bachelor's Degree, Computer Science",
+        'cred-bsc-institution': 'Unipegaso University',
+        'cred-bsc-status': 'Completed · 109/110',
+        'cred-english-title': 'English Language Certification — C1',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In progress',
         formal: {
-          elevator: { headline: 'Qualifications at a glance.' },
-          coffee: { headline: 'Education & certificates' },
-          'deep-dive': { headline: 'Academic profile' },
+          elevator: { eyebrow: 'Qualifications', headline: 'Qualifications at a glance.' },
+          coffee: { eyebrow: 'Education & Certificates', headline: 'Education & certificates.' },
+          'deep-dive': { eyebrow: 'Academic Profile', headline: 'Academic profile.' },
         },
         creative: {
-          elevator: { headline: 'Certified & curious.' },
-          coffee: { headline: 'The credential shelf' },
-          'deep-dive': { headline: 'Everything the CV lists under education' },
+          elevator: { eyebrow: 'Certified', headline: 'Certified & curious.' },
+          coffee: { eyebrow: 'Credentials', headline: 'The credential shelf.' },
+          'deep-dive': { eyebrow: 'Education', headline: "Everything the CV lists under education." },
         },
         technical: {
-          elevator: { headline: 'Degrees & certs.' },
-          coffee: { headline: 'What he studied' },
-          'deep-dive': { headline: 'Academic and certification track record' },
+          elevator: { eyebrow: 'Degrees & Certs', headline: 'Degrees & certs.' },
+          coffee: { eyebrow: 'Education', headline: 'What he studied.' },
+          'deep-dive': { eyebrow: 'Academic Record', headline: 'Academic and certification track record.' },
         },
       },
       client: {
+        // ── Role-level fallback ──
+        eyebrow: 'Qualifications',
+        headline: 'Formally qualified.',
+        'cred-bsc-title': 'University Degree in Computer Science',
+        'cred-bsc-institution': 'Unipegaso University',
+        'cred-bsc-status': 'Completed with distinction',
+        'cred-english-title': 'English Language Certification',
+        'cred-english-institution': 'Wall Street English',
+        'cred-english-status': 'In progress',
         formal: {
-          elevator: { headline: 'Formally qualified.' },
-          coffee: { headline: 'Education background' },
-          'deep-dive': { headline: 'Academic and professional qualifications' },
+          elevator: { eyebrow: 'Qualifications', headline: 'Formally qualified.' },
+          coffee: { eyebrow: 'Education', headline: 'Education background.' },
+          'deep-dive': { eyebrow: 'Academic & Professional', headline: 'Academic and professional qualifications.' },
         },
         creative: {
-          elevator: { headline: 'The vault.' },
-          coffee: { headline: 'Where it all started' },
-          'deep-dive': { headline: 'School, certs, and what came from them' },
+          elevator: { eyebrow: 'The Vault', headline: 'The vault.' },
+          coffee: { eyebrow: 'Education', headline: 'Where it all started.' },
+          'deep-dive': { eyebrow: 'Background', headline: 'School, certs, and what came from them.' },
         },
         technical: {
-          elevator: { headline: 'Credentials.' },
-          coffee: { headline: 'Degrees & certifications' },
-          'deep-dive': { headline: 'The formal qualifications behind the work' },
+          elevator: { eyebrow: 'Credentials', headline: 'Credentials.' },
+          coffee: { eyebrow: 'Education', headline: 'Degrees & certifications.' },
+          'deep-dive': { eyebrow: 'Formal Qualifications', headline: 'The formal qualifications behind the work.' },
         },
       },
       default: {
+        eyebrow: 'Education & Certifications',
         headline: 'Credentials',
         'cred-bsc-title': "Bachelor's Degree in Computer Science",
         'cred-bsc-institution': 'Unipegaso University',
-        'cred-bsc-status': 'Completed',
+        'cred-bsc-status': 'Completed · 109/110',
         'cred-english-title': 'English Language Certification',
         'cred-english-institution': 'Wall Street English',
-        'cred-english-status': 'In Progress',
+        'cred-english-status': 'In progress',
       },
     },
     'compatibility-engine': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             headline: 'Strong match detected.',
@@ -1169,64 +1209,442 @@ export const en: AppTranslation = {
       },
     },
     'core-identity': {
-      developer: {
+      'tech-peer': {
+        headline: 'The engineer behind the code.',
+        eyebrow: 'Engineer Profile',
+        'label-name': 'Name',
+        'label-age': 'Age',
+        'label-height': 'Height / Weight',
+        'label-location': 'Location',
+        'label-role': 'Current Role',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italy',
+        'value-role': 'Frontend Developer (de facto tech lead) at Datacolor',
         formal: {
-          elevator: { headline: 'The engineer behind the code.', eyebrow: 'Personal Data' },
-          coffee: { headline: 'Meet Erik Ferrari.', eyebrow: 'Who is Erik' },
+          elevator: {
+            headline: 'The engineer behind the code.',
+            eyebrow: 'Engineer Profile',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Current Role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend Developer (de facto tech lead) @ Datacolor',
+          },
+          coffee: {
+            headline: 'Meet Erik Ferrari — Angular developer, Reggio Emilia.',
+            eyebrow: 'Developer Identity',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Based in',
+            'label-role': 'Current Role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy',
+            'value-role': 'Frontend Developer & de facto tech lead at Datacolor',
+          },
           'deep-dive': {
-            headline: 'Erik Ferrari — engineer profile.',
-            eyebrow: 'Identity Overview',
+            headline: 'Erik Ferrari — engineer, architect, AI integrator.',
+            eyebrow: 'Full Identity',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Current Title & Scope',
+            'value-name': 'Erik Ferrari (Erikwski)',
+            'value-age': '25 — born 4 August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy',
+            'value-role': 'Frontend Developer (de facto tech lead) at Datacolor — Angular, SSR, UI library owner, AI agent architect',
           },
         },
         creative: {
-          elevator: { headline: "That's me in a card.", eyebrow: 'The Human' },
-          coffee: { headline: "Here's who I am.", eyebrow: 'Behind the keyboard' },
+          elevator: {
+            headline: "That's me in a card.",
+            eyebrow: 'The human',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Home base',
+            'label-role': 'What I do',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Build Angular apps. Lead architecture. Integrate AI.',
+          },
+          coffee: {
+            headline: "Here's who I am — beyond the GitHub profile.",
+            eyebrow: 'Behind the keyboard',
+            'label-name': 'I go by',
+            'label-age': 'Years on earth',
+            'label-height': 'Physical specs',
+            'label-location': 'Home base',
+            'label-role': 'Day job',
+            'value-name': 'Erik Ferrari / Erikwski',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Angular tech lead at Datacolor (and after hours: building this)',
+          },
           'deep-dive': {
             headline: 'Full picture, no filter.',
             eyebrow: 'The person & the engineer',
+            'label-name': 'Name / alias',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Where I work',
+            'label-role': 'Official title (and what it actually means)',
+            'value-name': 'Erik Ferrari — online as Erikwski',
+            'value-age': '25 (born August 4, 2000)',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna — remote-friendly',
+            'value-role': 'Frontend Developer at Datacolor — in practice, I own the architecture, the UI library, and the AI tooling roadmap',
           },
         },
         technical: {
-          elevator: { headline: 'Erik. Angular dev. Italy.', eyebrow: 'Profile' },
-          coffee: { headline: 'The dev behind the stack.', eyebrow: 'Dev profile' },
-          'deep-dive': { headline: 'Erik Ferrari — technical profile.', eyebrow: 'Identity card' },
+          elevator: {
+            headline: 'Erik. Angular. Italy.',
+            eyebrow: 'Dev profile',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Location',
+            'label-role': 'Stack / role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Angular + NgRx + SSR — de facto tech lead @ Datacolor',
+          },
+          coffee: {
+            headline: 'The dev behind the stack.',
+            eyebrow: 'Technical profile',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Role & scope',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend Developer (de facto tech lead) — Angular, NgRx Signal Store, SSR, AI agents',
+          },
+          'deep-dive': {
+            headline: 'Erik Ferrari — technical profile card.',
+            eyebrow: 'Identity',
+            'label-name': 'Full name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Current role & responsibilities',
+            'value-name': 'Erik Ferrari (alias: Erikwski)',
+            'value-age': '25 — DOB 2000-08-04',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy (remote preferred)',
+            'value-role': 'Frontend Developer @ Datacolor — de facto tech lead: Angular architecture, shared UI library, AI-assisted linting, DDD research',
+          },
         },
       },
       recruiter: {
+        headline: 'Candidate: Erik Ferrari.',
+        eyebrow: 'Candidate Overview',
+        'label-name': 'Full Name',
+        'label-age': 'Age',
+        'label-height': 'Height / Weight',
+        'label-location': 'Location',
+        'label-role': 'Current Position',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italy',
+        'value-role': 'Frontend Developer (de facto tech lead) at Datacolor',
         formal: {
-          elevator: { headline: 'Candidate: Erik Ferrari.', eyebrow: 'Candidate Overview' },
-          coffee: { headline: "Who you're looking at.", eyebrow: 'Candidate Profile' },
-          'deep-dive': { headline: 'Full candidate identity.', eyebrow: 'Candidate Data' },
-        },
-        creative: {
-          elevator: { headline: 'This is Erik.', eyebrow: "The person you'd hire" },
-          coffee: { headline: 'The face behind the resume.', eyebrow: 'Beyond the CV' },
-          'deep-dive': { headline: 'More than a LinkedIn profile.', eyebrow: 'Full identity' },
-        },
-        technical: {
-          elevator: { headline: 'Erik Ferrari, Angular dev.', eyebrow: 'Candidate info' },
-          coffee: { headline: 'Candidate basics.', eyebrow: 'Key facts' },
-          'deep-dive': { headline: 'Candidate identity card.', eyebrow: 'Full profile' },
-        },
-      },
-      client: {
-        formal: {
-          elevator: { headline: 'Your developer: Erik Ferrari.', eyebrow: 'Point of Contact' },
-          coffee: { headline: "Who you'd be working with.", eyebrow: 'Professional Profile' },
+          elevator: {
+            headline: 'Candidate: Erik Ferrari.',
+            eyebrow: 'Candidate Overview',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Current Position',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend Developer (de facto tech lead) at Datacolor',
+          },
+          coffee: {
+            headline: "Who you're evaluating.",
+            eyebrow: 'Candidate Profile',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Current Location',
+            'label-role': 'Current Position',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy',
+            'value-role': 'Frontend Developer & de facto tech lead at Datacolor (since June 2024)',
+          },
           'deep-dive': {
-            headline: 'Erik Ferrari — professional identity.',
-            eyebrow: 'Contact & Role',
+            headline: 'Full candidate identity: Erik Ferrari.',
+            eyebrow: 'Candidate Data',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Physical Data',
+            'label-location': 'Current Location',
+            'label-role': 'Current Role & Scope',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — born 4 August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy — open to remote',
+            'value-role': 'Frontend Developer at Datacolor — de facto tech lead, Angular architecture owner, UI library maintainer, AI tooling researcher',
           },
         },
         creative: {
-          elevator: { headline: "Hi, I'm Erik.", eyebrow: 'The builder' },
-          coffee: { headline: "The person who'd build your product.", eyebrow: 'Who I am' },
-          'deep-dive': { headline: 'Erik Ferrari — the full picture.', eyebrow: 'About me' },
+          elevator: {
+            headline: 'This is Erik.',
+            eyebrow: "The candidate you'd call",
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'Current role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend tech lead — architecture, Angular, AI',
+          },
+          coffee: {
+            headline: 'The face behind the resume.',
+            eyebrow: 'Beyond the CV',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Lives in',
+            'label-role': 'What he does',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy — strongly prefers remote',
+            'value-role': 'De facto tech lead at Datacolor — owns architecture, ships quality, builds with AI',
+          },
+          'deep-dive': {
+            headline: 'More than a LinkedIn profile.',
+            eyebrow: 'Full identity',
+            'label-name': 'Full name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'Current role (and what it really means)',
+            'value-name': 'Erik Ferrari / Erikwski',
+            'value-age': '25 — born August 2000',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy — remote-first',
+            'value-role': 'Frontend Developer at Datacolor — runs architecture decisions, owns the shared UI library, leads AI integration research for the team',
+          },
         },
         technical: {
-          elevator: { headline: 'Erik Ferrari, frontend dev.', eyebrow: 'Contact info' },
-          coffee: { headline: 'Developer overview.', eyebrow: 'Dev profile' },
-          'deep-dive': { headline: 'Technical identity: Erik Ferrari.', eyebrow: 'Developer card' },
+          elevator: {
+            headline: 'Erik Ferrari, Angular dev.',
+            eyebrow: 'Candidate info',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Location',
+            'label-role': 'Current stack',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Angular, NgRx, SSR — tech lead at Datacolor',
+          },
+          coffee: {
+            headline: 'Candidate basics.',
+            eyebrow: 'Key facts',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Role & stack',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend Developer (de facto tech lead) — Angular, NgRx Signal Store, SSR, AI agents',
+          },
+          'deep-dive': {
+            headline: 'Candidate identity card: Erik Ferrari.',
+            eyebrow: 'Full profile',
+            'label-name': 'Full name',
+            'label-age': 'Age / DOB',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'Current role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — DOB 2000-08-04',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy — remote preferred',
+            'value-role': 'Frontend Developer at Datacolor — de facto tech lead (Angular architecture, UI library, AI tooling)',
+          },
+        },
+      },
+      client: {
+        headline: 'Your developer: Erik Ferrari.',
+        eyebrow: 'Point of Contact',
+        'label-name': 'Name',
+        'label-age': 'Age',
+        'label-height': 'Build',
+        'label-location': 'Based in',
+        'label-role': 'What I do',
+        'value-name': 'Erik Ferrari',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
+        'value-location': 'Reggio Emilia, Italy',
+        'value-role': 'Frontend developer — I build web applications that look great and work reliably',
+        formal: {
+          elevator: {
+            headline: 'Your developer: Erik Ferrari.',
+            eyebrow: 'Point of Contact',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'What I do',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend developer — I build web applications that look great and work reliably',
+          },
+          coffee: {
+            headline: "Who you'd be working with.",
+            eyebrow: 'Professional Profile',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'Specialisation',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend developer specialising in modern web apps — currently tech lead at Datacolor',
+          },
+          'deep-dive': {
+            headline: 'Erik Ferrari — professional identity.',
+            eyebrow: 'Contact & Role',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Location',
+            'label-role': 'What I deliver',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Emilia-Romagna, Italy',
+            'value-role': 'Frontend developer with 5+ years building production web applications — from startup tools to enterprise platforms at Datacolor',
+          },
+        },
+        creative: {
+          elevator: {
+            headline: "Hi, I'm Erik.",
+            eyebrow: 'The builder',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Home',
+            'label-role': 'What I do',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'I build web products that are fast, clean, and built to last',
+          },
+          coffee: {
+            headline: "The person who'd build your product.",
+            eyebrow: 'Who I am',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': "Where I'm based",
+            'label-role': 'What I do for you',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'I design and build web applications — currently leading the frontend at Datacolor, looking for the right project',
+          },
+          'deep-dive': {
+            headline: 'Erik Ferrari — the full picture.',
+            eyebrow: 'About me',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'What I actually do',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25 — started coding in 2020, never stopped',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy — work remotely across time zones',
+            'value-role': 'Frontend developer — I turn ideas into fast, reliable web products. Currently the tech lead for Datacolor\'s frontend team.',
+          },
+        },
+        technical: {
+          elevator: {
+            headline: 'Erik Ferrari, frontend dev.',
+            eyebrow: 'Contact info',
+            'label-name': 'Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Location',
+            'label-role': 'Role',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend developer — web apps, fast-loading pages, clean code',
+          },
+          coffee: {
+            headline: 'Developer overview.',
+            eyebrow: 'Dev profile',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Build',
+            'label-location': 'Based in',
+            'label-role': 'Specialisation',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend developer — fast-loading pages, app state management, clean maintainable code',
+          },
+          'deep-dive': {
+            headline: 'Technical identity: Erik Ferrari.',
+            eyebrow: 'Developer card',
+            'label-name': 'Full Name',
+            'label-age': 'Age',
+            'label-height': 'Height / Weight',
+            'label-location': 'Location',
+            'label-role': 'What I build',
+            'value-name': 'Erik Ferrari',
+            'value-age': '25',
+            'value-height': '169 cm / 68 kg',
+            'value-location': 'Reggio Emilia, Italy',
+            'value-role': 'Frontend developer at Datacolor — building web interfaces, fast-loading pages, and app state management systems for production use',
+          },
         },
       },
       default: {
@@ -1238,14 +1656,21 @@ export const en: AppTranslation = {
         'label-location': 'Location',
         'label-role': 'Current Role',
         'value-name': 'Erik Ferrari',
-        'value-age': '28',
-        'value-height': '180 cm / 75 kg',
+        'value-age': '25',
+        'value-height': '169 cm / 68 kg',
         'value-location': 'Reggio Emilia, Italy',
-        'value-role': 'Angular Frontend Developer & UI Library Owner',
+        'value-role': 'Angular Frontend Developer & de facto tech lead at Datacolor',
       },
     },
     'professional-objective': {
-      developer: {
+      'tech-peer': {
+        // ── Role-level fallback ──
+        eyebrow: 'Next Target',
+        headline: 'Tech Lead.',
+        body: 'Moving from hands-on engineering to leading teams. Setting architecture, mentoring devs, integrating AI.',
+        'pillar-architecture': 'Architecture ownership & code standards',
+        'pillar-leadership': 'Team guidance & technical mentoring',
+        'pillar-ai': 'AI-native engineering workflows',
         formal: {
           elevator: {
             eyebrow: 'Next Target',
@@ -1289,16 +1714,23 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Career target',
             headline: 'Engineering Lead.',
-            body: 'Scope: architecture ownership, team coaching, AI integration roadmap. Stack agnostic, Angular-first.',
+            body: 'Scope: architecture ownership, team coaching, AI integration roadmap. Stack agnostic at heart, Angular-first in practice.',
           },
           'deep-dive': {
             eyebrow: 'Engineering objective',
             headline: 'Tech Lead / Principal Engineer.',
-            body: 'I want to own architecture decisions, define coding standards, run technical onboarding, and integrate AI at every layer of the development workflow. I\'m looking for a team where "AI-native" means something.',
+            body: 'I want to own architecture decisions, define coding standards, run technical onboarding, and integrate AI at every layer of the development workflow. I\'m looking for a team where "AI-native" means something beyond a sales deck.',
           },
         },
       },
       recruiter: {
+        // ── Role-level fallback ──
+        eyebrow: 'Career Objective',
+        headline: 'Tech Lead.',
+        body: 'Erik is targeting a Tech Lead or Engineering Leader position — ready to own architecture, guide teams, and drive AI adoption.',
+        'pillar-architecture': 'Architecture decisions',
+        'pillar-leadership': 'Team leadership & mentoring',
+        'pillar-ai': 'AI integration strategy',
         formal: {
           elevator: {
             eyebrow: 'Career Objective',
@@ -1330,7 +1762,7 @@ export const en: AppTranslation = {
           'deep-dive': {
             eyebrow: 'Target',
             headline: 'From senior engineer to tech leader.',
-            body: "Erik wants to move from individual contribution to team leadership — owning architecture, establishing patterns, embedding AI into engineering workflows. He's looking for a team that moves fast and cares about quality.",
+            body: "Erik wants to move from individual contribution to team leadership — owning architecture, establishing patterns, embedding AI into engineering workflows. He's looking for a team that moves fast and cares deeply about quality.",
           },
         },
         technical: {
@@ -1342,7 +1774,7 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Career target',
             headline: 'Engineering Lead / Tech Lead.',
-            body: 'Erik targets architecture ownership, team coaching, and AI-native development. He has the seniority and the technical track record.',
+            body: 'Erik targets architecture ownership, team coaching, and AI-native development. He has the seniority and the technical track record to step in on day one.',
           },
           'deep-dive': {
             eyebrow: 'Job target',
@@ -1352,6 +1784,13 @@ export const en: AppTranslation = {
         },
       },
       client: {
+        // ── Role-level fallback ──
+        eyebrow: 'Professional Direction',
+        headline: 'Technical Leadership.',
+        body: 'Erik leads technical direction on ambitious projects — architecture, AI integration, and delivery ownership.',
+        'pillar-architecture': 'Technical architecture',
+        'pillar-leadership': 'Project leadership',
+        'pillar-ai': 'AI feature integration',
         formal: {
           elevator: {
             eyebrow: 'Professional Direction',
@@ -1361,7 +1800,7 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'What Erik brings',
             headline: 'Project technical lead.',
-            body: "Beyond execution, Erik can own technical decisions: architecture, stack choices, AI integration strategy. He's available for engagements that require a senior technical voice.",
+            body: "Beyond execution, Erik can own technical decisions: architecture, technology choices, AI integration strategy. He's available for engagements that require a senior technical voice.",
           },
           'deep-dive': {
             eyebrow: "Erik's objective",
@@ -1383,7 +1822,7 @@ export const en: AppTranslation = {
           'deep-dive': {
             eyebrow: 'His objective',
             headline: 'Be the technical brain of ambitious digital products.',
-            body: "Erik's goal is to work on projects where he can shape the entire technical vision — not just deliver features. He wants to define the architecture, choose the stack, integrate AI meaningfully, and make sure the product is built to last.",
+            body: "Erik's goal is to work on projects where he can shape the entire technical vision — not just deliver features. He wants to define the architecture, choose the approach, integrate AI meaningfully, and make sure the product is built to last.",
           },
         },
         technical: {
@@ -1395,12 +1834,12 @@ export const en: AppTranslation = {
           coffee: {
             eyebrow: 'Project scope',
             headline: 'Tech lead for full-stack projects.',
-            body: 'Erik can lead architecture, delivery, and AI integration for your project. Optimal for complex Angular + AI builds.',
+            body: 'Erik can lead architecture, delivery, and AI integration for your project. Optimal for complex, high-quality digital products.',
           },
           'deep-dive': {
             eyebrow: 'Technical objective',
             headline: 'Full technical ownership on complex projects.',
-            body: "Erik targets projects where he owns the full technical scope: architecture, stack, AI integration, quality standards. He's effective as a technical lead on Angular-centric or AI-driven products.",
+            body: "Erik targets projects where he owns the full technical scope: architecture, stack, AI integration, quality standards. He's most effective as a technical lead on complex or AI-driven products where depth matters.",
           },
         },
       },
@@ -1414,7 +1853,7 @@ export const en: AppTranslation = {
       },
     },
     'team-culture': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             eyebrow: 'Team Fit',
@@ -1589,7 +2028,7 @@ export const en: AppTranslation = {
       },
     },
     'lifestyle-activities': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: { eyebrow: 'Outside the Terminal', headline: 'Active by default.' },
           coffee: { eyebrow: 'Lifestyle', headline: "Erik's activity dashboard." },
@@ -1678,7 +2117,7 @@ export const en: AppTranslation = {
       },
     },
     'contextual-faq': {
-      developer: {
+      'tech-peer': {
         formal: {
           elevator: {
             eyebrow: 'Quick Answers',
@@ -2066,7 +2505,7 @@ export const en: AppTranslation = {
       },
     },
     'cv-download': {
-      developer: {
+      'tech-peer': {
         headline: 'Download Résumé',
         cta: 'Download PDF',
         note: 'Last updated April 2026',
@@ -2133,7 +2572,7 @@ export const en: AppTranslation = {
       },
     },
     'hire-me': {
-      developer: {
+      'tech-peer': {
         headline: "Let's talk.",
         body: 'Open to senior and lead roles. Angular-first, AI-native, remote.',
         'cta-email': 'Send an email',
@@ -2370,7 +2809,7 @@ export const en: AppTranslation = {
       },
     },
     'philosophy': {
-      developer: {
+      'tech-peer': {
         headline: 'Engineering Philosophy',
         quote: 'Clean code should make you smile like a well-designed car would.',
         'belief-1-title': 'Architecture Before Code',
@@ -2700,7 +3139,7 @@ export const en: AppTranslation = {
       },
     },
     'music-taste': {
-      developer: {
+      'tech-peer': {
         headline: 'Off the Clock',
         intro: 'The playlist for when the terminal is closed.',
         'artist-1': 'Salmo',
@@ -3004,7 +3443,7 @@ export const en: AppTranslation = {
       },
     },
     'reading-list': {
-      developer: {
+      'tech-peer': {
         headline: 'The Shelf',
         intro: 'Books that changed how I think about software.',
         'book-1-title': 'Clean Code', 'book-1-author': 'Robert C. Martin', 'book-1-note': "The all-time favourite. Quality as a daily standard, not a sprint goal.",
@@ -3311,7 +3750,7 @@ export const en: AppTranslation = {
       },
     },
     'origin-story': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Origin Story',
           'act-1-title': 'Waiter by Day', 'act-1-body': 'Three years serving tables while learning to code at night. Six months of overlap — physical exhaustion, social isolation. Worth every hour.',
@@ -3507,7 +3946,7 @@ export const en: AppTranslation = {
     },
   },
   'meta-explainer': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'How This Works', body: 'Hashbrown + Angular SSR + Claude API. Your profile drives which components render.', 'tech-note': 'Angular 21 · Hashbrown · Claude API · NgRx Signals', invitation: 'Check the source.' },
         coffee: { headline: 'Generative UI Architecture', body: 'This portfolio is a Generative UI application. On every prompt, Claude decides which Angular components to render and how to frame their content — based on your visitor profile stored in an NgRx Signal Store.', 'tech-note': 'Stack: Angular 21 SSR · Hashbrown · @hashbrownai/anthropic · NgRx Signals · Vercel', invitation: 'Try asking something unusual and watch the layout adapt.' },
@@ -3566,7 +4005,7 @@ export const en: AppTranslation = {
     },
   },
   'conference-activity': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Conferences',
           'conf-1-name': 'AWS Summit', 'conf-1-year': 'May 2022', 'conf-1-note': 'Cloud infrastructure at scale.',
@@ -3817,7 +4256,7 @@ export const en: AppTranslation = {
     },
   },
   'open-source': {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Open Source', intro: 'HyperIoT main contributor. openapi-ts PR #3552.',
           'proj-1-name': 'HyperIoT', 'proj-1-role': 'Main contributor', 'proj-1-desc': 'Angular-based IoT & BigData platform.',
@@ -3930,7 +4369,7 @@ export const en: AppTranslation = {
     },
   },
   mentors: {
-    developer: {
+    'tech-peer': {
       formal: {
         elevator: { headline: 'Mentors',
           intro: 'The people who shaped the approach.',

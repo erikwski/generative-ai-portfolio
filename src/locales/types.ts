@@ -2,7 +2,7 @@ export interface OnboardingTranslation {
   eyebrow: string;
   title: string;
   role: {
-    developer: string;
+    'tech-peer': string;
     recruiter: string;
     client: string;
   };
@@ -14,12 +14,6 @@ export interface OnboardingTranslation {
     'coffee.sub': string;
     'deep-dive': string;
     'deep-dive.sub': string;
-  };
-  style: {
-    label: string;
-    formal: string;
-    creative: string;
-    technical: string;
   };
   submit: string;
   note: string;

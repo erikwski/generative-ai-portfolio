@@ -1,15 +1,12 @@
-export type VisitorRole = 'developer' | 'recruiter' | 'client';
+export type VisitorRole = 'tech-peer' | 'recruiter' | 'client';
 export type TimeAvailable = 'elevator' | 'coffee' | 'deep-dive';
-export type CommunicationStyle = 'formal' | 'creative' | 'technical';
 
 export interface VisitorProfile {
   role: VisitorRole;
   timeAvailable: TimeAvailable;
-  communicationStyle: CommunicationStyle;
 }
 
 export const EMPTY_PROFILE: VisitorProfile = {
-  role: 'developer',
+  role: 'tech-peer',
   timeAvailable: 'elevator',
-  communicationStyle: 'formal',
 };

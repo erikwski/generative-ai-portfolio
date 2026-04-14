@@ -19,7 +19,6 @@ export class PhilosophyWidgetComponent {
   private readonly profile = computed(() => ({
     role: this.store.role(),
     timeAvailable: this.store.timeAvailable(),
-    communicationStyle: this.store.communicationStyle(),
   }));
 
   readonly headline = computed(() =>

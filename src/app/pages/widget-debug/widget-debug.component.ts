@@ -1,11 +1,7 @@
 import { Component, inject, signal, effect } from '@angular/core';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
-import {
-  CommunicationStyle,
-  TimeAvailable,
-  VisitorRole,
-} from '../../shared/domain/visitor-profile';
+import { TimeAvailable, VisitorRole } from '../../shared/domain/visitor-profile';
 import { WidgetShellComponent } from '../../shared/ui/widget-shell/widget-shell.component';
 import { ArchitectsIdentityWidgetComponent } from '../../widgets/architects-identity/architects-identity.component';
 import { EvolutionTimelineWidgetComponent } from '../../widgets/evolution-timeline/evolution-timeline.component';
@@ -87,16 +83,14 @@ export class WidgetDebugComponent {
   private readonly store = inject(VisitorProfileStore);
 
   // ── Profile controls ──────────────────────────────────────────────────────
-  role = signal<VisitorRole>(this.store.role());
-  timeAvailable = signal<TimeAvailable>(this.store.timeAvailable());
-  communicationStyle = signal<CommunicationStyle>(this.store.communicationStyle());
+  role = signal<VisitorRole>('tech-peer');
+  timeAvailable = signal<TimeAvailable>('elevator');
 
   constructor() {
     effect(() => {
       this.store.setProfile({
         role: this.role(),
         timeAvailable: this.timeAvailable(),
-        communicationStyle: this.communicationStyle(),
       });
     });
   }

@@ -5,11 +5,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatRippleModule } from '@angular/material/core';
 import { FormsModule } from '@angular/forms';
 import { VisitorProfileStore } from '../../shared/data-access/visitor-profile.store';
-import {
-  CommunicationStyle,
-  TimeAvailable,
-  VisitorRole,
-} from '../../shared/domain/visitor-profile';
+import { TimeAvailable, VisitorRole } from '../../shared/domain/visitor-profile';
 import { LogoComponent } from '../../shared/ui/logo/logo.component';
 import { SUPPORTED_LOCALES, switchLocale, type SupportedLocale } from '../../../locales';
 
@@ -28,16 +24,13 @@ export class OnboardingComponent {
 
   role = signal<VisitorRole>(this.store.role());
   timeAvailable = signal<TimeAvailable>(this.store.timeAvailable());
-  communicationStyle = signal<CommunicationStyle>(this.store.communicationStyle());
 
   switchLocale(locale: SupportedLocale): void {
     if (locale !== this.activeLocale) switchLocale(locale);
   }
 
   isValid(): boolean {
-    return (
-      this.role() !== null && this.timeAvailable() !== null && this.communicationStyle() !== null
-    );
+    return this.role() !== null && this.timeAvailable() !== null;
   }
 
   submit(): void {
@@ -45,7 +38,6 @@ export class OnboardingComponent {
     this.store.setProfile({
       role: this.role(),
       timeAvailable: this.timeAvailable(),
-      communicationStyle: this.communicationStyle(),
     });
     this.router.navigate(['/canvas']);
   }
