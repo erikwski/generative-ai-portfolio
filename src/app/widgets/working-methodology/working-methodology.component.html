@@ -1,0 +1,16 @@
+<div class="widget-panel working-methodology">
+  <p class="working-methodology__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="working-methodology__headline">{{ headline() }}</h2>
+  @if (body()) {
+    <p class="working-methodology__body">{{ body() }}</p>
+  }
+
+  <ul class="working-methodology__methods">
+    @for (method of methods(); track method.id) {
+      <li class="working-methodology__method">
+        <span class="working-methodology__method-title">{{ method.title }}</span>
+        <span class="working-methodology__method-body">{{ method.body }}</span>
+      </li>
+    }
+  </ul>
+</div>

@@ -1,0 +1,58 @@
+<div class="widget-panel contact-links">
+  <p class="contact-links__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="contact-links__headline">{{ headline() }}</h2>
+
+  <ul class="contact-links__list">
+    <li class="contact-links__item">
+      <span class="contact-links__platform-icon contact-links__platform-icon--linkedin">in</span>
+      <div class="contact-links__info">
+        <span class="contact-links__platform">LinkedIn</span>
+        <span class="contact-links__hint">{{ linkedinHint() }}</span>
+      </div>
+      <a [href]="linkedinUrl" target="_blank" rel="noopener noreferrer"
+         mat-stroked-button class="contact-links__action">
+        Open
+      </a>
+    </li>
+
+    <li class="contact-links__item">
+      <span class="contact-links__platform-icon contact-links__platform-icon--github">
+        <mat-icon>code</mat-icon>
+      </span>
+      <div class="contact-links__info">
+        <span class="contact-links__platform">GitHub</span>
+        <span class="contact-links__hint">{{ githubHint() }}</span>
+      </div>
+      <a [href]="githubUrl" target="_blank" rel="noopener noreferrer"
+         mat-stroked-button class="contact-links__action">
+        Open
+      </a>
+    </li>
+
+    <li class="contact-links__item">
+      <span class="contact-links__platform-icon contact-links__platform-icon--email">
+        <mat-icon>mail_outline</mat-icon>
+      </span>
+      <div class="contact-links__info">
+        <span class="contact-links__platform">{{ email }}</span>
+        <span class="contact-links__hint">{{ emailHint() }}</span>
+      </div>
+      <a [href]="emailUrl" mat-flat-button color="primary" class="contact-links__action">
+        Email
+      </a>
+    </li>
+
+    <li class="contact-links__item">
+      <span class="contact-links__platform-icon contact-links__platform-icon--phone">
+        <mat-icon>phone</mat-icon>
+      </span>
+      <div class="contact-links__info">
+        <span class="contact-links__platform">{{ phone }}</span>
+        <span class="contact-links__hint">{{ phoneHint() }}</span>
+      </div>
+      <a [href]="phoneUrl" mat-stroked-button class="contact-links__action">
+        Call
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,51 @@
+<div class="widget-panel languages-and-location">
+  <p class="languages-and-location__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="languages-and-location__headline">{{ headline() }}</h2>
+
+  <div class="languages-and-location__body">
+    <section class="languages-and-location__section">
+      <ul class="languages-and-location__lang-list">
+        <li class="languages-and-location__lang-item">
+          <span class="languages-and-location__flag">🇮🇹</span>
+          <span class="languages-and-location__lang-name">Italian</span>
+          <span class="languages-and-location__level languages-and-location__level--native">
+            {{ langItalianLevel() }}
+          </span>
+        </li>
+        <li class="languages-and-location__lang-item">
+          <span class="languages-and-location__flag">🇬🇧</span>
+          <span class="languages-and-location__lang-name">English</span>
+          <span class="languages-and-location__level languages-and-location__level--advanced">
+            {{ langEnglishLevel() }}
+          </span>
+          <span class="languages-and-location__lang-note">{{ langEnglishNote() }}</span>
+        </li>
+        <li class="languages-and-location__lang-item">
+          <span class="languages-and-location__flag">🇩🇪</span>
+          <span class="languages-and-location__lang-name">German</span>
+          <span class="languages-and-location__level languages-and-location__level--beginner">
+            {{ langGermanLevel() }}
+          </span>
+          <span class="languages-and-location__lang-note languages-and-location__lang-note--funny">
+            {{ langGermanNote() }}
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="languages-and-location__section">
+      <div class="languages-and-location__location-row">
+        <span class="languages-and-location__location-icon">📍</span>
+        <div class="languages-and-location__location-info">
+          <span class="languages-and-location__city">Reggio Emilia, Emilia-Romagna</span>
+          <span class="languages-and-location__country">Italy</span>
+        </div>
+        <span class="languages-and-location__timezone">{{ timezoneValue() }}</span>
+      </div>
+    </section>
+  </div>
+
+  <div class="languages-and-location__remote-statement">
+    {{ remoteStatement() }}
+  </div>
+</div>

@@ -51,23 +51,23 @@ export const de: AppTranslation = {
       'tech-peer': {
         technical: {
           elevator: {
-            eyebrow: 'Full-Stack Engineer',
+            eyebrow: 'Frontend Engineer',
             headline: 'Ich baue Systeme, die denken.',
             tagline: 'Angular + KI, vom Spec bis zur Produktion.',
             body: 'Angular 21, Generative UI, Hashbrown, NgRx. Ich liefere Full-Stack-Anwendungen, bei denen die Oberfläche die KI-Ausgabe ist — kein festes Layout, Claude kompiliert Komponenten in Echtzeit.',
           },
           coffee: {
-            eyebrow: 'Full-Stack Engineer / KI-Architekt',
+            eyebrow: 'Frontend Engineer / KI-Architekt',
             headline: 'Hi, ich bin Erik.',
             tagline: 'Ich entwerfe Angular-Apps, die von Claude angetrieben werden.',
-            body: 'Fünf Jahre Aufbau von Angular-Anwendungen in Produktion. Die letzten zwei davon tief in Generative UI — Systemen, in denen Claude nicht nur Fragen beantwortet, sondern die Oberfläche selbst komponiert. Ich kombiniere NgRx Signal Store, Hashbrown und die Anthropic API, um adaptive, KI-native Frontends zu liefern.',
+            body: '~6 Jahre Aufbau von Angular-Anwendungen in Produktion. Die letzten zwei davon tief in Generative UI — Systemen, in denen Claude nicht nur Fragen beantwortet, sondern die Oberfläche selbst komponiert. Ich kombiniere NgRx Signal Store, Hashbrown und die Anthropic API, um adaptive, KI-native Frontends zu liefern.',
           },
           'deep-dive': {
-            eyebrow: 'Full-Stack Engineer / KI-Architekt',
+            eyebrow: 'Frontend Engineer / KI-Architekt',
             headline: 'Hi, ich bin Erik Ferrari.',
             tagline:
               'Ich entwerfe und entwickle Angular-Anwendungen, bei denen die KI der Architekt ist.',
-            body: 'Ich bin Full-Stack-Engineer mit fünf Jahren Produktionserfahrung in Angular. In den letzten zwei Jahren habe ich mich auf Generative UI spezialisiert — ein Muster, bei dem das LLM das Frontend-Layout dynamisch orchestriert, anstatt statische Komponenten auszuliefern. Ich arbeite mit Angular 21 mit SSR, NgRx Signal Store, Hashbrown und der Anthropic Claude API. Ich kann Features vollständig von der Architektur bis zum Deployment auf Vercel verantworten.',
+            body: 'Ich bin Frontend-Engineer mit ~6 Jahren Produktionserfahrung in Angular. In den letzten zwei Jahren habe ich mich auf Generative UI spezialisiert — ein Muster, bei dem das LLM das Frontend-Layout dynamisch orchestriert, anstatt statische Komponenten auszuliefern. Ich arbeite mit Angular 21 mit SSR, NgRx Signal Store, Hashbrown und der Anthropic Claude API. Ich kann Features vollständig von der Architektur bis zum Deployment auf Vercel verantworten.',
           },
         },
         creative: {
@@ -81,13 +81,13 @@ export const de: AppTranslation = {
             eyebrow: 'Ingenieur / Creative Technologist',
             headline: 'Hi, ich bin Erik.',
             tagline: 'Ich baue Oberflächen, die sich selbst neu schreiben.',
-            body: 'Ich entwickle seit fünf Jahren Angular-Apps, aber die letzten zwei waren anders — ich habe aufgehört, Layouts hart zu kodieren, und stattdessen Claude das Design übernehmen lassen. Jede Komponente, die du gerade liest, wurde spontan generiert. Ich nenne es Generative UI, und es ist das Aufregendste, was ich je gebaut habe.',
+            body: 'Ich entwickle seit ~6 Jahren Angular-Apps, aber die letzten zwei waren anders — ich habe aufgehört, Layouts hart zu kodieren, und stattdessen Claude das Design übernehmen lassen. Jede Komponente, die du gerade liest, wurde spontan generiert. Ich nenne es Generative UI, und es ist das Aufregendste, was ich je gebaut habe.',
           },
           'deep-dive': {
             eyebrow: 'Ingenieur / Creative Technologist',
             headline: 'Hi, ich bin Erik Ferrari.',
             tagline: 'Generative UI Engineer. Ich baue Oberflächen, die für sich selbst denken.',
-            body: 'Fünf Jahre Angular, zwei Jahre tief im Kaninchenbau der Generative UI — Systemen, bei denen die KI kein Feature ist, sondern der Renderer. Ich nutze Claude, Hashbrown und Angulars Signal-Architektur, um Frontends zu bauen, die sich für jeden Nutzer in Echtzeit anpassen. Keine zwei Besucher sehen dasselbe Layout. Mir liegt auch das Handwerk am Herzen: saubere Architektur, lesbarer Code und Dinge, die in der Produktion standhalten.',
+            body: '~6 Jahre Angular, zwei Jahre tief im Kaninchenbau der Generative UI — Systemen, bei denen die KI kein Feature ist, sondern der Renderer. Ich nutze Claude, Hashbrown und Angulars Signal-Architektur, um Frontends zu bauen, die sich für jeden Nutzer in Echtzeit anpassen. Keine zwei Besucher sehen dasselbe Layout. Mir liegt auch das Handwerk am Herzen: saubere Architektur, lesbarer Code und Dinge, die in der Produktion standhalten.',
           },
         },
         formal: {
@@ -95,19 +95,19 @@ export const de: AppTranslation = {
             eyebrow: 'Software-Ingenieur',
             headline: 'Erik Ferrari.',
             tagline: 'Angular-Spezialist. KI-Integrationsexperte.',
-            body: 'Full-Stack-Ingenieur mit fünf Jahren Produktionserfahrung in Angular, jetzt spezialisiert auf Generative UI Systeme mit der Anthropic Claude API.',
+            body: 'Frontend-Ingenieur mit ~6 Jahren Produktionserfahrung in Angular, jetzt spezialisiert auf Generative UI Systeme mit der Anthropic Claude API.',
           },
           coffee: {
             eyebrow: 'Software-Ingenieur',
             headline: 'Hi, ich bin Erik Ferrari.',
-            tagline: 'Full-Stack Angular Engineer, spezialisiert auf KI-native Anwendungen.',
-            body: 'Ich verfüge über fünf Jahre Berufserfahrung in der Entwicklung von Angular-Anwendungen, mit einer wachsenden Spezialisierung auf KI-Integration und Generative UI. Ich arbeite mit Angular 21, NgRx Signal Store und der Anthropic API, um adaptive Frontends zu bauen, bei denen die Oberfläche von Claude zur Laufzeit zusammengesetzt wird.',
+            tagline: 'Frontend Angular Engineer, spezialisiert auf KI-native Anwendungen.',
+            body: 'Ich verfüge über ~6 Jahre Berufserfahrung in der Entwicklung von Angular-Anwendungen, mit einer wachsenden Spezialisierung auf KI-Integration und Generative UI. Ich arbeite mit Angular 21, NgRx Signal Store und der Anthropic API, um adaptive Frontends zu bauen, bei denen die Oberfläche von Claude zur Laufzeit zusammengesetzt wird.',
           },
           'deep-dive': {
             eyebrow: 'Software-Ingenieur',
-            headline: 'Erik Ferrari — Full-Stack Engineer.',
+            headline: 'Erik Ferrari — Frontend Engineer.',
             tagline: 'Angular · KI-Integration · Generative UI',
-            body: 'Ich bin Full-Stack-Software-Ingenieur mit fünf Jahren Berufserfahrung, hauptsächlich in Angular. Mein aktueller Fokus liegt auf Generative UI — einem Muster, bei dem ein LLM das Frontend-Layout dynamisch orchestriert. Ich setze dies mit Angular 21 mit SSR, NgRx Signal Store, Hashbrown und der Anthropic Claude API um. Ich bin in der Lage, komplette Features end to end zu verantworten, von der Architektur und dem API-Design bis zum Deployment auf Vercel.',
+            body: 'Ich bin Frontend-Software-Ingenieur mit ~6 Jahren Berufserfahrung, hauptsächlich in Angular. Mein aktueller Fokus liegt auf Generative UI — einem Muster, bei dem ein LLM das Frontend-Layout dynamisch orchestriert. Ich setze dies mit Angular 21 mit SSR, NgRx Signal Store, Hashbrown und der Anthropic Claude API um. Ich bin in der Lage, komplette Features end to end zu verantworten, von der Architektur und dem API-Design bis zum Deployment auf Vercel.',
           },
         },
       },
@@ -117,19 +117,19 @@ export const de: AppTranslation = {
             eyebrow: 'Kandidatenprofil',
             headline: 'Erik Ferrari',
             tagline: 'Software Engineer · Angular · KI-Integration',
-            body: '5+ Jahre · Full-Stack Angular-Entwickler, spezialisiert auf Generative UI und KI-Anwendungen. Offen für Senior- und Lead-Rollen.',
+            body: '5+ Jahre · Frontend Angular-Entwickler, spezialisiert auf Generative UI und KI-Anwendungen. Offen für Senior- und Lead-Rollen.',
           },
           coffee: {
             eyebrow: 'Kandidatenprofil',
             headline: 'Erik Ferrari — Software Engineer',
             tagline: 'Angular · Generative UI · Anthropic API · 5+ Jahre',
-            body: 'Erik ist ein Full-Stack-Ingenieur mit fünf Jahren Erfahrung in der Entwicklung von Angular-Anwendungen. In den letzten zwei Jahren hat er sich auf KI-Integration und Generative UI konzentriert und Produktionssysteme geliefert, in denen Claude Oberflächen dynamisch komponiert. Er arbeitet über den gesamten Stack — Angular 21 mit SSR, NgRx, Express, Vercel — und ist offen für Senior- oder Lead-Rollen bei Produktunternehmen, die KI-native Produkte entwickeln.',
+            body: 'Erik ist ein Frontend-Ingenieur mit ~6 Jahren Erfahrung in der Entwicklung von Angular-Anwendungen. In den letzten zwei Jahren hat er sich auf KI-Integration und Generative UI konzentriert und Produktionssysteme geliefert, in denen Claude Oberflächen dynamisch komponiert. Er arbeitet über den gesamten Stack — Angular 21 mit SSR, NgRx, Express, Vercel — und ist offen für Senior- oder Lead-Rollen bei Produktunternehmen, die KI-native Produkte entwickeln.',
           },
           'deep-dive': {
             eyebrow: 'Kandidatenprofil',
-            headline: 'Erik Ferrari — Full-Stack Engineer',
+            headline: 'Erik Ferrari — Frontend Engineer',
             tagline: 'Angular · Generative UI · KI-native Anwendungen · 5+ Jahre',
-            body: 'Erik Ferrari ist Full-Stack-Software-Ingenieur mit fünf Jahren Berufserfahrung und einer tiefen Spezialisierung auf Angular und KI-gesteuerte Frontend-Systeme. Er ist der Autor dieses Portfolios — eine Generative UI Anwendung, bei der Claude jede Komponente zur Laufzeit basierend auf dem Besucherkontext zusammensetzt. Technisch abdeckt er Angular 21, NgRx Signal Store, die Anthropic Claude API, das Hashbrown Framework, TypeScript, Express und Vercel. Aktuell sucht er Senior-Engineering- und Tech-Lead-Möglichkeiten, bei denen KI eine Kernkompetenz ist.',
+            body: 'Erik Ferrari ist Frontend-Software-Ingenieur mit ~6 Jahren Berufserfahrung und einer tiefen Spezialisierung auf Angular und KI-gesteuerte Frontend-Systeme. Er ist der Autor dieses Portfolios — eine Generative UI Anwendung, bei der Claude jede Komponente zur Laufzeit basierend auf dem Besucherkontext zusammensetzt. Technisch abdeckt er Angular 21, NgRx Signal Store, die Anthropic Claude API, das Hashbrown Framework, TypeScript, Express und Vercel. Aktuell sucht er Senior-Engineering- und Tech-Lead-Möglichkeiten, bei denen KI eine Kernkompetenz ist.',
           },
         },
         creative: {
@@ -137,13 +137,13 @@ export const de: AppTranslation = {
             eyebrow: 'Lerne Erik kennen',
             headline: 'Erik Ferrari',
             tagline: 'Der Ingenieur, der die KI die Oberfläche entwerfen lässt.',
-            body: 'Fünf Jahre Angular. Zwei Jahre mit Claude als Architekt. Er liefert Generative UI in Produktion — einschließlich dieses Portfolios, das du gerade erkundest.',
+            body: '~6 Jahre Angular. Zwei Jahre mit Claude als Architekt. Er liefert Generative UI in Produktion — einschließlich dieses Portfolios, das du gerade erkundest.',
           },
           coffee: {
             eyebrow: 'Lerne Erik kennen',
             headline: 'Erik Ferrari — Engineer & KI-Builder',
             tagline: 'Er hat aufgehört, Layouts hart zu kodieren. Das macht jetzt Claude.',
-            body: 'Erik hat fünf Jahre lang Angular-Anwendungen entwickelt und die letzten zwei damit verbracht, Generative UI zu pioneeren — Frontends, bei denen die KI nicht nur antwortet, sondern rendert. Er hat dieses Portfolio als Live-Demo des Konzepts entwickelt. Angular 21, Hashbrown, NgRx, Claude API. Wenn du für ein Team einstellst, das bei KI-nativen Produkten vorne dabei sein will, ist Erik ein Gespräch wert.',
+            body: 'Erik hat ~6 Jahre lang Angular-Anwendungen entwickelt und die letzten zwei damit verbracht, Generative UI zu pioneeren — Frontends, bei denen die KI nicht nur antwortet, sondern rendert. Er hat dieses Portfolio als Live-Demo des Konzepts entwickelt. Angular 21, Hashbrown, NgRx, Claude API. Wenn du für ein Team einstellst, das bei KI-nativen Produkten vorne dabei sein will, ist Erik ein Gespräch wert.',
           },
         },
         technical: {
@@ -161,13 +161,13 @@ export const de: AppTranslation = {
             eyebrow: 'Freiberuflicher Ingenieur',
             headline: 'Ich entwickle Web-Anwendungen.',
             tagline: 'Angular-Frontends mit KI-Funktionen, pünktlich geliefert.',
-            body: 'Fünf Jahre Entwicklung von Angular-Anwendungen für Startups und Scale-ups. Jetzt biete ich Full-Stack-Entwicklung mit integrierten KI-Funktionen an — von generativen Oberflächen bis zu LLM-gestützten Workflows.',
+            body: '~6 Jahre Entwicklung von Angular-Anwendungen für Startups und Scale-ups. Jetzt biete ich Full-Stack-Entwicklung mit integrierten KI-Funktionen an — von generativen Oberflächen bis zu LLM-gestützten Workflows.',
           },
           coffee: {
             eyebrow: 'Freiberuflicher Ingenieur',
             headline: 'Hi, ich bin Erik Ferrari.',
             tagline: 'Ich entwickle Angular-Anwendungen mit von Grund auf integrierter KI.',
-            body: 'Ich habe fünf Jahre lang Produktions-Web-Anwendungen in Angular für Startups und wachsende Unternehmen entwickelt. Mein aktueller Fokus liegt darauf, Unternehmen zu helfen, KI richtig in ihre Produkte zu integrieren — nicht als Chatbot-Widget, sondern als zentralen Teil der Oberfläche und Logik. Ich decke den gesamten Stack ab: Angular-Frontend, API-Schicht und Deployment.',
+            body: 'Ich habe ~6 Jahre lang Produktions-Web-Anwendungen in Angular für Startups und wachsende Unternehmen entwickelt. Mein aktueller Fokus liegt darauf, Unternehmen zu helfen, KI richtig in ihre Produkte zu integrieren — nicht als Chatbot-Widget, sondern als zentralen Teil der Oberfläche und Logik. Ich decke den gesamten Stack ab: Angular-Frontend, API-Schicht und Deployment.',
           },
         },
         creative: {
@@ -181,12 +181,12 @@ export const de: AppTranslation = {
             eyebrow: 'Digitaler Architekt',
             headline: 'Hi, ich bin Erik.',
             tagline: 'Ich baue Produkte, bei denen die Oberfläche mit dem Nutzer mitdenkt.',
-            body: 'Ich entwickle seit fünf Jahren Web-Produkte, und in den letzten zwei bin ich von einer Frage besessen: Was passiert, wenn die KI nicht nur die Logik antreibt, sondern die Oberfläche selbst zusammensetzt? Die Antwort ist das, was du gerade siehst. Wenn du eine Produktidee hast, die diese Art von Denken braucht, lass uns reden.',
+            body: 'Ich entwickle seit ~6 Jahren Web-Produkte, und in den letzten zwei bin ich von einer Frage besessen: Was passiert, wenn die KI nicht nur die Logik antreibt, sondern die Oberfläche selbst zusammensetzt? Die Antwort ist das, was du gerade siehst. Wenn du eine Produktidee hast, die diese Art von Denken braucht, lass uns reden.',
           },
         },
         technical: {
           elevator: {
-            eyebrow: 'Full-Stack Contractor',
+            eyebrow: 'Frontend Contractor',
             headline: 'Angular + KI, von A bis Z.',
             tagline: 'Von der Architektur bis zum Deployment.',
             body: 'TypeScript, Angular 21, NgRx, Vercel. Claude API Integration, Generative UI, SSR. Ich spezifiziere, entwerfe und liefere.',
@@ -197,143 +197,171 @@ export const de: AppTranslation = {
         eyebrow: 'Erik Ferrari',
         headline: 'Hi, ich bin Erik.',
         tagline: 'Ich entwickle Angular-Apps, die von KI angetrieben werden.',
-        body: 'Full-Stack-Entwickler, spezialisiert auf Generative UI und KI-native Web-Anwendungen.',
+        body: 'Frontend-Entwickler, spezialisiert auf Generative UI und KI-native Web-Anwendungen.',
       },
     },
     'evolution-timeline': {
       'tech-peer': {
-        technical: {
+        // ── Fallback auf Rollenebene ──
+        headline: 'Karriere',
+        'current-label': 'Aktuell',
+        'datacolor-role': 'Angular Frontend Developer & UI Library Owner',
+        'acsoftware-role': 'Angular Developer / Consultant',
+        'smarthy-role': 'Full-Stack Developer',
+        'datacolor-desc':
+          'UI-Library-Owner · Micro-Frontends · DDD-Forschung · KI-Workflow-Integration · Angular 21.',
+        'acsoftware-desc':
+          'Enterprise Angular · NX-Monorepos · NgRx · Versicherungs- und Behördenkunden.',
+        'smarthy-desc': 'Erste Prod-Rolle · jQuery + ASP.NET · Full-Stack.',
+        formal: {
           elevator: {
-            headline: 'Career Stack',
+            headline: 'Berufserfahrung',
             'datacolor-desc':
-              'UI-Library-Owner · Micro-Frontends · KI-Workflow-Integration · Angular 21.',
-            'acsoftware-desc': 'Enterprise Angular · NX-Monorepo · NGRX-State.',
-            'smarthy-desc': 'Erste Prod-Rolle · Node.js + Angular · Full-Stack.',
+              'Angular UI-Library-Ownership, Micro-Frontend-Architektur, KI-Workflow-Integration.',
+            'acsoftware-desc':
+              'Enterprise Angular-Entwicklung, Architektur, NX-Monorepos, NgRx State-Management.',
+            'smarthy-desc': 'Full-Stack jQuery- und ASP.NET-Entwicklung im Startup-Umfeld.',
           },
           coffee: {
-            headline: 'Technische Laufbahn',
+            headline: 'Berufserfahrung',
             'datacolor-desc':
-              'Aktuell verantwortlich für Datacolors Angular UI-Library — Design Tokens, gemeinsame Komponenten, Micro-Frontend-Architektur. Jetzt leite ich die KI-Workflow-Integration mit Angular 21 und der Anthropic Claude API.',
+              'Aktuelle Position: Angular Frontend Developer und UI Library Owner bei Datacolor Industrial. Verantwortlich für das gemeinsame Design-System, Micro-Frontend-Integration, DDD-Forschung und die Einführung KI-gestützter Entwicklungs-Workflows.',
             'acsoftware-desc':
-              'Enterprise-Consulting bei ACSoftware. Große Angular-Apps mit NX-Monorepos und NGRX für reaktives State-Management. Fokus auf langfristige Wartbarkeit und teamübergreifende Wiederverwendung.',
+              'Angular Developer bei ACSoftware, einer Enterprise-Software-Beratung. Skalierbare Angular-Anwendungen für Versicherungs- und Behördenkunden mit NX-Monorepos und NgRx für State-Management geliefert.',
             'smarthy-desc':
-              'Erste Ingenieurstelle. Full-Stack-Features mit Angular und Node.js in einem Startup-Umfeld. Produktionscode geliefert und ein Gespür für saubere Architektur entwickelt.',
+              'Junior Full-Stack Developer bei Smarthy Srl. Produktions-Web-Anwendungen mit jQuery und ASP.NET über mehrere parallele Produkte hinweg entwickelt und ausgeliefert.',
           },
           'deep-dive': {
-            headline: 'Laufbahn im Detail',
+            headline: 'Berufserfahrung',
             'datacolor-desc':
-              'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (3+ Jahre). Vollständige Ownership der gemeinsamen Komponentenbibliothek aller Produktteams. Micro-Frontend-Integration eingeführt, TypeScript-Standards gesetzt und aktuell die KI-Workflow-Einführung mit Angular 21 und der Anthropic Claude API via Hashbrown geleitet.',
+              'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (~2 Jahre). Vollständige Ownership der gemeinsamen Komponentenbibliothek aller Produktteams. Zuständig für Micro-Frontend-Architektur, TypeScript-Standards, Design-System-Pflege, DDD-Forschung im Frontend und Leitung KI-gestützter Workflows mit Angular 21 und der Anthropic Claude API via Hashbrown.',
             'acsoftware-desc':
-              'Angular Developer bei ACSoftware (1 Jahr). Enterprise-Consulting — wartbare, große Anwendungen mit NX für Monorepo-Management und NGRX für reaktives State-Management. Starker Fokus auf Architekturqualität und teamübergreifende Komponentenwiederverwendung.',
+              'Angular Developer bei ACSoftware (2 Jahre). Enterprise-Software-Beratung für Versicherungsunternehmen und Behörden. Wartbare, großskalige Anwendungen mit NX für Monorepo-Management und NgRx für reaktives State-Management. Starker Fokus auf Architekturrobustheit und teamübergreifende Komponentenwiederverwendung.',
             'smarthy-desc':
-              'Full-Stack Developer bei Smarthy Srl (2 Jahre). Erste Produktionsstelle. End-to-End-Ownership von Features in Angular und Node.js. Produktionsdisziplin und Software-Delivery-Grundlagen aufgebaut.',
+              'Full-Stack Developer bei Smarthy Srl (2 Jahre). Erste Produktionsstelle. Full-Stack-Features über mehrere parallele Produkte — jQuery-Frontend, ASP.NET-Backend, teils Node.js. Von Spec bis Deployment. Produktionsdisziplin und Software-Delivery-Grundlagen aufgebaut.',
           },
         },
         creative: {
           elevator: {
             headline: 'Die Reise',
-            'datacolor-desc': 'Jetzt: baue die Komponenten, aus denen andere bauen.',
-            'acsoftware-desc': 'Davor: Enterprise Angular richtig skaliert.',
+            'datacolor-desc': 'Jetzt: baue die Fundamente, auf denen andere aufbauen.',
+            'acsoftware-desc': 'Davor: Enterprise Angular für anspruchsvolle Kunden skaliert.',
             'smarthy-desc': 'Beginn: erster Code, erste Nutzer, erste Lektionen.',
           },
           coffee: {
             headline: 'Die Geschichte bisher',
             'datacolor-desc':
-              'Aktuell verantwortlich für die Werkzeuge, aus denen andere Angular-Teams bauen — die UI-Library bei Datacolor. Und jetzt: was passiert, wenn Claude die Oberfläche entwirft statt der Entwickler?',
+              'Aktuell verantwortlich für die Werkzeuge, aus denen andere Angular-Teams bauen — die UI-Library bei Datacolor. Und jetzt: was passiert, wenn Claude die Oberfläche entwirft statt des Entwicklers?',
             'acsoftware-desc':
-              'Ein Jahr im tiefen Enterprise-Angular — NX, NGRX, Codebasen, die das Projekt überdauern müssen. Gelernt, wie Software wirklich skaliert.',
+              'Zwei Jahre im tiefen Enterprise-Angular — NX, NgRx, Codebasen, die das Projekt überdauern müssen. Gelernt, wie Software wirklich skaliert.',
             'smarthy-desc':
               'Hier hat es angefangen. Ein Startup, eine steile Lernkurve, das erste Mal etwas Echtes an echte Nutzer ausliefern.',
           },
           'deep-dive': {
             headline: 'Die vollständige Geschichte',
             'datacolor-desc':
-              'Aktuell bei Datacolor Industrial — Angular UI Library Owner. Die Arbeit dreht sich um Fundamente: das Design-System, gemeinsame Komponenten, Micro-Frontend-Integration. Und in letzter Zeit: Experimente mit Generative UI, bei der Claude die Oberfläche zusammensetzt statt ein Entwickler sie hardzukodieren.',
+              'Aktuell bei Datacolor Industrial — Angular UI Library Owner. Die Arbeit dreht sich um Fundamente: das Design-System, gemeinsame Komponenten, Micro-Frontend-Integration, DDD-Forschung. Und in letzter Zeit: Experimente mit Generative UI, bei der Claude die Oberfläche zusammensetzt statt ein Entwickler sie hardzukodiert.',
             'acsoftware-desc':
-              'Bei ACSoftware, ein Jahr Enterprise-Angular-Consulting. Die Art von Codebase, wo NX und NGRX keine Luxus sind — sie halten eine 200k-Zeilen-App zusammen. Architekturelle Disziplin gelernt.',
+              'Bei ACSoftware, zwei Jahre Enterprise-Angular-Consulting für Versicherungsunternehmen und Behörden. Die Art von Codebase, wo NX und NgRx kein Luxus sind — sie halten eine großskalige App zusammen. Architekturelle Disziplin gelernt.',
             'smarthy-desc':
-              'Smarthy Srl war der Anfang — ein Startup, ein kleines Team, volle Feature-Ownership von Tag eins. Gebaut in Angular und Node.js, in Produktion geliefert, den Unterschied zwischen Code der funktioniert und Code der hält gelernt.',
+              'Smarthy Srl war der Anfang — ein Startup, ein kleines Team, volle Feature-Ownership von Tag eins. Gebaut in jQuery und ASP.NET, in Produktion geliefert, den Unterschied zwischen Code der funktioniert und Code der hält gelernt.',
           },
         },
-        formal: {
+        technical: {
           elevator: {
-            headline: 'Berufserfahrung',
+            headline: 'Career Stack',
             'datacolor-desc':
-              'Angular UI-Library-Ownership, Micro-Frontend-Architektur, KI-Workflow-Integration.',
-            'acsoftware-desc': 'Enterprise Angular-Entwicklung, Architektur und State-Management.',
-            'smarthy-desc': 'Full-Stack Angular- und Node.js-Entwicklung.',
+              'UI-Lib-Owner · DDD · Micro-Frontends · KI-Workflow-Integration · Angular 21.',
+            'acsoftware-desc':
+              'Enterprise Angular · NX-Monorepos · NgRx · Versicherung & Behörden.',
+            'smarthy-desc': 'Erste Prod-Rolle · jQuery + ASP.NET · Full-Stack.',
           },
           coffee: {
-            headline: 'Berufserfahrung',
+            headline: 'Technische Laufbahn',
             'datacolor-desc':
-              'Aktuelle Position: Angular Frontend Developer und UI Library Owner bei Datacolor Industrial. Verantwortlich für das gemeinsame Design-System, Micro-Frontend-Integration und die Einführung KI-gestützter Entwicklungs-Workflows.',
+              'Aktuell Verantwortlicher für Datacolors Angular UI-Library — Design Tokens, gemeinsame Komponenten, Micro-Frontend-Architektur, DDD-Forschung im Frontend. Leitet jetzt KI-gestützte Workflows mit Angular 21 und der Anthropic Claude API.',
             'acsoftware-desc':
-              'Angular Developer bei ACSoftware, einer Enterprise-Software-Beratung. Skalierbare Angular-Anwendungen mit NX-Monorepos und NGRX für State-Management geliefert.',
+              'Enterprise-Consulting bei ACSoftware. Großskalige Angular-Apps mit NX-Monorepos und NgRx für reaktives State-Management. Kunden: Versicherungsunternehmen und Behörden. Fokus auf langfristige Wartbarkeit und teamübergreifende Wiederverwendung.',
             'smarthy-desc':
-              'Junior Full-Stack Developer bei Smarthy Srl. Produktions-Web-Anwendungen mit Angular und Node.js entwickelt und ausgeliefert.',
+              'Erste Ingenieurstelle bei Smarthy Srl. Full-Stack-Features über mehrere parallele Produkte — jQuery-Frontend, ASP.NET-Backend. Produktionscode geliefert und ein Gespür für saubere Architektur entwickelt.',
+          },
+          'deep-dive': {
+            headline: 'Laufbahn im Detail',
+            'datacolor-desc':
+              'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (~2 Jahre). Vollständige Ownership der gemeinsamen Komponentenbibliothek — von Design Tokens bis Micro-Frontend-Integration. Leitung von DDD-im-Frontend-Forschung (Manfred Steyer Einfluss) und KI-gestützten Entwicklungs-Workflows via Angular 21 + Hashbrown + Claude API.',
+            'acsoftware-desc':
+              'Angular Developer bei ACSoftware (2 Jahre). Enterprise-Consulting-Kontext — wartbare, großskalige Anwendungen mit NX für Monorepo-Management und NgRx für reaktiven State. Kunden in Versicherung und Behörden. Starker Fokus auf Architekturqualität, Onboarding-Standards und teamübergreifende Komponentenwiederverwendung.',
+            'smarthy-desc':
+              'Full-Stack Developer bei Smarthy Srl (2 Jahre). Erste Produktionsrolle. Full-Stack-Features über mehrere parallele Produkte (jQuery + ASP.NET + teils Node.js), von Spec bis Deployment. Produktionsdisziplin und Grundlagen realer Software-Delivery entwickelt.',
           },
         },
       },
       recruiter: {
         // ── Fallback auf Rollenebene — deckt jede Stil+Zeit-Kombination ab, die nicht explizit definiert ist ──
         headline: 'Berufsverlauf',
+        'current-label': 'Aktuell',
+        'datacolor-role': 'Angular Frontend Developer (de facto Tech Lead)',
+        'acsoftware-role': 'Angular Developer / Consultant',
+        'smarthy-role': 'Full-Stack Developer',
         'datacolor-desc':
-          'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (3+ Jahre). Micro-Frontend-Architektur, Komponentenbibliothek-Ownership, KI-Workflow-Integration mit Angular 21 und der Anthropic Claude API.',
+          'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (~2 Jahre). Micro-Frontend-Architektur, Komponentenbibliothek-Ownership, KI-Workflow-Integration mit Angular 21 und der Anthropic Claude API.',
         'acsoftware-desc':
-          'Angular Developer bei ACSoftware (1 Jahr). Enterprise-Consulting, NX-Monorepos, NGRX-State-Management, langfristige Architekturqualität.',
+          'Angular Developer bei ACSoftware (2 Jahre). Enterprise-Consulting für Versicherungs- und Behördenkunden. NX-Monorepos, NgRx State-Management, langfristige Architekturqualität.',
         'smarthy-desc':
-          'Full-Stack Developer bei Smarthy Srl (2 Jahre). Angular + Node.js, erste Produktionsstelle in einem Startup-Umfeld.',
+          'Full-Stack Developer bei Smarthy Srl (2 Jahre). jQuery + ASP.NET, erste Produktionsstelle im Startup-Umfeld.',
         formal: {
           elevator: {
             headline: 'Berufsverlauf',
-            'datacolor-desc': 'UI-Library-Ownership · Micro-Frontends · KI-Integration · 3+ J.',
-            'acsoftware-desc': 'Enterprise Angular · NX · NGRX · 1 J.',
-            'smarthy-desc': 'Full-Stack · Angular + Node.js · 2 J.',
+            'datacolor-desc': 'UI-Library-Ownership · Micro-Frontends · KI-Integration · ~2 J.',
+            'acsoftware-desc':
+              'Enterprise Angular · NX · NgRx · Versicherung & Behörden · 2 J.',
+            'smarthy-desc': 'Full-Stack · jQuery + ASP.NET · Startup · 2 J.',
           },
           coffee: {
             headline: 'Berufsverlauf',
             'datacolor-desc':
-              'Angular Frontend Developer und UI Library Owner bei Datacolor Industrial. Verantwortlich für die interne Komponentenbibliothek, Micro-Frontend-Architektur und KI-Workflow-Integration. 3+ Jahre.',
+              'Angular Frontend Developer und UI Library Owner bei Datacolor Industrial. Verantwortlich für die interne Komponentenbibliothek, Micro-Frontend-Architektur und KI-Workflow-Integration. ~2 Jahre.',
             'acsoftware-desc':
-              'Angular Developer bei ACSoftware, einer Enterprise-Beratung. Große Anwendungen mit NX-Monorepos und NGRX geliefert. Fokus auf langfristige Architekturqualität. 1 Jahr.',
+              'Angular Developer bei ACSoftware, einer Enterprise-Beratung. Großskalige Anwendungen für Versicherungsunternehmen und Behörden mit NX-Monorepos und NgRx. Fokus auf langfristige Architekturqualität. 2 Jahre.',
             'smarthy-desc':
-              'Full-Stack Developer bei Smarthy Srl, einem Startup. Produktions-Features mit Angular und Node.js. Erste Ingenieurstelle. 2 Jahre.',
+              'Full-Stack Developer bei Smarthy Srl, einem Startup. Produktions-Features über mehrere parallele Produkte mit jQuery und ASP.NET. Erste Ingenieurstelle. 2 Jahre.',
           },
           'deep-dive': {
             headline: 'Beschäftigungshistorie',
             'datacolor-desc':
-              'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (3+ Jahre). Verantwortlich für die interne Angular-Komponentenbibliothek aller Produktteams. Micro-Frontend-Integration, TypeScript-Standards, Design-System-Pflege und Einführung KI-gestützter Workflows mit Angular 21 und der Anthropic Claude API.',
+              'Angular Frontend Developer & UI Library Owner bei Datacolor Industrial (~2 Jahre). Verantwortlich für die interne Angular-Komponentenbibliothek aller Produktteams. Micro-Frontend-Integration, TypeScript-Standards, Design-System-Pflege, DDD-Forschung und Einführung KI-gestützter Workflows mit Angular 21 und der Anthropic Claude API.',
             'acsoftware-desc':
-              'Angular Developer bei ACSoftware (1 Jahr). Enterprise-Software-Beratung. Wartbare, große Web-Anwendungen für Unternehmenskunden mit NX für Monorepo-Management und NGRX für reaktives State-Management. Starker Fokus auf Architekturrobustheit.',
+              'Angular Developer bei ACSoftware (2 Jahre). Enterprise-Software-Beratung. Wartbare, großskalige Web-Anwendungen für Versicherungsunternehmen und Behörden mit NX für Monorepo-Management und NgRx für reaktives State-Management. Starker Fokus auf Architekturrobustheit.',
             'smarthy-desc':
-              'Full-Stack Developer bei Smarthy Srl (2 Jahre). Erste professionelle Ingenieurstelle in einem Startup-Umfeld. End-to-End-Ownership von Produktions-Features mit Angular und Node.js. Produktionsdisziplin und Software-Delivery-Grundlagen erworben.',
+              'Full-Stack Developer bei Smarthy Srl (2 Jahre). Erste professionelle Ingenieurstelle im Startup-Umfeld. End-to-End-Ownership von Produktions-Features mit jQuery und ASP.NET über mehrere parallele Produkte. Produktionsdisziplin und Software-Delivery-Grundlagen erworben.',
           },
         },
         technical: {
           elevator: {
             headline: 'Berufsverlauf',
             'datacolor-desc':
-              'Datacolor · UI-Lib-Owner · Angular 21 · Micro-Frontends · KI-Workflows · 3+ J.',
-            'acsoftware-desc': 'ACSoftware · Enterprise-Consulting · NX + NGRX · 1 J.',
-            'smarthy-desc': 'Smarthy · Full-Stack · Angular + Node.js · 2 J.',
+              'Datacolor · UI-Lib-Owner · Angular 21 · Micro-Frontends · KI-Workflows · ~2 J.',
+            'acsoftware-desc':
+              'ACSoftware · Enterprise-Consulting · NX + NgRx · Versicherung & Behörden · 2 J.',
+            'smarthy-desc': 'Smarthy · Full-Stack · jQuery + ASP.NET · 2 J.',
           },
           coffee: {
             headline: 'Berufsverlauf',
             'datacolor-desc':
-              'Datacolor Industrial — UI-Library-Owner. Verantwortlich für die Angular-Komponentenbibliothek aller Teams. Leitet Micro-Frontend-Integration + KI-Workflow-Einführung mit Angular 21 + Claude API. 3+ J.',
+              'Datacolor Industrial — UI-Library-Owner. Verantwortlich für die Angular-Komponentenbibliothek aller Teams. Leitet Micro-Frontend-Integration + KI-Workflow-Einführung mit Angular 21 + Claude API. ~2 J.',
             'acsoftware-desc':
-              'ACSoftware — Enterprise Angular-Consulting. NX-Monorepo, NGRX-Reactive-State, Architekturstandards. 1 J.',
+              'ACSoftware — Enterprise Angular-Consulting für Versicherung und Behörden. NX-Monorepo, NgRx-Reactive-State, Architekturstandards. 2 J.',
             'smarthy-desc':
-              'Smarthy Srl — Startup, erste Prod-Stelle. Angular + Node.js, vollständige Feature-Ownership von Spec bis Deploy. 2 J.',
+              'Smarthy Srl — Startup, erste Prod-Stelle. jQuery + ASP.NET, vollständige Feature-Ownership von Spec bis Deploy. 2 J.',
           },
           'deep-dive': {
             headline: 'Berufsverlauf',
             'datacolor-desc':
-              'Datacolor Industrial (3+ J.) · UI-Library-Owner · Angular 21 · Micro-Frontends · KI-Workflows via Hashbrown + Claude API · Vollständige Ownership von Design-System bis Deployment.',
+              'Datacolor Industrial (~2 J.) · UI-Library-Owner · Angular 21 · Micro-Frontends · DDD-Forschung · KI-Workflows via Hashbrown + Claude API · Vollständige Ownership von Design-System bis Deployment.',
             'acsoftware-desc':
-              'ACSoftware (1 J.) · Enterprise-Consulting · NX-Monorepo · NGRX-Reactive-State · TypeScript strict · Architekturqualität + teamübergreifende Komponentenwiederverwendung.',
+              'ACSoftware (2 J.) · Enterprise-Consulting · NX-Monorepo · NgRx-Reactive-State · TypeScript strict · Versicherungs- & Behördenkunden · Architekturqualität + teamübergreifende Komponentenwiederverwendung.',
             'smarthy-desc':
-              'Smarthy Srl (2 J.) · Erste Prod-Stelle · Angular + Node.js · Vollständige Feature-Ownership · Spec → Deploy im Startup-Umfeld.',
+              'Smarthy Srl (2 J.) · Erste Prod-Stelle · jQuery + ASP.NET · Vollständige Feature-Ownership über mehrere parallele Produkte · Spec → Deploy im Startup-Umfeld.',
           },
         },
         creative: {
@@ -347,56 +375,114 @@ export const de: AppTranslation = {
           coffee: {
             headline: 'Die Karrieregeschichte',
             'datacolor-desc':
-              'Datacolor Industrial — aktuell die Person, die die Komponenten besitzt, aus denen alle anderen Angular-Teams bauen. Und seit kurzem: die Person, die neu definiert, was "eine UI bauen" mit Generative AI bedeutet.',
+              "Datacolor Industrial — aktuell die Person, die die Komponenten besitzt, aus denen alle anderen Angular-Teams bauen. Und seit kurzem: die Person, die neu definiert, was 'eine UI bauen' mit Generative AI bedeutet.",
             'acsoftware-desc':
-              'ACSoftware — ein Jahr im tiefsten Enterprise-Angular. Gelernt, wie Software skaliert, wenn sie es wirklich muss.',
+              'ACSoftware — zwei Jahre im tiefsten Enterprise-Angular für Versicherungsunternehmen und Behörden. Gelernt, wie Software skaliert, wenn sie es wirklich muss.',
             'smarthy-desc':
               'Smarthy Srl — der Anfang. Erste Stelle, erste Produktions-App, erste echte Nutzer.',
+          },
+          'deep-dive': {
+            headline: 'Die vollständige Karrieregeschichte',
+            'datacolor-desc':
+              'Datacolor Industrial ist, wo Erik aktuell als UI Library Owner arbeitet — verantwortlich für die Fundamente, auf denen ganze Produktteams aufbauen. Design-System, Micro-Frontend-Integration, DDD-Forschung und jetzt Generative UI: Claude setzt die Oberfläche zur Laufzeit zusammen.',
+            'acsoftware-desc':
+              "ACSoftware gab Erik zwei Jahre im anspruchsvollsten Teil des Angular-Consultings — Versicherungs- und Behörden-Codebases, wo NX und NgRx keine Optionen sind, sondern Anforderungen. Er hat gelernt, was Architekturqualität bedeutet, wenn Kunden es sich nicht leisten können, in sechs Monaten zu refactoren.",
+            'smarthy-desc':
+              'Smarthy Srl ist, wo alles begann — ein Startup, mehrere parallele Produkte, vollständige Ownership von Tag eins. Erik lieferte jQuery + ASP.NET Features an Produktionsnutzer, bevor er ein Jahr professionell programmiert hatte.',
           },
         },
       },
       client: {
         // ── Fallback auf Rollenebene — deckt jede Stil+Zeit-Kombination ab, die nicht explizit definiert ist ──
         headline: 'Erfahrung',
+        'current-label': 'Aktuell',
+        'datacolor-role': 'Frontend Developer & Tech Lead',
+        'acsoftware-role': 'Web Developer',
+        'smarthy-role': 'Full-Stack Developer',
         'datacolor-desc':
-          'Aktuell Angular Frontend Developer bei Datacolor Industrial. Vollständige Ownership des Design-Systems und der Micro-Frontend-Architektur. Leitet KI-Integration mit Angular 21. 3+ Jahre.',
+          'Aktuell Web-Anwendungen und KI-gestützte Tools bei Datacolor entwickelt — einem Technologieunternehmen in der Textilindustrie. Leitet das Frontend-Team. ~2 Jahre.',
         'acsoftware-desc':
-          'Angular Developer in einer Enterprise-Softwareberatung. Robuste, skalierbare Web-Anwendungen für Unternehmenskunden geliefert.',
+          'Zuvor: Web Developer in einer Enterprise-Beratung. Zuverlässige Web-Anwendungen für Unternehmenskunden in Versicherung und Behörden geliefert.',
         'smarthy-desc':
-          'Full-Stack Developer in einem Startup. Produktions-Web-Anwendungen von Grund auf mit Angular und Node.js entwickelt.',
+          'Frühkarriere: Full-Stack Developer in einem Startup. Produktions-Web-Produkte von Grund auf entwickelt.',
         formal: {
           elevator: {
             headline: 'Erfahrung',
             'datacolor-desc':
-              'Aktuell: Angular UI-Library und Micro-Frontend-Architektur bei einem Industrietech-Unternehmen.',
-            'acsoftware-desc': 'Zuvor: skalierbare Angular-Lösungen für Enterprise-Kunden.',
-            'smarthy-desc': 'Frühkarriere: Full-Stack-Web-Produkte für ein Startup.',
+              'Aktuell: Frontend Developer und Tech Lead bei einem Industrietechnologie-Unternehmen.',
+            'acsoftware-desc':
+              'Zuvor: Web Developer für Enterprise-Kunden in Versicherung und Behörden.',
+            'smarthy-desc': 'Frühkarriere: Full-Stack-Webentwicklung in einem Startup.',
           },
           coffee: {
             headline: 'Erfahrung',
             'datacolor-desc':
-              'Aktuell: Angular Frontend Developer bei Datacolor Industrial. Vollständige Ownership des Design-Systems und Leitung der KI-Integration für interne Werkzeuge. 3+ Jahre.',
+              'Aktuell: Frontend Developer bei Datacolor Industrial. Leitung des Frontend-Teams, Aufbau des gemeinsamen Design-Systems und KI-Integration in das Produkt. ~2 Jahre.',
             'acsoftware-desc':
-              'Zuvor: Angular Developer in einer Enterprise-Softwareberatung. Robuste, skalierbare Web-Anwendungen für Unternehmenskunden mit anspruchsvollen Anforderungen geliefert.',
+              'Zuvor: Web Developer in einer Enterprise-Beratung. Robuste, skalierbare Web-Anwendungen für Unternehmenskunden mit anspruchsvollen Qualitätsanforderungen geliefert.',
             'smarthy-desc':
-              'Frühkarriere: Full-Stack Developer in einem Startup. Produktions-Web-Anwendungen von Grund auf mit Angular und Node.js entwickelt.',
+              'Frühkarriere: Full-Stack Developer in einem Startup. Produktions-Web-Anwendungen von Grund auf — von Design bis Deployment.',
+          },
+          'deep-dive': {
+            headline: 'Berufserfahrung',
+            'datacolor-desc':
+              'Aktuell bei Datacolor Industrial — ein Technologieunternehmen in der Farbmesstechnik für die Textilindustrie. Erik leitet das Frontend-Team, besitzt die gemeinsame Komponentenbibliothek aller Produkte und führt KI in den Entwicklungs-Workflow ein. Seit ~2 Jahren dort und de facto technischer Entscheidungsträger für alle Frontend-Belange.',
+            'acsoftware-desc':
+              'Zuvor bei ACSoftware, einer Enterprise-Software-Beratung. Erik entwickelte Web-Anwendungen für Versicherungsunternehmen und Behörden — Umgebungen mit strengen Qualitätsanforderungen und langen Wartungshorizonten. 2 Jahre zuverlässige, skalierbare Software unter anspruchsvollen Bedingungen geliefert.',
+            'smarthy-desc':
+              'Eriks Karriere begann bei Smarthy Srl, einem Startup, wo er 2 Jahre als Full-Stack Developer arbeitete. Er besaß Features von Anforderungen bis Deployment über mehrere parallele Produkte. Hier entwickelte er seine Produktionsdisziplin und seinen Instinkt, Dinge zu bauen, die halten.',
           },
         },
         creative: {
           elevator: {
             headline: 'Die Geschichte bisher',
-            'datacolor-desc': 'Jetzt: baue KI-gestützte Werkzeuge für ein Industrieunternehmen.',
-            'acsoftware-desc': 'Davor: Enterprise-Angular für anspruchsvolle Kunden.',
+            'datacolor-desc': 'Jetzt: baue KI-gestützte Tools für ein Industrieunternehmen.',
+            'acsoftware-desc': 'Davor: Web-Anwendungen für Enterprise-Kunden.',
             'smarthy-desc': 'Angefangen: erstes Produkt, erste Nutzer, erste Lektionen.',
+          },
+          coffee: {
+            headline: 'Die Geschichte bisher',
+            'datacolor-desc':
+              'Aktuell bei Datacolor — baut die Tools, auf die das gesamte Team angewiesen ist, und integriert jetzt KI, um sie intelligenter zu machen. Die Art Projekt, das jeden Tag herausfordert.',
+            'acsoftware-desc':
+              'Davor zwei Jahre Web-Anwendungen für Versicherungsunternehmen und Behördenkunden gebaut — die Art Arbeit, die lehrt, was "zuverlässige Software" wirklich bedeutet.',
+            'smarthy-desc':
+              'Es begann bei einem Startup namens Smarthy — schnell lernen, noch schneller liefern, und entdecken, dass etwas Echtes für echte Nutzer zu bauen die beste Ausbildung ist.',
+          },
+          'deep-dive': {
+            headline: 'Die Reise',
+            'datacolor-desc':
+              'Erik arbeitet aktuell bei Datacolor Industrial, wo er das Frontend-Team leitet und das gemeinsame Design-System besitzt, das in allen Produkten des Unternehmens genutzt wird. Das Spannendste an seiner aktuellen Arbeit: KI auf eine Weise in Web-Interfaces zu integrieren, die sich wirklich nützlich anfühlt — nicht nur als Gimmick. Dieses Portfolio ist das öffentliche Gesicht dieser Erkundung.',
+            'acsoftware-desc':
+              'Vor Datacolor verbrachte Erik zwei Jahre bei ACSoftware mit dem Bau von Web-Anwendungen für Versicherungsunternehmen und Behörden. Anspruchsvolle Kunden, strenge Qualitätsstandards, lange Wartungshorizonte — genau die Art Umgebung, in der man lernt, Software zu bauen, die hält.',
+            'smarthy-desc':
+              'Der Anfang: Smarthy Srl, ein Startup, wo Erik mehrere Web-Produkte gleichzeitig als Full-Stack Developer entwickelte. Er besaß Features von der Idee bis zur Produktion — und entdeckte früh, dass er den gesamten Prozess liebt, nicht nur Code schreiben.',
           },
         },
         technical: {
           elevator: {
             headline: 'Erfahrung',
+            'datacolor-desc': 'Datacolor · Frontend Tech Lead · KI-Integration · ~2 J.',
+            'acsoftware-desc': 'ACSoftware · Enterprise Web-Apps · Versicherung & Behörden',
+            'smarthy-desc': 'Smarthy · Full-Stack · Startup',
+          },
+          coffee: {
+            headline: 'Erfahrung',
             'datacolor-desc':
-              'Datacolor · Angular UI-Lib · Micro-Frontends · KI-Integration · 3+ J.',
-            'acsoftware-desc': 'ACSoftware · Enterprise Angular · NX + NGRX',
-            'smarthy-desc': 'Smarthy · Full-Stack · Angular + Node.js',
+              'Datacolor Industrial — Frontend Tech Lead. Besitzt das gemeinsame Design-System, leitet das Frontend-Team, integriert KI in das Produkt. Schnell ladende Seiten, zuverlässige Apps. ~2 Jahre.',
+            'acsoftware-desc':
+              'ACSoftware — Enterprise Web Developer für Versicherungs- und Behördenkunden. Robuste, skalierbare Web-Anwendungen mit zuverlässiger Performance geliefert. 2 Jahre.',
+            'smarthy-desc':
+              'Smarthy Srl — Startup, Full-Stack Developer. Web-Produkte von Grund auf entwickelt und ausgeliefert. Vollständige Ownership von Design bis Deployment. 2 Jahre.',
+          },
+          'deep-dive': {
+            headline: 'Erfahrung',
+            'datacolor-desc':
+              'Datacolor Industrial (~2 Jahre) — Frontend Developer & Tech Lead für die Textilindustrie-Division. Besitzt das gemeinsame Design-System, trifft Architekturentscheidungen und integriert KI-Features in die Produktpalette. Schnell ladende, zuverlässige Web-Anwendungen. De facto technischer Entscheidungsträger für alle Frontend-Belange.',
+            'acsoftware-desc':
+              'ACSoftware (2 Jahre) — Enterprise Web Developer. Zuverlässige, skalierbare Web-Anwendungen für Versicherungsunternehmen und Behörden geliefert. Hochwertige Lieferung in anspruchsvollen, regulierten Umgebungen.',
+            'smarthy-desc':
+              'Smarthy Srl (2 Jahre) — Startup, Full-Stack Developer. Mehrere parallele Web-Produkte von Grund auf entwickelt und ausgeliefert — Frontend, Backend, Deployment. Erste professionelle Ingenieurstelle.',
           },
         },
       },
@@ -404,11 +490,13 @@ export const de: AppTranslation = {
         headline: 'Erfahrung',
         'current-label': 'Aktuell',
         'datacolor-role': 'Angular Frontend Developer & UI Library Owner',
-        'acsoftware-role': 'Angular Developer',
+        'acsoftware-role': 'Angular Developer / Consultant',
         'smarthy-role': 'Full-Stack Developer',
-        'datacolor-desc': 'Angular UI-Library, Micro-Frontends, KI-Integration.',
-        'acsoftware-desc': 'Enterprise Angular-Consulting.',
-        'smarthy-desc': 'Full-Stack-Webentwicklung.',
+        'datacolor-desc':
+          'Angular UI-Library, Micro-Frontends, DDD-Forschung, KI-Integration. De facto Tech Lead.',
+        'acsoftware-desc':
+          'Enterprise Angular-Consulting — NX-Monorepos, NgRx, Versicherungs- & Behördenkunden.',
+        'smarthy-desc': 'Erste Produktionsstelle. Full-Stack-Webentwicklung im Startup-Umfeld.',
       },
     },
     'project-showcase': {
@@ -652,7 +740,7 @@ export const de: AppTranslation = {
           'deep-dive': {
             eyebrow: 'Skills & Stack',
             headline: 'Jedes Werkzeug in meinem Gürtel.',
-            body: 'Angular und TypeScript sind die Heimat — fünf Jahre, produktionsreif, volle Architektur-Ownership. Die mittlere Schicht: NgRx Signals, SSR, NX Monorepos, Storybook, SCSS Design-Systeme. Im Backend: Node.js, Express, Vercel. Die Frontier: Claude API, Hashbrown, Prompt Engineering, LLM-Orchestrierung. Und als nächstes: LangChain, LangGraph, React-Exploration.',
+            body: 'Angular und TypeScript sind die Heimat — ~6 Jahre, produktionsreif, volle Architektur-Ownership. Die mittlere Schicht: NgRx Signals, SSR, NX Monorepos, Storybook, SCSS Design-Systeme. Im Backend: Node.js, Express, Vercel. Die Frontier: Claude API, Hashbrown, Prompt Engineering, LLM-Orchestrierung. Und als nächstes: LangChain, LangGraph, React-Exploration.',
           },
         },
         formal: {
@@ -709,7 +797,7 @@ export const de: AppTranslation = {
           'deep-dive': {
             eyebrow: 'Vollständiges Toolkit',
             headline: 'Das vollständige technische Bild.',
-            body: 'Angular 21 ist Eriks Heimat — fünf Jahre produktionsgrade Arbeit, von Komponentenbibliotheken über Micro-Frontend-Architekturen bis zu KI-nativen Anwendungen. Die Backend-Schicht deckt Node.js und Vercel ab. Die KI-Schicht — Claude API, Hashbrown, Prompt Engineering — ist sein aktueller Vorsprung.',
+            body: 'Angular 21 ist Eriks Heimat — ~6 Jahre produktionsgrade Arbeit, von Komponentenbibliotheken über Micro-Frontend-Architekturen bis zu KI-nativen Anwendungen. Die Backend-Schicht deckt Node.js und Vercel ab. Die KI-Schicht — Claude API, Hashbrown, Prompt Engineering — ist sein aktueller Vorsprung.',
           },
         },
         technical: {
@@ -744,7 +832,7 @@ export const de: AppTranslation = {
           coffee: {
             eyebrow: 'Technische Fähigkeiten',
             headline: 'Meine technischen Fähigkeiten.',
-            body: 'Angular Frontend-Spezialist mit fünf Jahren Produktionserfahrung, ergänzt durch Node.js und Vercel Backend-Fähigkeiten. Ich biete KI-Feature-Integration über die Anthropic Claude API an.',
+            body: 'Angular Frontend-Spezialist mit ~6 Jahren Produktionserfahrung, ergänzt durch Node.js und Vercel Backend-Fähigkeiten. Ich biete KI-Feature-Integration über die Anthropic Claude API an.',
           },
           'deep-dive': {
             eyebrow: 'Technisches Profil',
@@ -1743,7 +1831,7 @@ export const de: AppTranslation = {
           coffee: {
             eyebrow: 'Das nächste Kapitel',
             headline: 'Tech Lead. Architekt. Team-Multiplikator.',
-            body: 'Erik hat fünf Jahre gebaut. Jetzt will er die Führung übernehmen — Richtung vorgeben, Standards anheben, KI in das Teamdenken einbringen.',
+            body: 'Erik hat ~6 Jahre gebaut. Jetzt will er die Führung übernehmen — Richtung vorgeben, Standards anheben, KI in das Teamdenken einbringen.',
           },
           'deep-dive': {
             eyebrow: 'Ziel',
@@ -1765,7 +1853,7 @@ export const de: AppTranslation = {
           'deep-dive': {
             eyebrow: 'Stellenziel',
             headline: 'Principal Engineer / Tech Lead.',
-            body: 'Erik will vollständige Ownership über Architekturentscheidungen, Coding-Standards und KI-Integrations-Roadmaps. Er bringt fünf Jahre Angular-Produktionserfahrung mit.',
+            body: 'Erik will vollständige Ownership über Architekturentscheidungen, Coding-Standards und KI-Integrations-Roadmaps. Er bringt ~6 Jahre Angular-Produktionserfahrung mit.',
           },
         },
       },
@@ -4620,6 +4708,304 @@ export const de: AppTranslation = {
       'mentor-5-name': 'Fabio Biondi', 'mentor-5-context': 'Italienische Angular-Community', 'mentor-5-gave': 'Wie Meisterschaft aussieht. Pures Gold.',
       'mentor-6-name': 'Soumaya Erradi', 'mentor-6-context': 'Konferenz-Speaker', 'mentor-6-gave': 'Hinterlässt immer etwas Verwertbares.',
       'friend-note': 'Und ein enger Freund bei Datacolor — der, der mich per Empfehlung reingebracht hat. Noch immer da. Noch immer der beste Anruf.',
+    },
+  },
+  'tech-opinions': {
+    'tech-peer': {
+      eyebrow: 'Standpunkte',
+      headline: 'Ansichten, die ich verteidige.',
+      formal: {
+        elevator: { eyebrow: 'Tech-Ansichten', headline: 'Sechs Meinungen. Alle begründet.' },
+        coffee: { eyebrow: 'Tech-Ansichten', headline: 'Wo Erik wirklich steht — und warum.' },
+        'deep-dive': { eyebrow: 'Tech-Ansichten', headline: 'Technische Meinungen mit Begründung und Erfahrungshintergrund.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Standpunkte', headline: 'Ansichten, die ich verteidige.' },
+        coffee: { eyebrow: 'Standpunkte', headline: 'Kein Dogma. Begründete Positionen.' },
+        'deep-dive': { eyebrow: 'Standpunkte', headline: 'Meine technischen Überzeugungen — offen für Diskussion.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Ansichten', headline: 'AI · Angular · Monorepos · Juniors · Backend · WASM.' },
+        coffee: { eyebrow: 'Ansichten', headline: 'Wo ich stehe und wie ich dazu gekommen bin.' },
+        'deep-dive': { eyebrow: 'Ansichten', headline: 'Sieben technische Positionen mit konkretem Kontext.' },
+      },
+    },
+    recruiter: {
+      eyebrow: 'Technische Ansichten',
+      headline: 'Wie Erik über Engineering denkt.',
+      formal: {
+        elevator: { eyebrow: 'Technische Ansichten', headline: 'Klare Meinungen. Offen für Diskussion.' },
+        coffee: { eyebrow: 'Technische Ansichten', headline: 'Wie Erik über wichtige technische Entscheidungen denkt.' },
+        'deep-dive': { eyebrow: 'Technische Ansichten', headline: 'Eriks technische Überzeugungen — ein Signal für Urteilsvermögen und Erfahrungstiefe.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Technische Ansichten', headline: 'Meinungen — kein Trendfolgen.' },
+        coffee: { eyebrow: 'Technische Ansichten', headline: 'Eigene Überzeugungen — kein Konsens.' },
+        'deep-dive': { eyebrow: 'Technische Ansichten', headline: 'Wie Erik in unsicheren technischen Entscheidungen denkt.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Technische Ansichten', headline: 'Klar positioniert zu AI, Angular, Monorepos und mehr.' },
+        coffee: { eyebrow: 'Technische Ansichten', headline: 'Wie Eriks Engineering-Denken zu deinem Team passt.' },
+        'deep-dive': { eyebrow: 'Technische Ansichten', headline: 'Sieben Positionen, die zeigen, wie Erik urteilt und priorisiert.' },
+      },
+    },
+    client: {
+      eyebrow: 'Wie Erik denkt',
+      headline: 'Klare Ansichten zu den richtigen Werkzeugen.',
+      formal: {
+        elevator: { eyebrow: 'Wie Erik denkt', headline: 'Klare Ansichten zu den richtigen Werkzeugen.' },
+        coffee: { eyebrow: 'Wie Erik denkt', headline: 'Wie Erik technische Entscheidungen bewertet.' },
+        'deep-dive': { eyebrow: 'Wie Erik denkt', headline: 'Eriks technische Perspektiven — was das für dein Projekt bedeutet.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Wie Erik denkt', headline: 'Eigene Ansichten. Kein Groupthink.' },
+        coffee: { eyebrow: 'Wie Erik denkt', headline: 'Er folgt nicht einfach Trends — er hat begründete Meinungen.' },
+        'deep-dive': { eyebrow: 'Wie Erik denkt', headline: 'Der Verstand hinter den Entscheidungen.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Wie Erik denkt', headline: 'Klarer Denkstil. Keine blinde Technologieadoption.' },
+        coffee: { eyebrow: 'Wie Erik denkt', headline: 'Klarer Kopf zu AI, Tooling und Prozess.' },
+        'deep-dive': { eyebrow: 'Wie Erik denkt', headline: 'Wie Eriks Denkweise dein Projekt beeinflusst.' },
+      },
+    },
+    default: {
+      eyebrow: 'Technische Ansichten',
+      headline: 'Ansichten, die ich verteidige.',
+      'opinion-ai-future-topic': 'AI und die Zukunft der Frontend-Entwicklung',
+      'opinion-ai-future-take': 'AI ersetzt kein gutes Engineering-Urteilsvermögen. Es verstärkt es.',
+      'opinion-ai-future-detail': 'Der AI-Hype vereinfacht in beide Richtungen — entweder "kein Code wird noch von Menschen geschrieben" oder "nichts ändert sich wirklich". Meine Einschätzung: AI ist ein leistungsfähiges Werkzeug für das, worin Frontend-Engineering ohnehin gut ist — schnell iterieren, Ideen prototypen, Boilerplate reduzieren. Was sich nicht ändert: die Fähigkeit, Architektur zu überdenken, sicherzustellen, dass das Ergebnis wartbar ist, und schlechte Ausgabe zu erkennen, bevor sie es in Produktion schafft. Ich nutze AI täglich. Ich lasse AI nicht für mich urteilen.',
+      'opinion-angular-react-topic': 'Angular vs. React',
+      'opinion-angular-react-take': 'Angular gewinnt für Enterprise. React gewinnt beim Ökosystem. Kenne den Unterschied.',
+      'opinion-angular-react-detail': 'Ich baue in Angular, weil die Struktur, die es aufzwingt, in komplexen, lang lebenden Produkten auszahlt — DI, strikte Typisierung, eine Meinung zu allem. React gewinnt beim Ökosystem und bei der Einstellungssituation, und das sind reale Überlegungen. Was ich nicht glaube: dass eines objektiv besser ist. Die richtige Wahl hängt von der Produktlebenserwartung, der Teamgröße und der Bereitschaft ab, über Tooling zu debattieren. Ich habe Angular gewählt. Ich bereue es nicht.',
+      'opinion-monorepos-topic': 'Monorepos',
+      'opinion-monorepos-take': 'Anfangsreibung, jahrelange Dividenden.',
+      'opinion-monorepos-detail': 'Monorepos erzeugen anfängliche Reibung und zahlen jahrelang Dividenden. Durchgesetzte Modulgrenzen, gemeinsame Bibliotheken, konsistentes Tooling, koordinierte Releases — das sind keine Luxusgüter im Multi-Team-Kontext, das ist das, was eine große Codebase handhabbar hält. Ich habe NX-Monorepos bei ACSoftware und Datacolor aufgesetzt und darin gearbeitet. Die Lernkurve ist real, aber konzentriert sich am Anfang. Das Ergebnis ist eine Architektur, die sauber bleibt.',
+      'opinion-juniors-ai-era-topic': 'Juniors im KI-Zeitalter',
+      'opinion-juniors-ai-era-take': 'Juniors zählen jetzt mehr, nicht weniger.',
+      'opinion-juniors-ai-era-detail': 'Der populäre Take ist, dass KI Junior-Arbeit ersetzt. Ich widerspreche. KI generiert Code schnell — aber Junior-Entwickler, die lernen, KI-Output zu hinterfragen, zu testen und wirklich zu verstehen, werden schneller wachsen als jede vorherige Generation. Meine Aufgabe als Senior ist nicht, mein Wissen zu schützen. Es ist, es so schnell zu teilen, dass sie aufholen — und mir dann beibringen, was ich verpasst habe. Das Beste, was ich in meiner Karriere getan habe, ist einem Freund geholfen, von null zu Angular-Developer bei Datacolor zu werden. Diesen Loop möchte ich weiterhin aufbauen.',
+      'opinion-backend-topic': 'Backend-Präferenzen',
+      'opinion-backend-take': 'Kein Stammesdenken. Aber .NET macht Sinn, wenn Angular schon im Stack ist.',
+      'opinion-backend-detail': 'Ich habe keine starke Backend-Zugehörigkeit. Für persönliche oder kleine Projekte: Node.js oder Vercel Serverless — schnell zu shippen, einfach zu warten. Für komplexe Enterprise-Kontexte würde ich .NET (C#) verwenden. Der Grund ist strukturell: Das Modulsystem, Dependency Injection und das strikte Typing von .NET passen gut dazu, wie Angular denkt. Das mentale Modell überträgt sich sauber, was zählt, wenn ich zwischen Front und Back wechsle. Reiner Pragmatismus, kein Tribalismus.',
+      'opinion-webassembly-topic': 'WebAssembly',
+      'opinion-webassembly-take': 'Nützlich für einen schmalen Problembereich. Wahrscheinlich irrelevant für dein Projekt.',
+      'opinion-webassembly-detail': 'Ich habe WebAssembly für meine Universitätsabschlussarbeit eingehend untersucht — Echtzeit-Schwerlastberechnungen in einem Lagerverwaltungssystem. Mein ehrliches Fazit nach dieser Forschung: Es ist das richtige Werkzeug für rechenintensive, latenzempfindliche, browserbasierte Operationen. Das beschreibt vielleicht 0,01% der Webprojekte. Für alles andere ist die JS-Engine bereits schnell genug und die Komplexität von WASM lohnt sich nicht hinzuzufügen. Nicht standardmäßig danach greifen.',
+      'opinion-italian-tech-topic': 'Italiens Tech-Industrie',
+      'opinion-italian-tech-take': 'Ein Großteil läuft noch auf Desktop-Apps aus den 2000ern. Frustrierend. Auch eine Chance.',
+      'opinion-italian-tech-detail': 'Ein bedeutender Teil der italienischen Business-Software läuft noch auf Legacy-Desktop-UIs — Prozesse, die schnelle, moderne Web-Erlebnisse sein sollten. Ich finde das aufrichtig frustrierend, weil die Lücke zwischen dem, was existiert, und dem, was möglich ist, enorm ist. Aber ich finde es auch interessant: Es gibt viel echte Modernisierungsarbeit zu tun, und Unternehmen, die das gut machen, werden einen erheblichen Vorteil haben. Das ist einer der Gründe, warum ich besonders von Health Tech angezogen bin — das italienische Gesundheitssystem ist genau diese Situation im großen Maßstab, und gutes Software Engineering dort verändert genuinely die Ergebnisse für Menschen.',
+    },
+  },
+  'contact-links': {
+    'tech-peer': {
+      eyebrow: 'Finde mich',
+      headline: 'Alle Links.',
+      formal: {
+        elevator: { eyebrow: 'Kontakt', headline: 'Direkt erreichbar.' },
+        coffee: { eyebrow: 'Kontakt', headline: 'Alle Wege, mich zu finden.' },
+        'deep-dive': { eyebrow: 'Kontakt', headline: 'Kontaktiere mich auf dem bevorzugten Kanal.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Finde mich', headline: 'Alle Links.' },
+        coffee: { eyebrow: 'Finde mich', headline: 'Code auf GitHub. Gespräch auf LinkedIn.' },
+        'deep-dive': { eyebrow: 'Finde mich', headline: 'Wo ich wirklich bin.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Links', headline: 'GitHub / LinkedIn / E-Mail / Telefon.' },
+        coffee: { eyebrow: 'Links', headline: 'Fang mit GitHub an. Beende es mit einer Nachricht.' },
+        'deep-dive': { eyebrow: 'Links', headline: 'Jeder Kanal, eine Card.' },
+      },
+    },
+    recruiter: {
+      eyebrow: 'Kontakt',
+      headline: 'Wie man Erik erreicht.',
+      formal: {
+        elevator: { eyebrow: 'Kontakt', headline: 'Wie man Erik erreicht.' },
+        coffee: { eyebrow: 'Kontakt', headline: 'LinkedIn ist der schnellste Weg, ein Gespräch zu beginnen.' },
+        'deep-dive': { eyebrow: 'Kontakt', headline: 'Alle Kanäle, alle offen.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Kontakt', headline: 'Offen für das richtige Gespräch.' },
+        coffee: { eyebrow: 'Kontakt', headline: 'LinkedIn zuerst. Oder E-Mail, wenn bevorzugt.' },
+        'deep-dive': { eyebrow: 'Kontakt', headline: 'Jeder Kanal ist offen. Wähle den bevorzugten.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Kontakt', headline: 'LinkedIn / GitHub / E-Mail / Telefon.' },
+        coffee: { eyebrow: 'Kontakt', headline: 'Kontaktiere mich auf dem bequemsten Kanal.' },
+        'deep-dive': { eyebrow: 'Kontakt', headline: 'Erik ist erreichbar und antwortet.' },
+      },
+    },
+    client: {
+      eyebrow: 'Kontaktiere mich',
+      headline: 'Reden wir über dein Projekt.',
+      formal: {
+        elevator: { eyebrow: 'Kontaktiere mich', headline: 'Reden wir über dein Projekt.' },
+        coffee: { eyebrow: 'Kontaktiere mich', headline: 'Schreib per E-Mail oder LinkedIn, um ein Gespräch zu beginnen.' },
+        'deep-dive': { eyebrow: 'Kontaktiere mich', headline: 'Jeder Kanal ist offen. E-Mail funktioniert am besten für Projekt-Briefs.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Kontaktiere mich', headline: 'Jedes große Projekt beginnt mit einer Nachricht.' },
+        coffee: { eyebrow: 'Kontaktiere mich', headline: 'Wenn etwas davon resoniert — schreib mir.' },
+        'deep-dive': { eyebrow: 'Kontaktiere mich', headline: 'Sende eine Nachricht. Sag mir, was du baust.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Kontakt', headline: 'E-Mail / LinkedIn / Telefon.' },
+        coffee: { eyebrow: 'Kontakt', headline: 'Kontaktiere mich auf dem bevorzugten Kanal.' },
+        'deep-dive': { eyebrow: 'Kontakt', headline: 'Offen für erste Gespräche über Projektscope und Kompatibilität.' },
+      },
+    },
+    default: {
+      eyebrow: 'Kontakt',
+      headline: 'Finde mich hier.',
+      'linkedin-hint': 'Professionelle Gespräche und Möglichkeiten',
+      'github-hint': 'Code, Beiträge und öffentliche Projekte',
+      'email-hint': 'ferrarierik.work@gmail.com',
+      'phone-hint': 'Verfügbar während CET-Geschäftszeiten',
+    },
+  },
+  'languages-and-location': {
+    'tech-peer': {
+      eyebrow: 'Standort & Sprachen',
+      headline: 'Wo ich bin. Was ich spreche.',
+      formal: {
+        elevator: { eyebrow: 'Standort & Sprachen', headline: 'Italien. Remote überall.', 'remote-statement': 'Offen für vollständig remote Positionen weltweit.' },
+        coffee: { eyebrow: 'Standort & Sprachen', headline: 'Reggio Emilia, Italien. Remote-first.', 'remote-statement': 'Standort ist keine Einschränkung. Offen für remote Rollen global.' },
+        'deep-dive': { eyebrow: 'Standort & Sprachen', headline: 'In Italien ansässig, global verfügbar.', 'remote-statement': 'Vollständig remote oder hybrid. Standort spielt keine Rolle — offen für Unternehmen weltweit.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Standort & Sprachen', headline: 'Italien. CET. Remote-friendly.', 'remote-statement': 'Offen für remote Rollen weltweit. Standort ist kein Blocker.' },
+        coffee: { eyebrow: 'Standort & Sprachen', headline: 'Reggio Emilia. CET. Offen für alles.', 'remote-statement': 'Remote-first aus Überzeugung. Gerne mit Teams in jeder Zeitzone.' },
+        'deep-dive': { eyebrow: 'Standort & Sprachen', headline: 'In Italien ansässig. Die Welt ist das Büro.', 'remote-statement': 'Vollständig remote bevorzugt. Async-friendly. Keine Zeitzone macht es unmöglich.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Standort & Sprachen', headline: 'CET/CEST · Italien · remote-offen.', 'remote-statement': 'Remote-friendly. Async-fähig. Offen überall.' },
+        coffee: { eyebrow: 'Standort & Sprachen', headline: 'Reggio Emilia, Italien · CET/CEST · remote-first.', 'remote-statement': 'Offen für vollständig remote Positionen global. Async-Kommunikation ist eine Stärke, kein Kompromiss.' },
+        'deep-dive': { eyebrow: 'Standort & Sprachen', headline: 'In CET ansässig. Global verfügbar.', 'remote-statement': 'Vollständig remote oder hybrid. Offen für jede Geographie. Async-first Kommunikationsstil.' },
+      },
+    },
+    recruiter: {
+      eyebrow: 'Standort & Verfügbarkeit',
+      headline: 'Wo Erik ist. Wo er arbeiten kann.',
+      formal: {
+        elevator: { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Italien ansässig. Offen für remote weltweit.', 'remote-statement': 'Offen für vollständig remote Positionen weltweit.' },
+        coffee: { eyebrow: 'Standort & Verfügbarkeit', headline: 'Reggio Emilia, Italien. Remote-first.', 'remote-statement': 'Standort ist keine Einschränkung. Offen für remote Rollen global, Hybrid verhandelbar.' },
+        'deep-dive': { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Italien ansässig. Verfügbar für internationale remote Rollen.', 'remote-statement': 'Vollständig remote bevorzugt. Hybrid ist verhandelbar. Offen für Unternehmen überall — Standort fließt nicht in Rollenentscheidungen ein.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Standort & Verfügbarkeit', headline: 'Italien. Remote überall.', 'remote-statement': 'Offen für remote Rollen weltweit. Keine geografischen Einschränkungen.' },
+        coffee: { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Reggio Emilia ansässig. Die Rolle kann überall sein.', 'remote-statement': 'Remote-first. Die richtige Chance zählt mehr als der Bürostandort.' },
+        'deep-dive': { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Italien ansässiger Engineer, globale Reichweite.', 'remote-statement': 'Vollständig remote oder hybrid. Offen für internationale Möglichkeiten. Async-Kommunikation ist eine echte Stärke.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Standort & Verfügbarkeit', headline: 'Italien · CET · remote-offen.', 'remote-statement': 'Remote-friendly. Offen für Positionen weltweit.' },
+        coffee: { eyebrow: 'Standort & Verfügbarkeit', headline: 'Reggio Emilia, Italien · CET/CEST · remote-first.', 'remote-statement': 'Remote bevorzugt. Hybrid verhandelbar. Standort ist kein Filter.' },
+        'deep-dive': { eyebrow: 'Standort & Verfügbarkeit', headline: 'In CET ansässig. Remote-fähig global.', 'remote-statement': 'Vollständig remote oder hybrid. Offen für jede Geographie. Async-fähig — überlappende Stunden willkommen, aber nicht erforderlich.' },
+      },
+    },
+    client: {
+      eyebrow: 'Standort & Verfügbarkeit',
+      headline: 'In Italien ansässig. Remote verfügbar.',
+      formal: {
+        elevator: { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Italien ansässig. Remote überall verfügbar.', 'remote-statement': 'Verfügbar für remote Projektarbeit mit Kunden weltweit.' },
+        coffee: { eyebrow: 'Standort & Verfügbarkeit', headline: 'Reggio Emilia, Italien. Remote-Arbeit willkommen.', 'remote-statement': 'Gerne remote mit Kunden in jeder Zeitzone. Standort ist keine Barriere für eine gute Zusammenarbeit.' },
+        'deep-dive': { eyebrow: 'Standort & Verfügbarkeit', headline: 'In Italien ansässig. Remote-friendly für Kundenprojekte.', 'remote-statement': 'Alle Kundenarbeit ist remote. Ich arbeite effektiv mit verteilten Teams und kommuniziere klar in async-Umgebungen.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Standort', headline: 'Italien. Überall verfügbar.', 'remote-statement': 'Remote-friendly. Arbeit reist gut.' },
+        coffee: { eyebrow: 'Standort', headline: 'In Reggio Emilia ansässig. Arbeite mit Kunden überall.', 'remote-statement': 'Geographie hat noch nie ein gutes Projekt aufgehalten. Remote-first, async-friendly.' },
+        'deep-dive': { eyebrow: 'Standort', headline: 'In Italien ansässig. Die beste Arbeit passiert ohnehin online.', 'remote-statement': 'Alle Zusammenarbeit geschieht remote — Videocalls, async-Updates, klare Dokumentation. Funktioniert gut.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Standort', headline: 'Italien · CET · remote-fähig.', 'remote-statement': 'Remote-Arbeit für Kundenprojekte. Überall verfügbar.' },
+        coffee: { eyebrow: 'Standort', headline: 'Reggio Emilia, Italien · remote-first.', 'remote-statement': 'Arbeite mit Kunden vollständig remote. Async-friendly. CET-Zeitzone mit flexiblem Overlap.' },
+        'deep-dive': { eyebrow: 'Standort', headline: 'In CET ansässig. Remote-fähig für jede Kundengeographie.', 'remote-statement': 'Alle Kundenaufträge sind remote. Async-first Kommunikation, strukturierte Check-ins, vollständige Dokumentation.' },
+      },
+    },
+    default: {
+      eyebrow: 'Standort & Sprachen',
+      headline: 'Wo ich bin. Was ich spreche.',
+      'remote-statement': 'Offen für vollständig remote Positionen weltweit.',
+      'lang-italian-level': 'Muttersprache',
+      'lang-english-level': 'C1',
+      'lang-english-note': 'in Bearbeitung — Wall Street English',
+      'lang-german-level': 'A1',
+      'lang-german-note': 'Duolingo. Zählt trotzdem.',
+      'timezone-value': 'CET / CEST',
+    },
+  },
+  'working-methodology': {
+    'tech-peer': {
+      eyebrow: 'Wie ich arbeite',
+      headline: 'Praktiken, nicht nur Prinzipien.',
+      body: 'Philosophie ist das, was ich glaube. Methodik ist das, was ich wirklich tue.',
+      formal: {
+        elevator: { eyebrow: 'Wie ich arbeite', headline: 'Konkrete Praktiken. Nicht nur Prinzipien.', body: 'Fünf Dinge, die ich systematisch tue, nicht nur predige.' },
+        coffee: { eyebrow: 'Wie ich arbeite', headline: 'Praktiken, die Code und Teams gesund halten.', body: 'Was ich wirklich täglich tue — nicht das, was ich anstrebe.' },
+        'deep-dive': { eyebrow: 'Wie ich arbeite', headline: 'Engineering-Praktiken, die ich unabhängig vom Kontext einhalte.', body: 'Die Lücke zwischen Philosophie und Methodik ist, wo die meisten Teams scheitern. So sieht Methodik in der Praxis aus.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Wie ich arbeite', headline: 'Praktiken, nicht nur Prinzipien.', body: '' },
+        coffee: { eyebrow: 'Wie ich arbeite', headline: 'Die echte Antwort auf "Wie arbeitest du?"', body: 'Nicht die Interview-Antwort. Die echte.' },
+        'deep-dive': { eyebrow: 'Wie ich arbeite', headline: 'Fünf Praktiken, bei denen ich keine Kompromisse mache.', body: 'Jede wurde gegen echte Teams, echte Deadlines und echte Meinungsverschiedenheiten getestet.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Dev-Praktiken', headline: 'PR-Disziplin · Mentoring · Agile · Docs · Pairing.', body: '' },
+        coffee: { eyebrow: 'Dev-Praktiken', headline: 'Wie mein Workflow wirklich aussieht.', body: 'Praktiken-Stack, den ich unabhängig vom Projekt oder Unternehmen anwende.' },
+        'deep-dive': { eyebrow: 'Dev-Praktiken', headline: 'Meine Arbeitsmethodik — konkret und meinungsstark.', body: 'Fünf Praktiken, die jedes Projekt definieren, das ich anfasse.' },
+      },
+    },
+    recruiter: {
+      eyebrow: 'Arbeitsstil',
+      headline: 'Wie Erik wirklich arbeitet.',
+      body: '',
+      formal: {
+        elevator: { eyebrow: 'Arbeitsstil', headline: 'Diszipliniert. Kollaborativ. Dokumentiert.', body: '' },
+        coffee: { eyebrow: 'Arbeitsstil', headline: 'Wie Erik Arbeit strukturiert und mit Teams zusammenarbeitet.', body: '' },
+        'deep-dive': { eyebrow: 'Arbeitsstil', headline: 'Eriks Arbeitsmethodik — was in der Praxis zu erwarten ist.', body: 'Das sind die Praktiken, die definieren, wie Erik in jedem Team arbeitet, unabhängig vom Projekt oder Unternehmen.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Arbeitsstil', headline: 'Hohe Standards. Wenig Reibung. Echtes Mentoring.', body: '' },
+        coffee: { eyebrow: 'Arbeitsstil', headline: 'Wie es sich anfühlt, mit Erik zu arbeiten.', body: 'Nicht die CV-Version. Die echte.' },
+        'deep-dive': { eyebrow: 'Arbeitsstil', headline: 'Fünf Dinge, auf die du zählen kannst, wenn Erik im Team ist.', body: '' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Arbeitsstil', headline: 'PR-Disziplin · Agile · Docs · Pairing · Mentoring.', body: '' },
+        coffee: { eyebrow: 'Arbeitsstil', headline: 'Eriks Engineering-Praktiken — konkret und konsistent.', body: '' },
+        'deep-dive': { eyebrow: 'Arbeitsstil', headline: 'Engineering-Methodik, die mit dem Team skaliert.', body: 'Jede Praxis unten ist etwas, das Erik anwendet und befürwortet — kein Checkbox-Abhaken.' },
+      },
+    },
+    client: {
+      eyebrow: 'Wie ich liefere',
+      headline: 'Klarer Prozess. Keine Überraschungen.',
+      body: '',
+      formal: {
+        elevator: { eyebrow: 'Wie ich liefere', headline: 'Strukturiert. Dokumentiert. Zuverlässig.', body: '' },
+        coffee: { eyebrow: 'Wie ich liefere', headline: 'Wie ich Kundenprojekte strukturiere.', body: 'Du weißt immer, wo das Projekt steht.' },
+        'deep-dive': { eyebrow: 'Wie ich liefere', headline: 'Meine Projektmethodik — was das für dich bedeutet.', body: 'Jede Praxis unten übersetzt sich in etwas Konkretes für das Projekt: weniger Überraschungen, besseres Handoff und wartbare Software nach der Lieferung.' },
+      },
+      creative: {
+        elevator: { eyebrow: 'Wie ich liefere', headline: 'Klarer Prozess. Keine Überraschungen.', body: '' },
+        coffee: { eyebrow: 'Wie ich liefere', headline: 'Du weißt immer, was passiert und warum.', body: '' },
+        'deep-dive': { eyebrow: 'Wie ich liefere', headline: 'Die Praktiken, die Kundenprojekte reibungslos machen.', body: 'Wie ich arbeite ist darauf ausgelegt, dein Leben einfacher zu machen — nicht nur guten Code zu produzieren.' },
+      },
+      technical: {
+        elevator: { eyebrow: 'Wie ich liefere', headline: 'Agile · dokumentiert · strukturiertes Handoff.', body: '' },
+        coffee: { eyebrow: 'Wie ich liefere', headline: 'Prozess, der Projekte auf Kurs hält.', body: '' },
+        'deep-dive': { eyebrow: 'Wie ich liefere', headline: 'Liefermethodik für Kundenaufträge.', body: '' },
+      },
+    },
+    default: {
+      eyebrow: 'Wie ich arbeite',
+      headline: 'Praktiken, nicht nur Prinzipien.',
+      body: 'Philosophie ist das, was ich glaube. Methodik ist das, was ich wirklich tue.',
+      'method-pr-discipline-title': 'PR-Disziplin im KI-Zeitalter',
+      'method-pr-discipline-body': 'KI generiert Code schnell. Das macht disziplinierte Code-Reviews wichtiger, nicht weniger. Jeder PR, den ich schreibe, hat eine klare Beschreibung, eine Begründung und einen Diff, den ich bereit bin zu verteidigen. Jeder PR, den ich reviewe, bekommt spezifisches, umsetzbares Feedback — kein "sieht okay aus". In einer Welt, in der Code in Sekunden generiert werden kann, ist der Review der Ort, wo Qualität wirklich entschieden wird.',
+      'method-mentoring-title': 'Mentoring-Kultur — Lehren und Lernen',
+      'method-mentoring-body': 'Das Beste, was ich in meiner Karriere getan habe, ist einem guten Freund geholfen, von null zu Angular-Developer bei Datacolor zu werden — und dann zuzuschauen, wie er mir Dinge beibringt, die ich verpasst hatte. Dieser Loop ist nicht zufällig. Ich teile Wissen schnell und direkt, weil Juniors, die schnell wachsen, zu den Personen werden, die deine blinden Flecken herausfordern. Mentoring ist keine einseitige Wohltätigkeit. Es ist ein Loop, der das gesamte Team besser macht.',
+      'method-agile-title': 'Agile — zertifiziert und praktiziert',
+      'method-agile-body': 'Zertifiziert in Scrum- und Agile-Methoden. Zweiwöchige Sprints, klare Akzeptanzkriterien, Retrospektiven, die wirklich etwas verändern. Agile ist kein Ritual — es ist ein Feedback-Loop. Richtig gemacht, bringt es Probleme ans Licht, bevor sie zu Krisen werden, und hält die Lieferung vorhersehbar, ohne Anpassungsfähigkeit zu opfern.',
+      'method-documentation-title': 'Für KI entwickelte Dokumentation',
+      'method-documentation-body': 'Dokumentation, die nicht für Maschinen geschrieben ist, wird zu Dokumentation, die nicht existiert — weil KI ignoriert, was sie nicht parsen kann. Ich schreibe Docs, die strukturiert, durchsuchbar und sowohl für Menschen als auch für LLMs verwendbar sind: typisierte Schnittstellen, OpenAPI-Spezifikationen, ADRs für bedeutende Entscheidungen und Inline-Kommentare nur dort, wo Code sich nicht selbst erklärt. Dokumentation ist Teil der Lieferung, kein Nachgedanke.',
+      'method-pairing-title': 'Wöchentliches Pair Programming',
+      'method-pairing-body': 'Ich mache wöchentlich Pair Programming — nicht als Krisenintervention, sondern als regulären Rhythmus. Pairing ist der Ort, wo Wissen am schnellsten übertragen wird, wo Bugs gefangen werden, bevor sie zu PRs werden, und wo Junior-Entwickler Patterns lernen, die sie aus Code-Reviews allein nie aufgreifen würden. Es hält mich auch ehrlich: Entscheidungen einem Kollegen zu erklären, erzwingt eine Klarheit, die das Arbeiten allein nicht liefert.',
     },
   },
   },

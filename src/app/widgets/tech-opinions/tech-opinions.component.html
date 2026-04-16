@@ -1,0 +1,18 @@
+<div class="widget-panel tech-opinions">
+  <p class="tech-opinions__eyebrow">{{ eyebrow() }}</p>
+  <h2 class="tech-opinions__headline">{{ headline() }}</h2>
+
+  <mat-accordion class="tech-opinions__accordion" [multi]="false">
+    @for (opinion of opinions(); track opinion.id) {
+      <mat-expansion-panel class="tech-opinions__panel">
+        <mat-expansion-panel-header class="tech-opinions__header">
+          <div class="tech-opinions__header-content">
+            <span class="tech-opinions__topic">{{ opinion.topic }}</span>
+            <span class="tech-opinions__take">{{ opinion.take }}</span>
+          </div>
+        </mat-expansion-panel-header>
+        <p class="tech-opinions__detail">{{ opinion.detail }}</p>
+      </mat-expansion-panel>
+    }
+  </mat-accordion>
+</div>

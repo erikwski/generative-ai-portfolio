@@ -31,6 +31,10 @@ import { MetaExplainerWidget } from '../../widgets/meta-explainer/meta-explainer
 import { ConferenceActivityWidget } from '../../widgets/conference-activity/conference-activity.widget';
 import { OpenSourceWidget } from '../../widgets/open-source/open-source.widget';
 import { MentorsWidget } from '../../widgets/mentors/mentors.widget';
+import { TechOpinionsWidget } from '../../widgets/tech-opinions/tech-opinions.widget';
+import { ContactLinksWidget } from '../../widgets/contact-links/contact-links.widget';
+import { LanguagesAndLocationWidget } from '../../widgets/languages-and-location/languages-and-location.widget';
+import { WorkingMethodologyWidget } from '../../widgets/working-methodology/working-methodology.widget';
 
 @Component({
   selector: 'app-canvas',
@@ -98,6 +102,10 @@ Instructions:
       ConferenceActivityWidget,
       OpenSourceWidget,
       MentorsWidget,
+      TechOpinionsWidget,
+      ContactLinksWidget,
+      LanguagesAndLocationWidget,
+      WorkingMethodologyWidget,
     ],
     debugName: 'portfolio-canvas',
   });
